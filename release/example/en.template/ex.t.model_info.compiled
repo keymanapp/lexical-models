@@ -1,0 +1,27 @@
+{
+    "id": "sil.km.fst",
+    "name": "Khmer FST Learning Language Model",
+    "license": "mit",
+    "related": {
+        "sil.km.wordlist": {
+            "deprecates": true
+        }
+    },
+    "version": "1.0.5",
+    "languages": [
+        "km"
+    ],
+    "authorName": "Makara Sok",
+    "jsFilename": "km.sil.model.js",
+    "sourcePath": "release/sil/km/sil.km",
+    "downloadPath": "https://downloads.keyman.com/models/sil.km/1.0.5/sil.km.kmp",
+    "authorEmail": "makara@keyman.com",
+    "description": "Khmer learning language model for autocorrection and prediction.",
+    "packageFileSize": 2639360,
+    "packageFilename": "sil.km.kmp",
+    "packageIncludes": [
+        "documentation"
+    ],
+    "lastModifiedDate": "2019-01-08T19:09:56.671Z",
+    "minKeymanVersion": "12.0"
+}
