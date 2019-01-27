@@ -1,1 +1,0 @@
-{"id":"example.template","format":"trie-1.0","sources":["example.tsv"]}

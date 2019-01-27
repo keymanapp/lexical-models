@@ -1,5 +1,5 @@
 com.keyman.lexicalModelCompiler.compile({
-  id: 'example.template',
+  //id: 'example.template',
   format: 'trie-1.0',
   /*wordBreaking: {
     allowedCharacters: { initials: 'abcdefghijklmnopqrstuvwxyz', medials: 'abcdefghijklmnopqrstuvwxyz', finals: 'abcdefghijklmnopqrstuvwxyz' },
