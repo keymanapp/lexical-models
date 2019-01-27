@@ -20,9 +20,16 @@ interface LexicalModelSource extends LexicalModel {
   readonly sources: [string];
 }
 
-interface LexicalModelTrie extends LexicalModel {
+interface LexicalModelCompiled extends LexicalModel {
   readonly id: string;
-  readonly trie: string;
+}
+
+interface LexicalModelCompiledTrie extends LexicalModelCompiled {
+  trie: string;
+}
+
+interface LexicalModelCompiledCustom extends LexicalModelCompiled {
+  predict(context: string): {display: string, transform: string, delete: number}[];
 }
 
 let com = {keyman: {lexicalModelCompiler: {
@@ -42,14 +49,37 @@ let com = {keyman: {lexicalModelCompiler: {
     // Emit the object as Javascript, to file
 
     let model_info_file = fs.readdirSync('../').find(function(f) { return f.match(/\.model_info$/)});
+    if(!model_info_file) {
+      this.logError('Unable to find .model_info file in parent folder');
+      return false;
+    }
     
     let src = fs.readFileSync('../source/'+o.sources[0], 'utf8'); //todo: multiple source files
     
     let model_info = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
+
+    // Build the compiled lexical model
     
+    let oc: LexicalModelCompiled = {id:model_info.id, format:o.format};
+
+    switch(o.format) {
+      case "custom-1.0":
+         (oc as LexicalModelCompiledCustom).predict = function(context: string) { return [] };
+         break;
+      case "fst-foma-1.0":
+        //let oc: LexicalModelCompiledFst = {id:model_info.id, format:o.format, fst:src};
+        break;
+      case "trie-1.0":
+        (oc as LexicalModelCompiledTrie).trie = src;
+        break;
+      default:
+        this.logError('Unknown model format '+o.format);
+        return false;
+    }
+
     // TODO: split based on lexical model type (wordlist, fst, custom)
     // TODO: Is there a better way to do this?
-    let oc: LexicalModelTrie = {id:model_info.id, format:o.format, trie:src};
+    
 
     let p: string = JSON.stringify(oc); //TODO: real emission of javascript code
 
