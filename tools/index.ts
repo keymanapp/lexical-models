@@ -5,6 +5,7 @@
 // TODO: update package.json schema at api.keyman.com/schemas to cater for additional fields.
 
 /// <reference path="lexical-model.ts" />
+/// <reference path="model-info-file.ts" />
 
 import * as ts from "typescript";
 import KmpCompiler from "./kmp-compiler";
@@ -23,7 +24,7 @@ export default class LexicalModelCompiler {
       return false;
     }
     
-    let model_info = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
+    let model_info: ModelInfoFile = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
 
     //
     // Filename expectations
@@ -31,6 +32,7 @@ export default class LexicalModelCompiler {
     const kpsFileName = '../source/'+model_info.id+'.model.kps';
     const kmpFileName = model_info.id+'.model.kmp';
     const modelFileName = model_info.id+'.model.js';
+    const modelInfoFileName = model_info.id+'.model_info';
     const sourcePath = '../source';
     
     //
@@ -136,9 +138,10 @@ export default class LexicalModelCompiler {
     // Build merged .model_info file
     //
 
-    // TODO: Create complete .model_info from source .model_info
-    
+    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toUTCString();
+    model_info.name = model_info.name || kmpJsonData.info.name.description;
 
+    fs.writeFileSync(modelInfoFileName, JSON.stringify(model_info, null, 2));
   };
 
   transpileSources(sources: Array<string>): Array<string> {
