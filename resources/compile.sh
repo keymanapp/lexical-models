@@ -123,10 +123,19 @@ function build_release_model {
   
   mkdir build || die "Failed to create build folder for $model"
   
+  #
+  # Check if color is supported
+  #
+  if [ -t 2 ]; then
+    local COLOR_FLAG=--color
+  else
+    local COLOR_FLAG=
+  fi
+
   pushd build
   mkdir obj
   ../../../../node_modules/.bin/tsc --outDir ./obj ../source/model.ts 
-  node ./obj/$group/$shortname/$base_model/source/model.js
+  node ./obj/$group/$shortname/$base_model/source/model.js $COLOR_FLAG
   popd
 
   return 0

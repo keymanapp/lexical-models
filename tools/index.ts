@@ -2,6 +2,8 @@
   index.ts: base file for lexical model compiles
 */
 
+// TODO: update package.json schema at api.keyman.com/schemas to cater for additional fields.
+
 /// <reference path="lexical-model.ts" />
 
 import * as ts from "typescript";
@@ -12,17 +14,9 @@ let path = require('path');
 
 export default class LexicalModelCompiler {
   compile(o: LexicalModelSource) {
-    // TODO: refactor into phases of build (use multiple source files for clarity)
-    // Validate fields provided by the model.ts file
-    //todo: assert id format
-    //todo: assert presence of source files
-
-    // Add any additional fields required for compiled version
-    
-    // Import data files and transform
-    
-    // Emit the object as Javascript, to file
-
+    //
+    // Load the model info file
+    //
     let model_info_file = fs.readdirSync('../').find(function(f) { return f.match(/\.model_info$/)});
     if(!model_info_file) {
       this.logError('Unable to find .model_info file in parent folder');
@@ -31,16 +25,45 @@ export default class LexicalModelCompiler {
     
     let model_info = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
 
+    //
+    // Filename expectations
+    //
     const kpsFileName = '../source/'+model_info.id+'.model.kps';
     const kmpFileName = model_info.id+'.model.kmp';
     const modelFileName = model_info.id+'.model.js';
+    const sourcePath = '../source';
     
+    //
+    // Validate the model ID
+    //
+
+    if(!model_info.id.match(/^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/)) {
+      this.logError(
+        `The model identifier '${model_info.id}' is invalid.\n`+
+        `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
+        `bcp_47 should be underscore (_) separated.`);
+      return false;
+    }
+
+    //
+    // This script is run from folder group/author/bcp47.uniq/build/ folder. We want to
+    // verify that author.bcp47.uniq is the same as the model identifier.
+    //
+
+    {
+      let p = process.cwd().split(path.sep).reverse();
+      if(p.length < 3 || p[0] != 'build' || model_info.id != p[2] + '.' + p[1]) {
+        this.logError(`Unexpected model path ${p[2]}.${p[1]}, does not match model id ${model_info.id}`);
+        return false;
+      }
+    }
+
     //
     // Build the compiled lexical model
     //
     
     let sources: string[] = o.sources.map(function(source) { 
-      return fs.readFileSync(path.join('../source', source), 'utf8'); 
+      return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
     });
 
     let oc: LexicalModelCompiled = {id:model_info.id, format:o.format, wordBreaking:o.wordBreaking};
@@ -53,15 +76,28 @@ export default class LexicalModelCompiler {
     let func = filePrefix;
 
     //
+    // Load custom wordbreak source files
+    //
+
+    let wordBreakingSource;
+
+    if(o.wordBreaking && o.wordBreaking.sources) {
+      let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
+        return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
+      });
+
+      wordBreakingSource = this.transpileSources(wordBreakingSources).join('\n');
+
+      delete oc.wordBreaking.sources;
+    }
+
+    //
     // Emit the model as code and data
     //
 
-    // TODO: support functions within the LexicalModel object, so essentially
-    // copy the polyfill for JSON.stringify and add function support
-
     switch(o.format) {
       case "custom-1.0":
-        func += funcPrefix + JSON.stringify(oc) + funcSuffix + this.transpileSources(sources).join('');
+        func += funcPrefix + JSON.stringify(oc) + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
         break;
       case "fst-foma-1.0":
         (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
@@ -77,30 +113,15 @@ export default class LexicalModelCompiler {
         return false;
     }
 
-    //
-    // Add custom wordbreak source files
-    //
-
-    if(o.wordBreaking && o.wordBreaking.sources) {
-      let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
-        return fs.readFileSync(path.join('../source', source), 'utf8'); 
-      });
-
-      let wordBreakingSource = this.transpileSources(wordBreakingSources).join('');
-
-      func += wordBreakingSource;
-
-      delete oc.wordBreaking.sources;
+    if(wordBreakingSource) {      
+      func += '\n' + wordBreakingSource;
     }
 
     func += fileSuffix;
-    let p = func;
     
     // Save full model to build folder as Javascript for use in KeymanWeb
     
-    fs.writeFileSync(modelFileName, p);
-
-    // TODO: update package.json schema at api.keyman.com/schemas to cater for additional fields.
+    fs.writeFileSync(modelFileName, func);
 
     //
     // Create KMP file
@@ -128,6 +149,6 @@ export default class LexicalModelCompiler {
   };
 
   logError(s) {
-    console.error(s);
+    console.error(require('chalk').red(s));
   };
 };
