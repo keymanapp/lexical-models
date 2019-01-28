@@ -59,6 +59,12 @@ MODEL_INFOS=($MODEL_INFO_PATHS)
 MODEL_INFOS=`printf -- '%s\n' "${MODEL_INFOS[@]}"`
 
 #
+# Build tools if out of date
+#
+
+node_modules/.bin/tsc tools/*.ts
+
+#
 # Run build
 #
 

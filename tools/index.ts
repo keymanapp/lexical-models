@@ -2,49 +2,24 @@
   index.ts: base file for lexical model compiles
 */
 
+/// <reference path="lexical-model.ts" />
+
+import * as ts from "typescript";
+import KmpCompiler from "./kmp-compiler";
+
 let fs = require('fs');
-let zip = require('node-zip')();
+let path = require('path');
 
-/// import file system
-
-interface LexicalModel {
-  readonly format: 'trie-1.0'|'fst-foma-1.0'|'custom-1.0',
-  /*readonly wordBreaking: {
-    allowedCharacters: { initials: string 'abcdefghijklmnopqrstuvwxyz', medials: 'abcdefghijklmnopqrstuvwxyz', finals: 'abcdefghijklmnopqrstuvwxyz' },
-    defaultBreakCharacter: ' '
-  },*/
-  //... metadata ...
-}
-
-interface LexicalModelSource extends LexicalModel {
-  readonly sources: [string];
-}
-
-interface LexicalModelCompiled extends LexicalModel {
-  readonly id: string;
-}
-
-interface LexicalModelCompiledTrie extends LexicalModelCompiled {
-  trie: string;
-}
-
-interface LexicalModelCompiledCustom extends LexicalModelCompiled {
-  predict(context: string): {display: string, transform: string, delete: number}[];
-}
-
-let com = {keyman: {lexicalModelCompiler: {
-  compile: function(o: LexicalModelSource) {
+export default class LexicalModelCompiler {
+  compile(o: LexicalModelSource) {
     // TODO: refactor into phases of build (use multiple source files for clarity)
     // Validate fields provided by the model.ts file
     //todo: assert id format
     //todo: assert presence of source files
 
-    // TODO: Create complete .model_info from source .model_info
-    
     // Add any additional fields required for compiled version
     
     // Import data files and transform
-
     
     // Emit the object as Javascript, to file
 
@@ -54,89 +29,106 @@ let com = {keyman: {lexicalModelCompiler: {
       return false;
     }
     
-    let src = fs.readFileSync('../source/'+o.sources[0], 'utf8'); //todo: multiple source files
-    
     let model_info = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
 
-    // Build the compiled lexical model
+    const kpsFileName = '../source/'+model_info.id+'.model.kps';
+    const kmpFileName = model_info.id+'.model.kmp';
+    const modelFileName = model_info.id+'.model.js';
     
-    let oc: LexicalModelCompiled = {id:model_info.id, format:o.format};
+    //
+    // Build the compiled lexical model
+    //
+    
+    let sources: string[] = o.sources.map(function(source) { 
+      return fs.readFileSync(path.join('../source', source), 'utf8'); 
+    });
+
+    let oc: LexicalModelCompiled = {id:model_info.id, format:o.format, wordBreaking:o.wordBreaking};
+
+    // Todo: add metadata in comment
+    const filePrefix: string = `(function() {\n'use strict';\n`;
+    const funcPrefix: string = `com.keyman.lexicalModel.register(`;
+    const funcSuffix: string = `);`;
+    const fileSuffix: string = `})();`;
+    let func = filePrefix;
+
+    //
+    // Emit the model as code and data
+    //
+
+    // TODO: support functions within the LexicalModel object, so essentially
+    // copy the polyfill for JSON.stringify and add function support
 
     switch(o.format) {
       case "custom-1.0":
-         (oc as LexicalModelCompiledCustom).predict = function(context: string) { return [] };
-         break;
-      case "fst-foma-1.0":
-        //let oc: LexicalModelCompiledFst = {id:model_info.id, format:o.format, fst:src};
+        (oc as LexicalModelCompiledCustom).predict = o.predict;
+        func += this.transpileSources(sources).join('') + funcPrefix + JSON.stringify(oc) + ', ' + o.predict.toString() + funcSuffix;
         break;
+      case "fst-foma-1.0":
+        (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
+        this.logError('Unimplemented model format '+o.format);
+        return false;
       case "trie-1.0":
-        (oc as LexicalModelCompiledTrie).trie = src;
+        // TODO: compile the trie
+        (oc as LexicalModelCompiledTrie).trie = sources.join(' ');
+        func += funcPrefix + JSON.stringify(oc) + funcSuffix;
         break;
       default:
         this.logError('Unknown model format '+o.format);
         return false;
     }
 
-    // TODO: split based on lexical model type (wordlist, fst, custom)
-    // TODO: Is there a better way to do this?
+    //
+    // Add custom wordbreak source files
+    //
+
+    if(o.wordBreaking && o.wordBreaking.sources) {
+      let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
+        return fs.readFileSync(path.join('../source', source), 'utf8'); 
+      });
+
+      let wordBreakingSource = this.transpileSources(wordBreakingSources).join('');
+
+      func += wordBreakingSource;
+
+      delete oc.wordBreaking.sources;
+    }
+
+    func += fileSuffix;
+    let p = func;
     
-
-    let p: string = JSON.stringify(oc); //TODO: real emission of javascript code
-
     // Save full model to build folder as Javascript for use in KeymanWeb
-    fs.writeFileSync(oc.id + '.model.js', p);
-
-    // Add model to .kmp file for deployment to mobile apps
-    zip.file(oc.id + '.model.js', p);
-
-    // TODO: this should be a transform from a .kps file. That allows us to add extra files such as documentation,
-    // graphics etc. Then, in the repo .model_info file, we should omit anything that can be gleaned from the 
-    // .kps, and warn if the content is in both places during compile phase.
+    
+    fs.writeFileSync(modelFileName, p);
 
     // TODO: update package.json schema at api.keyman.com/schemas to cater for additional fields.
 
-    // Create kmp.json file
+    //
+    // Create KMP file
+    //
 
-    let kmpJsonData = {
-      system: {
-        keymanDeveloperVersion: '12.0.0', //TODO: grab actual version from build environment
-        fileVersion: '12.0' // TODO: Figure out what the file version should actually be -- 12.0? because we add model data?
-      },
-      options: {
-        // TODO: We have no options at present for model files; we may add a readme or welcome later;
-        // NOTE: this comes from the .kps
-      },
-      files: [
-        {
-          name: 'kmp.json',
-          description: 'Package metadata'
-        },
-        {
-          name: oc.id + '.model.js',
-          description: oc.id + ' lexical model'
-        }
-      ],
-      lexicalModels: [
-        {
-          name: oc.id + ' for English', // TODO: read from .model_info
-          id: oc.id, // extension = .model.js
-          version: '1.0', // TODO: read from .model_info
-          languages: [{id: 'en', name: 'English'}], // TODO: read from .model_info
+    let kpsString = fs.readFileSync(kpsFileName);
+    let kmpCompiler = new KmpCompiler();
+    let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_info.id, kpsString);
+    kmpCompiler.buildKmpFile(kmpJsonData, kmpFileName);
 
-        }
-      ],
-      info: {
-        name: {description: oc.id + ' for English Lexical Model'}, // TODO: read from .model_info
-        version: {description:'1.0'}, //TODO: read from .model_info
-        author: {description:'Marc Durdin', url:'mailto:marc@keyman.com'}, //TODO: read from .model_info
-        copyright: {description:'(C) 2019 SIL International'} // TODO ... as above
-      }      
-    };
+    //
+    // Build merged .model_info file
+    //
 
-    zip.file('kmp.json', JSON.stringify(kmpJsonData));
+    // TODO: Create complete .model_info from source .model_info
+    
 
-    // Generate kmp file
-    var data = zip.generate({base64:false,compression:'DEFLATE'});
-    fs.writeFileSync(oc.id + '.model.kmp', data, 'binary');
-  }
-}}};
+  };
+
+  transpileSources(sources: Array<string>): Array<string> {
+    return sources.map((source) => ts.transpileModule(source, {
+        compilerOptions: { module: ts.ModuleKind.None }
+      }).outputText
+    );
+  };
+
+  logError(s) {
+    console.error(s);
+  };
+};

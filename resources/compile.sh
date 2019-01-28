@@ -101,6 +101,8 @@ function build_model {
 
 function build_release_model {
   local model=$1
+  local group=$(basename $(dirname $(dirname "$model")))
+  local shortname=$(basename $(dirname "$model"))
   local base_model=$(basename "$model")
   echo "$ACTION_VERB model $1"
   
@@ -122,8 +124,9 @@ function build_release_model {
   mkdir build || die "Failed to create build folder for $model"
   
   pushd build
-  ../../../../node_modules/.bin/tsc --outFile ./compiler.js ../../../../tools/index.ts ../source/model.ts
-  node ./compiler.js
+  mkdir obj
+  ../../../../node_modules/.bin/tsc --outDir ./obj ../source/model.ts 
+  node ./obj/$group/$shortname/$base_model/source/model.js
   popd
 
   return 0
