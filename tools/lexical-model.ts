@@ -17,7 +17,6 @@ interface LexicalModelPrediction {
 
 interface LexicalModelSource extends LexicalModel {
   readonly sources: Array<string>;
-  predict?(context: string): LexicalModelPrediction[];
 }
 
 interface LexicalModelCompiled extends LexicalModel {
@@ -33,5 +32,4 @@ interface LexicalModelCompiledFst extends LexicalModelCompiled {
 }
 
 interface LexicalModelCompiledCustom extends LexicalModelCompiled {
-  predict(context: string): LexicalModelPrediction[];
 }

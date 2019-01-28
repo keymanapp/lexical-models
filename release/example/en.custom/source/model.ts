@@ -6,12 +6,5 @@ import LexicalModelCompiler from "../../../../tools/index";
     sources: ['wordbreak.ts']
   },
   //... metadata ...
-  predict: function(context: string): LexicalModelPrediction[] {
-    if(context == 'f') {
-      return [{transform: 'foo', delete: 1}];
-    } else {
-      return [];
-    }
-  },
-  sources: []
+  sources: ['predict.ts']
 });

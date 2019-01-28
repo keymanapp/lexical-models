@@ -61,8 +61,7 @@ export default class LexicalModelCompiler {
 
     switch(o.format) {
       case "custom-1.0":
-        (oc as LexicalModelCompiledCustom).predict = o.predict;
-        func += this.transpileSources(sources).join('') + funcPrefix + JSON.stringify(oc) + ', ' + o.predict.toString() + funcSuffix;
+        func += funcPrefix + JSON.stringify(oc) + funcSuffix + this.transpileSources(sources).join('');
         break;
       case "fst-foma-1.0":
         (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
