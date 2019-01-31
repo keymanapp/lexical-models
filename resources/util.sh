@@ -4,6 +4,7 @@
 # Define terminal colours
 #
 
+# -t 2 tests that the script is running in an interactive terminal as opposed to redirected to file or piped
 if [ -t 2 ]; then
   t_red=$'\e[1;31m'
   t_grn=$'\e[1;32m'

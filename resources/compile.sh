@@ -125,6 +125,7 @@ function build_release_model {
   
   #
   # Check if color is supported
+  # -t 2 tests that the script is running in an interactive terminal as opposed to redirected to file or piped
   #
   if [ -t 2 ]; then
     local COLOR_FLAG=--color
