@@ -135,7 +135,7 @@ function build_release_model {
 
   pushd build
   mkdir obj
-  ../../../../node_modules/.bin/tsc --outDir ./obj ../source/model.ts 
+  ../../../../node_modules/.bin/tsc --module commonjs --target es6 --outDir ./obj ../source/model.ts 
   node ./obj/$group/$shortname/$base_model/source/model.js $COLOR_FLAG
   popd
 

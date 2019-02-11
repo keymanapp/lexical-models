@@ -13,7 +13,7 @@ interface ModelInfoFile {
   jsFilename?: string;
   jsFileSize?: number;
   isRTL?: boolean;
-  packageIncludes?: string[]; //'documentation'|'fonts'
+  packageIncludes?: string[]; //['fonts'] or []
   version?: string;
   minKeymanVersion?: string;
   helpLink?: string;

@@ -2,23 +2,23 @@
   index.ts: base file for lexical model compiles
 */
 
-// TODO: update package.json schema at api.keyman.com/schemas to cater for additional fields.
-
 /// <reference path="lexical-model.ts" />
 /// <reference path="model-info-file.ts" />
 
 import * as ts from "typescript";
 import KmpCompiler from "./kmp-compiler";
-
-let fs = require('fs');
-let path = require('path');
+import * as fs from "fs";
+import * as path from "path";
 
 export default class LexicalModelCompiler {
   compile(o: LexicalModelSource) {
     //
     // Load the model info file
     //
-    let model_info_file = fs.readdirSync('../').find(function(f) { return f.match(/\.model_info$/)});
+    let files = fs.readdirSync('../');
+    let model_info_file = files.find((f) => !!f.match(/\.model_info$/));
+
+    //let model_info_file = fs.readdirSync('../').find((f) => !!f.match(/\.model_info$/));
     if(!model_info_file) {
       this.logError('Unable to find .model_info file in parent folder');
       return false;
@@ -34,9 +34,12 @@ export default class LexicalModelCompiler {
     const modelFileName = model_info.id+'.model.js';
     const modelInfoFileName = model_info.id+'.model_info';
     const sourcePath = '../source';
+
+    const minKeymanVersion = '12.0';
     
     //
-    // Validate the model ID
+    // Validate the model ID.
+    // TODO: the schema does not require the id field, but we are assuming its presence here
     //
 
     if(!model_info.id.match(/^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/)) {
@@ -52,13 +55,19 @@ export default class LexicalModelCompiler {
     // verify that author.bcp47.uniq is the same as the model identifier.
     //
 
-    {
-      let p = process.cwd().split(path.sep).reverse();
-      if(p.length < 3 || p[0] != 'build' || model_info.id != p[2] + '.' + p[1]) {
-        this.logError(`Unexpected model path ${p[2]}.${p[1]}, does not match model id ${model_info.id}`);
-        return false;
-      }
+    let paths = process.cwd().split(path.sep).reverse();
+    if(paths.length < 4 || paths[0] != 'build' || model_info.id != paths[2] + '.' + paths[1]) {
+      this.logError(`Unexpected model path ${paths[2]}.${paths[1]}, does not match model id ${model_info.id}`);
+      return false;
     }
+
+    // 0 = build
+    // 1 = bcp47.uniq
+    // 2 = author
+    // 3 = group
+    let groupPath = paths[3];
+    let authorPath = paths[2];
+    let bcp47Path = paths[1];
 
     //
     // Build the compiled lexical model
@@ -129,18 +138,33 @@ export default class LexicalModelCompiler {
     // Create KMP file
     //
 
-    let kpsString = fs.readFileSync(kpsFileName);
+    let kpsString: string = fs.readFileSync(kpsFileName, 'utf8');
     let kmpCompiler = new KmpCompiler();
     let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_info.id, kpsString);
     kmpCompiler.buildKmpFile(kmpJsonData, kmpFileName);
 
     //
     // Build merged .model_info file
+    // https://api.keyman.com/schemas/model_info.source.json and
+    // https://api.keyman.com/schemas/model_info.distribution.json 
+    // https://help.keyman.com/developer/cloud/model_info/1.0
     //
 
-    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toUTCString();
     model_info.name = model_info.name || kmpJsonData.info.name.description;
-
+    model_info.authorName = model_info.authorName || kmpJsonData.info.author.description;
+    model_info.authorEmail = model_info.authorEmail || kmpJsonData.info.author.url;
+    model_info.languages = model_info.languages || [].concat(kmpJsonData.lexicalModels.map((e) => e.languages.map((f) => f.id)));
+    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toUTCString();
+    model_info.packageFilename = model_info.packageFilename || kmpFileName;
+    model_info.packageFileSize = fs.statSync(model_info.packageFilename).size; // Always overwrite with actual file size
+    model_info.jsFilename = model_info.jsFilename || modelFileName;
+    model_info.jsFileSize = fs.statSync(model_info.jsFilename).size; // Always overwrite with actual file size
+    model_info.packageIncludes = kmpJsonData.files.filter((e) => !!e.name.match(/.[ot]tf$/i)).length ? ['fonts'] : []; // Always overwrite source data
+    model_info.version = model_info.version || kmpJsonData.info.version.description;
+    model_info.minKeymanVersion = model_info.minKeymanVersion || minKeymanVersion;
+    //TODO: model_info.helpLink = model_info.helpLink || ... if source/help/id.php exists?
+    model_info.sourcePath = model_info.sourcePath || [groupPath, authorPath, bcp47Path].join('/');
+    
     fs.writeFileSync(modelInfoFileName, JSON.stringify(model_info, null, 2));
   };
 
