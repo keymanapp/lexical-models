@@ -29,10 +29,10 @@ export default class LexicalModelCompiler {
     //
     // Filename expectations
     //
-    const kpsFileName = '../source/'+model_info.id+'.model.kps';
-    const kmpFileName = model_info.id+'.model.kmp';
-    const modelFileName = model_info.id+'.model.js';
-    const modelInfoFileName = model_info.id+'.model_info';
+    const kpsFileName = `../source/${model_info.id}.model.kps`;
+    const kmpFileName = `${model_info.id}.model.kmp`;
+    const modelFileName = `${model_info.id}.model.js`;
+    const modelInfoFileName = `${model_info.id}.model_info`;
     const sourcePath = '../source';
 
     const minKeymanVersion = '12.0';
