@@ -1,0 +1,12 @@
+{
+    "id": "example.en.wordlist",
+    "name": "Example (English) Template Wordlist Model",
+    "license": "mit",
+    "version": "1.0.0",
+    "languages": [
+        "en"
+    ],
+    "authorName": "Marc Durdin",
+    "authorEmail": "support@keyman.com",
+    "description": "Example wordlist model template for English language."
+}

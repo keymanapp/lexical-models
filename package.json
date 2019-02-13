@@ -1,0 +1,29 @@
+{
+  "name": "lexical-models",
+  "version": "1.0.0",
+  "description": "Lexical models for predictive text in Keyman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keymanapp/lexical-models.git"
+  },
+  "author": "Marc Durdin (SIL)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keymanapp/lexical-models/issues"
+  },
+  "homepage": "https://github.com/keymanapp/lexical-models#readme",
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "node": "^11.7.0",
+    "node-zip": "^1.1.1",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "xml2js": "^0.4.19"
+  }
+}

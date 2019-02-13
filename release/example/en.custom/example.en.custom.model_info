@@ -1,0 +1,12 @@
+{
+    "id": "example.en.custom",
+    "name": "Example (English) Template Custom Model",
+    "license": "mit",
+    "version": "1.0.0",
+    "languages": [
+        "en"
+    ],
+    "authorName": "Marc Durdin",
+    "authorEmail": "support@keyman.com",
+    "description": "Example custom model template for English language."
+}
