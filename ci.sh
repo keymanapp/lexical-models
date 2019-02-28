@@ -52,7 +52,7 @@ function run {
       mkdir "$CI_CACHE/upload"
     fi
     zip_model_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" model-data/
+    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ true
     exit 0
   fi
   
@@ -69,7 +69,7 @@ function run {
   upload_models_by_target
 
   zip_model_info
-  rsync_to_downloads_keyman_com "$CI_CACHE/data/" model-data/
+  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ true
 }
 
 ##
