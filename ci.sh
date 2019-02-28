@@ -144,9 +144,9 @@ function upload_model {
 
   local package_version=`cat "$model_info" | $JQ -r '.version'`
   local package_name=`cat "$model_info" | $JQ -r '.name'`
-  local package_upload_path=$base_model/$package_version/$package_filename
-  local model_info_upload_path=$base_model/$package_version/$shortname.$base_model.model_info
-  local js_upload_path=$base_model/$package_version/$js_filename
+  local package_upload_path=$shortname.$base_model/$package_version/$package_filename
+  local model_info_upload_path=$shortname.$base_model/$package_version/$shortname.$base_model.model_info
+  local js_upload_path=$shortname.$base_model/$package_version/$js_filename
   
   local package_url=$DOWNLOADS_KEYMAN_COM_URL/models/$package_upload_path
   local model_info_url=$DOWNLOADS_KEYMAN_COM_URL/models/$model_info_upload_path
