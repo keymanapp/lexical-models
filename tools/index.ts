@@ -154,7 +154,7 @@ export default class LexicalModelCompiler {
     model_info.authorName = model_info.authorName || kmpJsonData.info.author.description;
     model_info.authorEmail = model_info.authorEmail || kmpJsonData.info.author.url;
     model_info.languages = model_info.languages || [].concat(kmpJsonData.lexicalModels.map((e) => e.languages.map((f) => f.id)));
-    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toUTCString();
+    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toISOString();
     model_info.packageFilename = model_info.packageFilename || kmpFileName;
     model_info.packageFileSize = fs.statSync(model_info.packageFilename).size; // Always overwrite with actual file size
     model_info.jsFilename = model_info.jsFilename || modelFileName;
