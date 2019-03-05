@@ -5,6 +5,7 @@ interface LexicalModel {
     allowedCharacters?: { initials?: string, medials?: string, finals?: string } | string,
     defaultBreakCharacter?: string
     sources?: Array<string>;
+    root?: string
   },
   //... metadata ...
 }
@@ -17,6 +18,7 @@ interface LexicalModelPrediction {
 
 interface LexicalModelSource extends LexicalModel {
   readonly sources: Array<string>;
+  readonly root?: string
 }
 
 interface LexicalModelCompiled extends LexicalModel {
