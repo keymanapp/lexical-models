@@ -3,19 +3,19 @@
 */
 class ExampleWordBreaker {
   // TODO:  Needs to reference a .d.ts file for type definitions!
-  wordBreak(text: string): Array<number> {
+  break(text: string): string[] {
     let regex = new RegExp(/[!a-zA-Z]/g);
   
-    let indexesOf = function(string) {
-      var match, indexes = [];
+    let tokensOf = function(string: string) {
+      var match: RegExpExecArray, tokens: string[] = [];
   
       while (match = regex.exec(string)) {
-        indexes.push(match.index);
+        tokens.push(match[0]);
       }
   
-      return indexes;
+      return tokens;
     }
   
-    return indexesOf(text);
+    return tokensOf(text);
   }
 }
