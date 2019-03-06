@@ -33,9 +33,6 @@ declare namespace com.keyman.text.prediction {
 
     predict(transform: Transform, context: Context): Promise<Suggestion[]>;
 
-    // TODO: asynchronous close() method.
-    //       Worker code must recognize message and call self.close().
-
     private onMessage(event: MessageEvent): void;
 
     /**
