@@ -4,9 +4,9 @@ import LexicalModelCompiler from "../../../../tools/index";
   format: 'custom-1.0',
   wordBreaking: {
     sources: ['wordbreak.ts'],
-    root: 'ExampleWordBreaker'
+    rootClass: 'ExampleWordBreaker'
   },
   //... metadata ...
   sources: ['predict.ts'],
-  root: 'ExampleCustom'
+  rootClass: 'ExampleCustom'
 });

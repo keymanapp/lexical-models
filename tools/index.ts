@@ -94,7 +94,7 @@ export default class LexicalModelCompiler {
       case "custom-1.0":
         func += funcPrefix + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
         // JSON.stringify(oc) gives the base metadata
-        func += `LMLayerWorker.loadModel(new ${o.root}());\n`;
+        func += `LMLayerWorker.loadModel(new ${o.rootClass}());\n`;
         break;
       case "fst-foma-1.0":
         (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
@@ -104,7 +104,7 @@ export default class LexicalModelCompiler {
         func += `var model = {};\n`;
         // TODO: compile the trie
         func += `model.backingData = ${JSON.stringify(sources.join(' '))};\n`;
-        func += `LMLayerWorker.loadModel(new models.WordListModel({}, model.backingData));\n`;
+        func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData));\n`;
         break;
       default:
         this.logError('Unknown model format '+o.format);
@@ -130,7 +130,7 @@ export default class LexicalModelCompiler {
 
       if(wordBreakingSource) {      
         func += '\n' + wordBreakingSource + '\n';
-        func += `LMLayerWorker.loadWordBreaker(new ${o.wordBreaking.root}());\n`;
+        func += `LMLayerWorker.loadWordBreaker(new ${o.wordBreaking.rootClass}());\n`;
       } else {
         func += `LMLayerWorker.loadWordBreaker(new DefaultWordBreaker(${JSON.stringify(oc.wordBreaking)}));\n`;
       }
