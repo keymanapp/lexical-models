@@ -25,12 +25,18 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.html</FileType>
     </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>Welcome file</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+     </File> 
   </Files>
   <LexicalModels>
     <LexicalModel>
       <Name>Example (English) Template Custom Model</Name>
       <ID>example.en.custom</ID>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>
