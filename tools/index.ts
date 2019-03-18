@@ -87,45 +87,53 @@ export default class LexicalModelCompiler {
     let func = filePrefix;
 
     //
-    // Load custom wordbreak source files
-    //
-
-    let wordBreakingSource;
-
-    if(o.wordBreaking && o.wordBreaking.sources) {
-      let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
-        return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
-      });
-
-      wordBreakingSource = this.transpileSources(wordBreakingSources).join('\n');
-
-      delete oc.wordBreaking.sources;
-    }
-
-    //
     // Emit the model as code and data
     //
 
     switch(o.format) {
       case "custom-1.0":
-        func += funcPrefix + JSON.stringify(oc) + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
+        func += funcPrefix + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
+        // JSON.stringify(oc) gives the base metadata
+        func += `LMLayerWorker.loadModel(new ${o.rootClass}());\n`;
         break;
       case "fst-foma-1.0":
         (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
         this.logError('Unimplemented model format '+o.format);
         return false;
       case "trie-1.0":
+        func += `var model = {};\n`;
         // TODO: compile the trie
-        (oc as LexicalModelCompiledTrie).trie = sources.join(' ');
-        func += funcPrefix + JSON.stringify(oc) + funcSuffix;
+        func += `model.backingData = ${JSON.stringify(sources.join(' '))};\n`;
+        func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData));\n`;
         break;
       default:
         this.logError('Unknown model format '+o.format);
         return false;
     }
 
-    if(wordBreakingSource) {      
-      func += '\n' + wordBreakingSource;
+    //
+    // Load custom wordbreak source files
+    //
+
+    let wordBreakingSource;
+
+    if(o.wordBreaking) {
+      if(o.wordBreaking.sources) {
+        let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
+          return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
+        });
+
+        wordBreakingSource = this.transpileSources(wordBreakingSources).join('\n');
+
+        delete oc.wordBreaking.sources;
+      }
+
+      if(wordBreakingSource) {      
+        func += '\n' + wordBreakingSource + '\n';
+        func += `LMLayerWorker.loadWordBreaker(new ${o.wordBreaking.rootClass}());\n`;
+      } else {
+        func += `LMLayerWorker.loadWordBreaker(new DefaultWordBreaker(${JSON.stringify(oc.wordBreaking)}));\n`;
+      }
     }
 
     func += fileSuffix;

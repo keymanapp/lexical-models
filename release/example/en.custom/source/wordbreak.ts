@@ -1,18 +1,21 @@
 /*
   Naively treat any character that is not a letter as a wordbreaking character.
 */
-com.keyman.lexicalModel.registerWordBreaker('example.en.custom', function(text: string): Array<number> {
-  let regex = new RegExp(/[!a-zA-Z]/g);
-
-  let indexesOf = function(string) {
-    var match, indexes = [];
-
-    while (match = regex.exec(string)) {
-      indexes.push(match.index);
+class ExampleWordBreaker {
+  // TODO:  Needs to reference a .d.ts file for type definitions!
+  break(text: string): string[] {
+    let regex = new RegExp(/[!a-zA-Z]/g);
+  
+    let tokensOf = function(string: string) {
+      var match: RegExpExecArray, tokens: string[] = [];
+  
+      while (match = regex.exec(string)) {
+        tokens.push(match[0]);
+      }
+  
+      return tokens;
     }
-
-    return indexes;
+  
+    return tokensOf(text);
   }
-
-  return indexesOf(text);
-});
+}

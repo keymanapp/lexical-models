@@ -5,6 +5,10 @@ interface LexicalModel {
     allowedCharacters?: { initials?: string, medials?: string, finals?: string } | string,
     defaultBreakCharacter?: string
     sources?: Array<string>;
+    /**
+     * The name of the type to instantiate (without parameters) as the base object for a custom word-breaking model.
+     */
+    rootClass?: string
   },
   //... metadata ...
 }
@@ -17,6 +21,10 @@ interface LexicalModelPrediction {
 
 interface LexicalModelSource extends LexicalModel {
   readonly sources: Array<string>;
+  /**
+   * The name of the type to instantiate (without parameters) as the base object for a custom predictive model.
+   */
+  readonly rootClass?: string
 }
 
 interface LexicalModelCompiled extends LexicalModel {
