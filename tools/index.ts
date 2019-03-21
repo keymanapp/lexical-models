@@ -1,5 +1,5 @@
 /*
-  index.ts: base file for lexical model compiles
+  index.ts: base file for lexical model compiler.
 */
 
 /// <reference path="lexical-model.ts" />
@@ -11,19 +11,32 @@ import * as fs from "fs";
 import * as path from "path";
 
 export default class LexicalModelCompiler {
-  compile(o: LexicalModelSource) {
+  compile(modelSource: LexicalModelSource) {
     //
     // Load the model info file
     //
     let files = fs.readdirSync('../');
     let model_info_file = files.find((f) => !!f.match(/\.model_info$/));
 
-    //let model_info_file = fs.readdirSync('../').find((f) => !!f.match(/\.model_info$/));
     if(!model_info_file) {
       this.logError('Unable to find .model_info file in parent folder');
       return false;
     }
     
+    /*
+     * Model info looks like this:
+     *
+     *  {
+     *    "id": "example.en.wordlist", // author.bcp46.uniq
+     *    "name": "Example Template Model"
+     *    "license": "mit",
+     *    "version": "1.0.0",
+     *    "languages": ["en"],
+     *    "authorName": "Example Author",
+     *    "authorEmail": "nobody@example.com",
+     *    "description": "Example wordlist model"
+     *  }
+     */
     let model_info: ModelInfoFile = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
 
     //
@@ -36,12 +49,13 @@ export default class LexicalModelCompiler {
     const sourcePath = '../source';
 
     const minKeymanVersion = '12.0';
-    
+
     //
     // Validate the model ID.
     // TODO: the schema does not require the id field, but we are assuming its presence here
     //
 
+    // TODO: factor out regexp: make const?
     if(!model_info.id.match(/^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/)) {
       this.logError(
         `The model identifier '${model_info.id}' is invalid.\n`+
@@ -73,13 +87,13 @@ export default class LexicalModelCompiler {
     // Build the compiled lexical model
     //
     
-    let sources: string[] = o.sources.map(function(source) { 
+    let sources: string[] = modelSource.sources.map(function(source) { 
       return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
     });
 
-    let oc: LexicalModelCompiled = {id:model_info.id, format:o.format, wordBreaking:o.wordBreaking};
+    let oc: LexicalModelCompiled = {id: model_info.id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
 
-    // Todo: add metadata in comment
+    // TODO: add metadata in comment
     const filePrefix: string = `(function() {\n'use strict';\n`;
     const funcPrefix: string = `com.keyman.lexicalModel.register(`;
     const funcSuffix: string = `);`;
@@ -90,24 +104,24 @@ export default class LexicalModelCompiler {
     // Emit the model as code and data
     //
 
-    switch(o.format) {
+    switch(modelSource.format) {
       case "custom-1.0":
         func += funcPrefix + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
         // JSON.stringify(oc) gives the base metadata
-        func += `LMLayerWorker.loadModel(new ${o.rootClass}());\n`;
+        func += `LMLayerWorker.loadModel(new ${modelSource.rootClass}());\n`;
         break;
       case "fst-foma-1.0":
         (oc as LexicalModelCompiledFst).fst = Buffer.from(sources.join('')).toString('base64');
-        this.logError('Unimplemented model format '+o.format);
+        this.logError('Unimplemented model format '+modelSource.format);
         return false;
       case "trie-1.0":
         func += `var model = {};\n`;
-        // TODO: compile the trie
+        // TODO: compile the "trie"
         func += `model.backingData = ${JSON.stringify(sources.join(' '))};\n`;
         func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData));\n`;
         break;
       default:
-        this.logError('Unknown model format '+o.format);
+        this.logError('Unknown model format '+modelSource.format);
         return false;
     }
 
@@ -117,9 +131,9 @@ export default class LexicalModelCompiler {
 
     let wordBreakingSource;
 
-    if(o.wordBreaking) {
-      if(o.wordBreaking.sources) {
-        let wordBreakingSources: string[] = o.wordBreaking.sources.map(function(source) { 
+    if(modelSource.wordBreaking) {
+      if(modelSource.wordBreaking.sources) {
+        let wordBreakingSources: string[] = modelSource.wordBreaking.sources.map(function(source) { 
           return fs.readFileSync(path.join(sourcePath, source), 'utf8'); 
         });
 
@@ -130,7 +144,7 @@ export default class LexicalModelCompiler {
 
       if(wordBreakingSource) {      
         func += '\n' + wordBreakingSource + '\n';
-        func += `LMLayerWorker.loadWordBreaker(new ${o.wordBreaking.rootClass}());\n`;
+        func += `LMLayerWorker.loadWordBreaker(new ${modelSource.wordBreaking.rootClass}());\n`;
       } else {
         func += `LMLayerWorker.loadWordBreaker(new DefaultWordBreaker(${JSON.stringify(oc.wordBreaking)}));\n`;
       }
