@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.1500.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <FollowKeyboardVersion/>
+  </Options>
+  <Info>
+    <Name URL="">Example Plains Cree Wordlist Model</Name>
+    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\example.crk.wordlist_wahkohtowin.model.js</Name>
+      <Description>Lexical model example.en.wordlist.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+    <File>
+      <Name>readme.html</Name>
+      <Description>Readme file</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.html</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Example Plains Cree Wordlist Model</Name>
+      <ID>example.crk.wordlist_wahkohotowin</ID>
+      <Version>1.0.0</Version>
+      <Languages>
+        <Language ID="crk">Plains Cree</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
