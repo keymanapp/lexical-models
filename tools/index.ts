@@ -224,7 +224,7 @@ export default class LexicalModelCompiler {
  */
 function createTrieDataStructure(sourceFiles: string[]) {
   // Supports LF or CRLF line terminators.
-  const NEWLINE_SEPARATOR = /\u0009?\u000a/;
+  const NEWLINE_SEPARATOR = /\u000d?\u000a/;
   const TAB = "\t";
 
   let contents = sourceFiles.join('\n');
