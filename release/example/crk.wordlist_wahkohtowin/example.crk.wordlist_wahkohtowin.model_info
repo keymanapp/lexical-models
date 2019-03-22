@@ -1,0 +1,12 @@
+{
+    "id": "example.crk.wordlist_wahkohtowin",
+    "name": "Example Plains Cree Wordlist Model",
+    "license": "mit",
+    "version": "1.0.0",
+    "languages": [
+        "crk"
+    ],
+    "authorName": "Eddie Antonio Santos",
+    "authorEmail": "Eddie.Santos@nrc-cnrc.gc.ca",
+    "description": "Example wordlist model for Plains Cree, using a wordlist exported from Google Sheets. The words are terms for kinship (wahkohtowin)."
+}
