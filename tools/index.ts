@@ -28,11 +28,19 @@ export default class LexicalModelCompiler {
       return false;
     }
 
+    let model_id = model_info_file.match(/^(.+)\.model_info$/)[1];
+    if(!model_id.match(MODEL_ID_PATTERN)) {
+      this.logError(
+        `The model identifier '${model_id}' is invalid.\n`+
+        `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
+        `bcp_47 should be underscore (_) separated.`);
+      return false;
+    }
+
     /*
      * Model info looks like this:
      *
      *  {
-     *    "id": "example.en.wordlist", // author.bcp46.uniq
      *    "name": "Example Template Model"
      *    "license": "mit",
      *    "version": "1.0.0",
@@ -62,15 +70,6 @@ export default class LexicalModelCompiler {
     // Validate the model ID.
     // TODO: the schema does not require the id field, but we are assuming its presence here
     //
-
-    // TODO: factor out regexp: make const?
-    if(!model_info.id.match(MODEL_ID_PATTERN)) {
-      this.logError(
-        `The model identifier '${model_info.id}' is invalid.\n`+
-        `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
-        `bcp_47 should be underscore (_) separated.`);
-      return false;
-    }
 
     //
     // This script is run from folder group/author/bcp47.uniq/build/ folder. We want to
