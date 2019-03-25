@@ -37,6 +37,9 @@ export default class LexicalModelCompiler {
      *    "authorEmail": "nobody@example.com",
      *    "description": "Example wordlist model"
      *  }
+     * 
+     * For full documentation, see:
+     * https://help.keyman.com/developer/cloud/model_info/1.0/
      */
     let model_info: ModelInfoFile = JSON.parse(fs.readFileSync('../'+model_info_file, 'utf8'));
 
