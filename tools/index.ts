@@ -58,17 +58,16 @@ export default class LexicalModelCompiler {
     //
     // Filename expectations
     //
-    const kpsFileName = `../source/${model_info.id}.model.kps`;
-    const kmpFileName = `${model_info.id}.model.kmp`;
-    const modelFileName = `${model_info.id}.model.js`;
-    const modelInfoFileName = `${model_info.id}.model_info`;
+    const kpsFileName = `../source/${model_id}.model.kps`;
+    const kmpFileName = `${model_id}.model.kmp`;
+    const modelFileName = `${model_id}.model.js`;
+    const modelInfoFileName = `${model_id}.model_info`;
     const sourcePath = '../source';
 
     const minKeymanVersion = '12.0';
 
     //
     // Validate the model ID.
-    // TODO: the schema does not require the id field, but we are assuming its presence here
     //
 
     //
@@ -77,8 +76,8 @@ export default class LexicalModelCompiler {
     //
 
     let paths = process.cwd().split(path.sep).reverse();
-    if(paths.length < 4 || paths[0] != 'build' || model_info.id != paths[2] + '.' + paths[1]) {
-      this.logError(`Unexpected model path ${paths[2]}.${paths[1]}, does not match model id ${model_info.id}`);
+    if(paths.length < 4 || paths[0] != 'build' || model_id != paths[2] + '.' + paths[1]) {
+      this.logError(`Unexpected model path ${paths[2]}.${paths[1]}, does not match model id ${model_id}`);
       return false;
     }
 
@@ -98,7 +97,7 @@ export default class LexicalModelCompiler {
       return fs.readFileSync(path.join(sourcePath, source), 'utf8');
     });
 
-    let oc: LexicalModelCompiled = {id: model_info.id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
+    let oc: LexicalModelCompiled = {id: model_id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
 
     // TODO: add metadata in comment
     const filePrefix: string = `(function() {\n'use strict';\n`;
@@ -168,7 +167,7 @@ export default class LexicalModelCompiler {
 
     let kpsString: string = fs.readFileSync(kpsFileName, 'utf8');
     let kmpCompiler = new KmpCompiler();
-    let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_info.id, kpsString);
+    let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_id, kpsString);
     kmpCompiler.buildKmpFile(kmpJsonData, kmpFileName);
 
     //
