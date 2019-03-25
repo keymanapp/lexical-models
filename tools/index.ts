@@ -11,6 +11,10 @@ import * as fs from "fs";
 import * as path from "path";
 import { createTrieDataStructure } from "./build-trie";
 
+// The model ID MUST adhere to this pattern:
+//                         author           .bcp47            .uniq
+const MODEL_ID_PATTERN = /^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/;
+
 export default class LexicalModelCompiler {
   compile(modelSource: LexicalModelSource) {
     //
@@ -60,7 +64,7 @@ export default class LexicalModelCompiler {
     //
 
     // TODO: factor out regexp: make const?
-    if(!model_info.id.match(/^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/)) {
+    if(!model_info.id.match(MODEL_ID_PATTERN)) {
       this.logError(
         `The model identifier '${model_info.id}' is invalid.\n`+
         `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
