@@ -177,6 +177,7 @@ export default class LexicalModelCompiler {
     // https://help.keyman.com/developer/cloud/model_info/1.0
     //
 
+    model_info.id = model_id; 
     model_info.name = model_info.name || kmpJsonData.info.name.description;
     model_info.authorName = model_info.authorName || kmpJsonData.info.author.description;
     model_info.authorEmail = model_info.authorEmail || kmpJsonData.info.author.url;
