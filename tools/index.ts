@@ -11,6 +11,10 @@ import * as fs from "fs";
 import * as path from "path";
 import { createTrieDataStructure } from "./build-trie";
 
+// The model ID MUST adhere to this pattern:
+//                         author           .bcp47            .uniq
+const MODEL_ID_PATTERN = /^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/;
+
 export default class LexicalModelCompiler {
   compile(modelSource: LexicalModelSource) {
     //
@@ -24,11 +28,19 @@ export default class LexicalModelCompiler {
       return false;
     }
 
+    let model_id = model_info_file.match(/^(.+)\.model_info$/)[1];
+    if(!model_id.match(MODEL_ID_PATTERN)) {
+      this.logError(
+        `The model identifier '${model_id}' is invalid.\n`+
+        `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
+        `bcp_47 should be underscore (_) separated.`);
+      return false;
+    }
+
     /*
      * Model info looks like this:
      *
      *  {
-     *    "id": "example.en.wordlist", // author.bcp46.uniq
      *    "name": "Example Template Model"
      *    "license": "mit",
      *    "version": "1.0.0",
@@ -46,27 +58,17 @@ export default class LexicalModelCompiler {
     //
     // Filename expectations
     //
-    const kpsFileName = `../source/${model_info.id}.model.kps`;
-    const kmpFileName = `${model_info.id}.model.kmp`;
-    const modelFileName = `${model_info.id}.model.js`;
-    const modelInfoFileName = `${model_info.id}.model_info`;
+    const kpsFileName = `../source/${model_id}.model.kps`;
+    const kmpFileName = `${model_id}.model.kmp`;
+    const modelFileName = `${model_id}.model.js`;
+    const modelInfoFileName = `${model_id}.model_info`;
     const sourcePath = '../source';
 
     const minKeymanVersion = '12.0';
 
     //
     // Validate the model ID.
-    // TODO: the schema does not require the id field, but we are assuming its presence here
     //
-
-    // TODO: factor out regexp: make const?
-    if(!model_info.id.match(/^[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*$/)) {
-      this.logError(
-        `The model identifier '${model_info.id}' is invalid.\n`+
-        `Must be a valid alphanumeric identifier in format (author).(bcp_47).(uniq).\n`+
-        `bcp_47 should be underscore (_) separated.`);
-      return false;
-    }
 
     //
     // This script is run from folder group/author/bcp47.uniq/build/ folder. We want to
@@ -74,8 +76,8 @@ export default class LexicalModelCompiler {
     //
 
     let paths = process.cwd().split(path.sep).reverse();
-    if(paths.length < 4 || paths[0] != 'build' || model_info.id != paths[2] + '.' + paths[1]) {
-      this.logError(`Unexpected model path ${paths[2]}.${paths[1]}, does not match model id ${model_info.id}`);
+    if(paths.length < 4 || paths[0] != 'build' || model_id != paths[2] + '.' + paths[1]) {
+      this.logError(`Unexpected model path ${paths[2]}.${paths[1]}, does not match model id ${model_id}`);
       return false;
     }
 
@@ -95,7 +97,7 @@ export default class LexicalModelCompiler {
       return fs.readFileSync(path.join(sourcePath, source), 'utf8');
     });
 
-    let oc: LexicalModelCompiled = {id: model_info.id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
+    let oc: LexicalModelCompiled = {id: model_id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
 
     // TODO: add metadata in comment
     const filePrefix: string = `(function() {\n'use strict';\n`;
@@ -165,7 +167,7 @@ export default class LexicalModelCompiler {
 
     let kpsString: string = fs.readFileSync(kpsFileName, 'utf8');
     let kmpCompiler = new KmpCompiler();
-    let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_info.id, kpsString);
+    let kmpJsonData = kmpCompiler.transformKpsToKmpObject(model_id, kpsString);
     kmpCompiler.buildKmpFile(kmpJsonData, kmpFileName);
 
     //
@@ -175,6 +177,7 @@ export default class LexicalModelCompiler {
     // https://help.keyman.com/developer/cloud/model_info/1.0
     //
 
+    model_info.id = model_id; 
     model_info.name = model_info.name || kmpJsonData.info.name.description;
     model_info.authorName = model_info.authorName || kmpJsonData.info.author.description;
     model_info.authorEmail = model_info.authorEmail || kmpJsonData.info.author.url;
