@@ -101,8 +101,6 @@ export default class LexicalModelCompiler {
 
     // TODO: add metadata in comment
     const filePrefix: string = `(function() {\n'use strict';\n`;
-    const funcPrefix: string = `com.keyman.lexicalModel.register(`;
-    const funcSuffix: string = `);`;
     const fileSuffix: string = `})();`;
     let func = filePrefix;
 
@@ -112,7 +110,7 @@ export default class LexicalModelCompiler {
 
     switch(modelSource.format) {
       case "custom-1.0":
-        func += funcPrefix + funcSuffix + '\n' + this.transpileSources(sources).join('\n');
+        func += this.transpileSources(sources).join('\n');
         // JSON.stringify(oc) gives the base metadata
         func += `LMLayerWorker.loadModel(new ${modelSource.rootClass}());\n`;
         break;
