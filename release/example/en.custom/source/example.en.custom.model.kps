@@ -20,12 +20,6 @@
       <FileType>.model.js</FileType>
     </File>
     <File>
-      <Name>readme.html</Name>
-      <Description>Readme file</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
-    </File>
-    <File>
       <Name>welcome.htm</Name>
       <Description>Welcome file</Description>
       <CopyLocation>0</CopyLocation>
