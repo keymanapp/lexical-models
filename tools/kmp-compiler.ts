@@ -42,11 +42,10 @@ export default class KmpCompiler {
 
       ['author', 'copyright', 'name', 'version', 'website'].forEach(element => {
         if(info[element]) {
-          ni[element] = {description: info[element]._};
-          if(info[element].$.URL) ni[element].url = info[element].$.URL;
+          ni[element] = {description: info[element]._ || info[element]};
+          if(info[element].$ && info[element].$.URL) ni[element].url = info[element].$.URL;
         }
       });
-
       return ni;
     };
 
@@ -122,7 +121,8 @@ export default class KmpCompiler {
     }
 
     kmpJsonData.files.forEach(function(value) {
-      zip.file(path.basename(value.name), path.join('../source', value.name));
+      let data = fs.readFileSync(path.join('../source', value.name), 'utf8');
+      zip.file(path.basename(value.name), data);
 
       // Remove path data from files before save
       value.name = path.basename(value.name);

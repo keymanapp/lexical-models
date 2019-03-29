@@ -1,7 +1,6 @@
 {
     "name": "Example Plains Cree Wordlist Model",
     "license": "mit",
-    "version": "1.0.0",
     "languages": [
         "crk"
     ],

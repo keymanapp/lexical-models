@@ -11,6 +11,7 @@
     <Name URL="">Example (English) Template Wordlist Model</Name>
     <Copyright URL="">© 2019 SIL International</Copyright>
     <Author URL="mailto:marc@keyman.com">Marc Durdin</Author>
+    <Version>0.1.0</Version>
   </Info>
   <Files>
     <File>
@@ -19,18 +20,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
     </File>
-    <File>
-      <Name>readme.html</Name>
-      <Description>Readme file</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
-    </File>
   </Files>
   <LexicalModels>
     <LexicalModel>
       <Name>Example (English) Template Wordlist Model</Name>
       <ID>example.en.wordlist</ID>
-      <Version>1.0.0</Version>
+      <Version>0.1.0</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>

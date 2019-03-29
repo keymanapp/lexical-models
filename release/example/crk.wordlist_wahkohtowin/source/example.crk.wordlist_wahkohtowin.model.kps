@@ -11,6 +11,7 @@
     <Name URL="">Example Plains Cree Wordlist Model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
+    <Version>0.1.0</Version>
   </Info>
   <Files>
     <File>
@@ -19,18 +20,12 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
     </File>
-    <File>
-      <Name>readme.html</Name>
-      <Description>Readme file</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
-    </File>
   </Files>
   <LexicalModels>
     <LexicalModel>
       <Name>Example Plains Cree Wordlist Model</Name>
-      <ID>example.crk.wordlist_wahkohotowin</ID>
-      <Version>1.0.0</Version>
+      <ID>example.crk.wordlist_wahkohtowin</ID>
+      <Version>0.1.0</Version>
       <Languages>
         <Language ID="crk">Plains Cree</Language>
       </Languages>
