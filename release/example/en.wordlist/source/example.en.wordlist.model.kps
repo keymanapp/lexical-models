@@ -19,12 +19,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
     </File>
-    <File>
-      <Name>readme.html</Name>
-      <Description>Readme file</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.html</FileType>
-    </File>
   </Files>
   <LexicalModels>
     <LexicalModel>
