@@ -11,6 +11,7 @@
     <Name URL="">Example (English) Template Wordlist Model</Name>
     <Copyright URL="">© 2019 SIL International</Copyright>
     <Author URL="mailto:marc@keyman.com">Marc Durdin</Author>
+    <Version>0.1.0</Version>
   </Info>
   <Files>
     <File>
@@ -24,7 +25,7 @@
     <LexicalModel>
       <Name>Example (English) Template Wordlist Model</Name>
       <ID>example.en.wordlist</ID>
-      <Version>1.0.0</Version>
+      <Version>0.1.0</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>

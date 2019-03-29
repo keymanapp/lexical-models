@@ -42,11 +42,10 @@ export default class KmpCompiler {
 
       ['author', 'copyright', 'name', 'version', 'website'].forEach(element => {
         if(info[element]) {
-          ni[element] = {description: info[element]._};
-          if(info[element].$.URL) ni[element].url = info[element].$.URL;
+          ni[element] = {description: info[element]._ || info[element]};
+          if(info[element].$ && info[element].$.URL) ni[element].url = info[element].$.URL;
         }
       });
-
       return ni;
     };
 
