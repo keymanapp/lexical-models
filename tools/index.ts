@@ -175,21 +175,50 @@ export default class LexicalModelCompiler {
     // https://help.keyman.com/developer/cloud/model_info/1.0
     //
 
-    model_info.id = model_id; 
-    model_info.name = model_info.name || kmpJsonData.info.name.description;
-    model_info.authorName = model_info.authorName || kmpJsonData.info.author.description;
-    model_info.authorEmail = model_info.authorEmail || kmpJsonData.info.author.url;
+    function set_model_metadata(field: string, expected: any, warn: boolean = true) {
+      if(model_info[field] && model_info[field] !== expected) {
+        if(warn || typeof warn === 'undefined')
+          console.warn(`Warning: source ${modelInfoFileName} field ${field} value "${model_info[field]}" does not match "${expected}" found in source file metadata.`);
+      }
+      model_info[field] = model_info[field] || expected;
+    }
+
+    // Merge model info file -- some fields have "special" behaviours -- see below
+
+    set_model_metadata('id', model_id);
+    set_model_metadata('name', kmpJsonData.info.name.description);
+    set_model_metadata('authorName', kmpJsonData.info.author.description);
+
+    // we strip the mailto: from the .kps file for the .model_info
+    set_model_metadata('authorEmail', kmpJsonData.info.author.url.match(/^(mailto\:)?(.+)$/)[2], false);
+    
+    // extract the language identifiers from the language metadata
+    // arrays for each of the lexical models in the kmp.json file,
+    // and merge into a single array of identifiers in the 
+    // .model_info file.
     model_info.languages = model_info.languages || [].concat(kmpJsonData.lexicalModels.map((e) => e.languages.map((f) => f.id)));
-    model_info.lastModifiedDate = model_info.lastModifiedDate || (new Date).toISOString();
-    model_info.packageFilename = model_info.packageFilename || kmpFileName;
-    model_info.packageFileSize = fs.statSync(model_info.packageFilename).size; // Always overwrite with actual file size
-    model_info.jsFilename = model_info.jsFilename || modelFileName;
-    model_info.jsFileSize = fs.statSync(model_info.jsFilename).size; // Always overwrite with actual file size
-    model_info.packageIncludes = kmpJsonData.files.filter((e) => !!e.name.match(/.[ot]tf$/i)).length ? ['fonts'] : []; // Always overwrite source data
-    model_info.version = model_info.version || kmpJsonData.info.version.description;
-    model_info.minKeymanVersion = model_info.minKeymanVersion || minKeymanVersion;
+
+    set_model_metadata('lastModifiedDate', (new Date).toISOString());
+    set_model_metadata('packageFilename', kmpFileName);
+
+    // Always overwrite with actual file size
+    model_info.packageFileSize = fs.statSync(model_info.packageFilename).size; 
+
+    set_model_metadata('jsFilename', modelFileName);
+
+    // Always overwrite with actual file size
+    model_info.jsFileSize = fs.statSync(model_info.jsFilename).size;
+
+    // Always overwrite source data
+    model_info.packageIncludes = kmpJsonData.files.filter((e) => !!e.name.match(/.[ot]tf$/i)).length ? ['fonts'] : []; 
+
+    set_model_metadata('version', kmpJsonData.info.version.description);
+
+    // The minimum Keyman version detected in the package file may be manually set higher by the developer
+    set_model_metadata('minKeymanVersion', minKeymanVersion, false); 
+
     //TODO: model_info.helpLink = model_info.helpLink || ... if source/help/id.php exists?
-    model_info.sourcePath = model_info.sourcePath || [groupPath, authorPath, bcp47Path].join('/');
+    set_model_metadata('sourcePath', [groupPath, authorPath, bcp47Path].join('/'));
 
     fs.writeFileSync(modelInfoFileName, JSON.stringify(model_info, null, 2));
   };
