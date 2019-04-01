@@ -177,7 +177,7 @@ export default class LexicalModelCompiler {
     // https://help.keyman.com/developer/cloud/model_info/1.0
     //
 
-    function set_model_metadata(field, expected, warn?: boolean) {
+    function set_model_metadata(field: string, expected: any, warn: boolean = true) {
       if(model_info[field] && model_info[field] !== expected) {
         if(warn || typeof warn === 'undefined')
           console.warn(`Warning: source ${modelInfoFileName} field ${field} value "${model_info[field]}" does not match "${expected}" found in source file metadata.`);
@@ -194,7 +194,10 @@ export default class LexicalModelCompiler {
     // we strip the mailto: from the .kps file for the .model_info
     set_model_metadata('authorEmail', kmpJsonData.info.author.url.match(/^(mailto\:)?(.+)$/)[2], false);
     
-    // TODO: languages is an array so more complicated to compare
+    // extract the language identifiers from the language metadata
+    // arrays for each of the lexical models in the kmp.json file,
+    // and merge into a single array of identifiers in the 
+    // .model_info file.
     model_info.languages = model_info.languages || [].concat(kmpJsonData.lexicalModels.map((e) => e.languages.map((f) => f.id)));
 
     set_model_metadata('lastModifiedDate', (new Date).toISOString());
