@@ -38,8 +38,9 @@ export function createTrieDataStructure(sourceFiles: string[]) {
     // Clean the word form.
     // TODO: what happens if we get duplicate forms?
     wordform = wordform.normalize('NFC').trim();
-    countText = countText.trim();
+    countText = (countText || '').trim();
     let count = parseInt(countText, 10);
+
     // When parsing a decimal integer fails (e.g., blank or something else):
     if (!isFinite(count)) {
       // TODO: is this the right thing to do?
