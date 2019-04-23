@@ -121,11 +121,14 @@ export default class KmpCompiler {
     }
 
     kmpJsonData.files.forEach(function(value) {
-      let data = fs.readFileSync(path.join('../source', value.name), 'utf8');
-      zip.file(path.basename(value.name), data);
+      // Make file path slashes compatible across platforms
+      let filename : string = value.name.replace(/\\/g, "/");
+      
+      let data = fs.readFileSync(path.join('../source', filename), 'utf8');
+      zip.file(path.basename(filename), data);
 
       // Remove path data from files before save
-      value.name = path.basename(value.name);
+      value.name = path.basename(filename);
     });
 
     zip.file(kmpJsonFileName, JSON.stringify(kmpJsonData));
