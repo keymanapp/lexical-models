@@ -15,7 +15,7 @@
   </Info>
   <Files>
     <File>
-      <Name>../build/example.crk.wordlist_wahkohtowin.model.js</Name>
+      <Name>..\build\example.crk.wordlist_wahkohtowin.model.js</Name>
       <Description>Lexical model example.en.wordlist.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>

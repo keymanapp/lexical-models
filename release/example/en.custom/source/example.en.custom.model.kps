@@ -15,7 +15,7 @@
   </Info>
   <Files>
     <File>
-      <Name>../build/example.en.custom.model.js</Name>
+      <Name>..\build\example.en.custom.model.js</Name>
       <Description>Lexical model example.en.custom.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
