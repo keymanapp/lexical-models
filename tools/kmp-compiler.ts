@@ -122,7 +122,7 @@ export default class KmpCompiler {
 
     kmpJsonData.files.forEach(function(value) {
       // Make file path slashes compatible across platforms
-      let filename : string = value.name.replace("\\", "/");
+      let filename : string = value.name.replace(/\\/g, "/");
       
       let data = fs.readFileSync(path.join('../source', filename), 'utf8');
       zip.file(path.basename(filename), data);
