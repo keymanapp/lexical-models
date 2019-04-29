@@ -1,0 +1,11 @@
+{
+    "name": "Example SENĆOŦEN Cree Trie Model",
+    "license": "mit",
+    "languages": [
+        "str",
+        "saan1246"
+    ],
+    "authorName": "Eddie Antonio Santos",
+    "authorEmail": "Eddie.Santos@nrc-cnrc.gc.ca",
+    "description": "Example trie model for SENĆOŦEN"
+}
