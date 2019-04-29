@@ -9,7 +9,7 @@ import * as ts from "typescript";
 import KmpCompiler from "./kmp-compiler";
 import * as fs from "fs";
 import * as path from "path";
-import { createWordListDataStructure } from "./build-trie";
+import { createWordListDataStructure, createTrieDataStructure } from "./build-trie";
 
 // The model ID MUST adhere to this pattern:
 //                         author           .bcp47            .uniq
@@ -122,6 +122,12 @@ export default class LexicalModelCompiler {
         func += `var model = {};\n`;
         func += `model.backingData = ${createWordListDataStructure(sources)};\n`;
         func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData));\n`;
+        break;
+      case 'trie-2.0':
+        // TODO: allow specification of key function.
+        func += `LMLayerWorker.loadModel(new models.TrieModel(${
+          createTrieDataStructure(sources)
+        }));\n`;
         break;
       default:
         this.logError('Unknown model format '+modelSource.format);
