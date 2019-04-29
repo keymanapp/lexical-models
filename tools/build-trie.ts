@@ -1,35 +1,50 @@
 /**
+ * A word list is an array of pairs: the concrete word form itself, followed by
+ * a non-negative count.
+ */
+type WordList = [string, number][];
+
+/**
  * Returns a data structure suitable for use by the trie wordlist model.
  *
+ * @param sourceFiles an array of the CONTENTS of source files
+ *
+ * @return a data structure that will be used internally by the trie wordlist
+ *         implemention. Currently this is an array of [wordlist, count] pairs.
+ */
+export function createTrieDataStructure(sourceFiles: string[]) {
+  // NOTE: this generates a simple array of word forms --- not a trie!
+  // In the future, this function may construct a true trie data structure,
+  // but this is not yet implemented.
+  let contents = sourceFiles.join('\n');
+  return JSON.stringify(parseWordList(contents));
+}
+
+/**
+ * Reads a tab-separated values file into a word list.
+ * 
  * Format specification:
  *
  *  - the file is a UTF-8 encoded text file
  *  - new lines are either LF or CRLF
  *  - the file either consists of a comment or an entry
- *  - comment lines MUST start with the '#' character
+ *  - comment lines MUST start with the '#' character on the very first column
  *  - entries are one to three columns, separated by the (horizontal) tab
  *    character
  *  - column 1 (REQUIRED): the wordform: can have any character except tab, CR,
- *    LF. surrounding SPACE characters are trimmed.
+ *    LF. Surrounding whitespace characters are trimmed.
  *  - column 2 (optional): the count: a non-negative integer specifying how many
  *    times this entry has appeared in the corpus. Blank means 'indeterminate'
  *  - column 3 (optional): comment: an informative comment, ignored by the tool.
- *
- * @param sourceFiles an array of the CONTENTS of source files
- * @return a data structure that will be used internally by the trie wordlist
- *         implemention. Currently this is an array of [wordlist, count] pairs.
  */
-export function createTrieDataStructure(sourceFiles: string[]) {
+export function parseWordList(contents: string): WordList {
   // Supports LF or CRLF line terminators.
   const NEWLINE_SEPARATOR = /\u000d?\u000a/;
   const TAB = "\t";
-  let contents = sourceFiles.join('\n');
   // TODO: format validation.
   let lines = contents.split(NEWLINE_SEPARATOR);
-  // NOTE: this generates a simple array of word forms --- not a trie!
-  // In the future, this function may construct a true trie data structure,
-  // but this is not yet implemented.
-  let result: (string | number)[][] = [];
+
+  let result: WordList = [];
   for (let line of lines) {
     if (line.startsWith('#') || line === "") {
       continue; // skip comments and empty lines
@@ -44,10 +59,10 @@ export function createTrieDataStructure(sourceFiles: string[]) {
     // When parsing a decimal integer fails (e.g., blank or something else):
     if (!isFinite(count)) {
       // TODO: is this the right thing to do?
-      // Treat it like a hapax legonmenom -- it exist
+      // Treat it like a hapax legonmenom -- it exist, but only once.
       count = 1;
     }
     result.push([wordform, count]);
   }
-  return JSON.stringify(result);
+  return result;
 }
