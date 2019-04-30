@@ -15,8 +15,8 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\example.str.trie.model.js</Name>
-      <Description>Lexical model example.str.trie.model.js</Description>
+      <Name>..\build\example.str.trie_sencoten.model.js</Name>
+      <Description>Lexical model example.str.trie_sencoten.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
     </File>

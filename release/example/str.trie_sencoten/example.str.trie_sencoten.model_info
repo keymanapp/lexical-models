@@ -2,8 +2,7 @@
     "name": "Example SENĆOŦEN Trie Model",
     "license": "mit",
     "languages": [
-        "str",
-        "saan1246"
+        "str"
     ],
     "authorName": "Eddie Antonio Santos",
     "authorEmail": "Eddie.Santos@nrc-cnrc.gc.ca",
