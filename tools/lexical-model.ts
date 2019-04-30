@@ -1,6 +1,6 @@
 
 interface LexicalModel {
-  readonly format: 'trie-1.0'|'fst-foma-1.0'|'custom-1.0',
+  readonly format: 'trie-1.0'|'trie-2.0'|'fst-foma-1.0'|'custom-1.0',
   readonly wordBreaking?: {
     allowedCharacters?: { initials?: string, medials?: string, finals?: string } | string,
     defaultBreakCharacter?: string

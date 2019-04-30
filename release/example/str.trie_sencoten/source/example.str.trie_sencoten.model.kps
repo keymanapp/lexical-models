@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.1500.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <FollowKeyboardVersion/>
+  </Options>
+  <Info>
+    <Name URL="">Example SENĆOŦEN Trie Model</Name>
+    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
+    <Version>0.1.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\example.str.trie_sencoten.model.js</Name>
+      <Description>Lexical model example.str.trie_sencoten.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Example SENĆOŦEN Trie Model</Name>
+      <ID>example.str.trie</ID>
+      <Version>0.1.0</Version>
+      <Languages>
+        <Language ID="str">SENĆOŦEN</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
