@@ -25,7 +25,7 @@
     <LexicalModel>
       <Name>Example SENĆOŦEN Trie Model</Name>
       <ID>example.str.trie</ID>
-      <Version>0.1.0</Version>
+      <Version>0.1.1</Version>
       <Languages>
         <Language ID="str">North Straits Salish</Language>
         <Language ID="str-Latn">SENĆOŦEN</Language>
