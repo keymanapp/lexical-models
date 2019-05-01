@@ -11,7 +11,7 @@
     <Name URL="">Example SENĆOŦEN Trie Model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </Info>
   <Files>
     <File>
@@ -27,7 +27,8 @@
       <ID>example.str.trie</ID>
       <Version>0.1.0</Version>
       <Languages>
-        <Language ID="str">SENĆOŦEN</Language>
+        <Language ID="str">North Straits Salish</Language>
+        <Language ID="str-Latn">SENĆOŦEN</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
