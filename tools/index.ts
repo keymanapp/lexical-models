@@ -97,12 +97,27 @@ export default class LexicalModelCompiler {
       return fs.readFileSync(path.join(sourcePath, source), 'utf8');
     });
 
-    let oc: LexicalModelCompiled = {id: model_id, format: modelSource.format, wordBreaking: modelSource.wordBreaking};
+    let oc: LexicalModelCompiled = {id: model_id, format: modelSource.format};
 
     // TODO: add metadata in comment
     const filePrefix: string = `(function() {\n'use strict';\n`;
     const fileSuffix: string = `})();`;
     let func = filePrefix;
+
+    let wordBreakingSource: string = null;
+
+    if (modelSource.wordBreaking) {
+      if (typeof modelSource.wordBreaking === "string") {
+        // It must be a builtin word breaker, so just instantiate it.
+        wordBreakingSource = `wordBreakers['${modelSource.wordBreaking}']`;
+      } else if (modelSource.wordBreaking.sources) {
+        let wordBreakingSources: string[] = modelSource.wordBreaking.sources.map(function(source) {
+          return fs.readFileSync(path.join(sourcePath, source), 'utf8');
+        });
+
+        wordBreakingSource = this.transpileSources(wordBreakingSources).join('\n');
+      }
+    }
 
     //
     // Emit the model as code and data
@@ -121,13 +136,21 @@ export default class LexicalModelCompiler {
       case "trie-1.0":
         func += `var model = {};\n`;
         func += `model.backingData = ${createWordListDataStructure(sources)};\n`;
-        func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData));\n`;
+        func += `LMLayerWorker.loadModel(new models.WordListModel(model.backingData`;
+        if (wordBreakingSource) {
+          func += `, {wordBreaking: ${wordBreakingSource}}`;
+        }
+        func += `));\n`;
         break;
       case 'trie-2.0':
         // TODO: allow specification of key function.
         func += `LMLayerWorker.loadModel(new models.TrieModel(${
           createTrieDataStructure(sources)
-        }));\n`;
+        }`;
+        if (wordBreakingSource) {
+          func += `, {wordBreaking: ${wordBreakingSource}}`;
+        }
+        func += `));\n`;
         break;
       default:
         this.logError('Unknown model format '+modelSource.format);
@@ -138,26 +161,6 @@ export default class LexicalModelCompiler {
     // Load custom wordbreak source files
     //
 
-    let wordBreakingSource;
-
-    if(modelSource.wordBreaking) {
-      if(modelSource.wordBreaking.sources) {
-        let wordBreakingSources: string[] = modelSource.wordBreaking.sources.map(function(source) {
-          return fs.readFileSync(path.join(sourcePath, source), 'utf8');
-        });
-
-        wordBreakingSource = this.transpileSources(wordBreakingSources).join('\n');
-
-        delete oc.wordBreaking.sources;
-      }
-
-      if(wordBreakingSource) {
-        func += '\n' + wordBreakingSource + '\n';
-        func += `LMLayerWorker.loadWordBreaker(new ${modelSource.wordBreaking.rootClass}());\n`;
-      } else {
-        func += `LMLayerWorker.loadWordBreaker(new DefaultWordBreaker(${JSON.stringify(oc.wordBreaking)}));\n`;
-      }
-    }
 
     func += fileSuffix;
 

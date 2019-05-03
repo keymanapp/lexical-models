@@ -1,15 +1,15 @@
+interface ClassBasedWordBreaker {
+  allowedCharacters?: { initials?: string, medials?: string, finals?: string } | string,
+  defaultBreakCharacter?: string
+  sources?: Array<string>;
+  /**
+   * The name of the type to instantiate (without parameters) as the base object for a custom word-breaking model.
+   */
+  rootClass?: string
+}
 
 interface LexicalModel {
   readonly format: 'trie-1.0'|'trie-2.0'|'fst-foma-1.0'|'custom-1.0',
-  readonly wordBreaking?: {
-    allowedCharacters?: { initials?: string, medials?: string, finals?: string } | string,
-    defaultBreakCharacter?: string
-    sources?: Array<string>;
-    /**
-     * The name of the type to instantiate (without parameters) as the base object for a custom word-breaking model.
-     */
-    rootClass?: string
-  },
   //... metadata ...
 }
 
@@ -25,6 +25,7 @@ interface LexicalModelSource extends LexicalModel {
    * The name of the type to instantiate (without parameters) as the base object for a custom predictive model.
    */
   readonly rootClass?: string
+  readonly wordBreaking?: 'ascii' | 'placeholder' | ClassBasedWordBreaker;
 }
 
 interface LexicalModelCompiled extends LexicalModel {
