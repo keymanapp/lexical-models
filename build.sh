@@ -54,6 +54,10 @@ if [[ ! -z "$KEYMAN_ROOT" ]]; then
   popd
 fi
 
+npm install
+
+# npm link must be done after npm install, because npm install removes linked packages
+# TODO: this should be removed once we have a published npm pathway
 npm link @keymanapp/developer-lexical-model-compiler
 
 #

@@ -28,8 +28,6 @@ The components must be lower case and are:
 
 ### Build instructions
 
-`npm install` must be run once to install the TypeScript compiler.
-
 `build.sh` can be used to build all the models from the command line.
 
 * Common `build.sh` parameters:
