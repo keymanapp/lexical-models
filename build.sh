@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
 #
@@ -37,6 +39,23 @@ MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
 #
 
 parse_args "$@"
+
+#
+# Pull dependencies (TODO: once this stabilises, we will use npm published packages).
+# This assumes you've already run `npm link .` in the $KEYMAN
+#
+
+if [[ ! -z "$KEYMAN_ROOT" ]]; then
+  echo "Building lexical model compiler from Keyman repo and publishing via npm link"
+  pushd "$KEYMAN_ROOT"/developer/js
+  npm install
+  npm run build
+  pwd
+  npm link .
+  popd
+fi
+
+npm link @keymanapp/developer-lexical-model-compiler
 
 #
 # Select action

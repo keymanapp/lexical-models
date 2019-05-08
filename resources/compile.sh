@@ -136,8 +136,8 @@ function build_release_model {
   pushd build
   mkdir obj
   # TODO: Consider moving options to tsconfig.json?
-  npx tsc --module commonjs --target es6 --outDir ./obj ../source/model.ts 
-  node ./obj/$group/$shortname/$base_model/source/model.js $COLOR_FLAG
+  npx tsc --module commonjs --target es6 --outDir ./obj ../source/model.ts || die "Compile phase 1 failed for $model"
+  node ./obj/model.js $COLOR_FLAG || die "Compile phase 2 failed for $model"
   popd
 
   return 0
