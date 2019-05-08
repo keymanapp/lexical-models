@@ -24,10 +24,9 @@ The components must be lower case and are:
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads) for your platform
 * You will need to use **Git Bash** or equivalent to build.
+* [keymanapp/keyman](https://github.com/keymanapp/keyman) repository must be cloned on your system (todo: compilers will be available via npm). See below for configuration.
 
 ### Build instructions
-
-`npm install` must be run once to install the TypeScript compiler.
 
 `build.sh` can be used to build all the models from the command line.
 
@@ -38,3 +37,13 @@ The components must be lower case and are:
   * `-s          Quiet build`
   * `[target]      The specific model(s) to build, e.g. release or release/example/en.template`
   
+### Configuring the keymanapp/keyman repo
+
+For a successful build, ensure you have either configured `$KEYMAN_ROOT` to point to the base folder of your local clone of the `keymanapp/keyman` repo, or manually run the following in the Keyman repo:
+
+```
+cd developer/js
+npm install
+npm run build
+npm link .
+```

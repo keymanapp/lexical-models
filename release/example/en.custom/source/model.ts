@@ -1,4 +1,4 @@
-import LexicalModelCompiler from "../../../../tools/index";
+import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler"; 
 
 (new LexicalModelCompiler).compile({
   format: 'custom-1.0',
