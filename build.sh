@@ -50,7 +50,6 @@ if [[ ! -z "$KEYMAN_ROOT" ]]; then
   pushd "$KEYMAN_ROOT"/developer/js
   npm install
   npm run build
-  pwd
   npm link .
   popd
 fi
