@@ -25,7 +25,7 @@
     <LexicalModel>
       <Name>Example (English) Template Wordlist Model</Name>
       <ID>example.en.wordlist</ID>
-      <Version>0.1.1</Version>
+      <Version>0.1.2</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>
