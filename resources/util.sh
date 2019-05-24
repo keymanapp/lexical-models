@@ -56,6 +56,7 @@ function die {
 function parse_args {
   DO_TEST=true
   DO_BUILD=true
+  DO_NPM=true
   WARNINGS_AS_ERRORS=false
   TARGET=
   PROJECT_TARGET=
@@ -72,6 +73,9 @@ function parse_args {
     case "$key" in
       -validate)
         DO_BUILD=false
+        ;;
+      -no-npm)
+        DO_NPM=false
         ;;
       -s)
         FLAG_SILENT=-s
