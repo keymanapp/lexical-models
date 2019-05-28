@@ -1,7 +1,7 @@
 import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler"; 
 
 (new LexicalModelCompiler).compile({
-  format: 'trie-2.0',
+  format: 'trie-1.0',
   wordBreaking: {
     allowedCharacters: { initials: 'abcdefghijklmnopqrstuvwxyz', medials: 'abcdefghijklmnopqrstuvwxyz', finals: 'abcdefghijklmnopqrstuvwxyz' },
     defaultBreakCharacter: ' '
