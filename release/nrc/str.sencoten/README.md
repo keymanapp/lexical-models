@@ -8,6 +8,10 @@ Credits
 -------
 
 The word list was compiled by Dr. Timothy Montler (<montler@unt.edu>).
+Find more here:
+
+> 2015. Montler, Timothy. SENĆOŦEN Classified Word List.
+> <http://saanich.montler.net/WordLIst>
 
 Data provided under permission by the [W̱SÁNEĆ School Board][WSANEC]
 
