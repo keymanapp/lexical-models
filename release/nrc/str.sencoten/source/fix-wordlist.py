@@ -85,6 +85,10 @@ with open('./saanich.tsv', 'rt', encoding='UTF-8') as saanfile:
         if bad:
             continue
 
+        # Our post-processing could have removed all characters! Skip it!
+        if word.strip() == '':
+            continue
+
         wordlist[word] += count
 
 # Print as CRLF TSV:
