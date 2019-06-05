@@ -11,7 +11,7 @@
     <Name URL="">SENĆOŦEN (Saanich Dialect) Lexical Model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </Info>
   <Files>
     <File>
@@ -25,7 +25,7 @@
     <LexicalModel>
       <Name>SENĆOŦEN lexical model</Name>
       <ID>nrc.str.sencoten</ID>
-      <Version>1.0.0</Version>
+      <Version>1.0.1</Version>
       <Languages>
         <Language ID="str">North Straits Salish</Language>
         <Language ID="str-Latn">SENĆOŦEN</Language>
