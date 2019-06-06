@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.1500.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <FollowKeyboardVersion/>
+  </Options>
+  <Info>
+    <Name URL="">English language model mined from MTNT</Name>
+    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
+    <Version>0.1.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\example.en.mtnt.model.js</Name>
+      <Description>Lexical model example.en.mtnt.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>English language model mined from MTNT</Name>
+      <ID>example.en.mtnt</ID>
+      <Version>0.1.0</Version>
+      <Languages>
+        <Language ID="en">English</Language>
+        <Language ID="en-us">English (US)</Language>
+        <Language ID="en-ca">English (Canada)</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
