@@ -43,3 +43,21 @@ diacritics. I kept track both of the count of the type, and of the
 different variations of the type. Variations are made mostly by
 different letter-casing or different diacritics. Then, to create the
 final wordlist, I selected the most common variation of each type.
+
+Data filtering
+--------------
+
+The data was cleaned both manually and automatically to remove
+objectionable terms. I initially used [profanties.en][] to remove
+obviously bad words. I also went through about the top 4000 words to
+remove anything I thought was probably offensive. Then I was inspired by
+the [Seven dirty words](https://en.wikipedia.org/wiki/Seven_dirty_words)
+to look for all variants and creative ways to embed these words within
+other words. I searched _within_ words, and manually verified all of
+them to avoid making that [clbuttic mistake][]. That was “fun”. This was
+a pretty manual, and at times, subjective process. Exact replication may
+not be guaranteed.
+
+
+[profanities.en]: https://github.com/pmichel31415/mtnt/blob/master/resources/profanities.en
+[clbuttic mistake]: https://thedailywtf.com/articles/The-Clbuttic-Mistake-
