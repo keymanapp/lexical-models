@@ -11,7 +11,7 @@
     <Name URL="">English language model mined from MTNT</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </Info>
   <Files>
     <File>
@@ -23,9 +23,9 @@
   </Files>
   <LexicalModels>
     <LexicalModel>
-      <Name>English language model mined from MTNT</Name>
+      <Name>English dictionary (MTNT)</Name>
       <ID>example.en.mtnt</ID>
-      <Version>0.1.0</Version>
+      <Version>0.1.1</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>
