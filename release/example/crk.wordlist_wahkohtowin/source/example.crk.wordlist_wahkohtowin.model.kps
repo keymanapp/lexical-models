@@ -8,10 +8,10 @@
     <FollowKeyboardVersion/>
   </Options>
   <Info>
-    <Name URL="">Example Plains Cree Wordlist Model</Name>
+    <Name URL="">Example Plains Cree lexical model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </Info>
   <Files>
     <File>
@@ -23,9 +23,9 @@
   </Files>
   <LexicalModels>
     <LexicalModel>
-      <Name>Example Plains Cree Wordlist Model</Name>
+      <Name>Plains Cree kinship dictionary</Name>
       <ID>example.crk.wordlist_wahkohtowin</ID>
-      <Version>0.1.0</Version>
+      <Version>0.1.1</Version>
       <Languages>
         <Language ID="crk">Plains Cree</Language>
       </Languages>

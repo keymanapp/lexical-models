@@ -11,7 +11,7 @@
     <Name URL="">Example (English) Template Custom Model</Name>
     <Copyright URL="">© 2019 SIL International</Copyright>
     <Author URL="mailto:marc@keyman.com">Marc Durdin</Author>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
   </Info>
   <Files>
     <File>
@@ -29,9 +29,9 @@
   </Files>
   <LexicalModels>
     <LexicalModel>
-      <Name>Example (English) Template Custom Model</Name>
+      <Name>Template custom lexical models</Name>
       <ID>example.en.custom</ID>
-      <Version>0.1.2</Version>
+      <Version>0.1.3</Version>
       <Languages>
         <Language ID="de">German</Language>
       </Languages>
