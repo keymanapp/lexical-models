@@ -56,12 +56,15 @@ CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
 # Create the wordlist:
 wordlist = Counter()
 
+# XXX: Artificially add this word because... it's not there for some reason???
+wordlist['ȻNEs'] = 3000
+
 # Structure of the wordlist provided by Dr. Montler:
 #
 # A tab-separated values file wherein the first column is the word, and the
 # second column is the count.
 # **The last line is "### total words." where ### is an non-negative integer**
-with open('./saanich.tsv', 'rt', encoding='UTF-8') as saanfile:
+def count_words(saanfile):
     for line in saanfile:
         # Skip the final line (which should contain a total word count).
         if 'total words' in line:
@@ -101,6 +104,13 @@ with open('./saanich.tsv', 'rt', encoding='UTF-8') as saanfile:
 
         wordlist[word] += count
 
-# Print as CRLF TSV:
-for word, count in wordlist.most_common():
-    print(word, count, sep='\t', end='\r\n')
+
+# Count lines from each file provided on the command line.
+for filename in sys.argv[1:]:
+    with open(filename, 'rt', encoding='UTF-8') as saanfile:
+        count_words(saanfile)
+
+# Print as a giant TSV with CRLF line endings:
+with open('saanich.tsv', 'wt', encoding='UTF-8') as outfile:
+    for word, count in wordlist.most_common():
+        print(word, count, sep='\t', end='\r\n', file=outfile)
