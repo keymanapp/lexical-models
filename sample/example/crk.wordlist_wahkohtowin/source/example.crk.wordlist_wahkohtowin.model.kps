@@ -11,7 +11,7 @@
     <Name URL="">Example Plains Cree lexical model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
   </Info>
   <Files>
     <File>
@@ -25,7 +25,7 @@
     <LexicalModel>
       <Name>Plains Cree kinship dictionary</Name>
       <ID>example.crk.wordlist_wahkohtowin</ID>
-      <Version>0.1.1</Version>
+      <Version>0.1.2</Version>
       <Languages>
         <Language ID="crk">Plains Cree</Language>
       </Languages>
