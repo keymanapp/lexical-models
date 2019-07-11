@@ -8,27 +8,28 @@
     <FollowKeyboardVersion/>
   </Options>
   <Info>
-    <Name URL="">Example (English) Template Wordlist Model</Name>
-    <Copyright URL="">© 2019 SIL International</Copyright>
-    <Author URL="mailto:marc@keyman.com">Marc Durdin</Author>
-    <Version>0.1.3</Version>
+    <Name URL="">English language model mined from MTNT</Name>
+    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
+    <Version>0.1.2</Version>
   </Info>
   <Files>
     <File>
-      <Name>..\build\example.en.wordlist.model.js</Name>
-      <Description>Lexical model example.en.wordlist.model.js</Description>
+      <Name>..\build\nrc.en.mtnt.model.js</Name>
+      <Description>Lexical model nrc.en.mtnt.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
     </File>
   </Files>
   <LexicalModels>
     <LexicalModel>
-      <Name>Template for a wordlist dictionary</Name>
-      <ID>example.en.wordlist</ID>
-      <Version>0.1.3</Version>
+      <Name>English dictionary (MTNT)</Name>
+      <ID>nrc.en.mtnt</ID>
+      <Version>0.1.2</Version>
       <Languages>
         <Language ID="en">English</Language>
         <Language ID="en-us">English (US)</Language>
+        <Language ID="en-ca">English (Canada)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
