@@ -26,11 +26,15 @@ def uplus(c):
 
 
 SAANICH_ALPHABET = frozenset(nfc(
-        'A Á Ⱥ B C Ć Ȼ D E H '
-        'I Í J K Ꝁ K̵ ₭ Ḵ Ḱ L Ƚ M '
-        'N Ṉ O P Q S Ś s T Ⱦ T̸ Ṯ '
-        'Ŧ U W W̱ X X̲ Y Z ¸'
+    # Characters in the SENĆOŦEN alphabet:
+    'A Á Ⱥ B C Ć Ȼ D E H '
+    'I Í J K Ꝁ K̵ ₭ Ḵ Ḱ L Ƚ M '
+    'N Ṉ O P Q S Ś s T Ⱦ T̸ Ṯ '
+    'Ŧ U W W̱ X X̲ Y Z ¸'
+    # Characters used in loan words from English
+    'F'
 ).replace(' ', ''))
+
 
 FILTER_LIST = frozenset((
         '_ ( ) ˑ ‿ ~ … / ᶿ {} '
@@ -47,7 +51,8 @@ DENY_LIST = frozenset((
 DENY_WORDS = {
     'LAUGHS',
     'RCMP',
-    'GUS'
+    'GUS',
+    'WOOF',
 }
 
 CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
@@ -55,9 +60,6 @@ CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
 
 # Create the wordlist:
 wordlist = Counter()
-
-# XXX: Artificially add this word because... it's not there for some reason???
-wordlist['ȻNEs'] = 3000
 
 # Structure of the wordlist provided by Dr. Montler:
 #
@@ -103,6 +105,14 @@ def count_words(saanfile):
             continue
 
         wordlist[word] += count
+
+    # XXX: Artificially add ȻNEs
+    # It's not technically a single word according to the standard orthography
+    # e.g., *"ȻNEs YÁ¸" should be written "Ȼ NE SYA¸" ("that I go").
+    # However, it's in such common use by older L2 speakers, it would be annoying
+    # to NOT be in the wordlist!
+    # This should put it lower than "Ȼ" and "NE"
+    wordlist['ȻNEs'] = min(wordlist["Ȼ"], wordlist["NE"]) - 1
 
 
 # Count lines from each file provided on the command line.
