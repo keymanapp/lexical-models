@@ -23,3 +23,9 @@ the [National Research Council Canada (NRC)][NRC].
 [WSANEC]: https://wsanecschoolboard.ca/administration/wsb-policies/au-welew-tribal-school
 [@eddieantonio]: https://github.com/eddieantonio
 [NRC]: https://nrc.canada.ca/en/node/1378
+
+Extending from sources
+----------------------
+
+If you have access to the original sources, the word list can be updated
+using the script(s) and Makefile in `extras/nrc/str.sencoten`.
