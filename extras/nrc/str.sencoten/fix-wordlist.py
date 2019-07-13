@@ -52,7 +52,6 @@ DENY_WORDS = {
     'LAUGHS',
     'RCMP',
     'GUS',
-    'WOOF',
 }
 
 CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
@@ -116,11 +115,12 @@ def count_words(saanfile):
 
 
 # Count lines from each file provided on the command line.
-for filename in sys.argv[1:]:
+_script, *sources, destination =  sys.argv
+for filename in sources:
     with open(filename, 'rt', encoding='UTF-8') as saanfile:
         count_words(saanfile)
 
 # Print as a giant TSV with CRLF line endings:
-with open('saanich.tsv', 'wt', encoding='UTF-8') as outfile:
+with open(destination, 'wt', encoding='UTF-8') as outfile:
     for word, count in wordlist.most_common():
         print(word, count, sep='\t', end='\r\n', file=outfile)
