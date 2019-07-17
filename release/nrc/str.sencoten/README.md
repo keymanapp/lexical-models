@@ -27,5 +27,6 @@ the [National Research Council Canada (NRC)][NRC].
 Extending from sources
 ----------------------
 
-If you have access to the original sources, the word list can be updated
-using the script(s) and Makefile in `extras/nrc/str.sencoten`.
+If you have access to the original sources (`SaanichWordFreq.txt`) as
+provided by Dr. Montler, the word list can be updated using the scripts
+and Makefile in `./extras/`.
