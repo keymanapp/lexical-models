@@ -26,11 +26,15 @@ def uplus(c):
 
 
 SAANICH_ALPHABET = frozenset(nfc(
-        'A Á Ⱥ B C Ć Ȼ D E H '
-        'I Í J K Ꝁ K̵ ₭ Ḵ Ḱ L Ƚ M '
-        'N Ṉ O P Q S Ś T Ⱦ T̸ Ṯ '
-        'Ŧ U W W̱ X X̲ Y Z ¸'
+    # Characters in the SENĆOŦEN alphabet:
+    'A Á Ⱥ B C Ć Ȼ D E H '
+    'I Í J K Ꝁ K̵ ₭ Ḵ Ḱ L Ƚ M '
+    'N Ṉ O P Q S Ś s T Ⱦ T̸ Ṯ '
+    'Ŧ U W W̱ X X̲ Y Z ¸'
+    # Characters used in loan words from English
+    'F'
 ).replace(' ', ''))
+
 
 FILTER_LIST = frozenset((
         '_ ( ) ˑ ‿ ~ … / ᶿ {} '
@@ -47,7 +51,7 @@ DENY_LIST = frozenset((
 DENY_WORDS = {
     'LAUGHS',
     'RCMP',
-    'GUS'
+    'GUS',
 }
 
 CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
@@ -56,8 +60,18 @@ CLEAN_REGEX = re.compile('|'.join(re.escape(c) for c in FILTER_LIST))
 # Create the wordlist:
 wordlist = Counter()
 
-with open('./saanich.tsv', 'rt', encoding='UTF-8') as saanfile:
+# Structure of the wordlist provided by Dr. Montler:
+#
+# A tab-separated values file wherein the first column is the word, and the
+# second column is the count.
+# **The last line is "### total words." where ### is an non-negative integer**
+def count_words(saanfile):
     for line in saanfile:
+        # Skip the final line (which should contain a total word count).
+        if 'total words' in line:
+            assert int(line.split()[0]) >= 0
+            continue
+
         word, _, count = line.strip().partition('\t')
         count = int(count)
         word = nfc(word)
@@ -91,6 +105,22 @@ with open('./saanich.tsv', 'rt', encoding='UTF-8') as saanfile:
 
         wordlist[word] += count
 
-# Print as CRLF TSV:
-for word, count in wordlist.most_common():
-    print(word, count, sep='\t', end='\r\n')
+    # XXX: Artificially add ȻNEs
+    # It's not technically a single word according to the standard orthography
+    # e.g., *"ȻNEs YÁ¸" should be written "Ȼ NE SYA¸" ("that I go").
+    # However, it's in such common use by older L2 speakers, it would be annoying
+    # to NOT be in the wordlist!
+    # This should put it lower than "Ȼ" and "NE"
+    wordlist['ȻNEs'] = min(wordlist["Ȼ"], wordlist["NE"]) - 1
+
+
+# Count lines from each file provided on the command line.
+_script, *sources, destination =  sys.argv
+for filename in sources:
+    with open(filename, 'rt', encoding='UTF-8') as saanfile:
+        count_words(saanfile)
+
+# Print as a giant TSV with CRLF line endings:
+with open(destination, 'wt', encoding='UTF-8') as outfile:
+    for word, count in wordlist.most_common():
+        print(word, count, sep='\t', end='\r\n', file=outfile)
