@@ -190,8 +190,9 @@ release/
             └── model.ts
 ```
 
-To create this folder structure, I can execute the following code in
-the Git Bash/the terminal:
+To create this folder structure, I can execute the following in
+Git Bash or the terminal:
+
     cd /type/the/path/to/release
     mkdir -p example/str.tutorial/source
 
@@ -236,7 +237,6 @@ Copy this template, and use it to create your own `.model_info` file.
 Save this file to `{author}/{bcp47}.{uniq}/{author}.{bcp47}.{uniq}.model_info`.
 
 > NOTE: the only current valid value for `license` is `"mit"`.
-
 
 In our `example.str.tutorial` example, I'll use the following
 `.model_info`.
@@ -297,15 +297,40 @@ Step 4.2: Creating the KPS file
 Step 4.3: Creating the model file
 ---------------------------------
 
+Finally, the `model.ts` is a TypeScript source code file that is
+executed to build the model. For our purposes, we can simply copy-paste
+the following example:
+
 ```typescript
 import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
 
 (new LexicalModelCompiler).compile({
   format: 'trie-1.0',
   wordBreaking: 'default',
-  sources: ['saanich.tsv'],
+  sources: ['wordlist.tsv'],
 });
 ```
+
+Most importantly, this file specifies that model will use the word list
+in `wordlist.tsv`.
+
+For simple lexical models with exactly one wordlist called
+`wordlist.tsv`, **this file does not need to be changed any further**.
+
+However, it specifies a few other things:
+
+  - `format: 'trie-1.0'`: Use the trie back-end, that allows for
+    prediction based on prefixes of words.
+  - `wordBreaking: 'default'`: use Unicode's default word boundary rules
+    to find where "words" are when predicting text. This works for most
+    languages and writing systems, however, it does not work for
+    languages/writing systems that do not mark breaks between words,
+    e.g., Chinese, Thai, Laos, Khmer, and Japanese, to name a few. For
+    these writing systems, you must provide a language-specific word
+    breaking algorithm to find the words in running text.
+
+Step 5: Build the model
+-----------------------
 
 
 Appendix: Tab-separated wordlist file format specification
