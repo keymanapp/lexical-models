@@ -10,6 +10,17 @@ How to build a lexical model
 A **lexical model** or a **dictionary** is a way to enable **predictive text**
 for your keyboard.
 
+Requirements
+------------
+
+You will need to have:
+
+ - [Node.js][] >= 10.0
+ - (Windows only) [Git Bash](https://gitforwindows.org/)
+
+
+[Node.js]: https://nodejs.org/en/
+
 
 Step 1: Get some data
 ---------------------
@@ -59,6 +70,8 @@ This is what my word list looks like in Google Sheets:
 ![The word list, as it appears in Google Sheets](./sencoten-sheets-full.png).
 
 [sencoten-sheet]: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
+zsh:1: no matches found: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
+zsh:1: no matches found: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
 
 Now, we download the spreadsheet in the [required
 format](#appendix:tsv). To do this, in Google Sheets, select "File"
@@ -140,15 +153,158 @@ is:
 Step 4: Creating the package files
 ----------------------------------
 
+Now that we have a unique ID for our model, and wordlist data, we can
+the appropriate packaging files.
+
+Say we're currently in a folder called `release`: our model will follow
+this template for its directory structure.
+
+```
+release/
+└── {author}/
+    └── {bcp47}.{uniq}/
+        ├── {author}.{bcp47}.{uniq}.model_info
+        └── source/
+            ├── {author}.{bcp47}.{uniq}.model.kps
+            ├── wordlist.tsv
+            └── model.ts
+```
+
+Notice how under `release`, there is a folder that is named after the
+author. Within that folder is a folder for each models created by that
+particular author. Within each model folder, this is a folder called
+`source` that contains **wordlist.tsv**. We will discuss what the other
+files are called a bit later in this document.
+
+For our example of `example.str.tutorial`, I'll want the following
+folder structure:
+
+```
+release/
+└── example/
+    └── str.tutorial/
+        ├── example.str.tutorial.model_info
+        └── source/
+            ├── example.str.tutorial.model.kps
+            ├── wordlist.tsv
+            └── model.ts
+```
+
+To create this folder structure, I can execute the following code in
+the Git Bash/the terminal:
+    cd /type/the/path/to/release
+    mkdir -p example/str.tutorial/source
+
+Now move the wordlist to the appropriate place:
+
+    mv /type/the/current/path/to/wordlist.tsv example/str.tutorial/source/
+
+I now have the following folder structure:
+
 ```
 .
 └── example
     └── str.tutorial
-        ├── example.str.tutorial.model_info
         └── source
-            ├── example.str.tutorial.model.kps
-            ├── wordlist.tsv
-            └── model.ts
+            └── wordlist.tsv
+```
+
+We need to create the remaining files:
+ - The "model info" file: `example.str.tutorial.model_info`
+ - The package file: `example.str.tutorial.model.kps`
+ - The model configuration file: `model.ts`
+
+
+Step 4.1: Creating the model info file
+--------------------------------------
+
+The model info contains a little bit of metadata that is required when
+distributing packages. It is a JSON file that lists the model license
+and a short description of the lexical model.
+
+The `.model_info` file should follow this template:
+
+```json
+{
+    "license": "<SPDX license identifier>",
+    "description": "<short description of the lexical model>"
+}
+```
+
+Copy this template, and use it to create your own `.model_info` file.
+
+Save this file to `{author}/{bcp47}.{uniq}/{author}.{bcp47}.{uniq}.model_info`.
+
+> NOTE: the only current valid value for `license` is `"mit"`.
+
+
+In our `example.str.tutorial` example, I'll use the following
+`.model_info`.
+
+```json
+{
+    "license": "mit",
+    "description": "Predicts words in the SENĆOŦEN language (Saanich Dialect)"
+}
+```
+
+I'll save this file to `example/str.tutorial/example.str.tutorial.model_info`.
+
+
+Step 4.2: Creating the KPS file
+-------------------------------
+
+**TODO:**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.1500.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <FollowKeyboardVersion/>
+  </Options>
+  <Info>
+    <Name URL="">SENĆOŦEN (Saanich Dialect) Lexical Model</Name>
+    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
+    <Version>1.0.3</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\nrc.str.sencoten.model.js</Name>
+      <Description>Lexical model nrc.str.sencoten.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>SENĆOŦEN dictionary</Name>
+      <ID>nrc.str.sencoten</ID>
+      <Version>1.0.3</Version>
+      <Languages>
+        <Language ID="str">North Straits Salish</Language>
+        <Language ID="str-Latn">SENĆOŦEN</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
+```
+
+Step 4.3: Creating the model file
+---------------------------------
+
+```typescript
+import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
+
+(new LexicalModelCompiler).compile({
+  format: 'trie-1.0',
+  wordBreaking: 'default',
+  sources: ['saanich.tsv'],
+});
 ```
 
 
