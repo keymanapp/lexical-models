@@ -171,8 +171,8 @@ release/
 ```
 
 Notice how under `release`, there is a folder that is named after the
-author. Within that folder is a folder for each models created by that
-particular author. Within each model folder, this is a folder called
+author. Within that folder is a folder for each model created by that
+particular author. Within each model folder, there is a folder called
 `source` that contains **wordlist.tsv**. We will discuss what the other
 files are called a bit later in this document.
 
