@@ -16,10 +16,11 @@ Requirements
 You will need to have:
 
  - [Node.js][] >= 10.0
- - (Windows only) [Git Bash](https://gitforwindows.org/)
+ - (Windows only) [Git Bash][]
 
 
 [Node.js]: https://nodejs.org/en/
+[Git Bash]: https://gitforwindows.org/
 
 
 Step 1: Get some data
@@ -69,10 +70,6 @@ This is what my word list looks like in Google Sheets:
 
 ![The word list, as it appears in Google Sheets](./sencoten-sheets-full.png).
 
-[sencoten-sheet]: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
-zsh:1: no matches found: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
-zsh:1: no matches found: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
-
 Now, we download the spreadsheet in the [required
 format](#appendix:tsv). To do this, in Google Sheets, select "File"
 » "Download as" » "Tab-separated values (.tsv, current sheet)".
@@ -81,6 +78,8 @@ format](#appendix:tsv). To do this, in Google Sheets, select "File"
 
 I'll save mine as **wordlist.tsv**.
 
+[sencoten-sheet]: https://docs.google.com/spreadsheets/d/10zhIc439BCSSooL_-HeJ6TUHd-ovkiXYcIGe-pHDTSg/edit?usp=sharing
+
 
 Step 2: Create a unique model ID
 --------------------------------
@@ -88,8 +87,9 @@ Step 2: Create a unique model ID
 Now that we have our TSV file, called **wordlist.tsv**, let's create the
 associated packaging folder and data.
 
-Our model needs a **unique ID**. The lexical model ID is a string in the
-format:
+Our model needs a **unique ID**. For publicly sharing models online in
+the [lexical-models repository](https://github.com/keymanapp/lexical-model),
+the unique ID must be a string in the format:
 
 > _author_._bcp47_._uniq_
 
@@ -99,7 +99,7 @@ format:
 _author_ is an identifier for the maintainer of the model. This
 identifier is a string of one or more ASCII lowercase letters, digits, and the
 underscore (`_`), and it must begin with a lowercase ASCII letter. Some
-organizations have a author identifier already, like `sil` for SIL
+organizations have an author identifier already, like `sil` for SIL
 International, `nrc` for the National Research Council Canada, and `fv`
 for FirstVoices.
 
@@ -137,7 +137,7 @@ lowercase. Thus, our `bcp47` is:
 
 _uniq_ is an arbitrary tag that uniquely identifies your specific model.
 This identifier can be anything, as long as it hasn't already been used
-before for this specific language. As with `author`
+before for this specific author or organization. As with `author`
 identifier is one or more ASCII lowercase letters, digits, and the underscore
 (`_`), and it must start with a lowercase ASCII letter.
 
@@ -220,7 +220,10 @@ Step 4.1: Creating the model info file
 --------------------------------------
 
 The model info contains a little bit of metadata that is required when
-distributing packages. It is a JSON file that lists the model license
+distributing packages online using Keyman Cloud. Thus, **if you do not
+plan to distribute this model on Keyman Cloud, you may skip this step**.
+
+The model info is provided as a JSON file that lists the model license
 and a short description of the lexical model.
 
 The `.model_info` file should follow this template:
@@ -343,7 +346,7 @@ Appendix: Tab-separated wordlist file format specification
 The **lexical model compiler** expects wordlists to abide by the
 following **tab-separated values** (TSV) format:
 
- - the file is must be **UTF-8** encoded text file
+ - the file must be **UTF-8** encoded text file
  - newlines are either **LF** or **CRLF**
  - the file either consists of a **comment** or an **entry**
  - **comment** lines MUST start with the '#' character on the very first column
@@ -351,11 +354,13 @@ following **tab-separated values** (TSV) format:
    **tab character** (U+0009)
  - column 1 (REQUIRED): the **word form**: can have any character
    except tab, CR, or LF. Surrounding whitespace characters are trimmed.
+   Quote characters (`'` or `"`) are **NOT** required to surround the
+   text and are **NOT** parsed in any special manner.
  - column 2 (optional): the **count**: a non-negative integer specifying how many
    times this entry has appeared in the corpus. Blank means
    'indeterminate', and is treated as if the word exists in the corpus,
    but will be predicted at the lowest possible priority.
- - the following columns are ignored.
+ - any other columns are ignored.
 
 > Source:
 > [build-trie.js@e58173f](https://github.com/keymanapp/keyman/blob/307436e7c24caa5c720b272640184362c4dc3223/developer/js/lexical-model-compiler/build-trie.ts#L21-L66)
