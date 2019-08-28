@@ -1,6 +1,4 @@
-import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
-
-(new LexicalModelCompiler).compile({
+const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaking: 'default',
   sources: ['saanich.tsv'],
@@ -30,4 +28,6 @@ import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
       .replace(LATIN_CAPITAL_LETTER_T_WITH_STROKE, 'T')
       .normalize('NFC');
   }
-});
+};
+
+export default source;

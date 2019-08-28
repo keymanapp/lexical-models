@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -u
+
 #----------------------------------------------------------------------------------------
 # Build all the models in a given group
 #----------------------------------------------------------------------------------------
@@ -68,7 +71,7 @@ function build_model {
   #
   # Check if .model_info doesn't exist
   #
-  model_infoFilename="$shortname.$base_model.model_info"
+  model_infoFilename="$base_model.model_info"
   if [ ! -f "$model_infoFilename" ]; then
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$model_infoFilename doesn't exist"
@@ -96,7 +99,7 @@ function build_model {
 }
 
 #----------------------------------------------------------------------------------------
-# Build a model in the release/ or experimental/ folders from full source
+# Build a model in the sample/, release/ or experimental/ folders from full source
 #----------------------------------------------------------------------------------------
 
 function build_release_model {
@@ -105,7 +108,7 @@ function build_release_model {
   local shortname=$(basename $(dirname "$model"))
   local base_model=$(basename "$model")
   echo "$ACTION_VERB model $1"
-  
+
   # local kpj="$base_keyboard.kpj"
   # We don't have a .kpj; we assume presence of .model_info, .kps and model.ts
 
@@ -133,11 +136,14 @@ function build_release_model {
     local COLOR_FLAG=
   fi
 
-  pushd build
-  mkdir obj
-  # TODO: Consider moving options to tsconfig.json?
-  npx tsc --module commonjs --target es6 --outDir ./obj ../source/model.ts || die "Compile phase 1 failed for $model"
-  node ./obj/model.js $COLOR_FLAG || die "Compile phase 2 failed for $model"
+  local modelInputFilename="$base_model.model.ts"
+  local modelOutputFilename="$base_model.model.js"
+  local modelInputPackageFilename="$base_model.model.kps"
+  local modelOutputPackageFilename="$base_model.model.kmp"
+
+  pushd source
+  kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename"
+  # TODO: kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename"
   popd
 
   return 0

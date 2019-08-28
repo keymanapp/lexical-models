@@ -1,6 +1,4 @@
-import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler"; 
-
-(new LexicalModelCompiler).compile({
+const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaking: {
     allowedCharacters: { initials: 'abcdefghijklmnopqrstuvwxyz', medials: 'abcdefghijklmnopqrstuvwxyz', finals: 'abcdefghijklmnopqrstuvwxyz' },
@@ -8,4 +6,6 @@ import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
   },
   //... metadata ...
   sources: ['cree-kinship.tsv']
-});
+};
+
+export default source;
