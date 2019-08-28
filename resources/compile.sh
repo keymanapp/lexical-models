@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-set -u
+# set -u We need to do more cleanup to enable this
 
 #----------------------------------------------------------------------------------------
 # Build all the models in a given group
