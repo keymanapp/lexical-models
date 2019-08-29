@@ -1,6 +1,6 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
-  wordBreaking: 'default',
+  wordBreaker: 'default',
   sources: ['saanich.tsv'],
   searchTermToKey: function (wordform: string): string {
     const CEDILLA = '¸';
