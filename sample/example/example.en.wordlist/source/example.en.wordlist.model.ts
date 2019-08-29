@@ -1,6 +1,6 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
-  wordBreaking: 'ascii',
+  wordBreaker: 'ascii',
   //... metadata ...
   sources: ['example.tsv']
 };
