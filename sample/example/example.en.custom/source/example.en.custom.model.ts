@@ -1,6 +1,6 @@
 const source: LexicalModelSource = {
   format: 'custom-1.0',
-  wordBreaking: {
+  wordBreaker: {
     sources: ['wordbreak.ts'],
     rootClass: 'ExampleWordBreaker'
   },
