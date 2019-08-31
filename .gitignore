@@ -4,3 +4,4 @@ sample/*/*/build/
 experimental/*/*/build/
 servervars.sh
 .cache
+*.kpj.user
