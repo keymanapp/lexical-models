@@ -140,11 +140,28 @@ function build_release_model {
   local modelOutputFilename="$base_model.model.js"
   local modelInputPackageFilename="$base_model.model.kps"
   local modelOutputPackageFilename="$base_model.model.kmp"
+  local modelInfoFilename="$base_model.model_info"
 
   pushd source
+
+  # Compile model
   kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename"
-  # TODO: kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename"
+
+  # Compile package
+  kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename"
+
   popd
+
+  # Merge .model_info file
+
+  kmlmi \
+    --model "$base_model" \
+    --outFile "build/$modelInfoFilename" \
+    --source "$group/$shortname/$base_model" \
+    --jsFilename "build/$modelOutputFilename" \
+    --kpsFilename "source/$modelInputPackageFilename" \
+    --kmpFilename "build/$modelOutputPackageFilename" \
+    "./$modelInfoFilename"
 
   return 0
 }
