@@ -9,16 +9,16 @@ set -e
 
 function build_models {
   # $1 = path to build models
-  # for each model, run the default 
+  # for each model, run the default
   # build based on the folder name and location.
-  
+
   # excluded folders are: shared and template
 
   local group=$1
   local excluded_folders=" shared template "
 
   if [ ! -d $MODELROOT/$group ]; then return 0; fi
-  
+
   echo "$ACTION_VERB lexical models for $1"
 
   local shortname
@@ -26,7 +26,7 @@ function build_models {
     if [ ! "$(ls -A $shortname)" ]; then
       if [ "$WARNINGS_AS_ERRORS" = true ]; then
         die "$shortname is empty."
-      fi  
+      fi
       echo "$shortname is empty. skipping..."
       continue
     fi
@@ -35,10 +35,10 @@ function build_models {
     if [[ "$base_shortname" == '*' ]]; then
       exit 0
     fi
-    
+
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
-    else 
+    else
       if [[ "$base_shortname" < "$START" ]]; then
         echo "- Skipping folder $group/$base_shortname, before $START"
       else
@@ -50,7 +50,7 @@ function build_models {
       fi
     fi
   done
-  
+
   return 0
 }
 
@@ -63,11 +63,11 @@ function build_model {
   local model=$2
   local shortname=$(basename $(dirname "$model"))
   local base_model=$(basename "$model")
-  
+
   echo "Validating model $model"
-    
+
   pushd "$model"
-  
+
   #
   # Check if .model_info doesn't exist
   #
@@ -75,25 +75,25 @@ function build_model {
   if [ ! -f "$model_infoFilename" ]; then
     if [ "$WARNINGS_AS_ERRORS" = true ]; then
       die "$model_infoFilename doesn't exist"
-    fi  
-    echo "  No $model_infoFilename file. Skipping..."   
+    fi
+    echo "  No $model_infoFilename file. Skipping..."
     popd
     return 0
   fi
-  
+
   #validate_model_uniqueness "$group" "$model" "$base_model"
-  
+
   if [ "$DO_BUILD" = false ]; then
     popd
     return 0
   fi
-  
+
   build_release_model "$model" || die "Failed to build $group model $base_model"
-  
+
   #
   # Back to root of repo
   #
-  
+
   popd
   return 0
 }
@@ -113,19 +113,19 @@ function build_release_model {
   # We don't have a .kpj; we assume presence of .model_info, .kps and model.ts
 
   # Clean build folder
-  
+
   if [[ -d build ]]; then
     rm -rf build/ || die
   fi
-  
+
   if [[ ! -z "$FLAG_CLEAN" ]]; then
     return 0
   fi
-  
+
   # Recreate build folder
-  
+
   mkdir build || die "Failed to create build folder for $model"
-  
+
   #
   # Check if color is supported
   # -t 2 tests that the script is running in an interactive terminal as opposed to redirected to file or piped
@@ -145,10 +145,10 @@ function build_release_model {
   pushd source
 
   # Compile model
-  kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename"
+  kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
 
   # Compile package
-  kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename"
+  kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
 
   popd
 
@@ -161,7 +161,7 @@ function build_release_model {
     --jsFilename "build/$modelOutputFilename" \
     --kpsFilename "source/$modelInputPackageFilename" \
     --kmpFilename "build/$modelOutputPackageFilename" \
-    "./$modelInfoFilename"
+    "./$modelInfoFilename" || die "Unable to merge .model_info file"
 
   return 0
 }
