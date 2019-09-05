@@ -1,8 +1,6 @@
-import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
-
-(new LexicalModelCompiler).compile({
+const source: LexicalModelSource = {
   format: 'trie-1.0',
-  wordBreaking: 'default',
+  wordBreaker: 'default',
   sources: ['saanich.tsv'],
   searchTermToKey: function (wordform: string): string {
     const CEDILLA = '¸';
@@ -30,4 +28,6 @@ import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler";
       .replace(LATIN_CAPITAL_LETTER_T_WITH_STROKE, 'T')
       .normalize('NFC');
   }
-});
+};
+
+export default source;

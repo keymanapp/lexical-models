@@ -1,12 +1,12 @@
-import LexicalModelCompiler from "@keymanapp/developer-lexical-model-compiler"; 
-
-(new LexicalModelCompiler).compile({
+const source: LexicalModelSource = {
   format: 'custom-1.0',
-  wordBreaking: {
+  wordBreaker: {
     sources: ['wordbreak.ts'],
     rootClass: 'ExampleWordBreaker'
   },
   //... metadata ...
   sources: ['predict.ts'],
   rootClass: 'ExampleCustom'
-});
+};
+
+export default source;

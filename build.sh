@@ -93,7 +93,7 @@ if [[ "$TARGET" ]]; then
     group=$(cut -d / -f 1 <<< "$TARGET")
     echo "--- Only building $group $TARGET ---"
     build_model $group "$TARGET"
-  elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "experimental" ]]; then
+  elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "experimental" ]] || [[ "$TARGET" == "sample" ]]; then
     # Assuming release|experimental
     echo "--- Only building $TARGET ---"
     build_models "$TARGET"
