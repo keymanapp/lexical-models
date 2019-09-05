@@ -55,7 +55,7 @@ function run {
     rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
     exit 0
   fi
-  
+
   if [ -d "$CI_CACHE/upload" ]; then
     rm -rf "$CI_CACHE/upload"
   fi
@@ -94,7 +94,7 @@ function upload_models_by_target {
     upload_models release
     upload_models experimental
   fi
-  
+
   rsync_to_downloads_keyman_com "$CI_CACHE/upload/" models/ true
 }
 
@@ -120,12 +120,12 @@ function upload_model {
   local base_model=$(basename "$model")
   local shortname=$(basename $(dirname "$model"))
   local buildpath=$MODELROOT/$group/$shortname/$base_model/build
-  local model_info=$buildpath/$shortname.$base_model.model_info
-  
+  local model_info=$buildpath/$base_model.model_info
+
   echo "${t_grn}Uploading $model${t_end}"
-  
+
   [ -f "$model_info" ] || die "Failed to locate $model_info"
-  
+
   local package_filename=`cat "$model_info" | $JQ -r '.packageFilename'`
   local js_filename=`cat "$model_info" | $JQ -r '.jsFilename'`
 
@@ -144,15 +144,15 @@ function upload_model {
 
   local package_version=`cat "$model_info" | $JQ -r '.version'`
   local package_name=`cat "$model_info" | $JQ -r '.name'`
-  local package_upload_path=$shortname.$base_model/$package_version/$package_filename
-  local model_info_upload_path=$shortname.$base_model/$package_version/$shortname.$base_model.model_info
-  local js_upload_path=$shortname.$base_model/$package_version/$js_filename
-  
+  local package_upload_path=$base_model/$package_version/$package_filename
+  local model_info_upload_path=$base_model/$package_version/$base_model.model_info
+  local js_upload_path=$base_model/$package_version/$js_filename
+
   local package_url=$DOWNLOADS_KEYMAN_COM_URL/models/$package_upload_path
   local model_info_url=$DOWNLOADS_KEYMAN_COM_URL/models/$model_info_upload_path
   local installer_url=$DOWNLOADS_KEYMAN_COM_URL/models/$installer_upload_path
   local js_url=$DOWNLOADS_KEYMAN_COM_URL/models/$js_upload_path
-  
+
   echo "${t_grn}Package name: $package_name, version: $package_version${t_end}"
 
   prepare_for_upload "$model_info" "$model_info_upload_path"
@@ -165,14 +165,14 @@ function upload_model {
 ##
 function upload_models {
   # $1 = path to build models
-  # for each model, if a build.sh file exists, call it, otherwise, run the default 
+  # for each model, if a build.sh file exists, call it, otherwise, run the default
   # build based on the folder name and location.
-  
+
   # excluded folders are: shared and template
 
   local group=$1
   local excluded_folders=" shared template "
-  
+
   echo "Uploading models for $1"
   local shortname
   for shortname in "$MODELROOT/$group/"*/ ; do
@@ -180,10 +180,10 @@ function upload_models {
     if [[ "$base_shortname" == '*' ]]; then
       return 0
     fi
-    
+
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
-    else 
+    else
       if [[ "$base_shortname" < "$START" ]]; then
         echo "- Skipping folder $group/$base_shortname, before $START"
       else
@@ -195,7 +195,7 @@ function upload_models {
       fi
     fi
   done
-    
+
   return 0
 }
 
@@ -206,7 +206,7 @@ function upload_models {
 function zip_model_info {
   # We use an @list file to give a specific list of files to
   # 7z so that it does not include pathnames in the archive
-  # The "./" on the front of the search is also needed to force 7Z to not 
+  # The "./" on the front of the search is also needed to force 7Z to not
   # include pathnames in the archive
   local files=(./.cache/upload/*/*/*.model_info)
   printf "%s\n" "${files[@]}" > .cache/model_info.list
