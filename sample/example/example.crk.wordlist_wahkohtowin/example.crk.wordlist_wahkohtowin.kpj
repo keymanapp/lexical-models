@@ -16,14 +16,22 @@
       <FileType>.ts</FileType>
     </File>
     <File>
+      <ID>id_89f63b613fd4156e39e15a1786b03708</ID>
+      <Filename>cree-kinship.tsv</Filename>
+      <Filepath>source\cree-kinship.tsv</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.tsv</FileType>
+    </File>
+    <File>
       <ID>id_9fbab87260ce2666ad934188bc9aa1bf</ID>
       <Filename>example.crk.wordlist_wahkohtowin.model.kps</Filename>
       <Filepath>source\example.crk.wordlist_wahkohtowin.model.kps</Filepath>
-      <FileVersion></FileVersion>
+      <FileVersion>0.1.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>example.crk.wordlist_wahkohtowin</Name>
-        <Copyright>©</Copyright>
+        <Name>Example Plains Cree lexical model</Name>
+        <Copyright>© 2019 National Research Council Canada</Copyright>
+        <Version>0.1.2</Version>
       </Details>
     </File>
     <File>
@@ -60,22 +68,6 @@
       <Filepath>source\..\build\example.crk.wordlist_wahkohtowin.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_9fbab87260ce2666ad934188bc9aa1bf</ParentFileID>
-    </File>
-    <File>
-      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
-      <Filename>welcome.htm</Filename>
-      <Filepath>source\welcome.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_9fbab87260ce2666ad934188bc9aa1bf</ParentFileID>
-    </File>
-    <File>
-      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
-      <Filename>readme.htm</Filename>
-      <Filepath>source\readme.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
       <ParentFileID>id_9fbab87260ce2666ad934188bc9aa1bf</ParentFileID>
     </File>
   </Files>

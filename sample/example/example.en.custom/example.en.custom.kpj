@@ -19,11 +19,12 @@
       <ID>id_532f8759fdea7486ef2670cf444186dd</ID>
       <Filename>example.en.custom.model.kps</Filename>
       <Filepath>source\example.en.custom.model.kps</Filepath>
-      <FileVersion></FileVersion>
+      <FileVersion>0.1.4</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>example.en.custom</Name>
-        <Copyright>©</Copyright>
+        <Name>Example (English) Template Custom Model</Name>
+        <Copyright>© 2019 SIL International</Copyright>
+        <Version>0.1.4</Version>
       </Details>
     </File>
     <File>
@@ -66,14 +67,6 @@
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
       <Filename>welcome.htm</Filename>
       <Filepath>source\welcome.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_532f8759fdea7486ef2670cf444186dd</ParentFileID>
-    </File>
-    <File>
-      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
-      <Filename>readme.htm</Filename>
-      <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
       <ParentFileID>id_532f8759fdea7486ef2670cf444186dd</ParentFileID>
