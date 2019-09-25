@@ -16,6 +16,13 @@
       <FileType>.ts</FileType>
     </File>
     <File>
+      <ID>id_89f63b613fd4156e39e15a1786b03708</ID>
+      <Filename>saanich.tsv</Filename>
+      <Filepath>source\saanich.tsv</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.tsv</FileType>
+    </File>
+    <File>
       <ID>id_c2d6578233d0ef9036f598b2918606ed</ID>
       <Filename>nrc.str.sencoten.model.kps</Filename>
       <Filepath>source\nrc.str.sencoten.model.kps</Filepath>

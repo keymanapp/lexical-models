@@ -16,14 +16,22 @@
       <FileType>.ts</FileType>
     </File>
     <File>
+      <ID>id_89f63b613fd4156e39e15a1786b03708</ID>
+      <Filename>example.tsv</Filename>
+      <Filepath>source\example.tsv</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.tsv</FileType>
+    </File>
+    <File>
       <ID>id_ee631d95e9ecfee2632a3a2d6510cf9a</ID>
       <Filename>example.en.wordlist.model.kps</Filename>
       <Filepath>source\example.en.wordlist.model.kps</Filepath>
-      <FileVersion></FileVersion>
+      <FileVersion>0.1.4</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>example.en.wordlist</Name>
-        <Copyright>©</Copyright>
+        <Name>Example (English) Template Wordlist Model</Name>
+        <Copyright>© 2019 SIL International</Copyright>
+        <Version>0.1.4</Version>
       </Details>
     </File>
     <File>
@@ -60,22 +68,6 @@
       <Filepath>source\..\build\example.en.wordlist.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_ee631d95e9ecfee2632a3a2d6510cf9a</ParentFileID>
-    </File>
-    <File>
-      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
-      <Filename>welcome.htm</Filename>
-      <Filepath>source\welcome.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_ee631d95e9ecfee2632a3a2d6510cf9a</ParentFileID>
-    </File>
-    <File>
-      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
-      <Filename>readme.htm</Filename>
-      <Filepath>source\readme.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
       <ParentFileID>id_ee631d95e9ecfee2632a3a2d6510cf9a</ParentFileID>
     </File>
   </Files>
