@@ -11,7 +11,7 @@ function display_usage {
   echo "  -t || -test   Runs tests on models"
   echo "  -b || -build  Creates compiled models"
   echo "  -c || -clean  Cleans intermediate and output files"
-  echo "  -no-npm       Skips building and linking the lexical model compiler from the keyman repo"
+  echo "  -no-npm       Use and link the lexical model compiler from the keyman repo"
   echo "  -s            Quiet build"
   echo "  target        The specific model(s) to build, e.g. release or release/example/en.template"
   echo "                If omitted, builds all models"
@@ -42,27 +42,34 @@ MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
 parse_args "$@"
 
 #
-# Pull dependencies (TODO: once this stabilises, we will use npm published packages).
-# This assumes you've already run `npm link .` in the $KEYMAN
+# Pull dependencies
 #
+  # Check if Node.JS/npm is installed.
+type npm >/dev/null ||\
+    die "Build environment setup error detected!  Please ensure Node.js is installed!"
 
 if [[ "$DO_NPM" = true ]]; then
-
+  echo "Dependencies check"
+  npm install --no-optional
+else
   if [[ ! -z "$KEYMAN_ROOT" ]]; then
+    echo "Uninstalling @keymanapp/lexical-model-compiler and @keymanapp/lexical-model-types"
+    npm uninstall @keymanapp/lexical-model-compiler --no-save
+    npm uninstall @keymanapp/lexical-model-types --no-save
+
     echo "Building lexical model compiler from Keyman repo and publishing via npm link"
     pushd "$KEYMAN_ROOT"/developer/js
     npm install
     npm run build
     npm link .
     popd
+
+    # npm link must be done after npm install, because npm install removes linked packages
+    npm link @keymanapp/developer-lexical-model-compiler
+  else
+    die "Environment variable \$KEYMAN_ROOT undefined!"
   fi
-
-  npm install
 fi
-
-# npm link must be done after npm install, because npm install removes linked packages
-# TODO: this should be removed once we have a published npm pathway
-npm link @keymanapp/developer-lexical-model-compiler
 
 #
 # Select action
