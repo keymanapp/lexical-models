@@ -145,16 +145,16 @@ function build_release_model {
   pushd source
 
   # Compile model
-  kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
+  npx kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
 
   # Compile package
-  kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
+  npx kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
 
   popd
 
   # Merge .model_info file
 
-  kmlmi \
+  npx kmlmi \
     --model "$base_model" \
     --outFile "build/$modelInfoFilename" \
     --source "$group/$shortname/$base_model" \
