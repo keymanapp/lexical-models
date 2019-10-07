@@ -11,7 +11,7 @@ function display_usage {
   echo "  -t || -test   Runs tests on models"
   echo "  -b || -build  Creates compiled models"
   echo "  -c || -clean  Cleans intermediate and output files"
-  echo "  -no-npm       Skips building and linking the lexical model compiler from the keyman repo"
+  echo "  -no-npm       Skip all npm steps"
   echo "  -s            Quiet build"
   echo "  target        The specific model(s) to build, e.g. release or release/example/en.template"
   echo "                If omitted, builds all models"
@@ -38,31 +38,19 @@ MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
 #
 # Default is validate model_info, build models
 #
-
 parse_args "$@"
 
-#
-# Pull dependencies (TODO: once this stabilises, we will use npm published packages).
-# This assumes you've already run `npm link .` in the $KEYMAN
-#
-
 if [[ "$DO_NPM" = true ]]; then
+  # Check if Node.JS/npm is installed.
+  type npm >/dev/null ||\
+    die "Build environment setup error detected!  Please ensure Node.js is installed!"
 
-  if [[ ! -z "$KEYMAN_ROOT" ]]; then
-    echo "Building lexical model compiler from Keyman repo and publishing via npm link"
-    pushd "$KEYMAN_ROOT"/developer/js
-    npm install
-    npm run build
-    npm link .
-    popd
-  fi
-
-  npm install
+  #
+  # Pull dependencies
+  #
+  echo "Dependencies check"
+  npm install --no-optional
 fi
-
-# npm link must be done after npm install, because npm install removes linked packages
-# TODO: this should be removed once we have a published npm pathway
-npm link @keymanapp/developer-lexical-model-compiler
 
 #
 # Select action
@@ -105,6 +93,4 @@ else
   build_models experimental
 fi
 
-
 # todo copy multi-folder approach from keyboards repo
-
