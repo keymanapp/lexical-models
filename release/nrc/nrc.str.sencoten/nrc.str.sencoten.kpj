@@ -26,12 +26,12 @@
       <ID>id_c2d6578233d0ef9036f598b2918606ed</ID>
       <Filename>nrc.str.sencoten.model.kps</Filename>
       <Filepath>source\nrc.str.sencoten.model.kps</Filepath>
-      <FileVersion>1.0.3</FileVersion>
+      <FileVersion>1.0.4</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>SENĆOŦEN (Saanich Dialect) Lexical Model</Name>
         <Copyright>© 2019 Timothy Montler and the W̱SÁNEĆ School Board</Copyright>
-        <Version>1.0.3</Version>
+        <Version>1.0.4</Version>
       </Details>
     </File>
     <File>
