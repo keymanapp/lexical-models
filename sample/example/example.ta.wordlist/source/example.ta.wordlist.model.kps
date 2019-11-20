@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>12.0.53.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Example (Tamil) Template Wordlist Model</Name>
+    <Version>1.0</Version>
+    <Copyright URL="">© 2019 SIL International</Copyright>
+    <Author URL="">Darcy Wong</Author>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\example.ta.wordlist.model.js</Name>
+      <Description>Lexical model example.ta.wordlist.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Template for a wordlist dictionary</Name>
+      <ID>example.ta.wordlist</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="ta">Tamil</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
