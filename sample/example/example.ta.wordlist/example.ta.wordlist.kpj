@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProject>
+  <Options>
+    <BuildPath>$PROJECTPATH\build</BuildPath>
+    <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
+    <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>lexicalmodel</ProjectType>
+  </Options>
+  <Files>
+    <File>
+      <ID>id_c96dcbd3f947632eaebbdcacac0f48df</ID>
+      <Filename>example.ta.wordlist.model.ts</Filename>
+      <Filepath>source\example.ta.wordlist.model.ts</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.ts</FileType>
+    </File>
+    <File>
+      <ID>id_89f63b613fd4156e39e15a1786b03708</ID>
+      <Filename>ta.tsv</Filename>
+      <Filepath>source\ta.tsv</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.tsv</FileType>
+    </File>
+    <File>
+      <ID>id_2e49df5502c4e4cd9d65b3f49a48f92e</ID>
+      <Filename>example.ta.wordlist.model.kps</Filename>
+      <Filepath>source\example.ta.wordlist.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.kps</FileType>
+      <Details>
+        <Name>Example (Tamil) Template Wordlist Model</Name>
+        <Copyright>© 2019 SIL International</Copyright>
+        <Version>1.0</Version>
+      </Details>
+    </File>
+    <File>
+      <ID>id_9d2b834990c2dcd7d8c1de51a88d7800</ID>
+      <Filename>example.ta.wordlist.model.js</Filename>
+      <Filepath>source\..\build\example.ta.wordlist.model.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
+      <ParentFileID>id_2e49df5502c4e4cd9d65b3f49a48f92e</ParentFileID>
+    </File>
+  </Files>
+</KeymanDeveloperProject>
