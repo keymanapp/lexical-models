@@ -31,7 +31,6 @@
     <LexicalModel>
       <Name>Template for a wordlist dictionary</Name>
       <ID>example.ta.wordlist</ID>
-      <Version>1.0</Version>
       <Languages>
         <Language ID="ta">Tamil</Language>
       </Languages>
