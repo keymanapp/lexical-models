@@ -5,7 +5,6 @@
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
-    <FollowKeyboardVersion/>
   </Options>
   <Info>
     <Name URL="">Example (English) Template Custom Model</Name>
@@ -31,7 +30,6 @@
     <LexicalModel>
       <Name>Template custom lexical models</Name>
       <ID>example.en.custom</ID>
-      <Version>0.1.4</Version>
       <Languages>
         <Language ID="en">English</Language>
       </Languages>
