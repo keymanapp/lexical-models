@@ -46,7 +46,7 @@
       <Name>sil.bcc-latn.upp_ptwl1</Name>
       <ID>sil.bcc-latn.upp_ptwl1</ID>
       <Languages>
-        <Language ID="bcc-Latn">Southern Balochi</Language>
+        <Language ID="bcc-Latn">Southern Balochi (Latin)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
