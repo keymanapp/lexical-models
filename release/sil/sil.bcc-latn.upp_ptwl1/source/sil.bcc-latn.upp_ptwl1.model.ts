@@ -1,5 +1,5 @@
 /*
-  sil.bcc-latn.upp_ptwl1 1.0 generated from template.
+  sil.bcc-latn.upp_ptwl1 1.1 generated from template.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for
@@ -13,7 +13,7 @@ const source: LexicalModelSource = {
   searchTermToKey: function (term) {
     // Use this pattern to remove common diacritical marks.
     // See: https://www.compart.com/en/unicode/block/U+0300
-    const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
+    //const COMBINING_DIACRITICAL_MARKS = /[\u0300-\u036f]/g;
    
     // Converts to Unicode Normalization form D.
     // This means that MOST accents and diacritics have been "decomposed" and
@@ -35,9 +35,12 @@ const source: LexicalModelSource = {
     //
     // In Balochi we don't want to convert accented letters to their base form.
     // each accented letter should be treated as an equal letter.
-    //  let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
+    //let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
    
     // The resultant key is lowercased, and has no accents or diacritics.
+    //return termWithoutDiacritics;
+    
+    // The resultant key is lowercased and normalized
     return lowercasedTerm;
   },
 
