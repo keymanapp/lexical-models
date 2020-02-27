@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Unilex rw Lexical Model</Name>
+    <Copyright URL="">© 2019 Unicode.org and contributors</Copyright>
+    <Author URL=""></Author>
+    <Version>1.0.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\unilex.rw.unilex.model.js</Name>
+      <Description>Lexical model unilex.rw.unilex.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>unilex rw dictionary</Name>
+      <ID>unilex.rw.unilex</ID>
+      <Languages>
+        <Language ID="rw">rw</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>

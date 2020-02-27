@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Unilex qxl Lexical Model</Name>
+    <Copyright URL="">© 2019 Unicode.org and contributors</Copyright>
+    <Author URL=""></Author>
+    <Version>1.0.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\unilex.qxl.unilex.model.js</Name>
+      <Description>Lexical model unilex.qxl.unilex.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>unilex qxl dictionary</Name>
+      <ID>unilex.qxl.unilex</ID>
+      <Languages>
+        <Language ID="qxl">qxl</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
