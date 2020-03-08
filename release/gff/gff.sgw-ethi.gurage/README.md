@@ -12,7 +12,7 @@ This is a Gurage (ጉራጌ , ISO-639-2 swg) lexical model developed to support 
 corresponding GFF Gurage Keyboard.  The lexical model comprises word frequency lists from
 the works of Wolf Leslau ("Ethiopians Speak vol. 2 Chaha"), Shahle Jingo (Gurage Fables)
 and the Sebat Bet Bible of the Ethiopian Bible Society. The respective texts have been normalized
-under the 2018 experimetnal orthography of Dr. Fekede Menuta and require the "Zebidar" font
+under the 2018 experimental orthography of Dr. Fekede Menuta and require the "Zebidar" font
 to view non-standard characters introduced for the Gurage language.  Frequency counts were
 generated with the "PrimerPrep" application.
 
