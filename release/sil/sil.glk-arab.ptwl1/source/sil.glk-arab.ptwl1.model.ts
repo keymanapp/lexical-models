@@ -7,7 +7,7 @@ const source: LexicalModelSource = {
   searchTermToKey: function (term) {
     // This pattern removes common Arabic script combiing diacritics.
     // Except, skip the ARABIC_MADDAH_ABOVE. We want that to stay with its base character ALEF
-    const COMBINING_DIACRITICAL_MARKS = /[\u064b-\u0652\u0654-\u065f\u0670]/g;
+    const COMBINING_DIACRITICAL_MARKS = /[\u064b-\u0652\u0654-\u065f\u0670\u200C]/g;
    
     // Converts to Unicode Normalization form D.
     // This means that MOST accents and diacritics have been "decomposed" and
