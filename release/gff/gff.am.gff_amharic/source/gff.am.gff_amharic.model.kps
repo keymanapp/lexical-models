@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\gff.am-ethi.gff_amharic.model.js</Name>
+      <Name>..\build\gff.am.gff_amharic.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,9 +44,9 @@
   <LexicalModels>
     <LexicalModel>
       <Name>GFF Amharic</Name>
-      <ID>gff.am-ethi.gff_amharic</ID>
+      <ID>gff.am.gff_amharic</ID>
       <Languages>
-        <Language ID="am-Ethi">Amharic</Language>
+        <Language ID="am">Amharic</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

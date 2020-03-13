@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_297cd6d25be59772f81115dde5fdfab9</ID>
-      <Filename>gff.am-ethi.gff_amharic.model.ts</Filename>
-      <Filepath>source\gff.am-ethi.gff_amharic.model.ts</Filepath>
+      <Filename>gff.am.gff_amharic.model.ts</Filename>
+      <Filepath>source\gff.am.gff_amharic.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
-      <Filename>gff.am-ethi.gff_amharic.model.kps</Filename>
-      <Filepath>source\gff.am-ethi.gff_amharic.model.kps</Filepath>
+      <Filename>gff.am.gff_amharic.model.kps</Filename>
+      <Filepath>source\gff.am.gff_amharic.model.kps</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,15 +50,15 @@
     </File>
     <File>
       <ID>id_90e8fc7a3a0aa0a27249a5dbf533f559</ID>
-      <Filename>gff.am-ethi.gff_amharic.model_info</Filename>
-      <Filepath>gff.am-ethi.gff_amharic.model_info</Filepath>
+      <Filename>gff.am.gff_amharic.model_info</Filename>
+      <Filepath>gff.am.gff_amharic.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_71c8643392b874e7dee84b9ac8a55fcd</ID>
-      <Filename>gff.am-ethi.gff_amharic.model.js</Filename>
-      <Filepath>source\..\build\gff.am-ethi.gff_amharic.model.js</Filepath>
+      <ID>id_4f16488e19af561d7b4d0c0b54157f76</ID>
+      <Filename>gff.am.gff_amharic.model.js</Filename>
+      <Filepath>source\..\build\gff.am.gff_amharic.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_a4adc1eca30536fc86b0c5c550478e55</ParentFileID>
