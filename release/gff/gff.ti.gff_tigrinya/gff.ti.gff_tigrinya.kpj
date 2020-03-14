@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_71ec81e779cf48d6f4711907a19624e0</ID>
-      <Filename>gff.ti-ethi.gff_tigrinya.model.ts</Filename>
-      <Filepath>source\gff.ti-ethi.gff_tigrinya.model.ts</Filepath>
+      <Filename>gff.ti.gff_tigrinya.model.ts</Filename>
+      <Filepath>source\gff.ti.gff_tigrinya.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_00dd560f925dcdbddadee25ddb87f433</ID>
-      <Filename>gff.ti-ethi.gff_tigrinya.model.kps</Filename>
-      <Filepath>source\gff.ti-ethi.gff_tigrinya.model.kps</Filepath>
+      <ID>id_1499e91aec3343ff3062111dac598b4f</ID>
+      <Filename>gff.ti.gff_tigrinya.model.kps</Filename>
+      <Filepath>source\gff.ti.gff_tigrinya.model.kps</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,18 +50,18 @@
     </File>
     <File>
       <ID>id_3dcb4ba398ce2936f9d1a37641d300b9</ID>
-      <Filename>gff.ti-ethi.gff_tigrinya.model_info</Filename>
-      <Filepath>gff.ti-ethi.gff_tigrinya.model_info</Filepath>
+      <Filename>gff.ti.gff_tigrinya.model_info</Filename>
+      <Filepath>gff.ti.gff_tigrinya.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_f6c2bbd1d62a7975e3177344af5b29c5</ID>
-      <Filename>gff.ti-ethi.gff_tigrinya.model.js</Filename>
-      <Filepath>source\..\build\gff.ti-ethi.gff_tigrinya.model.js</Filepath>
+      <ID>id_62b717a096229fd4972faf20cdc8f95b</ID>
+      <Filename>gff.ti.gff_tigrinya.model.js</Filename>
+      <Filepath>source\..\build\gff.ti.gff_tigrinya.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_00dd560f925dcdbddadee25ddb87f433</ParentFileID>
+      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -69,7 +69,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_00dd560f925dcdbddadee25ddb87f433</ParentFileID>
+      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -77,7 +77,7 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_00dd560f925dcdbddadee25ddb87f433</ParentFileID>
+      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>

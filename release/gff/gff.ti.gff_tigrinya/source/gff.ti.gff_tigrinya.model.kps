@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.104.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\gff.ti-ethi.gff_tigrinya.model.js</Name>
+      <Name>..\build\gff.ti.gff_tigrinya.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -43,11 +43,11 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>GFF Tigrinya</Name>
-      <ID>gff.ti-ethi.gff_tigrinya</ID>
+      <Name></Name>
+      <ID>gff.ti.gff_tigrinya</ID>
       <Languages>
-        <Language ID="ti-Ethi-ET">Tigrinya</Language>
-        <Language ID="ti-Ethi-ER">Tigrinya</Language>
+        <Language ID="ti-ET">Tigrinya (Ethiopia)</Language>
+        <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

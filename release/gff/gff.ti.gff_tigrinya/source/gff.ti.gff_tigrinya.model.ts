@@ -9,6 +9,6 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
-  sources: ['WordLists\\ti-unilex.txt'],
+  sources: ['ti-unilex.tsv'],
 };
 export default source;
