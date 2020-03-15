@@ -9,6 +9,6 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
-  sources: ['WordLists/sgw-unilex-NewOrthography-WordList.txt', 'WordLists/WolfLeslau-NewOrthography-WordList.txt', 'WordLists/SahleJingo-NewOrthography-WordList.txt'],
+  sources: ['sgw-unilex-NewOrthography-WordList.tsv', 'WolfLeslau-NewOrthography-WordList.tsv', 'SahleJingo-NewOrthography-WordList.tsv'],
 };
 export default source;

@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\gff.sgw-ethi.gurage.model.js</Name>
+      <Name>..\build\gff.sgw.gurage.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,9 +44,9 @@
   <LexicalModels>
     <LexicalModel>
       <Name>Gurage</Name>
-      <ID>gff.sgw-ethi.gurage</ID>
+      <ID>gff.sgw.gurage</ID>
       <Languages>
-        <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
+        <Language ID="sgw">Sebat Bet Gurage</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

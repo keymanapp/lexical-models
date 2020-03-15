@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_e1b11594a62d7e778b652d1ec707a82b</ID>
-      <Filename>gff.sgw-ethi.gurage.model.ts</Filename>
-      <Filepath>source\gff.sgw-ethi.gurage.model.ts</Filepath>
+      <Filename>gff.sgw.gurage.model.ts</Filename>
+      <Filepath>source\gff.sgw.gurage.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_60dbd3dc5598c8a7525f9f53eae22083</ID>
-      <Filename>gff.sgw-ethi.gurage.model.kps</Filename>
-      <Filepath>source\gff.sgw-ethi.gurage.model.kps</Filepath>
+      <Filename>gff.sgw.gurage.model.kps</Filename>
+      <Filepath>source\gff.sgw.gurage.model.kps</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,15 +50,15 @@
     </File>
     <File>
       <ID>id_76cb8e2954f2052726c43ae4831898bc</ID>
-      <Filename>gff.sgw-ethi.gurage.model_info</Filename>
-      <Filepath>gff.sgw-ethi.gurage.model_info</Filepath>
+      <Filename>gff.sgw.gurage.model_info</Filename>
+      <Filepath>gff.sgw.gurage.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_88a3f5019cf87b73e9ad8452feceb188</ID>
-      <Filename>gff.sgw-ethi.gurage.model.js</Filename>
-      <Filepath>source\..\build\gff.sgw-ethi.gurage.model.js</Filepath>
+      <ID>id_9520ecc500c3d50b010e4265dbf1e812</ID>
+      <Filename>gff.sgw.gurage.model.js</Filename>
+      <Filepath>source\..\build\gff.sgw.gurage.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_60dbd3dc5598c8a7525f9f53eae22083</ParentFileID>
