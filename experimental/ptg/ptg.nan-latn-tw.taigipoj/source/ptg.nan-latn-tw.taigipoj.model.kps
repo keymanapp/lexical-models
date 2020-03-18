@@ -15,7 +15,7 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">PhahTaigi POJ Keyman Keyboard Lexical Model</Name>
+    <Name URL="">PhahTaigi POJ Lexical Model</Name>
     <Copyright URL="">© 2020 PhahTaigi</Copyright>
     <Author URL="">PhahTaigi</Author>
     <Version URL="">1.0</Version>
@@ -43,7 +43,7 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>PhahTaigi POJ Keyman Keyboard Lexical Model</Name>
+      <Name>PhahTaigi POJ Lexical Model</Name>
       <ID>ptg.nan-latn-tw.taigipoj</ID>
       <Languages>
         <Language ID="nan-Latn-TW">Tâi-gí</Language>

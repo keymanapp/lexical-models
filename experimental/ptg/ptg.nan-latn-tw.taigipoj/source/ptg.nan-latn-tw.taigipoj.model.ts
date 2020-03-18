@@ -1,5 +1,5 @@
 /*
-  PhahTaigi POJ Keyman Keyboard Lexical Model 1.0
+  PhahTaigi POJ Lexical Model 1.0
 
   Tai-gi (Taiwanese) Pe̍h-ōe-jī lexical model.*/
 
