@@ -1,5 +1,5 @@
 /*
-  Me'en 1.0 generated from template.
+  Me'en 1.1
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for
@@ -36,6 +36,9 @@ const source: LexicalModelSource = {
 
   // The resultant key is lowercased, and has no accents or diacritics.
   return termWithoutDiacritics;
+},
+punctuation: {
+  insertAfterWord: "",
 },
 };
 export default source;
