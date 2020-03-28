@@ -3,12 +3,12 @@ Me'en lexical model
 
 © 2020 Wycliffe Ethiopia
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Me'en generated from template
+Me'en based on wordlist
 
 Links
 -----
