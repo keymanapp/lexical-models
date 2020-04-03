@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-(cc) 2020 Ananda K Maharjan, Santosh Pradhan
+(c) 2020 Ananda K Maharjan, Santosh Pradhan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
