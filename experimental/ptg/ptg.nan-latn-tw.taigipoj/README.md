@@ -1,9 +1,7 @@
-PhahTaigi POJ Keyman Keyboard Lexical Model
+PhahTaigi POJ Lexical Model
 ===================
 
 © 2020 PhahTaigi
-
-Version 1.0
 
 Description
 -----------
@@ -18,10 +16,6 @@ Links
 
 Supported Platforms
 -------------------
- * Windows
- * macOS
- * Linux
- * Web
  * iPhone
  * iPad
  * Android phone
