@@ -6,7 +6,7 @@ PhahTaigi POJ Lexical Model
 Description
 -----------
 
-PhahTaigi POJ Keyman Keyboard Lexical Model.
+PhahTaigi POJ Lexical Model.
 
 For keyboard you need to use with, please install [PhahTaigi POJ Keyman Keyboard](https://keyman.com/keyboards/taigi_poj).
 
