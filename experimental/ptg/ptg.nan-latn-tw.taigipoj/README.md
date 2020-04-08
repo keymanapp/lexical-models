@@ -1,14 +1,12 @@
-PhahTaigi POJ Keyman Keyboard Lexical Model
+PhahTaigi POJ Lexical Model
 ===================
 
 © 2020 PhahTaigi
 
-Version 1.0
-
 Description
 -----------
 
-PhahTaigi POJ Keyman Keyboard Lexical Model.
+PhahTaigi POJ Lexical Model.
 
 For keyboard you need to use with, please install [PhahTaigi POJ Keyman Keyboard](https://keyman.com/keyboards/taigi_poj).
 
@@ -18,10 +16,6 @@ Links
 
 Supported Platforms
 -------------------
- * Windows
- * macOS
- * Linux
- * Web
  * iPhone
  * iPad
  * Android phone
