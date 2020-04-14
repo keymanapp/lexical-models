@@ -19,12 +19,12 @@
       <ID>id_f008039edc7c2114f0c7b27dfdb93884</ID>
       <Filename>sil.glk-arab.ptwl1.model.kps</Filename>
       <Filepath>source\sil.glk-arab.ptwl1.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.0.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>ptwl1</Name>
         <Copyright>© 2020 SIL International</Copyright>
-        <Version>1.0</Version>
+        <Version>1.0.1</Version>
       </Details>
     </File>
     <File>

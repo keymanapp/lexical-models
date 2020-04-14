@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.106.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
     <Name URL="">ptwl1</Name>
     <Copyright URL="">© 2020 SIL International</Copyright>
     <Author URL="">RL</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.0.1</Version>
   </Info>
   <Files>
     <File>
@@ -45,6 +45,7 @@
     <LexicalModel>
       <Name>ptwl1</Name>
       <ID>sil.glk-arab.ptwl1</ID>
+      <RTL>True</RTL>
       <Languages>
         <Language ID="glk-Arab">Gilaki</Language>
       </Languages>

@@ -4,8 +4,13 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
   sources: ['wordlist.tsv'],
+  punctuation: {
+    quotesForKeepSuggestion: {
+       open: "«", close: "»"
+    },
+  },
   searchTermToKey: function (term) {
-    // This pattern removes common Arabic script combiing diacritics.
+    // This pattern removes common Arabic script combiing diacritics and the zero-width non-joiner.
     // Except, skip the ARABIC_MADDAH_ABOVE. We want that to stay with its base character ALEF
     const COMBINING_DIACRITICAL_MARKS = /[\u064b-\u0652\u0654-\u065f\u0670\u200C]/g;
    
