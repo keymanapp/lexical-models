@@ -1,4 +1,4 @@
-/*Gilaki wordlist ptwl1 1.0 */
+/*Gilaki wordlist ptwl1 1.0.2 */
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
@@ -6,7 +6,7 @@ const source: LexicalModelSource = {
   sources: ['wordlist.tsv'],
   punctuation: {
     quotesForKeepSuggestion: {
-       open: "«", close: "»"
+       open: "Â«", close: "Â»"
     },
   },
   searchTermToKey: function (term) {
@@ -18,12 +18,12 @@ const source: LexicalModelSource = {
     // This means that MOST accents and diacritics have been "decomposed" and
     // are stored as separate characters. We can then remove these separate
     // characters!
-    // e.g., Å = A + °
+    // e.g., Ã… = A + Â°
     let normalizedTerm = term.normalize('NFD');
    
     // Now, using the pattern above replace each diacritic with the
     // empty string. This effectively removes all diacritics!
-    // e.g.,  a + ° = a
+    // e.g.,  a + Â° = a
     let termWithoutDiacritics = normalizedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
    
     // The resultant key is normalized and without diacritics
