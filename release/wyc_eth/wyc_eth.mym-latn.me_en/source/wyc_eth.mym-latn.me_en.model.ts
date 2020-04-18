@@ -20,18 +20,18 @@ const source: LexicalModelSource = {
   // are stored as separate characters. We can then remove these separate
   // characters!
   //
-  // e.g., Å ? A + °
+  // e.g., Ã… ? A + Â°
   let normalizedTerm = term.normalize('NFD');
 
   // Now, make it lowercase.
   //
-  // e.g.,  A + ° ? a + °
+  // e.g.,  A + Â° ? a + Â°
   let lowercasedTerm = normalizedTerm.toLowerCase();
 
   // Now, using the pattern above replace each accent and diacritic with the
   // empty string. This effectively removes all accents and diacritics!
   //
-  // e.g.,  a + ° ? a
+  // e.g.,  a + Â° ? a
   let termWithoutDiacritics = lowercasedTerm.replace(COMBINING_DIACRITICAL_MARKS, '')
 
   // The resultant key is lowercased, and has no accents or diacritics.
