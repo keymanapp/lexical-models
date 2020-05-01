@@ -1,0 +1,10 @@
+{
+    "name": "Example Kanien'kéha Model with word breaker customization",
+    "license": "mit",
+    "languages": [
+        "moh"
+    ],
+    "authorName": "Eddie Antonio Santos",
+    "authorEmail": "Eddie.Santos@nrc-cnrc.gc.ca",
+    "description": "Example Kanien'kéha Model with word breaker customization"
+}

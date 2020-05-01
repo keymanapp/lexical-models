@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>14.0.62.0</KeymanDeveloperVersion>
+    <FileVersion>14.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Example Kanien'kéha Model with word breaker customization</Name>
+    <Copyright URL="">© 2020 National Research Council</Copyright>
+    <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
+    <Version>0.1.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\example.moh.customize_word_breaker.model.js</Name>
+      <Description>Lexical model example.moh.customize_word_breaker.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Example for a customizing the default word breaker</Name>
+      <ID>example.moh.customize_word_breaker</ID>
+      <Languages>
+        <Language ID="moh">Kanien'kéha (Mohawk)</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
