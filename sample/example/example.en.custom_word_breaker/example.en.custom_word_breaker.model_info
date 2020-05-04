@@ -1,0 +1,10 @@
+{
+    "name": "Example (English) Lexical Model with Custom Word Breaker",
+    "license": "mit",
+    "languages": [
+        "en"
+    ],
+    "authorName": "Eddie Antonio Santos",
+    "authorEmail": "Eddie.Santos@nrc-cnrc.gc.ca",
+    "description": "Example lexical model with custom word breaker."
+}
