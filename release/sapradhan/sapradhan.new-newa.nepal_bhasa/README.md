@@ -3,12 +3,12 @@ nepal-bhasa lexical model
 
 (c) 2020 Ananda K Maharjan, Santosh Pradhan
 
-Version 1.0
+Version 2.0
 
 Description
 -----------
 
-Based on wordlist provided by Ananda K Maharjan in devanagiri script converted to Prachalit using https://www.hamroschool.com/a.php
+Based on articles from nepalbhasatimes.com converted to Prachalit using https://www.hamroschool.com/a.php
 
 Links
 -----
