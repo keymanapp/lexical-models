@@ -3,7 +3,7 @@ nepal-bhasa lexical model
 
 (c) 2020 Ananda K Maharjan, Santosh Pradhan
 
-Version 2.0
+Version 2.1
 
 Description
 -----------
