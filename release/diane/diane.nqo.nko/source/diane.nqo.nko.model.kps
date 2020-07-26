@@ -47,6 +47,7 @@
       <ID>diane.nqo.nko</ID>
       <Languages>
         <Language ID="nqo">N'Ko</Language>
+        <Language ID="nqo-Nkoo">N'Ko (N’Ko)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

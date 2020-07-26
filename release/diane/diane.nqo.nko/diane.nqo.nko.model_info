@@ -1,7 +1,4 @@
 {
     "license": "mit",
-    "languages": [
-        "nqo"
-    ],
-	  "description": "N'Ko generated from template"
+    "description": "N'Ko generated from template"
 }
