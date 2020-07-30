@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\sil_international.kjg-laoo.ptwl1.model.js</Name>
+      <Name>..\build\sil.kjg-laoo.ptwl1.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,7 +44,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>ptwl1</Name>
-      <ID>sil_international.kjg-laoo.ptwl1</ID>
+      <ID>sil.kjg-laoo.ptwl1</ID>
       <Languages>
         <Language ID="kjg-Laoo">Khmu</Language>
       </Languages>
