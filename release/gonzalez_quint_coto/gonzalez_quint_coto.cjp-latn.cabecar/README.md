@@ -3,12 +3,12 @@ Cabécar lexical model
 
 © 2020 Guillermo González, Victoria Quint, and Rolando Coto
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
 
-Cabécar generated from template
+Teclado Cabécar
 
 Links
 -----
