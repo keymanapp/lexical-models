@@ -1,14 +1,12 @@
-Cabécar lexical model
+N'Ko lexical model
 ===================
 
-© 2020 Guillermo González, Victoria Quint, and Rolando Coto
-
-Version 1.1
+© 2020 Baba Mamadi Diane
 
 Description
 -----------
 
-Teclado Cabécar
+N'Ko generated from template
 
 Links
 -----
@@ -21,5 +19,6 @@ Supported Platforms
  * Android phone
  * Android tablet
  * Mobile devices
+ * Desktop devices
  * Tablet devices
 

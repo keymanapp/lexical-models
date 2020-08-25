@@ -19,12 +19,12 @@
       <ID>id_762b4e980ddd27ac947ecb21fcc36e28</ID>
       <Filename>sapradhan.new-newa.nepal_bhasa.model.kps</Filename>
       <Filepath>source\sapradhan.new-newa.nepal_bhasa.model.kps</Filepath>
-      <FileVersion>2.0</FileVersion>
+      <FileVersion>2.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>nepal-bhasa</Name>
         <Copyright>(c) 2020 Ananda K Maharjan, Santosh Pradhan</Copyright>
-        <Version>2.0</Version>
+        <Version>2.1</Version>
       </Details>
     </File>
     <File>
