@@ -8,22 +8,14 @@ Version 1.0
 Description
 -----------
 
-ptwl1 generated from template
-
-Links
------
+This lexical model works with Kmhmu (SIL) keyboard.
 
 Supported Platforms
 -------------------
- * Windows
- * macOS
- * Linux
- * Web
  * iPhone
  * iPad
  * Android phone
  * Android tablet
  * Mobile devices
- * Desktop devices
  * Tablet devices
 
