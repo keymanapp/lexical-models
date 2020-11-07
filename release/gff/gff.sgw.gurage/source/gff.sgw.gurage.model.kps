@@ -46,7 +46,7 @@
       <Name>Gurage</Name>
       <ID>gff.sgw.gurage</ID>
       <Languages>
-        <Language ID="sgw">Sebat Bet Gurage</Language>
+        <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
