@@ -19,12 +19,12 @@
       <ID>id_60dbd3dc5598c8a7525f9f53eae22083</ID>
       <Filename>gff.sgw.gurage.model.kps</Filename>
       <Filepath>source\gff.sgw.gurage.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.01</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Gurage</Name>
         <Copyright>© 2020 Ge'ez Frontier Foundation</Copyright>
-        <Version>1.0</Version>
+        <Version>1.01</Version>
       </Details>
     </File>
     <File>
