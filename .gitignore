@@ -5,3 +5,5 @@ experimental/*/*/build/
 servervars.sh
 .cache
 *.kpj.user
+
+.DS_Store

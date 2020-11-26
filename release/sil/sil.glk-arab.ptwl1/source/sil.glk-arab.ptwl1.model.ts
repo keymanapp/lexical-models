@@ -6,7 +6,8 @@ const source: LexicalModelSource = {
   sources: ['wordlist.tsv'],
   punctuation: {
     quotesForKeepSuggestion: {
-       open: "«", close: "»"
+       open: "«", close: "»",
+       isRTL: true
     },
   },
   searchTermToKey: function (term) {
