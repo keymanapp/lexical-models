@@ -1,6 +1,10 @@
 ptwl1 Change History
 ====================
 
+1.0.3 (2020-11-26)
+------------------
+Marks glk-arab as RTL
+
 1.0.2 (2020-04-17)
 ------------------
 Fix encoding to UTF-8
