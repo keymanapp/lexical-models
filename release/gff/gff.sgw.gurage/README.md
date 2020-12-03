@@ -3,12 +3,12 @@ Gurage Lexical Model
 
 © 2020 Ge'ez Frontier Foundation
 
-Version 1.0
+Version 1.01
 
 Description
 -------------
 
-This is a Gurage (ጉራጌ , ISO-639-2 sgw) lexical model developed to support predictive text the
+This is a Gurage (ጉራጊና, ISO-639-2 sgw) lexical model developed to support predictive text the
 corresponding GFF Gurage Keyboard.  The lexical model comprises word frequency lists from
 the works of Wolf Leslau ("Ethiopians Speak vol. 2 Chaha"), Shahle Jingo (Gurage Fables)
 and the Sebat Bet Bible of the Ethiopian Bible Society. The respective texts have been normalized

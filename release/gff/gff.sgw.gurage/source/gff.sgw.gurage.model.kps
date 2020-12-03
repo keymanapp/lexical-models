@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.100.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>13.0.114.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
     <Name URL="">Gurage</Name>
     <Copyright URL="">© 2020 Ge'ez Frontier Foundation</Copyright>
     <Author URL="">Ge'ez Frontier Foundation</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.01</Version>
   </Info>
   <Files>
     <File>
@@ -46,7 +46,7 @@
       <Name>Gurage</Name>
       <ID>gff.sgw.gurage</ID>
       <Languages>
-        <Language ID="sgw">Sebat Bet Gurage</Language>
+        <Language ID="sgw-Ethi">Sebat Bet Gurage</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
