@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProjectUser>
+  <ViewState>
+    <tab>2</tab>
+    <showhelp>1</showhelp>
+    <path>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\katelem.ann-latn.getat.kpj</path>
+  </ViewState>
+  <FileStates>
+    <FileState>
+      <ID>id_5f02c799d49584f2f639b0f172b7fa5f</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\katelem.ann-latn.getat.model.ts</FullPath>
+      <Debug>False</Debug>
+      <TestKeyboard></TestKeyboard>
+    </FileState>
+    <FileState>
+      <ID>id_0850757cc248c5de84f5a43521c81e04</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\katelem.ann-latn.getat.model.kps</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\HISTORY.md</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_53e892b8b41cc4caece1cfd5ef21d6e7</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\LICENSE.md</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_0730bb7c2e8f9ea2438b52e419dd86c9</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\README.md</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_73680e61d39cd8413ef2d88d0247415b</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\katelem.ann-latn.getat.model_info</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_15b5edfab5359ee38191472f06229d0d</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\..\build\katelem.ann-latn.getat.model.js</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\welcome.htm</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\readme.htm</FullPath>
+    </FileState>
+  </FileStates>
+  <MRU>
+    <File>
+      <ID>id_MRU0</ID>
+      <Filename>katelem.ann-latn.getat.model.kps</Filename>
+      <FileType>.kps</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\katelem.ann-latn.getat.model.kps</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU1</ID>
+      <Filename>katelem.ann-latn.getat.model.ts</Filename>
+      <FileType>.ts</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\source\katelem.ann-latn.getat.model.ts</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU2</ID>
+      <Filename>katelem.ann-latn.getat.model_info</Filename>
+      <FileType>.model_info</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\katelem.ann-latn.getat.model_info</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU3</ID>
+      <Filename>LICENSE.md</Filename>
+      <FileType>.md</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\LICENSE.md</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU4</ID>
+      <Filename>README.md</Filename>
+      <FileType>.md</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\README.md</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU5</ID>
+      <Filename>HISTORY.md</Filename>
+      <FileType>.md</FileType>
+      <FullPath>C:\pragma\keyman_projects\lexical-models\release\katelem\katelem.ann-latn.getat\HISTORY.md</FullPath>
+    </File>
+  </MRU>
+</KeymanDeveloperProjectUser>
