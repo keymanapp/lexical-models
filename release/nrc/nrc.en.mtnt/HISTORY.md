@@ -1,5 +1,9 @@
 # Version History
 
+## 0.1.5
+
+* Enables use of Keyman 14's case-detection & capitalization modeling features
+
 ## 0.1.4
 
 * Clean up versioning in .kps package file
