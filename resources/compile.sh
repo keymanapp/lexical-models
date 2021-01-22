@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Set sensible script defaults:
+# set -e: Terminate script if a command returns an error
 set -e
-# set -u We need to do more cleanup to enable this
+# set -u: Terminate script if an unset variable is used
+set -u
 
 #----------------------------------------------------------------------------------------
 # Build all the models in a given group
