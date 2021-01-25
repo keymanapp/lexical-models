@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>12.0.1500.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.180.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
   </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
   <Info>
     <Name URL="">English language model mined from MTNT</Name>
-    <Copyright URL="">© 2019 National Research Council Canada</Copyright>
+    <Copyright URL="">© 2019-2021 National Research Council Canada</Copyright>
     <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.5</Version>
+    <Version URL="">0.1.5</Version>
   </Info>
   <Files>
     <File>
       <Name>..\build\nrc.en.mtnt.model.js</Name>
       <Description>Lexical model nrc.en.mtnt.model.js</Description>
       <CopyLocation>0</CopyLocation>
-      <FileType>.model.js</FileType>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>..\README.md</Name>
+      <Description>File README.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
+  <Keyboards/>
   <LexicalModels>
     <LexicalModel>
       <Name>English dictionary (MTNT)</Name>
@@ -31,4 +51,5 @@
       </Languages>
     </LexicalModel>
   </LexicalModels>
+  <Strings/>
 </Package>
