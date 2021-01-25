@@ -26,18 +26,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
-    <File>
-      <Name>..\LICENSE.md</Name>
-      <Description>File LICENSE.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <Name>..\README.md</Name>
-      <Description>File README.md</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.md</FileType>
-    </File>
   </Files>
   <Keyboards/>
   <LexicalModels>
