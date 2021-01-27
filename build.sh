@@ -1,6 +1,11 @@
 #!/bin/bash
+# Build lexical models
 
+# Set sensible script defaults:
+# set -e: Terminate script if a command returns an error
 set -e
+# set -u: Terminate script if an unset variable is used
+set -u
 
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
