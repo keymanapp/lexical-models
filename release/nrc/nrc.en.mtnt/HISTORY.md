@@ -1,5 +1,9 @@
 # Version History
 
+## 0.1.6
+
+* Fixes a bug that broke word weighting, which affected the quality of suggestions (keymanapp/keyman#4504)
+
 ## 0.1.5
 
 * Enables use of Keyman 14's case-detection & capitalization modeling features
