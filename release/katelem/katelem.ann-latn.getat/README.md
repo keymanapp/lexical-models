@@ -3,7 +3,7 @@ Getat lexical model
 
 © 2020 Rogers Katelem Edeh
 
-Version 1.0
+Version 1.0.1
 
 Description
 -----------

@@ -19,12 +19,12 @@
       <ID>id_0850757cc248c5de84f5a43521c81e04</ID>
       <Filename>katelem.ann-latn.getat.model.kps</Filename>
       <Filepath>source\katelem.ann-latn.getat.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.0.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Getat</Name>
         <Copyright>© 2020 Rogers Katelem Edeh</Copyright>
-        <Version>1.0</Version>
+        <Version>1.0.1</Version>
       </Details>
     </File>
     <File>
