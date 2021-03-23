@@ -1,9 +1,9 @@
 Wakhi Cyrillic lexical model
 ===================
 
-© 2020 Tajik International Cultural Relations Organisation
+© 2020-2021 Tajik International Cultural Relations Organisation
 
-Version 1.0
+Version 1.1
 
 Description
 -----------
