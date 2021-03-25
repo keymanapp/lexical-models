@@ -19,12 +19,12 @@
       <ID>id_c19d7de11db311d4ce9c8bb114ca0b7c</ID>
       <Filename>jo.wbl-cyrl-tj.wakhi_cyrillic_minimal.model.kps</Filename>
       <Filepath>source\jo.wbl-cyrl-tj.wakhi_cyrillic_minimal.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Wakhi Cyrillic</Name>
-        <Copyright>© 2020 Tajik International Cultural Relations Organisation</Copyright>
-        <Version>1.0</Version>
+        <Copyright>© 2020-2021 Tajik International Cultural Relations Organisation</Copyright>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
