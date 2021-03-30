@@ -19,12 +19,12 @@
       <ID>id_37efb1440e6331ee4c47ff0285d8dc3c</ID>
       <Filename>jo.isk-cyrl-tj.ishkashimi_cyrillic_minimal_model.model.kps</Filename>
       <Filepath>source\jo.isk-cyrl-tj.ishkashimi_cyrillic_minimal_model.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Ishkashimi Cyrillic minimal model</Name>
-        <Copyright>© 2020 Tajik International Cultural Relations Organisation</Copyright>
-        <Version>1.0</Version>
+        <Copyright>© 2020-2021 Tajik International Cultural Relations Organisation</Copyright>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>

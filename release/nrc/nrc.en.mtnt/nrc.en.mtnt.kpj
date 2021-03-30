@@ -26,12 +26,12 @@
       <ID>id_dbb5a988f0d2f501a6d48d1d9987c55f</ID>
       <Filename>nrc.en.mtnt.model.kps</Filename>
       <Filepath>source\nrc.en.mtnt.model.kps</Filepath>
-      <FileVersion>0.1.5</FileVersion>
+      <FileVersion>0.1.7</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>English language model mined from MTNT</Name>
         <Copyright>© 2019-2021 National Research Council Canada</Copyright>
-        <Version>0.1.5</Version>
+        <Version>0.1.7</Version>
       </Details>
     </File>
     <File>

@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2020 Tajik International Cultural Relations Organisation
+© 2020-2021 Tajik International Cultural Relations Organisation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
