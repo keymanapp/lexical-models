@@ -1,5 +1,6 @@
-/*
-  Cabecar 1.0 generated from template.
+/*Cabecar 1.2 updated to include upper and lower case predictive capabilities.
+  
+Cabecar 1.0 generated from template.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for
@@ -10,5 +11,6 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
   sources: ['wordlist.tsv'],
+  languageUsesCasing: true,
 };
 export default source;
