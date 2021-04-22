@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\sil_international.km.nckw.model.js</Name>
+      <Name>..\build\sil.km.nckw.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,7 +44,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>NC Khmer Wordlist</Name>
-      <ID>sil_international.km.nckw</ID>
+      <ID>sil.km.nckw</ID>
       <Languages>
         <Language ID="km">Central Khmer</Language>
       </Languages>

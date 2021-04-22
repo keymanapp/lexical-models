@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_8239e4adcb1d1662e6e1df5f97e12edd</ID>
-      <Filename>sil_international.km.nckw.model.ts</Filename>
-      <Filepath>source\sil_international.km.nckw.model.ts</Filepath>
+      <Filename>sil.km.nckw.model.ts</Filename>
+      <Filepath>source\sil.km.nckw.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_e3d05d557ec3ddc29d087d79d381b714</ID>
-      <Filename>sil_international.km.nckw.model.kps</Filename>
-      <Filepath>source\sil_international.km.nckw.model.kps</Filepath>
+      <Filename>sil.km.nckw.model.kps</Filename>
+      <Filepath>source\sil.km.nckw.model.kps</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,15 +50,15 @@
     </File>
     <File>
       <ID>id_c8ad3a2281a26529fd2424b80cb52c66</ID>
-      <Filename>sil_international.km.nckw.model_info</Filename>
-      <Filepath>sil_international.km.nckw.model_info</Filepath>
+      <Filename>sil.km.nckw.model_info</Filename>
+      <Filepath>sil.km.nckw.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_7d937b75cc9453e6376e6b0a3706b3d0</ID>
-      <Filename>sil_international.km.nckw.model.js</Filename>
-      <Filepath>source\..\build\sil_international.km.nckw.model.js</Filepath>
+      <ID>id_201a974996ea7b4c02491371bb43b49c</ID>
+      <Filename>sil.km.nckw.model.js</Filename>
+      <Filepath>source\..\build\sil.km.nckw.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_e3d05d557ec3ddc29d087d79d381b714</ParentFileID>
