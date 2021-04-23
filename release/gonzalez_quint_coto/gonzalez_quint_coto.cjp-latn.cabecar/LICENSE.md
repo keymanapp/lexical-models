@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2020 Guillermo González, Victoria Quint, and Rolando Coto
+© 2020-2021 Guillermo González, Victoria Quint, and Rolando Coto
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

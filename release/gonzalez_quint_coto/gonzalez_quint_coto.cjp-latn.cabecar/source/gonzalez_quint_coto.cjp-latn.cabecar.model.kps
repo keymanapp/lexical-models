@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.100.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.271.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Cabécar</Name>
-    <Copyright URL="">© 2020 Guillermo González, Victoria Quint, and Rolando Coto</Copyright>
+    <Copyright URL="">© 2020-2021 Guillermo González, Victoria Quint, and Rolando Coto</Copyright>
     <Author URL="">Guillermo González, Victoria Quint, and Rolando Coto</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.2</Version>
   </Info>
   <Files>
     <File>
