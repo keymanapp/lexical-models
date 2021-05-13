@@ -1,5 +1,5 @@
 /*
-  Cook Islands Maori 1.1. Generated from texts.
+  Cook Islands Maori 1.1. Word list generated from texts collected by Sally Akevai Nicholas.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for
@@ -7,8 +7,9 @@
 */
 
 const source: LexicalModelSource = {
-  format: 'trie-1.0',
-  wordBreaker: 'default',
-  sources: ['wordlist.tsv'],
+   format: 'trie-1.0',
+   wordBreaker: 'default',
+   sources: ['wordlist.tsv'],
+   languageUsesCasing: true,
 };
 export default source;

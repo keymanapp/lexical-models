@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.100.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.272.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Cook Islands Maori</Name>
-    <Copyright URL="">© 2020 Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano</Copyright>
-    <Author URL="">Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano</Author>
-    <Version URL="">1.0</Version>
+    <Copyright URL="">© 2020-2021 Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano, Victoria Quint</Copyright>
+    <Author URL="">Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano, Victoria Quint</Author>
+    <Version URL="">1.1</Version>
   </Info>
   <Files>
     <File>
@@ -47,6 +47,7 @@
       <ID>akevainicholas_oh_zhou_cotosolano.rar-latn.cook_islands_maori</ID>
       <Languages>
         <Language ID="rar-Latn">Rarotongan</Language>
+        <Language ID="rar">Rarotongan</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

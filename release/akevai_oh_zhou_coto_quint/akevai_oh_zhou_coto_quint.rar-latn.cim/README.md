@@ -5,9 +5,6 @@ Cook Islands Maori lexical model
 
 Version 1.1
 -----------
-Expanded text files for greater accuracy.
-
-Version 1.0
 
 Description
 -----------
