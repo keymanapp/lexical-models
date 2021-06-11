@@ -1,17 +1,13 @@
 Balochi lexical model
 ===================
 
-© 2020 SIL International
+© 2020-2021 SIL International
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
-
 Balochi generated from template
-
-Links
------
 
 Supported Platforms
 -------------------
