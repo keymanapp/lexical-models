@@ -1,7 +1,10 @@
 {
     "license": "mit",
     "languages": [
+        "bal",
+        "bal-arab",
+        "bcc",
         "bcc-arab"
     ],
-	  "description": "Balochi generated from template"
+	  "description": "Balochi in Arabic script."
 }
