@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.106.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Balochi</Name>
-    <Copyright URL="">© 2020 SIL International</Copyright>
+    <Copyright URL="">© 2020-2021 SIL International</Copyright>
     <Author URL="">SIL International</Author>
-    <Version URL="">1.1</Version>
+    <Version URL="">1.2</Version>
   </Info>
   <Files>
     <File>
@@ -45,8 +45,12 @@
     <LexicalModel>
       <Name>Balochi</Name>
       <ID>sil.bcc-arab.upp_ptwl1</ID>
+      <RTL>True</RTL>
       <Languages>
-        <Language ID="bcc-arab">Southern Balochi</Language>
+        <Language ID="bcc-Arab">Southern Balochi</Language>
+        <Language ID="bcc">Southern Balochi</Language>
+        <Language ID="bal-Arab">Baluchi (Arabic)</Language>
+        <Language ID="bal">Baluchi</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

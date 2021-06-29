@@ -1,0 +1,8 @@
+{
+    "license": "mit",
+    "languages": [
+        "rar-Latn", 
+        "rar"
+    ],
+	  "description": "Cook Islands Maori predictive text lexical model. Generated from texts collected by Sally Akevai Nicholas."
+}
