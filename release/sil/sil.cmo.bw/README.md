@@ -8,12 +8,7 @@ Version 1.0
 Description
 -----------
 
-Bunong Wordlist generated from the existing Bunong-Khmer Bilingual Dictionary.
-
-Links
------
-Bunong-Khmer Bilingual Dictionary on webonary: https://www.webonary.org/bunong/?lang=en.
-
+Bunong Wordlist is based on the Bible wordlist of 1,157 unique entries with their frequencies.
 
 Supported Platforms
 -------------------

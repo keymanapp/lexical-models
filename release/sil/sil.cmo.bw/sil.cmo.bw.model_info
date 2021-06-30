@@ -3,5 +3,5 @@
     "languages": [
         "cmo"
     ],
-	  "description": "Bunong Wordlist from the existing Bunong-Khmer Bilingual Dictionary. A ZWSP is added automatocally after a word is selected from the suggestion banner. Continue typing would keep giving related suggestion."
+	  "description": "Bunong Wordlist is based on the Bible wordlist of 1,157 unique entries with their frequencies."
 }
