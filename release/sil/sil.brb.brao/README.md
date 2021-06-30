@@ -7,7 +7,7 @@ Version 1.0
 
 Description
 -----------
-This model was created based on a word list provided by the linguist working on the language. 
+This model was created based on a 4352 wordlist.
 
 Supported Platforms
 -------------------

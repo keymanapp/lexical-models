@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.271.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -17,7 +17,7 @@
   <Info>
     <Name URL="">brao</Name>
     <Copyright URL="">© 2021 SIL International</Copyright>
-    <Author URL="">SIL International</Author>
+    <Author URL=""></Author>
     <Version URL="">1.0</Version>
   </Info>
   <Files>
