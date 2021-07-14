@@ -19,12 +19,12 @@
       <ID>id_5040820b2622ffeadc44735b014fd845</ID>
       <Filename>sil.bcc-latn.upp_ptwl1.model.kps</Filename>
       <Filepath>source\sil.bcc-latn.upp_ptwl1.model.kps</Filepath>
-      <FileVersion>1.1</FileVersion>
+      <FileVersion>1.2.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>sil.bcc-latn.upp_ptwl1</Name>
-        <Copyright>© 2020 SIL International</Copyright>
-        <Version>1.1</Version>
+        <Copyright>© 2020-2021 SIL International</Copyright>
+        <Version>1.2.1</Version>
       </Details>
     </File>
     <File>
