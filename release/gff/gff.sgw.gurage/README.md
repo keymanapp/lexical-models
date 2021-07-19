@@ -1,9 +1,9 @@
 Gurage Lexical Model
 =============
 
-© 2020 Ge'ez Frontier Foundation
+© 2020 - 2021 Ge'ez Frontier Foundation
 
-Version 1.01
+Version 1.1
 
 Description
 -------------
@@ -12,9 +12,8 @@ This is a Gurage (ጉራጊና, ISO-639-2 sgw) lexical model developed to suppor
 corresponding GFF Gurage Keyboard.  The lexical model comprises word frequency lists from
 the works of Wolf Leslau ("Ethiopians Speak vol. 2 Chaha"), Shahle Jingo (Gurage Fables)
 and the Sebat Bet Bible of the Ethiopian Bible Society. The respective texts have been normalized
-under the 2018 experimental orthography of Dr. Fekede Menuta and require the "Zebidar" font
-to view non-standard characters introduced for the Gurage language.  Frequency counts were
-generated with the "PrimerPrep" application.
+under the 2018 experimental orthography of Dr. Fekede Menuta and require a Unicode 14
+compliant font for viewing.  Frequency counts were generated with the "PrimerPrep" application.
 
 
 Links
