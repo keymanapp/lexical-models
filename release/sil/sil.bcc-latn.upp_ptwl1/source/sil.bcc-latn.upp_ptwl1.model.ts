@@ -10,6 +10,7 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
   sources: ['wordlist.tsv'],
+  languageUsesCasing: true,
   searchTermToKey: function (term) {
     // Use this pattern to remove common diacritical marks.
     // See: https://www.compart.com/en/unicode/block/U+0300
