@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.114.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
   </StartMenu>
   <Info>
     <Name URL="">Gurage</Name>
-    <Copyright URL="">© 2020 Ge'ez Frontier Foundation</Copyright>
+    <Copyright URL="">© 2020 - 2021 Ge'ez Frontier Foundation</Copyright>
     <Author URL="">Ge'ez Frontier Foundation</Author>
-    <Version URL="">1.01</Version>
+    <Version URL="">1.1</Version>
   </Info>
   <Files>
     <File>

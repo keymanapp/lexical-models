@@ -9,22 +9,22 @@
   </Options>
   <Files>
     <File>
-      <ID>id_e1b11594a62d7e778b652d1ec707a82b</ID>
+      <ID>id_ddc22f62d0740ae8f033c82f74d58517</ID>
       <Filename>gff.sgw.gurage.model.ts</Filename>
       <Filepath>source\gff.sgw.gurage.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_60dbd3dc5598c8a7525f9f53eae22083</ID>
+      <ID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ID>
       <Filename>gff.sgw.gurage.model.kps</Filename>
       <Filepath>source\gff.sgw.gurage.model.kps</Filepath>
-      <FileVersion>1.01</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Gurage</Name>
-        <Copyright>© 2020 Ge'ez Frontier Foundation</Copyright>
-        <Version>1.01</Version>
+        <Copyright>© 2020 - 2021 Ge'ez Frontier Foundation</Copyright>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
@@ -61,7 +61,7 @@
       <Filepath>source\..\build\gff.sgw.gurage.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_60dbd3dc5598c8a7525f9f53eae22083</ParentFileID>
+      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -69,7 +69,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_60dbd3dc5598c8a7525f9f53eae22083</ParentFileID>
+      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -77,7 +77,7 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_60dbd3dc5598c8a7525f9f53eae22083</ParentFileID>
+      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
