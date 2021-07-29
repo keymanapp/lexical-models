@@ -7,6 +7,7 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>english_shavian.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
