@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "dgr"
+    ],
+	  "description": "This is an experimental predictive text model for Tłı̨chǫ, (BCP47: dgr)"
+}
