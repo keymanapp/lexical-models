@@ -8,7 +8,7 @@ Version 0.1
 Description
 -----------
 
-This is an experimental predictive text model for Tłı̨chǫ, (BCP47: dgr). The Indigenous NT keyboard must be installed for this language for the dictionary to appear when installed.
+This is an preliminary predictive text model for Tłı̨chǫ, (BCP47: dgr). The Indigenous NT keyboard must be installed for this language for the dictionary to appear when installed.
 
 Links
 -----
