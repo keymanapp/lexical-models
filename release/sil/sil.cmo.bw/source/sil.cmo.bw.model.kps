@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -15,14 +15,14 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">sil.bcc-latn.upp_ptwl1</Name>
-    <Copyright URL="">© 2020-2021 SIL International</Copyright>
-    <Author URL="">RL</Author>
-    <Version URL="">1.2.1</Version>
+    <Name URL="">Bunong Wordlist</Name>
+    <Copyright URL="">© 2021 SIL International</Copyright>
+    <Author URL=""></Author>
+    <Version URL="">1.0</Version>
   </Info>
   <Files>
     <File>
-      <Name>..\build\sil.bcc-latn.upp_ptwl1.model.js</Name>
+      <Name>..\build\sil.cmo.bw.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -39,15 +39,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>suggestion.png</Name>
+      <Description>File suggestion.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
   </Files>
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>sil.bcc-latn.upp_ptwl1</Name>
-      <ID>sil.bcc-latn.upp_ptwl1</ID>
+      <Name>Bunong Wordlist</Name>
+      <ID>sil.cmo.bw</ID>
       <Languages>
-        <Language ID="bcc-Latn">Southern Balochi (Latin)</Language>
-        <Language ID="bal-Latn">Baluchi (Latin)</Language>
+        <Language ID="cmo-Khmr">Central Mnong (Khmer)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

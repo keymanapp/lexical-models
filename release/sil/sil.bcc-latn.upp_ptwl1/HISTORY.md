@@ -1,5 +1,9 @@
 sil.bcc-latn.upp_ptwl1 Change History
-====================
+=====================================
+
+1.2.1 (2020-07-14)
+----------------
+Added language code bal.
 
 1.2 (2020-05-22)
 ----------------
@@ -11,4 +15,4 @@ Don't neutralize accented vowels.
 
 1.0 (2020-01-31)
 ----------------
-* Created by RL
+Initial version.

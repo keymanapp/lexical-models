@@ -9,22 +9,22 @@
   </Options>
   <Files>
     <File>
-      <ID>id_ddc22f62d0740ae8f033c82f74d58517</ID>
-      <Filename>gff.sgw.gurage.model.ts</Filename>
-      <Filepath>source\gff.sgw.gurage.model.ts</Filepath>
+      <ID>id_38efab96d2de37e9177c5fa752d72b69</ID>
+      <Filename>shavian_info.en-shaw.readlex.model.ts</Filename>
+      <Filepath>source\shavian_info.en-shaw.readlex.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ID>
-      <Filename>gff.sgw.gurage.model.kps</Filename>
-      <Filepath>source\gff.sgw.gurage.model.kps</Filepath>
-      <FileVersion>1.1</FileVersion>
+      <ID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ID>
+      <Filename>shavian_info.en-shaw.readlex.model.kps</Filename>
+      <Filepath>source\shavian_info.en-shaw.readlex.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>Gurage</Name>
-        <Copyright>© 2020 - 2021 Ge'ez Frontier Foundation</Copyright>
-        <Version>1.1</Version>
+        <Name>Shaw ReadLex</Name>
+        <Copyright>Shavian.info</Copyright>
+        <Version>1.0</Version>
       </Details>
     </File>
     <File>
@@ -49,19 +49,26 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <ID>id_76cb8e2954f2052726c43ae4831898bc</ID>
-      <Filename>gff.sgw.gurage.model_info</Filename>
-      <Filepath>gff.sgw.gurage.model_info</Filepath>
+      <ID>id_d3a2767924df3b9339e0d564ef611dc6</ID>
+      <Filename>shavian_info.en-shaw.readlex.model_info</Filename>
+      <Filepath>shavian_info.en-shaw.readlex.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_9520ecc500c3d50b010e4265dbf1e812</ID>
-      <Filename>gff.sgw.gurage.model.js</Filename>
-      <Filepath>source\..\build\gff.sgw.gurage.model.js</Filepath>
+      <ID>id_7d93c966eef4f7d3bb6829d729932744</ID>
+      <Filename>english_shavian.kpj</Filename>
+      <Filepath>..\english_shavian\english_shavian.kpj</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.kpj</FileType>
+    </File>
+    <File>
+      <ID>id_4ac22f2847b42d890c124af6236a9d46</ID>
+      <Filename>shavian_info.en-shaw.readlex.model.js</Filename>
+      <Filepath>source\..\build\shavian_info.en-shaw.readlex.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
+      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -69,7 +76,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
+      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -77,7 +84,15 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_45c64fe3e7cd80ebaa6c3f6d5d8676cc</ParentFileID>
+      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
+    </File>
+    <File>
+      <ID>id_c861ad5e8db756e2aea55a53dd333a94</ID>
+      <Filename>english_shavian.jpg</Filename>
+      <Filepath>source\english_shavian.jpg</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.jpg</FileType>
+      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>

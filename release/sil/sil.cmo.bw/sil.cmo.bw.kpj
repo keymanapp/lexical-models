@@ -9,22 +9,22 @@
   </Options>
   <Files>
     <File>
-      <ID>id_30fdd44a4b1e5646d8773e365c7cea5c</ID>
-      <Filename>sil.bcc-latn.upp_ptwl1.model.ts</Filename>
-      <Filepath>source\sil.bcc-latn.upp_ptwl1.model.ts</Filepath>
+      <ID>id_dfd4741bbe02549a14ec8bef4abe8086</ID>
+      <Filename>sil.cmo.bw.model.ts</Filename>
+      <Filepath>source\sil.cmo.bw.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_5040820b2622ffeadc44735b014fd845</ID>
-      <Filename>sil.bcc-latn.upp_ptwl1.model.kps</Filename>
-      <Filepath>source\sil.bcc-latn.upp_ptwl1.model.kps</Filepath>
-      <FileVersion>1.2.1</FileVersion>
+      <ID>id_5e80cdf613c84a12d5993094b1118f82</ID>
+      <Filename>sil.cmo.bw.model.kps</Filename>
+      <Filepath>source\sil.cmo.bw.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>sil.bcc-latn.upp_ptwl1</Name>
-        <Copyright>© 2020-2021 SIL International</Copyright>
-        <Version>1.2.1</Version>
+        <Name>Bunong Wordlist</Name>
+        <Copyright>© 2021 SIL International</Copyright>
+        <Version>1.0</Version>
       </Details>
     </File>
     <File>
@@ -49,19 +49,19 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <ID>id_1b8e6ce2d6b552ef687aafd0311ec922</ID>
-      <Filename>sil.bcc-latn.upp_ptwl1.model_info</Filename>
-      <Filepath>sil.bcc-latn.upp_ptwl1.model_info</Filepath>
+      <ID>id_8146e45ce008c5c83d5a824f2121c46c</ID>
+      <Filename>sil.cmo.bw.model_info</Filename>
+      <Filepath>sil.cmo.bw.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_32d5c8045866364f00a288c337114c52</ID>
-      <Filename>sil.bcc-latn.upp_ptwl1.model.js</Filename>
-      <Filepath>source\..\build\sil.bcc-latn.upp_ptwl1.model.js</Filepath>
+      <ID>id_46ebc8fccf1bc10c92484653167449df</ID>
+      <Filename>sil.cmo.bw.model.js</Filename>
+      <Filepath>source\..\build\sil.cmo.bw.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_5040820b2622ffeadc44735b014fd845</ParentFileID>
+      <ParentFileID>id_5e80cdf613c84a12d5993094b1118f82</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -69,7 +69,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_5040820b2622ffeadc44735b014fd845</ParentFileID>
+      <ParentFileID>id_5e80cdf613c84a12d5993094b1118f82</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -77,7 +77,15 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_5040820b2622ffeadc44735b014fd845</ParentFileID>
+      <ParentFileID>id_5e80cdf613c84a12d5993094b1118f82</ParentFileID>
+    </File>
+    <File>
+      <ID>id_aaa55e5b6267484eea1c691a46cd4fd0</ID>
+      <Filename>suggestion.png</Filename>
+      <Filepath>source\suggestion.png</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.png</FileType>
+      <ParentFileID>id_5e80cdf613c84a12d5993094b1118f82</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>

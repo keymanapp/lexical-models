@@ -15,14 +15,14 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">sil.bcc-latn.upp_ptwl1</Name>
-    <Copyright URL="">© 2020-2021 SIL International</Copyright>
-    <Author URL="">RL</Author>
-    <Version URL="">1.2.1</Version>
+    <Name URL="">Chula top 5000</Name>
+    <Copyright URL="">© 2021 Sebastian Restrepo &amp; LatamAsia</Copyright>
+    <Author URL="">Sebastian Restrepo &amp; LatamAsia</Author>
+    <Version URL="">1.0</Version>
   </Info>
   <Files>
     <File>
-      <Name>..\build\sil.bcc-latn.upp_ptwl1.model.js</Name>
+      <Name>..\build\srla.th.ct5k.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -43,11 +43,10 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>sil.bcc-latn.upp_ptwl1</Name>
-      <ID>sil.bcc-latn.upp_ptwl1</ID>
+      <Name>Chula top 5000</Name>
+      <ID>srla.th.ct5k</ID>
       <Languages>
-        <Language ID="bcc-Latn">Southern Balochi (Latin)</Language>
-        <Language ID="bal-Latn">Baluchi (Latin)</Language>
+        <Language ID="th">Thai</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
