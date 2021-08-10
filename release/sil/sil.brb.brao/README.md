@@ -7,7 +7,7 @@ Version 1.0
 
 Description
 -----------
-This model was created based on a 4352 wordlist.
+This model was created based on a working wordlist of 4322 words.
 
 Supported Platforms
 -------------------
