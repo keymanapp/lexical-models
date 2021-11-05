@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 
-Cook Islands Maori predictive text lexical model.
+Mon predictive text lexical model.
 
 
 Supported Platforms
