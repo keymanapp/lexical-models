@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\ait.mnw-mymr-mm.mon.model.js</Name>
+      <Name>..\build\ait.mnw.mon.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,7 +44,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>Mon dictionary</Name>
-      <ID>ait.mnw-mymr-mm.mon</ID>
+      <ID>ait.mnw.mon</ID>
       <Languages>
         <Language ID="mnw-Mymr">Mon</Language>
         <Language ID="mnw">Mon</Language>

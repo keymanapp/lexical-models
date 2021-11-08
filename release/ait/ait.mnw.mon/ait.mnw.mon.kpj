@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_a0a76ecb3384b957c34b9a90d62d20ea</ID>
-      <Filename>ait.mnw-mymr-mm.mon.model.ts</Filename>
-      <Filepath>source\ait.mnw-mymr-mm.mon.model.ts</Filepath>
+      <Filename>ait.mnw.mon.model.ts</Filename>
+      <Filepath>source\ait.mnw.mon.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_e06131155a3cd6fa86531f339ad6dc6c</ID>
-      <Filename>ait.mnw-mymr-mm.mon.model.kps</Filename>
-      <Filepath>source\ait.mnw-mymr-mm.mon.model.kps</Filepath>
+      <Filename>ait.mnw.mon.model.kps</Filename>
+      <Filepath>source\ait.mnw.mon.model.kps</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,15 +50,15 @@
     </File>
     <File>
       <ID>id_9793f0819d13010a9fa77b38cde32fd1</ID>
-      <Filename>ait.mnw-mymr-mm.mon.model_info</Filename>
-      <Filepath>ait.mnw-mymr-mm.mon.model_info</Filepath>
+      <Filename>ait.mnw.mon.model_info</Filename>
+      <Filepath>ait.mnw.mon.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_65c8e763f522430d9940a2a50b7f1bc1</ID>
-      <Filename>ait.mnw-mymr-mm.mon.model.js</Filename>
-      <Filepath>source\..\build\ait.mnw-mymr-mm.mon.model.js</Filepath>
+      <ID>id_7a375ba64706e68937322d30145c71d2</ID>
+      <Filename>ait.mnw.mon.model.js</Filename>
+      <Filepath>source\..\build\ait.mnw.mon.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_e06131155a3cd6fa86531f339ad6dc6c</ParentFileID>
