@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "chp"
+    ],
+	  "description": "This is a preliminary predictive text model for Chipewyan, (BCP47: chp)"
+}
