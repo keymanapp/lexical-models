@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.277.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.283.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
     <Name URL="">sil.bcc-latn.upp_ptwl1</Name>
     <Copyright URL="">© 2020-2021 SIL International</Copyright>
     <Author URL="">RL</Author>
-    <Version URL="">1.2.1</Version>
+    <Version URL="">1.2.2</Version>
   </Info>
   <Files>
     <File>
