@@ -62,13 +62,16 @@ github.com.
 
 
 The file `external_source` must contain one line for each file to be downloaded,
-in a `file=url` format. For example:
+in a `file url sha256` format. For example:
 
 ```
-experiment.en.external_binary.model_info=https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model_info
-source/experiment.en.external_binary.model.kmp=https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model.kmp
-source/experiment.en.external_binary.model.js=https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model.js
+experiment.en.external_binary.model_info https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model_info f3bcbcb99208ef542000f5a7d55db39e247cb28cac7936bf289bce4457c9ceab
+source/experiment.en.external_binary.model.kmp https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model.kmp 207009d20c3687df0f549e040a20f93133f64debe0a90ce988987b4f62327a59
+source/experiment.en.external_binary.model.js https://github.com/mcdurdin/experiment.en.external_binary/releases/download/v1.0/experiment.en.external_binary.model.js 5498c1736e0bbd4124cd7e27973d691358522e1600ebdfdd15e11a8daee9f082
 ```
+
+The three required files are `<model>.model_info`, `source/<model>.model.kmp`
+and `source/<model>.model.js`.
 
 The `.model_info` file must contain all metadata that a compiled model normally
 has. See examples from built models elsewhere in this repository for examples.
