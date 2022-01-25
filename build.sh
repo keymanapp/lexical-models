@@ -35,6 +35,7 @@ MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
 
 . "$MODELROOT/resources/util.sh"
 . "$MODELROOT/resources/compile.sh"
+. "$MODELROOT/resources/external.sh"
 #. "$MODELROOT/resources/validate.sh"
 #. "$MODELROOT/resources/merge.sh"
 

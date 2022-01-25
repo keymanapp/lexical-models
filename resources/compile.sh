@@ -72,6 +72,29 @@ function build_model {
   pushd "$model"
 
   #
+  # For models from an external source, we need to copy them from the
+  # source repository.
+  #
+
+  if [ -f external_source ]; then
+    if [ -d "build/" ]; then
+      # We want to make sure we rebuild or get correct binaries
+      rm -rf "build/"
+    fi
+
+    retrieve_external_model || die "unable to retrieve external model $base_model"
+
+    if [ -f .source_is_binary ]; then
+      # For models supplied as binary (only possible with signed contract with SIL),
+      # we do not do any further processing and assume that what we are given is good,
+      # although we can still validate the .model_info and file names etc.
+      #
+      # Note: retrieve_external_model will create .source_is_binary as required
+      echo "  Model binary was sourced from external location"
+    fi
+  fi
+
+  #
   # Check if .model_info doesn't exist
   #
   model_infoFilename="$base_model.model_info"
@@ -145,26 +168,33 @@ function build_release_model {
   local modelOutputPackageFilename="$base_model.model.kmp"
   local modelInfoFilename="$base_model.model_info"
 
-  pushd source
+  if [ -f .source_is_binary ]; then
+    # All these files must exist, so we'll fail if they are not present
+    cp $modelInfoFilename build/$modelInfoFilename
+    cp source/$modelOutputFilename build/$modelOutputFilename
+    cp source/$modelOutputPackageFilename build/$modelOutputPackageFilename
+  else
+    pushd source
 
-  # Compile model
-  npx kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
+    # Compile model
+    npx kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
 
-  # Compile package
-  npx kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
+    # Compile package
+    npx kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
 
-  popd
+    popd
 
-  # Merge .model_info file
+    # Merge .model_info file
 
-  npx kmlmi \
-    --model "$base_model" \
-    --outFile "build/$modelInfoFilename" \
-    --source "$group/$shortname/$base_model" \
-    --jsFilename "build/$modelOutputFilename" \
-    --kpsFilename "source/$modelInputPackageFilename" \
-    --kmpFilename "build/$modelOutputPackageFilename" \
-    "./$modelInfoFilename" || die "Unable to merge .model_info file"
+    npx kmlmi \
+      --model "$base_model" \
+      --outFile "build/$modelInfoFilename" \
+      --source "$group/$shortname/$base_model" \
+      --jsFilename "build/$modelOutputFilename" \
+      --kpsFilename "source/$modelInputPackageFilename" \
+      --kmpFilename "build/$modelOutputPackageFilename" \
+      "./$modelInfoFilename" || die "Unable to merge .model_info file"
+  fi
 
   return 0
 }
