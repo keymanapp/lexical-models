@@ -1,6 +1,10 @@
 Balochi Change History
 ======================
 
+1.2.1 (2022-02-18)
+----------------
+Work only with composed forms.
+
 1.2 (2020-06-11)
 ----------------
 Ignore diacritics.
