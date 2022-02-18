@@ -20,7 +20,7 @@ const source: LexicalModelSource = {
     // are stored as separate characters. We can then remove these separate
     // characters!
     // e.g., Å = A + °
-    let normalizedTerm = term.normalize('NFD');
+    let normalizedTerm = term.normalize('NFC');
    
     // Now, using the pattern above replace each diacritic with the
     // empty string. This effectively removes all diacritics!
