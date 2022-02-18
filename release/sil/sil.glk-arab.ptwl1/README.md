@@ -1,9 +1,9 @@
 ptwl1 lexical model
 ===================
 
-© 2020 SIL International
+© 2020-2022 SIL International
 
-Version 1.0.2
+Version 1.0.4
 
 Description
 -----------
