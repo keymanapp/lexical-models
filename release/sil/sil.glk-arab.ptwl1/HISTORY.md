@@ -1,6 +1,10 @@
 ptwl1 Change History
 ====================
 
+1.0.4 (2022-01-18)
+------------------
+Work just with composed forms.
+
 1.0.3 (2020-11-26)
 ------------------
 Marks glk-arab as RTL
