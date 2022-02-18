@@ -26,12 +26,12 @@
       <ID>id_fb59fc64267f189c780ad07fd0b843c2</ID>
       <Filename>sil.bcc-arab.upp_ptwl1.model.kps</Filename>
       <Filepath>source\sil.bcc-arab.upp_ptwl1.model.kps</Filepath>
-      <FileVersion>1.2</FileVersion>
+      <FileVersion>1.2.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Balochi</Name>
-        <Copyright>© 2021 SIL International</Copyright>
-        <Version>1.2</Version>
+        <Copyright>© 2022 SIL International</Copyright>
+        <Version>1.2.1</Version>
       </Details>
     </File>
     <File>

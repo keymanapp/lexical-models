@@ -16,7 +16,7 @@ const source: LexicalModelSource = {
     // characters!
     //
     // e.g., Å ? A + °
-    let normalizedTerm = term.normalize('NFD');
+    let normalizedTerm = term.normalize('NFC');
   
     // Now, make it lowercase.
     //
