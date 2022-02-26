@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>14.0.280.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Postmodern English US Midland Dictionary</Name>
+    <Copyright URL=""></Copyright>
+    <Author URL="mailto:postmodernenglish@gmail.com">-</Author>
+    <Version URL="">v1.0</Version>
+    <WebSite URL="postmodernenglish.org">postmodernenglish.org</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\_.en.postmodern_english_us_midland_dictionary.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Postmodern English US Midland Dictionary</Name>
+      <ID>_.en.postmodern_english_us_midland_dictionary</ID>
+      <Languages>
+        <Language ID="en">English</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
