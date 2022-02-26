@@ -9,24 +9,6 @@
   </Options>
   <Files>
     <File>
-      <ID>id_7cfae0402ccf9e1f341d1de5d735a40c</ID>
-      <Filename>_.en.postmodern_english_us_midland_dictionary.model.ts</Filename>
-      <Filepath>source\_.en.postmodern_english_us_midland_dictionary.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.ts</FileType>
-    </File>
-    <File>
-      <ID>id_ceea8eb6edad3bb999390669d8b66bb9</ID>
-      <Filename>_.en.postmodern_english_us_midland_dictionary.model.kps</Filename>
-      <Filepath>source\_.en.postmodern_english_us_midland_dictionary.model.kps</Filepath>
-      <FileVersion>v1.0</FileVersion>
-      <FileType>.kps</FileType>
-      <Details>
-        <Name>Postmodern English US Midland Dictionary</Name>
-        <Version>v1.0</Version>
-      </Details>
-    </File>
-    <File>
       <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
       <Filename>HISTORY.md</Filename>
       <Filepath>HISTORY.md</Filepath>
@@ -48,19 +30,30 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <ID>id_6a02f244ee59ec5ebc501903468a25e2</ID>
-      <Filename>_.en.postmodern_english_us_midland_dictionary.model_info</Filename>
-      <Filepath>_.en.postmodern_english_us_midland_dictionary.model_info</Filepath>
+      <ID>id_6ac01f36d09ad17cba63de8db0bfed48</ID>
+      <Filename>pme.en.postmodern_english_us_midland.model_info</Filename>
+      <Filepath>pme.en.postmodern_english_us_midland.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_1849b3afb98adb41db7c246ebab1214a</ID>
-      <Filename>_.en.postmodern_english_us_midland_dictionary.model.js</Filename>
-      <Filepath>source\..\build\_.en.postmodern_english_us_midland_dictionary.model.js</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.js</FileType>
-      <ParentFileID>id_ceea8eb6edad3bb999390669d8b66bb9</ParentFileID>
+      <ID>id_9ca1a0ca1b9ed1c93d8e8d697c7d9c39</ID>
+      <Filename>pme.en.postmodern_english_us_midland.model.ts</Filename>
+      <Filepath>source\pme.en.postmodern_english_us_midland.model.ts</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.ts</FileType>
+    </File>
+    <File>
+      <ID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ID>
+      <Filename>pme.en.postmodern_english_us_midland.model.kps</Filename>
+      <Filepath>source\pme.en.postmodern_english_us_midland.model.kps</Filepath>
+      <FileVersion>1.0.0</FileVersion>
+      <FileType>.kps</FileType>
+      <Details>
+        <Name>Postmodern English US Midland lexical model</Name>
+        <Copyright>© 2022, The Postmodern English Project</Copyright>
+        <Version>1.0.0</Version>
+      </Details>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -68,7 +61,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_ceea8eb6edad3bb999390669d8b66bb9</ParentFileID>
+      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -76,7 +69,15 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_ceea8eb6edad3bb999390669d8b66bb9</ParentFileID>
+      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
+    </File>
+    <File>
+      <ID>id_d648aaadd87b9feb2a19177d340a047d</ID>
+      <Filename>pme.en.postmodern_english_us_midland.model.js</Filename>
+      <Filepath>source\..\build\pme.en.postmodern_english_us_midland.model.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
+      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
