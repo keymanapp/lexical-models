@@ -1,8 +1,6 @@
 Postmodern English US Midland lexical model
 ===================
 
-© 2022, The Postmodern English Project
-
 Description
 -----------
 
