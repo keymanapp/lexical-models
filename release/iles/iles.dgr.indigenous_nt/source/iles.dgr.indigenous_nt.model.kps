@@ -34,8 +34,8 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\iles.chp.indigenous_nt.model.js</Name>
-      <Description>File iles.chp.indigenous_nt.model.js</Description>
+      <Name>..\build\iles.dgr.indigenous_nt.model.js</Name>
+      <Description>File iles.dgr.indigenous_nt.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
@@ -46,7 +46,7 @@
       <Name></Name>
       <ID>iles.chp.indigenous_nt</ID>
       <Languages>
-        <Language ID="chp">Chipewyan</Language>
+        <Language ID="dgr">Tłı̨chǫ</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
