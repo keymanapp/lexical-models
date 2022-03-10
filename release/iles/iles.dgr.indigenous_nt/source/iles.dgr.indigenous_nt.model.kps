@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.275.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.280.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -22,12 +22,6 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\iles.dgr.indigenous_nt.model.js</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.js</FileType>
-    </File>
-    <File>
       <Name>welcome.htm</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
@@ -39,14 +33,20 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
+    <File>
+      <Name>..\build\iles.chp.indigenous_nt.model.js</Name>
+      <Description>File iles.chp.indigenous_nt.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
   </Files>
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Indigenous NT</Name>
-      <ID>iles.dgr.indigenous_nt</ID>
+      <Name></Name>
+      <ID>iles.chp.indigenous_nt</ID>
       <Languages>
-        <Language ID="dgr">Tłı̨chǫ</Language>
+        <Language ID="chp">Chipewyan</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
