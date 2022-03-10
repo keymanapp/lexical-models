@@ -43,8 +43,8 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Indigenous NT Chipewyan</Name>
-      <ID>iles.chp.indigenous_nt</ID>
+      <Name>Indigenous NT Tłı̨chǫ</Name>
+      <ID>iles.dgr.indigenous_nt</ID>
       <Languages>
         <Language ID="dgr">Tłı̨chǫ</Language>
       </Languages>
