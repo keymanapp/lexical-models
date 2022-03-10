@@ -8,7 +8,7 @@ Version 0.1
 Description
 -----------
 
-This is an preliminary predictive text model for Chipewyan (BCP47: chp). The Indigenous NT keyboard must be installed for this language for the dictionary to appear when installed.
+This is an preliminary predictive text model for Chipewyan (BCP47: chp). The Indigenous NT keyboard must be installed for this specific language for the dictionary to appear in the keyman app.
 
 Links
 -----
