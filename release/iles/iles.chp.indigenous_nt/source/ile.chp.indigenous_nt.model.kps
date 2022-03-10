@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>iles.chp.indigenous_nt.model.js</Name>
+      <Name>..\build\iles.chp.indigenous_nt.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
