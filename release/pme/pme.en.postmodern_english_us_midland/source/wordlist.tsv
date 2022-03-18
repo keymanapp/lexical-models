@@ -75,6 +75,7 @@ blůīst
 blůԅ
 bodīŋ
 bol	10
+bold	10
 bolīŋ
 bon	10
 bonz
@@ -196,16 +197,15 @@ bīze	10
 bīznīs	10
 bīznīsīz
 bīzēle
-bōe	10
-bōez
 bōl	10
-bōld	10
 bōlz
 bōrd	10
 bōrdz
 bōrdīd
 bōrdīŋ
 bōrn
+bōī	10
+bōīz
 būk	10
 būks
 būkt
@@ -273,9 +273,9 @@ dórk	10
 dórknēs
 dórkīst
 dórkԅ
+dúble
 dúblīŋ
 dúbōl	10
-dúbōle
 dúk	10
 dúks
 dúkt
@@ -327,7 +327,7 @@ dīfrēnt	10
 dīfrēnէle
 dīfīkōlt	10
 dīfīkōlte
-dīfīkōltle
+dīfīkōlէle
 dīfԅ	10
 dīfԅd
 dīfԅz
@@ -352,8 +352,8 @@ dīstēns	10
 dīstēnst
 dīstēnsīŋ
 dīstēnt	10
-dīstēntle
 dīstēntīd
+dīstēnէle
 dīҁ	10
 dīҁt
 dīҁwóҁ	10
@@ -369,8 +369,8 @@ důīŋ
 dԅékdīd
 dԅékdīŋ
 dԅékdԅ
+dԅékle
 dԅékt	10
-dԅéktle
 dԅīŋ
 edīŋ
 edԅ
@@ -533,8 +533,6 @@ fórm	10
 fórmd
 fórmz
 fórmīŋ
-fórīst
-fórԅ
 fót
 fóћԅ	10
 fóћԅd
@@ -557,10 +555,10 @@ fāstīŋ
 fāstԅ
 fāt	10
 fāts
-fātēnīŋ
 fāūnd
 fāūndaҁēn	10
 fāūndԅ	10
+fāէnīŋ
 fēmīleárīde
 fēmīlyԅ	10
 fīdīŋ
@@ -624,6 +622,8 @@ fůd	10
 fůdz
 fԅst	20
 fԅstle
+fԅћīst
+fԅћԅ
 gam	10
 gamz
 gamīŋ
@@ -641,17 +641,19 @@ glādԅ
 glās	10
 glāsīz
 go	30
+gold	10
+goldēn
 goz
 goīŋ
 gra	10
 grad	10
 gradīd
+gradīst
 gradԅ
 grat	10
-gratle
-gratīst
 graīst
 graԅ
+graէle
 gren	10
 grenz
 grenīst
@@ -705,8 +707,6 @@ gāћԅīŋ
 gīv 30
 gīvz
 gīvīŋ
-gōld	10
-gōldēn
 gūd	20
 gūdz
 gԅl	10
@@ -725,6 +725,9 @@ hi	10
 hiīst
 hiԅ
 hol	10
+hold	10
+holdz
+holdīŋ
 hole	10
 holeīst
 holeԅ
@@ -794,10 +797,10 @@ hórdēn
 hórdēnīŋ
 hórdīst
 hórdԅ
-hórnés	10
-hórnést
-hórnésīz
-hórnésīŋ
+hórnīs	10
+hórnīst
+hórnīsīz
+hórnīsīŋ
 hórt	10
 hórts
 hót	10
@@ -816,11 +819,11 @@ hāpe	10
 hāpenīs
 hāpeīst
 hāpeԅ
+hāpēle
 hāpēn	10
 hāpēnd
 hāpēnz
 hāpēnīŋ
-hāpīle
 hāt	10
 hāts
 hāv	30
@@ -850,9 +853,6 @@ hīstԅez
 hīt	10
 hīts
 hīz	20
-hōld	10
-hōldz
-hōldīŋ
 hōrs	10
 hōrsīz
 hōrsīŋ
@@ -927,9 +927,8 @@ jélez
 jém	10
 jémz
 jéntōl	10
-jéntōle
-jéntōlīst
-jéntōlԅ
+jénōlīst
+jénōlԅ
 jénԅōl	10
 jénԅōle
 jénԅōliz
@@ -937,6 +936,7 @@ jénԅōlizd
 jénԅōlizīz
 jénԅōlizīŋ
 jénԅōlz
+jénէle
 jób	10
 jóbz
 júmp	10
@@ -947,14 +947,14 @@ júst	20
 jústle
 jústīs
 jústīsīz
-jōe	10
-jōefōl
-jōefōle
-jōen	10
-jōend
-jōenz
-jōenīŋ
-jōez
+jōī	10
+jōīfōl
+jōīfōle
+jōīn	10
+jōīnd
+jōīnz
+jōīnīŋ
+jōīz
 jůōl	10
 jůōlz
 jůōlԅ
@@ -1091,6 +1091,8 @@ kwīkīst
 kwīkԅ
 kwīt	10
 kwīts
+kwōrdԅ	10
+kwōrdԅz
 kwōrt	10
 kwōrts
 kámp	10
@@ -1108,8 +1110,8 @@ káred
 kárez
 káreīŋ
 kárz
-kárīktԅ	10
-kárīktԅz
+kárīkdԅ	10
+kárīkdԅz
 kárīŋ
 kål	10
 kåld
@@ -1135,9 +1137,9 @@ kómīt	10
 kómīts
 kónsēnēnt	10
 kónsēnēnts
-kóntēnént	10
-kóntēnénts
-kóntēnéntōl
+kónէnéntōl
+kónէnēnt	10
+kónէnēnts
 kópe	10
 kóped
 kópez
@@ -1172,10 +1174,6 @@ kúmpēne	10
 kúmpēnez
 kúmz
 kúmīŋ
-kúntīnu	10
-kúntīnud
-kúntīnuz
-kúntīnuīŋ
 kúnчre	10
 kúnчrez
 kút	10
@@ -1205,9 +1203,9 @@ kāч	10
 kāчīz
 kāчīŋ
 kēlékdīd
+kēlékdīŋ
 kēlékt	10
 kēlékts
-kēléktīŋ
 kēlékҁēn
 kēlékҁēnz
 kēmpledīd
@@ -1235,6 +1233,10 @@ kēntanz
 kēntanīŋ
 kēntanԅ
 kēntanԅz
+kēntīnu	10
+kēntīnud
+kēntīnuz
+kēntīnuīŋ
 kēnékdīd
 kēnékdīŋ
 kēnékt	10
@@ -1253,8 +1255,6 @@ kīŋle
 kīŋz
 kōrd	10
 kōrdz
-kōrdԅ	10
-kōrdԅz
 kōrn	10
 kōrne
 kōrneīst
@@ -1283,8 +1283,8 @@ kԅékts
 kԅúndēm	10
 kԅúndēmz
 kԅēnt	10
-kԅēntle
 kԅēnts
+kԅēnէle
 la	10
 lad
 lade	10
@@ -1379,9 +1379,9 @@ léts
 lévōl	10
 lévōlz
 lévōlīŋ
-léŋþ	10
-léŋþe
-léŋþs
+léŋkþ	10
+léŋkþe
+léŋkþs
 lóg	10
 lógd
 lógz
@@ -1419,11 +1419,11 @@ lāst	10
 lāstle
 lāsts
 lāstīŋ
+lāzūle
 lāūd	10
 lāūdle
 lāūdīst
 lāūdԅ
-lēzůle
 līdōl	10
 līdōlīst
 līdōlԅ
@@ -1533,8 +1533,8 @@ mán	10
 mánle
 mánleīst
 mánleԅ
-médīsīn	10
-médīsīnz
+médēsīn	10
+médēsīnz
 médōl	10
 médōle
 médōlz
@@ -1610,8 +1610,6 @@ māūnt	10
 māūnts
 māūntīd
 māūntīŋ
-māūnէn	10
-māūnէnz
 māūs	10
 māūsīz
 māūþ	10
@@ -1621,6 +1619,8 @@ māūþwóҁīz
 māūћd
 māūћz
 māūћīŋ
+māūէn	10
+māūէnz
 māч	10
 māчrīs	10
 māчrīsīz
@@ -1643,8 +1643,8 @@ mīlyēn	10
 mīlyēnz
 mīlyēnár
 mīnīt	10
-mīnītle
 mīnīts
+mīnīէle
 mīs	10
 mīse
 mīst
@@ -1747,17 +1747,17 @@ nā
 nāū	20
 nāūn	10
 nāūnz
+nāчrēle
 nāчԅōl	10
-nāчԅōle
 nāчԅōlz
-nōez	10
-nōeze
-nōezeīst
-nōezeԅ
-nōezīz
 nōr
 nōrþ	10
 nōrћԅn
+nōīz	10
+nōīze
+nōīzeīst
+nōīzeԅ
+nōīzīz
 nů	10
 nůdōl	10
 nůdōle
@@ -1856,7 +1856,10 @@ plánԅ
 plánԅz
 plԅōl	10
 plԅōlz
+polz
+polīŋ
 post	10
+postmódԅn
 posts
 postīd
 postīŋ
@@ -1901,10 +1904,10 @@ prósésīz
 prósésīŋ
 prósésԅ
 prósésԅz
-prāktīs	10
-prāktīst
-prāktīsīz
-prāktīsīŋ
+prākdīs	10
+prākdīst
+prākdīsīz
+prākdīsīŋ
 prēdúkdīv	10
 prēdúkdīvle
 prēdůs	10
@@ -1917,12 +1920,12 @@ prēpár	10
 prēpárd
 prēpárz
 prēpárīŋ
+prētékdīd
+prētékdīŋ
+prētékdԅ
+prētékdԅz
 prētékt	10
 prētékts
-prētéktīd
-prētéktīŋ
-prētéktԅ
-prētéktԅz
 prēvid	10
 prēvidz
 prēvidīd
@@ -2053,18 +2056,10 @@ pīчīz
 pīчīŋ
 pīчԅ
 pīчԅz
-pōent	10
-pōents
-pōentīd
-pōentīŋ
-pōentԅ
-pōentԅz
 pōl	10
 pōld
 pōle
 pōlez
-pōlz
-pōlīŋ
 pōr	10
 pōrd
 pōrdīŋ
@@ -2079,6 +2074,12 @@ pōrz
 pōrīst
 pōrīŋ
 pōrԅ
+pōīnt	10
+pōīnts
+pōīntīd
+pōīntīŋ
+pōīntԅ
+pōīntԅz
 pūdīŋ
 pūt	10
 pūts
@@ -2129,12 +2130,6 @@ redz
 redīŋ
 rejēn	10
 rejēnz
-rekōrd	10
-rekōrdz
-rekōrdīd
-rekōrdīŋ
-rekōrdԅ
-rekōrdԅz
 rel	10
 relīst
 relԅ
@@ -2189,7 +2184,7 @@ réded
 rédez
 rédeīŋ
 rédz
-rédīle
+rédēle
 rédīst
 rédԅ
 réfuj	10
@@ -2244,6 +2239,12 @@ rēkwiԅ	10
 rēkwiԅd
 rēkwiԅz
 rēkwiԅīŋ
+rēkōrd	10
+rēkōrdz
+rēkōrdīd
+rēkōrdīŋ
+rēkōrdԅ
+rēkōrdԅz
 rēmémbԅ	10
 rēmémbԅd
 rēmémbԅz
@@ -2269,7 +2270,6 @@ rīske
 rīsks
 rīskt
 rīskīŋ
-rītēn
 rīvԅ	10
 rīvԅz
 rīzålt	10
@@ -2285,6 +2285,7 @@ rīч	10
 rīчle
 rīчīst
 rīчԅ
+rīէn
 růbe	10
 růbez
 růbórb	10
@@ -2445,6 +2446,7 @@ snoīŋ
 so	20
 sodē	10
 sodēz
+sold
 soljԅ	10
 soljԅz
 sop	10
@@ -2624,6 +2626,7 @@ stԅ	10
 stԅd
 stԅz
 stԅīŋ
+swet
 swets
 swám
 swīm	10
@@ -2707,10 +2710,10 @@ sénsԅz
 sénsԅīŋ
 sént
 sénts
-sénténs	10
-sénténst
-sénténsīz
-sénténsīŋ
+séntēns	10
+séntēnst
+séntēnsīz
+séntēnsīŋ
 séntԅ	10
 séntԅd
 séntԅz
@@ -2753,8 +2756,6 @@ sóŋ	10
 sóŋz
 súbjékt	10
 súbjékts
-súbjéktīv
-súbjéktīvle
 súbstēns	10
 súbstēnsīz
 súdēn	10
@@ -2762,8 +2763,8 @@ súdēnle
 súfīx	10
 súfīxīz
 súm	30
-súmbēde	10
-súmbēde'z
+súmbúde	10
+súmbúde'z
 súmd
 súmz
 súmþīŋ	10
@@ -2793,13 +2794,17 @@ sāūԅ	10
 sāūԅd
 sāūԅz
 sāūԅīŋ
+sēbjékdīv
+sēbjékdīvle
+sēbjékt
+sēbjékts
+sēbчrākdīd
+sēbчrākdīv
+sēbчrākdīŋ
+sēbчrākdԅ
+sēbчrākdԅz
 sēbчrākt	10
 sēbчrākts
-sēbчrāktīd
-sēbчrāktīv
-sēbчrāktīŋ
-sēbчrāktԅ
-sēbчrāktԅz
 sējést	10
 sējésts
 sējéstīd
@@ -2812,10 +2817,10 @@ sēksésfōle
 sēksésīz
 sēksésԅ
 sēksésԅz
+sēlékdīd
+sēlékdīŋ
 sēlékt	10
 sēlékts
-sēléktīd
-sēléktīŋ
 sēlůҁēn	10
 sēlůҁēnz
 sēpli	10
@@ -2849,9 +2854,9 @@ sīmbōl	10
 sīmbōlz
 sīmple
 sīmplēfi
+sīmplīst
+sīmplԅ
 sīmpōl	10
-sīmpōlīst
-sīmpōlԅ
 sīmēlԅ	10
 sīmēlԅle
 sīns
@@ -2874,7 +2879,6 @@ sīŋgōlz
 sīŋgōlīŋ
 sīŋz
 sīŋīŋ
-sōld
 sōīl	10
 sōīld
 sōīle
@@ -2973,6 +2977,7 @@ todōld
 todōle
 todōlz
 todōlīŋ
+told
 ton	10
 tond
 tonz
@@ -3041,13 +3046,12 @@ tāūōlz
 tēgéћԅ
 tīҁů	10
 tīҁůz
-tōelīt	10
-tōelīts
-tōld
 tōrd	10
 tōrdz
 tōrteyē	10
 tōrteyēz
+tōīlīt	10
+tōīlīts
 tūk
 tů	30
 tůb	10
@@ -3093,7 +3097,6 @@ váre	10
 váred
 várez
 váreīŋ
-vére
 véчtēbōl	10
 véчtēbōlz
 vāle	10
@@ -3129,10 +3132,10 @@ vīԏēn	10
 vīԏēnd
 vīԏēnz
 vīԏēnīŋ
-vōes	10
-vōest
-vōesīz
-vōesīŋ
+vōīs	10
+vōīst
+vōīsīz
+vōīsīŋ
 vԅb	10
 vԅbz
 vԅs	10
@@ -3174,6 +3177,7 @@ wi'd
 wi'r
 wi'z
 wid	10
+widnīŋ
 widēn
 widēnd
 widēnz
@@ -3185,6 +3189,8 @@ wip	10
 wips
 wipt
 wipīŋ
+wipԅ
+wipԅz
 wit	10
 wits
 wivz
@@ -3260,8 +3266,8 @@ wúd'v
 wún	20
 wúndԅ	10
 wúndԅd
+wúndԅfle
 wúndԅfōl
-wúndԅfōle
 wúndԅz
 wúndԅīŋ
 wúns
@@ -3269,7 +3275,6 @@ wúnz
 wút	30
 wút's
 wúz
-wīdēnīŋ
 wīl	30
 wīld
 wīlz
@@ -3394,16 +3399,14 @@ zůz
 éfԅts
 ég	10
 égz
-égzākt	10
-égzāktle
 éj	10
 éjd
 éjīz
 éjīŋ
 éls
+élēméntōl
 élēmēnt	10
 élēmēnts
-élēmēntōl
 émԅōld	10
 émԅōldz
 énd	10
@@ -3415,12 +3418,12 @@ zůz
 énjēner
 énjēnerīŋ
 énjēnz
-énjōe	10
-énjōed
-énjōez
-énjōeīŋ
-énjōeԅ
-énjōeԅz
+énjōī	10
+énjōīd
+énjōīz
+énjōīŋ
+énjōīԅ
+énjōīԅz
 éntԅ	10
 éntԅd
 éntԅz
@@ -3435,23 +3438,9 @@ zůz
 évre
 évreþīŋ
 évԅ
-éxidīd
-éxidīŋ
-éxit	10
-éxits
-éxperēmēnt	10
-éxperēmēnts
-éxperēmēntīd
-éxperēmēntīŋ
-éxpékdīd
-éxpékdīŋ
-éxpékt	10
-éxpékts
 éxpԅt	10
-éxpԅtes
+éxpԅtez
 éxpԅts
-éxépt	10
-éxépts
 éxīdīd
 éxīdīŋ
 éxīt	10
@@ -3555,10 +3544,10 @@ zůz
 ādīŋ
 āftԅ	20
 ākdīd
+ākdīŋ
+ākdԅ
 ākt	10
 ākts
-āktīŋ
-āktԅ
 ālkēhål	10
 ālkēhålz
 ālkēhålīk
@@ -3644,17 +3633,22 @@ zůz
 ēsůmd
 ēsůmz
 ēsůmīŋ
+Īŋglīҁ
 īd'd
 īd'l
 īf	20
 īfe
 īfs
+īfékt
+īfékts
 īgzámpōl	10
 īgzámpōlz
-īkspereēns	10
-īkspereēnst
-īkspereēnsīz
-īkspereēnsīŋ
+īgzākle
+īgzākt	10
+īkspīreēns	10
+īkspīreēnst
+īkspīreēnsīz
+īkspīreēnsīŋ
 īkwadīd
 īkwadīŋ
 īkwat	10
@@ -3679,9 +3673,9 @@ zůz
 īmājīnz
 īmājīnīŋ
 īn	20
-īndústreōl
-īndústreōlizaҁēn
-īndústreōlz
+īndúsdreōl
+īndúsdreōlizaҁēn
+īndúsdreōlz
 īndēstre	10
 īndēstrez
 īndīkadīd
@@ -3696,9 +3690,9 @@ zůz
 īnsidz
 īnsidԅ
 īnsidԅz
+īnstrēméntōl
 īnstrēmēnt	10
 īnstrēmēnts
-īnstrēmēntōl
 īnstēnt	10
 īnstēnէle
 īnsékt	10
@@ -3723,19 +3717,27 @@ zůz
 īt	30
 īt's
 īts
-ītsēlf
+ītsélf
 īvént	10
 īvénts
+īxidīd
+īxidīŋ
+īxit	10
+īxits
 īxplod	10
 īxplodz
 īxplodīd
 īxplodīŋ
+īxpékdīd
+īxpékdīŋ
+īxpékt	10
+īxpékts
+īxpīrēmēnt	10
+īxpīrēmēnts
+īxpīrēmēntīd
+īxpīrēmēntīŋ
+īxépt
 īz
-ōeōl	10
-ōeōle
-ōeōlz
-ōeōlīŋ
-ōeōlԅ
 ōr	20
 ōrdԅ	10
 ōrdԅd
@@ -3745,6 +3747,11 @@ zůz
 ōrgēn	10
 ōrgēnle
 ōrgēnz
+ōīle
+ōīlīŋ
+ōīlԅ
+ōīōl	10
+ōīōlz
 чanj	10
 чanjd
 чanjīz
@@ -3828,13 +3835,13 @@ zůz
 чóklīt	10
 чóklīts
 чórdīd
+чórdīŋ
 чórj	10
 чórjd
 чórjīz
 чórjīŋ
 чórt	10
 чórts
-чórtīŋ
 чīk	10
 чīks
 чīkēn	10
@@ -3862,15 +3869,15 @@ zůz
 ћán	20
 ћár	30
 ћém	20
-ћémsélf
-ћémsélvz
 ћén	20
 ћú	30
 ћús
+ћād'd
+ћād'l
 ћāt	30
-ћāt'd
-ћāt'l
 ћāt's
+ћēmsélf
+ћēmsélvz
 ћīs	30
 ҁak	10
 ҁaks
