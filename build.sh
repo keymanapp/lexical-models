@@ -12,10 +12,12 @@ set -u
 #
 
 function display_usage {
-  echo "Usage: $0 [-t(est)|-b(uild)|-c(lean)] [-no-npm] [-s] [target]"
+  echo "Usage: $0 [-t(est)|-b(uild)|-c(lean)] [-no-npm] [-s] [-color|-no-color] [target]"
   echo "  -t || -test   Runs tests on models"
   echo "  -b || -build  Creates compiled models"
   echo "  -c || -clean  Cleans intermediate and output files"
+  echo "  -color        Force color output"
+  echo "  -no-color     Force no color output"
   echo "  -no-npm       Skip all npm steps"
   echo "  -s            Quiet build"
   echo "  target        The specific model(s) to build, e.g. release or release/example/en.template"
@@ -45,6 +47,7 @@ MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
 # Default is validate model_info, build models
 #
 parse_args "$@"
+setup_colors
 
 if [[ "$DO_NPM" = true ]]; then
   # Check if Node.JS/npm is installed.
@@ -55,7 +58,7 @@ if [[ "$DO_NPM" = true ]]; then
   # Pull dependencies
   #
   echo "Dependencies check"
-  npm install --no-optional
+  npm ${NPM_COLOR_FLAG} install --no-optional
 fi
 
 #
