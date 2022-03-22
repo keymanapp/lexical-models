@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Define terminal colours
@@ -13,6 +13,14 @@ if [ -t 2 ]; then
   t_mag=$'\e[1;35m'
   t_cyn=$'\e[1;36m'
   t_end=$'\e[0m'
+else
+  t_red=
+  t_grn=
+  t_yel=
+  t_blu=
+  t_mag=
+  t_cyn=
+  t_end=
 fi
 
 #
@@ -47,7 +55,7 @@ function die {
   if [ $rc == 0 ]; then
     rc=999
   fi
-  
+
   (>&2 echo "${t_red}$msg${t_end}")
   (>&2 echo "${t_red}Aborting with error $rc${t_end}")
   exit $rc
@@ -65,9 +73,9 @@ function parse_args {
   FLAG_CLEAN=
   FLAG_TARGET=
   START=
-  
+
   local key
-  
+
   # Parse args
   for key in "$@"; do
     case "$key" in
@@ -88,7 +96,7 @@ function parse_args {
         ;;
       -w)
         WARNINGS_AS_ERRORS=true
-        ;;          
+        ;;
       -h|-?)
         display_usage
         ;;
@@ -115,10 +123,10 @@ function verlt {
 # verlt 2.4.10 2.4.9 && echo "yes" || echo "no" # no
 # verlt 2.4.8 2.4.10 && echo "yes" || echo "no" # yes
 # verlte 2.5.6 2.5.6 && echo "yes" || echo "no" # yes
-# verlt 2.5.6 2.5.6 && echo "yes" || echo "no" # no 
+# verlt 2.5.6 2.5.6 && echo "yes" || echo "no" # no
 
 # if $(verlte 2.5.7 2.5.6) ; then echo "yes" ; else echo "no" ; fi # no
 # if $(verlt 2.4.10 2.4.9) ; then echo "yes" ; else echo "no" ; fi # no
 # if $(verlt 2.4.8 2.4.10) ; then echo "yes" ; else echo "no" ; fi # yes
 # if $(verlte 2.5.6 2.5.6) ; then echo "yes" ; else echo "no" ; fi # yes
-# if $(verlt 2.5.6 2.5.6)  ; then echo "yes" ; else echo "no" ; fi # no 
+# if $(verlt 2.5.6 2.5.6)  ; then echo "yes" ; else echo "no" ; fi # no
