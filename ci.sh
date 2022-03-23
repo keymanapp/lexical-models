@@ -29,6 +29,7 @@ fi
 . "$MODELROOT/resources/rsync-tools.sh"
 
 parse_args "$@"
+setup_colors
 
 function run {
 

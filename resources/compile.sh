@@ -22,7 +22,7 @@ function build_models {
 
   if [ ! -d $MODELROOT/$group ]; then return 0; fi
 
-  echo "$ACTION_VERB lexical models for $1"
+  echo "${t_cyn}$ACTION_VERB lexical models for $1${t_end}"
 
   local shortname
   for shortname in "$MODELROOT/$group/"*/ ; do
@@ -67,7 +67,7 @@ function build_model {
   local shortname=$(basename $(dirname "$model"))
   local base_model=$(basename "$model")
 
-  echo "Validating model $model"
+  echo "${t_cyn}Validating model $model${t_end}"
 
   pushd "$model"
 
@@ -133,7 +133,7 @@ function build_release_model {
   local group=$(basename $(dirname $(dirname "$model")))
   local shortname=$(basename $(dirname "$model"))
   local base_model=$(basename "$model")
-  echo "$ACTION_VERB model $1"
+  echo "${t_cyn}$ACTION_VERB model $1${t_end}"
 
   # local kpj="$base_keyboard.kpj"
   # We don't have a .kpj; we assume presence of .model_info, .kps and model.ts
@@ -152,16 +152,6 @@ function build_release_model {
 
   mkdir build || die "Failed to create build folder for $model"
 
-  #
-  # Check if color is supported
-  # -t 2 tests that the script is running in an interactive terminal as opposed to redirected to file or piped
-  #
-  if [ -t 2 ]; then
-    local COLOR_FLAG=--color
-  else
-    local COLOR_FLAG=
-  fi
-
   local modelInputFilename="$base_model.model.ts"
   local modelOutputFilename="$base_model.model.js"
   local modelInputPackageFilename="$base_model.model.kps"
@@ -177,16 +167,16 @@ function build_release_model {
     pushd source
 
     # Compile model
-    npx kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
+    npx ${NPM_COLOR_FLAG} kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
 
     # Compile package
-    npx kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
+    npx ${NPM_COLOR_FLAG} kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
 
     popd
 
     # Merge .model_info file
 
-    npx kmlmi \
+    npx ${NPM_COLOR_FLAG} kmlmi \
       --model "$base_model" \
       --outFile "build/$modelInfoFilename" \
       --source "$group/$shortname/$base_model" \
