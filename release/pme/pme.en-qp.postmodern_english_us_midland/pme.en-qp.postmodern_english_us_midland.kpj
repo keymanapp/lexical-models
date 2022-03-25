@@ -30,23 +30,16 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <ID>id_6ac01f36d09ad17cba63de8db0bfed48</ID>
-      <Filename>pme.en.postmodern_english_us_midland.model_info</Filename>
-      <Filepath>pme.en.postmodern_english_us_midland.model_info</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.model_info</FileType>
-    </File>
-    <File>
-      <ID>id_9ca1a0ca1b9ed1c93d8e8d697c7d9c39</ID>
-      <Filename>pme.en.postmodern_english_us_midland.model.ts</Filename>
-      <Filepath>source\pme.en.postmodern_english_us_midland.model.ts</Filepath>
+      <ID>id_49bac086ed55d5a331857f627ccb3fa6</ID>
+      <Filename>pme.en-qp.postmodern_english_us_midland.model.ts</Filename>
+      <Filepath>source\pme.en-qp.postmodern_english_us_midland.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ID>
-      <Filename>pme.en.postmodern_english_us_midland.model.kps</Filename>
-      <Filepath>source\pme.en.postmodern_english_us_midland.model.kps</Filepath>
+      <ID>id_f3f4c2984a0f3c656b7bb13b630ab777</ID>
+      <Filename>pme.en-qp.postmodern_english_us_midland.model.kps</Filename>
+      <Filepath>source\pme.en-qp.postmodern_english_us_midland.model.kps</Filepath>
       <FileVersion>1.0.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -56,12 +49,19 @@
       </Details>
     </File>
     <File>
+      <ID>id_53245265556ba058ac431262ef117e12</ID>
+      <Filename>pme.en-qp.postmodern_english_us_midland.model_info</Filename>
+      <Filepath>pme.en-qp.postmodern_english_us_midland.model_info</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.model_info</FileType>
+    </File>
+    <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
       <Filename>welcome.htm</Filename>
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
+      <ParentFileID>id_f3f4c2984a0f3c656b7bb13b630ab777</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -69,15 +69,15 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
+      <ParentFileID>id_f3f4c2984a0f3c656b7bb13b630ab777</ParentFileID>
     </File>
     <File>
-      <ID>id_d648aaadd87b9feb2a19177d340a047d</ID>
-      <Filename>pme.en.postmodern_english_us_midland.model.js</Filename>
-      <Filepath>source\..\build\pme.en.postmodern_english_us_midland.model.js</Filepath>
+      <ID>id_b90f038e90e7ed3b37e2079e58f8a67a</ID>
+      <Filename>pme.en-qp.postmodern_english_us_midland.model.js</Filename>
+      <Filepath>source\..\build\pme.en-qp.postmodern_english_us_midland.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_44b52a2d6728104b9dcb7cb4d38bf4f2</ParentFileID>
+      <ParentFileID>id_f3f4c2984a0f3c656b7bb13b630ab777</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>

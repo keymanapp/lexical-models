@@ -18,4 +18,3 @@ Supported Platforms
  * Android tablet
  * Mobile devices
  * Tablet devices
-

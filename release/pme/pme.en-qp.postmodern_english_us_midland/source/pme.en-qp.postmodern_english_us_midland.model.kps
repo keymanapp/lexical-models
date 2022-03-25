@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.286.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.288.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -35,8 +35,8 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\build\pme.en.postmodern_english_us_midland.model.js</Name>
-      <Description>File pme.en.postmodern_english_us_midland.model.js</Description>
+      <Name>..\build\pme.en-qp.postmodern_english_us_midland.model.js</Name>
+      <Description>File pme.en-qp.postmodern_english_us_midland.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
@@ -45,9 +45,9 @@
   <LexicalModels>
     <LexicalModel>
       <Name></Name>
-      <ID>pme.en.postmodern_english_us_midland</ID>
+      <ID>pme.en-qp.postmodern_english_us_midland</ID>
       <Languages>
-        <Language ID="en">Postmodern English</Language>
+        <Language ID="en-QP">Postmodern English (QP)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
