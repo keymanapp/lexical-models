@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>14.0.288.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Postmodern English US Midland lexical model</Name>
+    <Copyright URL="">© 2022, The Postmodern English Project</Copyright>
+    <Author URL="mailto:postmodernenglish@gmail.com">The Postmodern English Project</Author>
+    <Version URL="">1.0.0</Version>
+    <WebSite URL="www.postmodernenglish.org">www.postmodernenglish.org</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\pme.en-qp.postmodern_english_us_midland.model.js</Name>
+      <Description>File pme.en-qp.postmodern_english_us_midland.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name></Name>
+      <ID>pme.en-qp.postmodern_english_us_midland</ID>
+      <Languages>
+        <Language ID="en-QP">Postmodern English (QP)</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
