@@ -170,9 +170,9 @@ function build_release_model {
 
   if [ -f .source_is_binary ]; then
     # All these files must exist, so we'll fail if they are not present
-    cp $modelInfoFilename build/$modelInfoFilename
-    cp source/$modelOutputFilename build/$modelOutputFilename
-    cp source/$modelOutputPackageFilename build/$modelOutputPackageFilename
+    cp $modelInfoFilename build/$modelInfoFilename || die
+    cp source/$modelOutputFilename build/$modelOutputFilename || die
+    cp source/$modelOutputPackageFilename build/$modelOutputPackageFilename || die
   else
     pushd source
 
