@@ -121,6 +121,8 @@ retrieve_external_binary_model() {
   # We'll read .source line by line...
   touch .source_is_binary
 
+  mkdir -p source
+
   # for each line in the external_source file
   while IFS="" read -r line
   do
@@ -132,8 +134,10 @@ retrieve_external_binary_model() {
     local sha256="${BASH_REMATCH[3]}"
     [[ $filename =~ \.\. ]] && die "path cannot contain .."
     [[ $filename =~ ^/ ]] && die "path cannot start with /"
-    curl -s -L "$url" --output "$filename" --create-dirs || die "Unable to download $filename"
-    echo "$sha256 $filename" | sha256sum -c --quiet || die "Invalid checksum for $filename"
+    local path=
+    [[ ! $filename =~ .model_info$ ]] && path=source/
+    curl -s -L "$url" --output "$path$filename" --create-dirs || die "Unable to download $filename"
+    echo "$sha256 $path$filename" | sha256sum -c --quiet || die "Invalid checksum for $filename"
   done < external_source
 }
 
