@@ -1,5 +1,9 @@
 # Version History
 
+## 0.1.8 (2022-04-13)
+
+* Removed typos and non-Latin characters
+
 ## 0.1.7 (2021-03-19)
 
 * Fixes a bug that prevented use on Android 5.0 devices (keymanapp/keyman#4718)

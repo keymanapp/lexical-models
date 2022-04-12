@@ -30,7 +30,7 @@ Maintainer
 ----------
 
 Eddie Antonio Santos <easantos@ualberta.ca> 🙃
-© 2019-2021 National Research Council Canada
+© 2019-2022 National Research Council Canada
 
 How the corpus was post-processed
 ---------------------------------
