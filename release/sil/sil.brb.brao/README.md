@@ -1,7 +1,7 @@
 Brao Lexical Model
 ===================
 
-© 2022 SIL International
+© 2021-2022 SIL International
 
 Version 1.1
 
