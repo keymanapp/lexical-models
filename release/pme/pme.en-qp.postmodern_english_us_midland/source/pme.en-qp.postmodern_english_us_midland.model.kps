@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>14.0.290.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>14.0.294.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -18,7 +18,7 @@
     <Name URL="">Postmodern English US Midland lexical model</Name>
     <Copyright URL="">© 2022, The Postmodern English Project</Copyright>
     <Author URL="mailto:postmodernenglish@gmail.com">The Postmodern English Project</Author>
-    <Version URL="">1.0.1</Version>
+    <Version URL="">1.0.2</Version>
     <WebSite URL="www.postmodernenglish.org">www.postmodernenglish.org</WebSite>
   </Info>
   <Files>

@@ -40,12 +40,12 @@
       <ID>id_f3f4c2984a0f3c656b7bb13b630ab777</ID>
       <Filename>pme.en-qp.postmodern_english_us_midland.model.kps</Filename>
       <Filepath>source\pme.en-qp.postmodern_english_us_midland.model.kps</Filepath>
-      <FileVersion>1.0.1</FileVersion>
+      <FileVersion>1.0.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Postmodern English US Midland lexical model</Name>
         <Copyright>© 2022, The Postmodern English Project</Copyright>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
       </Details>
     </File>
     <File>
