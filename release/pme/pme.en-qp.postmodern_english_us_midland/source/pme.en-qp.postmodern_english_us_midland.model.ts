@@ -1,4 +1,4 @@
-/*Postmodern English US Midland lexical model v1.0.1.
+/*Postmodern English US Midland lexical model v1.0.2.
 */
 
 const source: LexicalModelSource = {
