@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>15.0.245.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>..\..\kb ico\ann_kb_48.ico</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Getat</Name>
+    <Copyright URL="">© 2020 - 2022 Rogers Katelem Edeh</Copyright>
+    <Author URL="mailto:rogerskatelem@gmail.com">Rogers Katelem Edeh</Author>
+    <Version URL="">1.1</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\katelem.ann-latn.getat.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\kb ico\ann_kb_48.ico</Name>
+      <Description>File ann_kb_48.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Getat</Name>
+      <ID>katelem.ann-latn.getat</ID>
+      <Languages>
+        <Language ID="ann-Latn">Obolo (Andoni)</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
