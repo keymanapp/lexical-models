@@ -1,9 +1,7 @@
 Getat lexical model
 ===================
 
-© 2020 Rogers Katelem Edeh
-
-Version 1.0.1
+© 2020-2022 Rogers Katelem Edeh
 
 Description
 -----------
