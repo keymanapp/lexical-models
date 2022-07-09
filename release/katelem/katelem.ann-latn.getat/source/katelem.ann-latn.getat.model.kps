@@ -40,12 +40,6 @@
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
-    <File>
-      <Name>..\..\kb ico\ann_kb_48.ico</Name>
-      <Description>File ann_kb_48.ico</Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.ico</FileType>
-    </File>
   </Files>
   <Keyboards/>
   <LexicalModels>
