@@ -7,7 +7,6 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>..\..\kb ico\ann_kb_48.ico</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
