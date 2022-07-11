@@ -18,12 +18,15 @@ retrieve_external_model() {
 
   local source=`urldecode $(<external_source)`
 
-  if [[ -z "$FLAG_CLEAN" ]]; then
-    verify_external_target_folder_is_clean
-  else
+  if [[ ! -z "$FLAG_CLEAN" ]]; then
     clean_external_target_folder
     return 0
   fi
+
+  # We currently don't verify that the external target folder is clean.
+  # That breaks rebuilding. Instead, we just retrieve the files again.
+  # verify_external_target_folder_is_clean
+
 
   if is_external_source_model "$source"; then
     # If the external_source file has a single line referencing a GitHub commit
