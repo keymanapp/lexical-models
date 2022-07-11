@@ -1,5 +1,5 @@
 /*
-  Getat 1.0 - a lexical model for the Obolo language.
+  Getat: a lexical model for the Obolo language of Nigeria.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for

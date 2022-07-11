@@ -1,14 +1,12 @@
 Getat lexical model
 ===================
 
-© 2020 Rogers Katelem Edeh
-
-Version 1.0.1
+© Rogers Katelem Edeh
 
 Description
 -----------
 
-A Lexical Model for the Obolo Language
+A Lexical Model for the Obolo Language of Nigeria.
 
 Links
 -----
