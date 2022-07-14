@@ -7,6 +7,7 @@ Russian generated from template
 
 Links
 -----
+[https://github.com/dotland/lexical-model-ru/blob/main/README.md](https://github.com/dotland/lexical-model-ru/blob/main/README.md) <br />
 [https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md](https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md)
 
 Copyright
