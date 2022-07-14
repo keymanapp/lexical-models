@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>15.0.266.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>splash.png</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Russian</Name>
+    <Copyright URL="">© Dotland</Copyright>
+    <Author URL="mailto:tisarukhan@gmail.com">Tigran Sarukhanyan</Author>
+    <Version URL=""></Version>
+    <WebSite URL="https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md">https://github.com/dotland/mnemonic-kb-ru/blob/main/README.md</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\dotland.ru.russian.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>splash.png</Name>
+      <Description>File splash.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Russian</Name>
+      <ID>dotland.ru.russian</ID>
+      <Languages>
+        <Language ID="ru">Russian</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
