@@ -1,5 +1,5 @@
 /*
-  Russian 1.0 generated from template.
+  Russian 1.2 generated from template.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for
@@ -10,6 +10,7 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
   sources: ['wordlist.tsv'],
+  languageUsesCasing: true,
   searchTermToKey: function (term: string): string {
     // Use this pattern to remove common diacritical marks (accents).
     // See: https://www.compart.com/en/unicode/block/U+0300
