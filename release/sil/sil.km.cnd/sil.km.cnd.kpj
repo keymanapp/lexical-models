@@ -10,15 +10,15 @@
   <Files>
     <File>
       <ID>id_cb2180319493f55b5ba58aaf1f3cb8fd</ID>
-      <Filename>sil.km.chuon_nath_dictionary.model.ts</Filename>
-      <Filepath>source\sil.km.chuon_nath_dictionary.model.ts</Filepath>
+      <Filename>sil.km.cnd.model.ts</Filename>
+      <Filepath>source\sil.km.cnd.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_5b59c5bb30cd227e0987645222da5a9b</ID>
-      <Filename>sil.km.chuon_nath_dictionary.model.kps</Filename>
-      <Filepath>source\sil.km.chuon_nath_dictionary.model.kps</Filepath>
+      <Filename>sil.km.cnd.model.kps</Filename>
+      <Filepath>source\sil.km.cnd.model.kps</Filepath>
       <FileVersion>0.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
@@ -50,15 +50,15 @@
     </File>
     <File>
       <ID>id_3a6872ab62e5f64c511eee818b84a361</ID>
-      <Filename>sil.km.chuon_nath_dictionary.model_info</Filename>
-      <Filepath>sil.km.chuon_nath_dictionary.model_info</Filepath>
+      <Filename>sil.km.cnd.model_info</Filename>
+      <Filepath>sil.km.cnd.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_c8456e1fe1b2cf354de97588efccdb67</ID>
-      <Filename>sil.km.chuon_nath_dictionary.model.js</Filename>
-      <Filepath>source\..\build\sil.km.chuon_nath_dictionary.model.js</Filepath>
+      <ID>id_595bcb42eefe87fc283f646cb2ee8860</ID>
+      <Filename>sil.km.cnd.model.js</Filename>
+      <Filepath>source\..\build\sil.km.cnd.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_5b59c5bb30cd227e0987645222da5a9b</ParentFileID>
