@@ -47,6 +47,7 @@
       <ID>sil.glk-arab.ptwl1</ID>
       <RTL>True</RTL>
       <Languages>
+        <Language ID="glk">Gilaki</Language>
         <Language ID="glk-Arab">Gilaki</Language>
       </Languages>
     </LexicalModel>
