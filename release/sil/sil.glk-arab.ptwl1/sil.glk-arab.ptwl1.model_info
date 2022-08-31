@@ -1,6 +1,7 @@
 {
     "license": "mit",
     "languages": [
+        "glk",
         "glk-Arab"
     ],
 	  "description": "ptwl1 generated from template"
