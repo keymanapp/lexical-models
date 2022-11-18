@@ -1,5 +1,9 @@
 # Version History
 
+## 0.1.9 (2022-11-20)
+
+* Replace "left single quotation mark" with "apostrophe" (#143)
+
 ## 0.1.8 (2022-04-13)
 
 * Removed typos and non-Latin characters
