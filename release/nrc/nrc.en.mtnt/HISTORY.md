@@ -1,6 +1,6 @@
 # Version History
 
-## 0.1.9 (2022-08-24)
+## 0.1.9 (2022-11-20)
 
 * Replace "left single quotation mark" with "apostrophe" (#143)
 
