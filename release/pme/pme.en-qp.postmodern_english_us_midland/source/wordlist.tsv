@@ -2711,11 +2711,11 @@ jélēsnīs
 jém	10
 jémz
 jént
+jéntlīst
+jéntlԅ
 jénts
 jéntōl	10
 jénōlmēn
-jéntlīst
-jéntlԅ
 jénԅadīd
 jénԅadīŋ
 jénԅadԅ
@@ -3392,8 +3392,8 @@ kābīj
 kābījīz
 kāfa
 kāfaz
-kāfētereē
-kāfētereēz
+kāfētīreē
+kāfētīreēz
 kāklīŋ
 kākti
 kāktēs
@@ -3699,10 +3699,10 @@ kԅēnէle
 kԅէn
 kԅէnz
 la	10
+lablīŋ
 labōl	10
 labōld
 labōlz
-labōlīŋ
 lad
 lade	10
 ladez
@@ -3738,8 +3738,6 @@ lest
 lev	10
 levz
 levīŋ
-lewdly', 'lůdle
-lewds', 'lůdz
 li	10
 libōl	10
 libōld
@@ -3942,10 +3940,10 @@ lāҁ	10
 lāҁt
 lāҁīz
 lāҁīŋ
-lējīdīmīt
-lējīdīmītle
+lējīdēmīt
+lējīdēmīէle
 lējīt
-lējītle
+lējīէle
 lēkrós
 lībԅadīd
 lībԅadīŋ
@@ -4034,6 +4032,8 @@ lůbrīkēnts
 lůbz
 lůbīŋ
 lůd	10
+lůdle
+lůdz
 lůs	10
 lůsle
 lůsēn
@@ -5204,6 +5204,16 @@ párīҁīz
 párīҁīŋ
 på	10
 påd
+pålegón
+pålegónz
+pålīn
+pålīnadīd
+pålīnadīŋ
+pålīnadԅ
+pålīnadԅz
+pålīnat	10
+pålīnats
+pålīnaҁēn
 pålītīks
 påm
 påmz
@@ -5235,16 +5245,6 @@ pét	10
 péts
 pód	10
 pódz
-pólegón
-pólegónz
-pólīn
-pólīnadīd
-pólīnadīŋ
-pólīnadԅ
-pólīnadԅz
-pólīnat	10
-pólīnats
-pólīnaҁēn
 pómp
 pómēgránīt
 pómēgránīts
@@ -5638,7 +5638,7 @@ repli	10
 replid
 repliz
 repliīŋ
-repólīnaҁēn
+repålīnaҁēn
 rer	10
 rerz
 rezēn	10
