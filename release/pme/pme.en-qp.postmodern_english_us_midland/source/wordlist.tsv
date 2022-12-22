@@ -52,10 +52,10 @@ Fébuárez
 G
 G'z
 GMT
-Gwódēmólē
-Gwódēmólē'z
-Gwódēmólīn
-Gwódēmólīnz
+Gwódēmålē
+Gwódēmålē'z
+Gwódēmålīn
+Gwódēmålīnz
 Gónde
 Gónde'z
 Gōrdēn
@@ -64,10 +64,10 @@ H
 H'z
 Háre
 Háre'z
+Hålewūd
+Hålewūd'z
 Hékdԅ
 Hékdԅ'z
-Hólewūd
-Hólewūd'z
 Hāl
 Hāl'z
 Hālowen
@@ -1703,6 +1703,11 @@ fárz
 fárēmon
 fárēmonz
 fål	10
+fålo	10
+fålod
+fåloz
+fåloīŋ
+fåloԅ
 fåls	10
 fålsle
 fålt	10
@@ -1728,11 +1733,6 @@ féstīv	10
 féstīvōl
 féstīvōlz
 fó
-fólo	10
-fólod
-fóloz
-fóloīŋ
-fóloԅ
 fór
 fórdīd
 fórdīŋ
@@ -2323,6 +2323,9 @@ hål	10
 hålwa
 hålwaz
 hålz
+hålēgrāfīk	10
+hålēgrāfīkle
+hålēgrāfīks
 hålīda
 hålīdaz
 héd	10
@@ -2365,9 +2368,6 @@ hóbez
 hódīst
 hódԅ
 hóke
-hólēgrāfīk	10
-hólēgrāfīkle
-hólēgrāfīks
 hónt	10
 hónts
 hóntīd
@@ -3120,6 +3120,14 @@ kwot	10
 kwots
 kwoҁēnt	10
 kwoҁēnts
+kwålēfi	10
+kwålēfid
+kwålēfiz
+kwålēfiīŋ
+kwålēfīkaҁēn
+kwålēfīkaҁēnz
+kwålīde
+kwålīdez
 kwésdīd
 kwésdīŋ
 kwést	10
@@ -3139,14 +3147,6 @@ kwójrůplīŋ
 kwójrůpōl
 kwójrůpōld
 kwójrůpōlz
-kwólēfi	10
-kwólēfid
-kwólēfiz
-kwólēfiīŋ
-kwólēfīkaҁēn
-kwólēfīkaҁēnz
-kwólīde
-kwólīdez
 kwāk	10
 kwāks
 kwākt
@@ -3223,6 +3223,16 @@ kålmīŋ
 kålz
 kålēflāūԅ
 kålēflāūԅz
+kålēm	10
+kålēmz
+kålēne	10
+kålēnez
+kålēniz
+kålēnizd
+kålēnizīza
+kålēnizīŋ
+kålīj
+kålījīz
 kålīŋ
 kémīkōl
 kémīkōlz
@@ -3240,16 +3250,6 @@ kóft
 kófīŋ
 kókpīt
 kókpīts
-kólēm	10
-kólēmz
-kólēne	10
-kólēnez
-kólēniz
-kólēnizd
-kólēnizīz
-kólēnizīŋ
-kólīj
-kólījīz
 kómbo
 kómboz
 kómbēnaҁēn
@@ -4203,6 +4203,8 @@ máŋgo
 máŋgoz
 mål
 målz
+målēkul	10
+målēkulz
 médo
 médoz
 médēsīn	10
@@ -4280,8 +4282,6 @@ módԅn	10
 módԅnle
 módԅīt
 módԅīէle
-mólēkul	10
-mólēkulz
 móm	10
 móme
 mómez
@@ -7302,7 +7302,7 @@ sīlvԅe
 sīlvԅz
 sīlēbōl	10
 sīlēbōlz
-sīmbólīk
+sīmbålīk
 sīmbōl	10
 sīmbōlz
 sīmple
@@ -9420,7 +9420,7 @@ zůz
 īkwats
 īkwaԏēn	10
 īkwaԏēnz
-īkwólīde
+īkwålīde
 īkónēme
 īkónēmez
 īlegōl	10
