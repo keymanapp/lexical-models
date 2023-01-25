@@ -1,14 +1,10 @@
 wl1 lexical model
 ===================
 
-© 2021 SIL International
-
-Version 1.0
-
 Description
 -----------
 
-wl1 generated from template
+Predictive text model for Oniyan (bsc, Senegal), based on a word list.
 
 Links
 -----

@@ -19,12 +19,12 @@
       <ID>id_db2e7c870a10910dadfc6e4eaa35c9ca</ID>
       <Filename>sil_senegal.bsc.wl1.model.kps</Filename>
       <Filepath>source\sil_senegal.bsc.wl1.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.0.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>wl1</Name>
-        <Copyright>© 2021 SIL International</Copyright>
-        <Version>1.0</Version>
+        <Copyright>© 2021-2023 SIL International</Copyright>
+        <Version>1.0.1</Version>
       </Details>
     </File>
     <File>
