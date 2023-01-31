@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "wo"
+    ],
+	  "description": "predictive text model for Wolof (wo, Senegal), based on a word list"
+}

@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "gsl-Arab"
+    ],
+	  "description": "predictive text model for Gusilay (gsl, Senegal) in Ajami, based on a word list"
+}
