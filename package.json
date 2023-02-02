@@ -20,7 +20,7 @@
     "@keymanapp/lexical-model-compiler": "^16.0.138",
     "@keymanapp/models-types": "^16.0.138",
     "@types/node": "^10.17.27",
-    "node": "^14.15.0",
+    "node": "^18.13.0",
     "typescript": "^3.9.6"
   },
   "devDependencies": {
