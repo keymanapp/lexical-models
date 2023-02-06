@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/keymanapp/lexical-models#readme",
   "dependencies": {
-    "@keymanapp/lexical-model-compiler": "^15.0.263",
-    "@keymanapp/models-types": "^15.0.263",
+    "@keymanapp/lexical-model-compiler": "^16.0.138",
+    "@keymanapp/models-types": "^16.0.138",
     "@types/node": "^10.17.27",
     "node": "^14.15.0",
     "typescript": "^3.9.6"
