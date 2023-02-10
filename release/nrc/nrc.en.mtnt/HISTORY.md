@@ -1,6 +1,6 @@
 # Version History
 
-## 0.2.0 (2023-02-06)
+## 0.2.0 (2023-02-13)
 
 * Lower-case some common words
 * Remove single-characters and decimal numbers
