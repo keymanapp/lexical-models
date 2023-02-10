@@ -1,5 +1,10 @@
 # Version History
 
+## 0.2.0 (2023-02-13)
+
+* Lower-case some common words
+* Remove single-characters and decimal numbers
+
 ## 0.1.9 (2022-11-20)
 
 * Replace "left single quotation mark" with "apostrophe" (#143)
