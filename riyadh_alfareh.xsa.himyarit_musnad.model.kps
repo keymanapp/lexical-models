@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.138.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>..\..\himyarit_musnad.ico</GraphicFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">himyarit musnad</Name>
+    <Copyright URL="">© Riyadh alfareh</Copyright>
+    <Author URL="mailto:ralfareh@gmail.com">Riyadh alfareh</Author>
+    <Version URL="">1.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\riyadh_alfareh.xsa.himyarit_musnad.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\himyarit_musnad.ico</Name>
+      <Description>File himyarit_musnad.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description>File LICENSE.md</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>wordlist.tsv</Name>
+      <Description>File wordlist.tsv</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.tsv</FileType>
+    </File>
+    <File>
+      <Name>..\sultanmusnad.ttf</Name>
+      <Description>Font sultan-musnad</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+    <File>
+      <Name>..\HimyaritMusnadTyping-English.pdf</Name>
+      <Description>File HimyaritMusnadTyping-English.pdf</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.pdf</FileType>
+    </File>
+    <File>
+      <Name>..\TeachingOrder.tsv</Name>
+      <Description>File TeachingOrder.tsv</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.tsv</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>himyarit musnad</Name>
+      <ID>riyadh_alfareh.xsa.himyarit_musnad</ID>
+      <Languages>
+        <Language ID="xsa">Sabaean</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
