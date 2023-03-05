@@ -6,7 +6,8 @@ Version 1.0
 Description
 -----------
 himyarit musnad generated from template
-
+for used with himyarit Musnad keyboard 
+https://keyman.com/keyboards/himyarit_musnad
 Links
 -----
 
