@@ -1,16 +1,16 @@
 himyarit musnad lexical model
 ===================
 
-Version 1.0
-
-Description
+الإصدار 1.0
+مؤلف BCP 47 tag 'xsa-sarb'
+وصف
 -----------
 himyarit musnad generated from template
 for used with himyarit Musnad keyboard 
 https://keyman.com/keyboards/himyarit_musnad
 Links
 -----
-sil.xsa
+BCP 47 tag 'xsa-sarb'
 
 Copyright
 ---------
