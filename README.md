@@ -10,6 +10,7 @@ for used with himyarit Musnad keyboard
 https://keyman.com/keyboards/himyarit_musnad
 Links
 -----
+sil.xsa
 
 Copyright
 ---------
