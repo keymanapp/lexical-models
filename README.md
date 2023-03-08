@@ -1,16 +1,14 @@
-himyarit musnad lexical model
+himyarit musnad wordlist lexical model
 ===================
 
 Version 1.0
 
 Description
 -----------
-himyarit musnad generated from template
-for used with himyarit Musnad keyboard 
-https://keyman.com/keyboards/himyarit_musnad
+himyarit musnad wordlist generated from template
+
 Links
 -----
-sil.xsa
 
 Copyright
 ---------
