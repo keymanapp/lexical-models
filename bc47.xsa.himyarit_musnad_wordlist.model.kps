@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.138.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">himyarit musnad wordlist</Name>
+    <Copyright URL="">© BC47</Copyright>
+    <Author URL="mailto:ralfareh@gmail.com">BC47</Author>
+    <Version URL="">1.0</Version>
+    <WebSite URL="https://keyman.com/keyboards/himyarit_musnad">https://keyman.com/keyboards/himyarit_musnad</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\bc47.xsa.himyarit_musnad_wordlist.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\..\..\..\..\..\Desktop\كيبورد المسند 6\himyarit_musnad-1\himyarit_musnad\source\himyarit_musnad.ico</Name>
+      <Description>File himyarit_musnad.ico</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ico</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>himyarit musnad wordlist</Name>
+      <ID>bc47.xsa.himyarit_musnad_wordlist</ID>
+      <Languages>
+        <Language ID="xsa">Sabaean</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
