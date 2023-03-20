@@ -1,6 +1,10 @@
 Balochi Change History
 ======================
 
+1.2.2 (2023-03-21)
+----------------
+* Rebuilt with ES3 code generation to support Android 5.0 devices
+
 1.2.1 (2022-02-18)
 ----------------
 Work only with composed forms.
