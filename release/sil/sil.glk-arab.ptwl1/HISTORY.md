@@ -1,6 +1,10 @@
 ptwl1 Change History
 ====================
 
+1.0.6 (2023-03-21)
+----------------
+* Rebuilt with ES3 code generation to support Android 5.0 devices
+
 1.0.5 (2022-08-31)
 ------------------
 add glk to list of BCP 47 codes
