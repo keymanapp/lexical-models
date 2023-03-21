@@ -15,9 +15,9 @@
   </StartMenu>
   <Info>
     <Name URL="">English language model mined from MTNT</Name>
-    <Copyright URL="">© 2019-2022 National Research Council Canada</Copyright>
+    <Copyright URL="">© 2019-2023 National Research Council Canada</Copyright>
     <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
-    <Version URL="">0.1.9</Version>
+    <Version URL="">0.2.0</Version>
   </Info>
   <Files>
     <File>
