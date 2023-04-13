@@ -45,6 +45,7 @@
     <LexicalModel>
       <Name>Himyarit Musnad</Name>
       <ID>alfareh.xsa.himyarit_musnad</ID>
+      <RTL>True</RTL>
       <Languages>
         <Language ID="xsa">Sabaean</Language>
       </Languages>
