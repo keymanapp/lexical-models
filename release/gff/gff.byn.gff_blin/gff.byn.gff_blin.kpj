@@ -19,7 +19,7 @@
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
       <Filename>gff.byn.gff_blin.model.kps</Filename>
       <Filepath>source\gff.byn.gff_blin.model.kps</Filepath>
-      <FileVersion></FileVersion>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Blin Lexical Model</Name>
@@ -56,16 +56,9 @@
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_28c485f54e943898113a5172d94cdb1a</ID>
-      <Filename>gff.byn.gff_blin.model.ts</Filename>
-      <Filepath>gff.byn.gff_blin.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.ts</FileType>
-    </File>
-    <File>
-      <ID>id_4f16488e19af561d7b4d0c0b54157f76</ID>
+      <ID>id_ffa536b9d164e9de3edf435c28fd4d75</ID>
       <Filename>gff.byn.gff_blin.model.js</Filename>
-      <Filepath>build\gff.byn.gff_blin.model.js</Filepath>
+      <Filepath>source\..\build\gff.byn.gff_blin.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_a4adc1eca30536fc86b0c5c550478e55</ParentFileID>
