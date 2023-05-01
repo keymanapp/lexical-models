@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,8 +16,8 @@
   </StartMenu>
   <Info>
     <Name URL="">GFF Harari Lexical Model</Name>
-    <Copyright URL="">© 2023 Ge'ez Frontier Foundation</Copyright>
-    <Author URL="mailto:yacob@geez.org">Ge'ez Frontier Foundation</Author>
+    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
+    <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
     <Version URL="">1.0</Version>
   </Info>
   <Files>
