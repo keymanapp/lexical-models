@@ -49,6 +49,13 @@
       <FileType>.model_info</FileType>
     </File>
     <File>
+      <ID>id_1b4460628b8417ef1733db5d6e9f7710</ID>
+      <Filename>gff.har.gff_harari.model.ts</Filename>
+      <Filepath>source\gff.har.gff_harari.model.ts</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.ts</FileType>
+    </File>
+    <File>
       <ID>id_4f16488e19af561d7b4d0c0b54157f76</ID>
       <Filename>gff.am.gff_amharic.model.js</Filename>
       <Filepath>build\gff.am.gff_amharic.model.js</Filepath>
@@ -71,13 +78,6 @@
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
       <ParentFileID>id_a4adc1eca30536fc86b0c5c550478e55</ParentFileID>
-    </File>
-    <File>
-      <ID>id_1b4460628b8417ef1733db5d6e9f7710</ID>
-      <Filename>gff.har.gff_harari.model.ts</Filename>
-      <Filepath>source\gff.har.gff_harari.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.ts</FileType>
     </File>
   </Files>
 </KeymanDeveloperProject>
