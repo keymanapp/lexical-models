@@ -1,7 +1,7 @@
 GFF Blin lexical model
 ===================
 
-© 2023 Ge'ez Frontier Foundation
+© 2023 Geʾez Frontier Foundation
 
 Version 1.0
 
