@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "byn"
+    ],
+	  "description": "Blin Lexical Model derived from a curated document corpus."
+}
