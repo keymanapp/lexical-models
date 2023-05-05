@@ -22,7 +22,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\gf.har.gff_harari.model.js</Name>
+      <Name>..\build\gff.har.gff_harari.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -44,7 +44,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>GFF Harari</Name>
-      <ID>gf.har.gff_harari</ID>
+      <ID>gff.har.gff_harari</ID>
       <Languages>
         <Language ID="har">Harari</Language>
       </Languages>

@@ -10,13 +10,13 @@
   <Files>
     <File>
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
-      <Filename>gff.am.gff_amharic.model.kps</Filename>
-      <Filepath>source\gff.am.gff_amharic.model.kps</Filepath>
-      <FileVersion></FileVersion>
+      <Filename>gff.har.gff_harari.model.kps</Filename>
+      <Filepath>source\gff.har.gff_harari.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>GFF Amharic Lexical Model</Name>
-        <Copyright>© 2020 Ge'ez Frontier Foundation</Copyright>
+        <Name>GFF Harari Lexical Model</Name>
+        <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
         <Version>1.0</Version>
       </Details>
     </File>
@@ -43,8 +43,8 @@
     </File>
     <File>
       <ID>id_90e8fc7a3a0aa0a27249a5dbf533f559</ID>
-      <Filename>gff.am.gff_amharic.model_info</Filename>
-      <Filepath>gff.am.gff_amharic.model_info</Filepath>
+      <Filename>gff.har.gff_harari.model_info</Filename>
+      <Filepath>gff.har.gff_harari.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
@@ -56,9 +56,9 @@
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_4f16488e19af561d7b4d0c0b54157f76</ID>
-      <Filename>gff.am.gff_amharic.model.js</Filename>
-      <Filepath>build\gff.am.gff_amharic.model.js</Filepath>
+      <ID>id_31680eddd2cb04d27520e9ad64201141</ID>
+      <Filename>gff.har.gff_harari.model.js</Filename>
+      <Filepath>source\..\build\gff.har.gff_harari.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_a4adc1eca30536fc86b0c5c550478e55</ParentFileID>
