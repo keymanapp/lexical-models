@@ -46,7 +46,7 @@
       <Name>GFF Blin</Name>
       <ID>gff.byn.gff_blin</ID>
       <Languages>
-        <Language ID="byn-Ethi">Blin</Language>
+        <Language ID="byn-Ethi">Blin (Ethiopic)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
