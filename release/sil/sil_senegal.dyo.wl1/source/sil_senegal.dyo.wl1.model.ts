@@ -8,11 +8,6 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
   sources: ['wordlist.tsv'],,
-  punctuation: {
-    quotesForKeepSuggestion: {
-      open: "\u00AB",
-      close: "\u00BB"
-    }
-  }
+  languageUsesCasing: true
 };
 export default source;
