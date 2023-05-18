@@ -3,5 +3,5 @@
     "languages": [
         "sav"
     ],
-	  "description": "predictive text model for Saafi-Saafi (sav, Senegal), based on a word list"
+	  "description": "predictive text model for Saafi-Saafi (sav, Senegal), based on a word list with casing enabled"
 }
