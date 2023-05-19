@@ -3,5 +3,5 @@
     "languages": [
         "bsc"
     ],
-	  "description": "predictive text model for Oniyan (bsc, Senegal), based on a word list"
+	  "description": "Predictive text model for Oniyan (bsc, Senegal), based on a word list with casing enabled."
 }

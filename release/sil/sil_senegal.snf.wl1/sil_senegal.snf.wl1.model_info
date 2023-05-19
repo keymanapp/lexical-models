@@ -3,5 +3,5 @@
     "languages": [
         "snf"
     ],
-	  "description": "predictive text model for Noon (snf, Senegal), based on a word list"
+	  "description": "predictive text model for Noon (snf, Senegal), based on a word list with casing enabled"
 }

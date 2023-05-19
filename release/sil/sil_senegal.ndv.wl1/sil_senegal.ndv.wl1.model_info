@@ -3,5 +3,5 @@
     "languages": [
         "ndv"
     ],
-	  "description": "predictive text model for Ndut (ndv, Senegal), based on a word list"
+	  "description": "predictive text model for Ndut (ndv, Senegal), based on a word list with casing"
 }

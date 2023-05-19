@@ -3,5 +3,5 @@
     "languages": [
         "gsl"
     ],
-	  "description": "predictive text model for Gusilay (gsl, Senegal), based on a word list"
+	  "description": "predictive text model for Gusilay (gsl, Senegal), based on a word list with casing enabled"
 }
