@@ -4,7 +4,7 @@ texts lexical model
 Description
 -----------
 
-predictive text model for Serer-Sine (srr, Senegal), based on a word list
+Predictive text model for Serer-Sine (srr, Senegal), based on a word list with casing enabled.
 
 Links
 -----

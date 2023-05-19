@@ -4,7 +4,7 @@ wl1 lexical model
 Description
 -----------
 
-Predictive text model for Wolof (wo, Senegal), based on a word list.
+Predictive text model for Wolof (wo, Senegal), based on a word list with casing enabled.
 
 Links
 -----

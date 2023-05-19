@@ -19,12 +19,12 @@
       <ID>id_67ba2189ea9d07878d99f0a273bc9877</ID>
       <Filename>sil_senegal.sav.wl1.model.kps</Filename>
       <Filepath>source\sil_senegal.sav.wl1.model.kps</Filepath>
-      <FileVersion>1.0.1</FileVersion>
+      <FileVersion>1.1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>wl1</Name>
         <Copyright>© 2021-2023 SIL International</Copyright>
-        <Version>1.0.1</Version>
+        <Version>1.1.0</Version>
       </Details>
     </File>
     <File>
@@ -80,9 +80,9 @@
       <ParentFileID>id_67ba2189ea9d07878d99f0a273bc9877</ParentFileID>
     </File>
     <File>
-      <ID>id_5c4716f250dd6b7187905e4ea5ebff75</ID>
-      <Filename>sil_senegal_sav_azerty_splash.png</Filename>
-      <Filepath>source\sil_senegal_sav_azerty_splash.png</Filepath>
+      <ID>id_2ec42f4c39ae077ef2debb0cc009e8fa</ID>
+      <Filename>sil_senegal_sav_splash.png</Filename>
+      <Filepath>source\sil_senegal_sav_splash.png</Filepath>
       <FileVersion></FileVersion>
       <FileType>.png</FileType>
       <ParentFileID>id_67ba2189ea9d07878d99f0a273bc9877</ParentFileID>

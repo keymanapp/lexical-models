@@ -9,7 +9,7 @@
   </Options>
   <Files>
     <File>
-      <ID>id_be96d0118a94768ae448ab32cad61d03</ID>
+      <ID>id_64f52d84ff6cbe115f498fa71ee3e2e8</ID>
       <Filename>sil_senegal.srr.texts.model.ts</Filename>
       <Filepath>source\sil_senegal.srr.texts.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
@@ -19,12 +19,12 @@
       <ID>id_efeca3a210228add882ec95debba6ad4</ID>
       <Filename>sil_senegal.srr.texts.model.kps</Filename>
       <Filepath>source\sil_senegal.srr.texts.model.kps</Filepath>
-      <FileVersion>1.0.1</FileVersion>
+      <FileVersion>1.1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>texts</Name>
         <Copyright>© 2021-2023 SIL International</Copyright>
-        <Version>1.0.1</Version>
+        <Version>1.1.0</Version>
       </Details>
     </File>
     <File>
@@ -80,9 +80,9 @@
       <ParentFileID>id_efeca3a210228add882ec95debba6ad4</ParentFileID>
     </File>
     <File>
-      <ID>id_37d281b2cdc076bd7f8c69db28fd5b8e</ID>
-      <Filename>sil_senegal_srr_azerty_splash.png</Filename>
-      <Filepath>source\sil_senegal_srr_azerty_splash.png</Filepath>
+      <ID>id_4f137391b378778e440fb42a57c5cbb0</ID>
+      <Filename>sil_senegal_srr_splash.png</Filename>
+      <Filepath>source\sil_senegal_srr_splash.png</Filepath>
       <FileVersion></FileVersion>
       <FileType>.png</FileType>
       <ParentFileID>id_efeca3a210228add882ec95debba6ad4</ParentFileID>

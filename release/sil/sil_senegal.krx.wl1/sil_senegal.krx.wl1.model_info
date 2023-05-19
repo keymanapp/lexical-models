@@ -3,5 +3,5 @@
     "languages": [
         "krx"
     ],
-	  "description": "predictive text model for Karon (krx, Senegal), based on a word list"
+	  "description": "Predictive text model for Karon (krx, Senegal), based on a word list with casing enabled."
 }

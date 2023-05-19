@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>15.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>sil_senegal_dyo_azerty_splash.png</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -19,7 +18,7 @@
     <Name URL="">wl1</Name>
     <Copyright URL="">© 2022-2023 SIL International</Copyright>
     <Author URL="mailto:academic_computing_seb@sil.org">SIL Senegal</Author>
-    <Version URL="">1.0.1</Version>
+    <Version URL="">1.1.0</Version>
     <WebSite URL="senegal.sil.org">senegal.sil.org</WebSite>
   </Info>
   <Files>
@@ -42,8 +41,8 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>sil_senegal_dyo_azerty_splash.png</Name>
-      <Description>File sil_senegal_dyo_azerty_splash.png</Description>
+      <Name>sil_senegal_dyo_splash.png</Name>
+      <Description>File sil_senegal_dyo_splash.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
