@@ -1,7 +1,7 @@
 {
     "license": "mit",
     "languages": [
-        "byn"
+        "byn-Ethi"
     ],
 	  "description": "Blin Lexical Model derived from a curated document corpus."
 }
