@@ -8,7 +8,7 @@ Version 1.0
 Description
 -----------
 This is an Harari (ሀረሪ, ISO-639-3 har) lexical model developed to support predictive text in the
-corresponding GFF Harari keyboard.  The word list has not reviewed to validate spelling. Spelling 
+corresponding GFF Harari keyboard. The word list has not been reviewed to validate spelling. Spelling 
 refinements and the incorporation of additional word lists are goals of future development of this
 lexical model.
 
