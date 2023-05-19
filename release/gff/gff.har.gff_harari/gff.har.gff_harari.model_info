@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "har"
+    ],
+	  "description": "Harari Lexical Model derived from a curated document corpus."
+}
