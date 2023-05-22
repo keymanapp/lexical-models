@@ -1,4 +1,5 @@
-/// <reference types="@keymanapp/lexical-model-types" />
+// Defines LexicalModelSource.
+/// <reference types="@keymanapp/lexical-model-compiler/dist/kmlmc.d.ts" />
 
 const source: LexicalModelSource = {
   format: 'trie-1.0',
