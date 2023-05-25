@@ -8,7 +8,7 @@ Version 1.0.1
 Description
 -----------
 This is an Xamtanga (ኽምጣጘ, ISO-639-3 xan) lexical model developed to support predictive text in the
-corresponding GFF Xamtanga+Awi keyboard.  The word list has been modified to remove English entries
+corresponding GFF Awngi+Xamtanga keyboard.  The word list has been modified to remove English entries
 only but has not otherwise been reviewed to validate spelling. Spelling refinements and the incorporation 
 of additional word lists are goals of future development of this lexical model.
 
