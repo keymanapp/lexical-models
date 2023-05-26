@@ -7,3 +7,4 @@ servervars.sh
 *.kpj.user
 
 .DS_Store
+/.project

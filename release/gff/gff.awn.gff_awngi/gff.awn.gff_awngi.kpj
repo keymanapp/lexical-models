@@ -19,12 +19,12 @@
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
       <Filename>gff.awn.gff_awngi.model.kps</Filename>
       <Filepath>source\gff.awn.gff_awngi.model.kps</Filepath>
-      <FileVersion>1.0.1</FileVersion>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Awngi Lexical Model</Name>
         <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.0.1</Version>
+        <Version>1.0</Version>
       </Details>
     </File>
     <File>

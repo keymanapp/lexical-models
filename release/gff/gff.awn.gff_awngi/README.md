@@ -3,7 +3,7 @@ GFF Awngi lexical model
 
 © 2023 Geʾez Frontier Foundation
 
-Version 1.0.1
+Version 1.0
 
 Description
 -----------
