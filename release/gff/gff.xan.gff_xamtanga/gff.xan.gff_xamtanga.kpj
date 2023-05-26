@@ -19,12 +19,12 @@
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
       <Filename>gff.xan.gff_xamtanga.model.kps</Filename>
       <Filepath>source\gff.xan.gff_xamtanga.model.kps</Filepath>
-      <FileVersion>1.0.1</FileVersion>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Xamtanga Lexical Model</Name>
         <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.0.1</Version>
+        <Version>1.0</Version>
       </Details>
     </File>
     <File>
