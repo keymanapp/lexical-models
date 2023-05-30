@@ -1,5 +1,5 @@
 /*
-  GFF Harari 1.0 generated from template.
+  GFF Harari 1.1 generated from template.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for

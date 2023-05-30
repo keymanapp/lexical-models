@@ -12,12 +12,12 @@
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
       <Filename>gff.har.gff_harari.model.kps</Filename>
       <Filepath>source\gff.har.gff_harari.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Harari Lexical Model</Name>
         <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
