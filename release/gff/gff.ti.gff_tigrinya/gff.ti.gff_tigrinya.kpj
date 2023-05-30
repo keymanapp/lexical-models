@@ -12,19 +12,19 @@
       <ID>id_71ec81e779cf48d6f4711907a19624e0</ID>
       <Filename>gff.ti.gff_tigrinya.model.ts</Filename>
       <Filepath>source\gff.ti.gff_tigrinya.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_1499e91aec3343ff3062111dac598b4f</ID>
       <Filename>gff.ti.gff_tigrinya.model.kps</Filename>
       <Filepath>source\gff.ti.gff_tigrinya.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Tigrinya</Name>
         <Copyright>© 2020 - 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.0</Version>
+        <Version>1.2</Version>
       </Details>
     </File>
     <File>

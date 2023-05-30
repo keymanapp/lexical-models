@@ -3,7 +3,7 @@ GFF Tigrinya Lexical Model
 
 © 2020 – 2023 Geʾez Frontier Foundation
 
-Version 1.1
+Version 1.2
 
 Description
 -----------
