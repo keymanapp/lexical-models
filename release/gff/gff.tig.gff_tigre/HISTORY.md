@@ -5,6 +5,7 @@ GFF Tigre Change History
 ------------------
 * Replaced bad "har" language identifier with "tig".
 * Added content from the Modaina.com website.
+* Recognize ’ as a word-forming symbol.
 
 1.0 (2023-06-03)
 ----------------
