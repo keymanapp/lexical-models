@@ -43,10 +43,10 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>GFF Tigre</Name>
+      <Name>GFF Tigre Lexical Model</Name>
       <ID>gff.tig.gff_tigre</ID>
       <Languages>
-        <Language ID="har">Tigre</Language>
+        <Language ID="tig">Tigre</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
