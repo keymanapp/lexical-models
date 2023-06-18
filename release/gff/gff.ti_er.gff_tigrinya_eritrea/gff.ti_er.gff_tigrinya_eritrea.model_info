@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "ti-ET", "ti-ER"
+    ],
+	  "description": "Tigrinya Lexical Model derived from the UniLex word list for Tigrinya."
+}
