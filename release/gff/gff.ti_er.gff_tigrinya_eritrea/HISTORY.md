@@ -1,5 +1,5 @@
-GFF Tigrinya Change History
-====================
+GFF Tigrinya-Eritrean Lexical Change History
+============================================
 
 1.0 (2023-06-18)
 ----------------

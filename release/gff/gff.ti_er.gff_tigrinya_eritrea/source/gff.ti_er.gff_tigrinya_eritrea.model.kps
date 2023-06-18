@@ -46,7 +46,6 @@
       <Name></Name>
       <ID>gff.ti_er.gff_tigrinya_eritrea</ID>
       <Languages>
-        <Language ID="ti-ET">Tigrinya (Ethiopia)</Language>
         <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
       </Languages>
     </LexicalModel>
