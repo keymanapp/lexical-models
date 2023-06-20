@@ -8,17 +8,17 @@ Version 1.0
 Description
 -----------
 
-This is a Tigrinya (ትግርኛ , ISO-639-2 ti) lexical model developed to support predictive text in 
-corresponding GFF Tigrinya keyboards.  The lexical model relies on the UniLex projects's word
-List for Tigrinya.  The word list has been modified to remove English entries only.  The word
-list has not otherwise been reviewed to validate spelling or separate Eritrean Tigrinya from
-Ethiopian Tigrinya spelling conventions. These refinements are goals to be addressed in the
-future development of this lexical model.
+This is a Tigrinya (ትግርኛ , ISO-639-2 ti-ER) lexical model developed to support predictive text in 
+the corresponding GFF Tigrinya-Eritrea keyboard.  The lexical model is based on the content found from 131
+issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper. English words have been removed from the generated word list,
+but quality checks for spelling, etc. have not been performed.  These checks are left as a goal for a
+future version of the lexical model.
+
 
 
 Links
 -----
-* UniLex TI Word List: [https://github.com/unicode-org/unilex/blob/master/data/frequency/ti.txt](https://github.com/unicode-org/unilex/blob/master/data/frequency/ti.txt)
+* Haddas Eritrea (ሓዳስ ኤርትራ): [https://shabait.com/category/newspapers/haddas-ertra-news/](https://shabait.com/category/newspapers/haddas-ertra-news/)
 
 
 Supported Platforms
