@@ -12,12 +12,12 @@
       <ID>id_a4adc1eca30536fc86b0c5c550478e55</ID>
       <Filename>gff.tig.gff_tigre.model.kps</Filename>
       <Filepath>source\gff.tig.gff_tigre.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.0.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>GFF Tigre Lexical Model</Name>
         <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.0</Version>
+        <Version>1.0.2</Version>
       </Details>
     </File>
     <File>
