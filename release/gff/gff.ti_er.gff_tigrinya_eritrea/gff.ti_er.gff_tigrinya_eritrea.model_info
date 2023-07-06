@@ -1,7 +1,7 @@
 {
     "license": "mit",
     "languages": [
-        "ti-ET", "ti-ER"
+        "ti-ER"
     ],
-	  "description": "Tigrinya Lexical Model derived from the UniLex word list for Tigrinya."
+	  "description": "The Tigrinya-Eritrea lexical model is based on the content found from 131 issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper."
 }
