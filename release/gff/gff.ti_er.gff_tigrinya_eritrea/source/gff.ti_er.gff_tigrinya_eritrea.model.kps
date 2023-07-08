@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>13.0.104.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -16,9 +16,9 @@
   </StartMenu>
   <Info>
     <Name URL="">GFF Tigrinya-Eritrean Lexical Model</Name>
-    <Copyright URL="">© 2020 - 2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.0.1</Version>
   </Info>
   <Files>
     <File>
@@ -43,7 +43,7 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name></Name>
+      <Name>GFF Eritrean Tigrinya</Name>
       <ID>gff.ti_er.gff_tigrinya_eritrea</ID>
       <Languages>
         <Language ID="ti-ER">Tigrinya (Eritrea)</Language>

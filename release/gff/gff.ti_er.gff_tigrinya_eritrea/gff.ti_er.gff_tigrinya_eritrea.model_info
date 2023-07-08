@@ -3,5 +3,10 @@
     "languages": [
         "ti-ER"
     ],
-	  "description": "The Tigrinya-Eritrea lexical model is based on the content found from 131 issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper."
+	 "description": "The Tigrinya-Eritrea lexical model is based on the content found from 131 issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper.",
+	 "related": {
+	   "gff.ti.gff_tigrinya": {
+        "deprecates": true
+       }
+    }
 }
