@@ -1,5 +1,5 @@
 GFF Tigrinya-Ethiopian Lexical Model
-==========================
+====================================
 
 © 2023 Geʾez Frontier Foundation
 
@@ -33,4 +33,3 @@ Supported Platforms
  * Mobile devices
  * Desktop devices
  * Tablet devices
-
