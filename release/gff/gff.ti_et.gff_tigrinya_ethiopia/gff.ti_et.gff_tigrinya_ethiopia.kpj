@@ -16,15 +16,15 @@
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_1499e91aec3343ff3062111dac598b4f</ID>
+      <ID>id_03ece69616e6ef0388964b5843fce535</ID>
       <Filename>gff.ti_et.gff_tigrinya_ethiopia.model.kps</Filename>
       <Filepath>source\gff.ti_et.gff_tigrinya_ethiopia.model.kps</Filepath>
-      <FileVersion>1.2</FileVersion>
+      <FileVersion>1.0.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>GFF Tigrinya Ethiopia Lexical Model</Name>
+        <Name>GFF Tigrinya-Ethiopia Lexical Model</Name>
         <Copyright>© 2023 Geʾez Frontier Foundation</Copyright>
-        <Version>1.2</Version>
+        <Version>1.0.1</Version>
       </Details>
     </File>
     <File>
@@ -56,12 +56,12 @@
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_62b717a096229fd4972faf20cdc8f95b</ID>
+      <ID>id_bd5d0f5db6e7d5d6bb9d0a5dd93151f0</ID>
       <Filename>gff.ti_et.gff_tigrinya_ethiopia.model.js</Filename>
       <Filepath>source\..\build\gff.ti_et.gff_tigrinya_ethiopia.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
+      <ParentFileID>id_03ece69616e6ef0388964b5843fce535</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -69,7 +69,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
+      <ParentFileID>id_03ece69616e6ef0388964b5843fce535</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -77,7 +77,7 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_1499e91aec3343ff3062111dac598b4f</ParentFileID>
+      <ParentFileID>id_03ece69616e6ef0388964b5843fce535</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
