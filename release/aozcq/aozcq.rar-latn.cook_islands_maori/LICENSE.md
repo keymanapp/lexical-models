@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2020-2021 Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano, Victoria Quint
+Copyright © 2020-2021 Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano, Victoria Quint
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
