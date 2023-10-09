@@ -1,105 +1,144 @@
-#!/bin/bash
-# Build lexical models
-
-# Set sensible script defaults:
-# set -e: Terminate script if a command returns an error
-set -e
-# set -u: Terminate script if an unset variable is used
-set -u
-
+#!/usr/bin/env bash
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
-#
 
-function display_usage {
-  echo "Usage: $0 [-t(est)|-b(uild)|-c(lean)] [-no-npm] [-s] [-color|-no-color] [target]"
-  echo "  -t || -test   Runs tests on models"
-  echo "  -b || -build  Creates compiled models"
-  echo "  -c || -clean  Cleans intermediate and output files"
-  echo "  -color        Force color output"
-  echo "  -no-color     Force no color output"
-  echo "  -no-npm       Skip all npm steps"
-  echo "  -s            Quiet build"
-  echo "  target        The specific model(s) to build, e.g. release or release/example/en.template"
-  echo "                If omitted, builds all models"
-  exit 1
+# Prevents 'clear' on exit of mingw64 bash shell
+SHLVL=0
+
+## START STANDARD BUILD SCRIPT INCLUDE
+# adjust relative paths as necessary
+THIS_SCRIPT="$(readlink -f "${BASH_SOURCE[0]}")"
+. "${THIS_SCRIPT%/*}/resources/builder.inc.sh"
+# END STANDARD BUILD SCRIPT INCLUDE
+
+# script runs from repo root
+cd "$THIS_SCRIPT_PATH"
+
+. "./resources/util.inc.sh"
+. "./resources/build_targets.inc.sh"
+. "./resources/external.inc.sh"
+
+builder_describe \
+  "Build Keyman lexical models" \
+  clean \
+  configure \
+  build \
+  test \
+  "--model,-m=MODEL     Build specific targets only, e.g. release/ or release/nrc/ or release/nrc/nrc.en.mtnt, comma separated"
+
+#?  "--silent,-s          Suppress unnecessary messages"
+
+builder_describe_outputs \
+  configure   /node_modules
+
+builder_parse "$@"
+
+#------------------------------------------------------------
+# Definitions
+#------------------------------------------------------------
+
+if [[ -z ${KMC+x} ]]; then
+  readonly KMC="./node_modules/.bin/kmc"
+fi
+
+# TODO: remove -W
+readonly KMC_BUILD_PARAMS="build $builder_debug -W"
+# readonly KMC_CLEAN_PARAMS="clean"
+# readonly KMC_TEST_PARAMS="test"
+
+#------------------------------------------------------------
+# Commands
+#------------------------------------------------------------
+
+function do_clean() {
+  do_clean_externals
+  do_clean_targets
 }
 
-#
-# Define paths
-#
-MODELROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+function do_clean_externals() {
+  if [[ ! -f build_external_targets.txt ]]; then return; fi
+  local model=
+  for model in $(cat build_external_targets.txt); do
+    pushd "$model"
+    clean_external_target_folder
+    popd
+  done
+}
 
-# Master json schema is from https://api.keyman.com/schemas/model_info.json
+function do_clean_targets() {
+  if [[ ! -f build_targets.txt ]]; then return; fi
+  local model=
+  for model in $(cat build_targets.txt); do
+    rm -rf "$model/build/"
+    rm -rf "$model/*.kpj.user"
+  done
+}
 
-MODELINFO_SCHEMA_JSON="$MODELROOT/tools/model_info.source.json"
-MODELINFO_SCHEMA_DIST_JSON="$MODELROOT/tools/model_info.distribution.json"
+#------------------------------------------------------------
 
-. "$MODELROOT/resources/util.sh"
-. "$MODELROOT/resources/compile.sh"
-. "$MODELROOT/resources/external.sh"
-#. "$MODELROOT/resources/validate.sh"
-#. "$MODELROOT/resources/merge.sh"
+function do_configure() {
+  npm install --no-optional
+}
 
-#
-# Build parameters
-#
-# Default is validate model_info, build models
-#
-parse_args "$@"
-setup_colors
+#------------------------------------------------------------
 
-if [[ "$DO_NPM" = true ]]; then
-  # Check if Node.JS/npm is installed.
-  type npm >/dev/null ||\
-    die "Build environment setup error detected!  Please ensure Node.js is installed!"
+function do_build() {
+  do_build_externals
+  do_build_targets
+}
 
-  #
-  # Pull dependencies
-  #
-  echo "Dependencies check"
-  npm ${NPM_COLOR_FLAG} install --no-optional
-fi
+function do_build_externals() {
+  if [[ ! -f build_external_targets.txt ]]; then return; fi
+  local model=
+  for model in $(cat build_external_targets.txt); do
+    local model_basename=$(basename $model)
+    builder_echo "Downloading external model $model"
+    pushd "$model"
+    retrieve_external_model
 
-#
-# Select action
-#
+    if [ -f .source_is_binary ]; then
+      # All these files must exist, so we'll fail if they are not present
+      mkdir -p build/
+      cp $model_basename.model_info build/
+      cp source/$model_basename.model.js build/
+      cp source/$model_basename.model.kmp build/
+      # TODO: consider verifying the .model_info
+    else
+      # add it to list of build targets
+      echo "$model" >> "$THIS_SCRIPT_PATH/build_targets.txt"
+    fi
 
-if [ "$DO_BUILD" = false ]; then
-  ACTION_VERB=Testing
-elif [[ ! -z "$FLAG_CLEAN" ]]; then
-  ACTION_VERB=Cleaning
+    popd
+  done
+}
+
+function do_build_targets() {
+  if [[ ! -f build_targets.txt ]]; then return; fi
+  $KMC $KMC_BUILD_PARAMS @build_targets.txt
+}
+
+#------------------------------------------------------------
+
+function do_test() {
+  echo "TODO: support test"
+  # "$KMC" $KMC_TEST_PARAMS @build_targets.txt
+  # No tests available for external targets
+}
+
+#------------------------------------------------------------
+# Main
+#------------------------------------------------------------
+
+if builder_has_option --model; then
+  # Split $MODEL into an array, split with comma
+  IFS=',' read -ra TARGETS <<< "$MODEL"
 else
-  ACTION_VERB=Building
+  TARGETS=(release experimental)
 fi
 
-#
-# Collect filenames
-#
+collect_build_targets
 
-MODEL_INFO_PATHS="$MODELROOT"/*/*/*/*.model_info
-MODEL_INFOS=($MODEL_INFO_PATHS)
-MODEL_INFOS=`printf -- '%s\n' "${MODEL_INFOS[@]}"`
-
-#
-# Run build
-#
-
-if [[ "$TARGET" ]]; then
-  if [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
-    group=$(cut -d / -f 1 <<< "$TARGET")
-    echo "--- Only building $group $TARGET ---"
-    build_model $group "$TARGET"
-  elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "experimental" ]] || [[ "$TARGET" == "sample" ]]; then
-    # Assuming release|experimental
-    echo "--- Only building $TARGET ---"
-    build_models "$TARGET"
-  else
-    display_usage
-  fi
-else
-  build_models release
-  build_models experimental
-fi
-
-# todo copy multi-folder approach from keyboards repo
+builder_run_action clean      do_clean
+builder_run_action configure  do_configure
+builder_run_action build      do_build
+builder_run_action test       do_test

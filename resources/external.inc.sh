@@ -5,30 +5,17 @@
 # This file corresponds very closely to external.sh in keymanapp/keyboards
 #----------------------------------------------------------------------------------------
 
-is_external_source_model() {
-  # https://github.com/(owner)/(repo)/tree/(commit)/(path?)
-  [[ $1 =~ ^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/tree\/([a-z0-9]{40})(\/.+)?$ ]]
-}
-
-urldecode() { echo -e "${*//%/\\x}"; } # https://stackoverflow.com/a/37840948/1836776, no +
-
 retrieve_external_model() {
   # Assume we are starting in the correct folder
   [ -f external_source ] || die "No external_source file found"
 
-  local source=`urldecode $(<external_source)`
-
-  if [[ ! -z "$FLAG_CLEAN" ]]; then
-    clean_external_target_folder
-    return 0
-  fi
+  local source=`_urldecode $(<external_source)`
 
   # We currently don't verify that the external target folder is clean.
   # That breaks rebuilding. Instead, we just retrieve the files again.
-  # verify_external_target_folder_is_clean
+  # _verify_external_target_folder_is_clean
 
-
-  if is_external_source_model "$source"; then
+  if _is_external_source_model "$source"; then
     # If the external_source file has a single line referencing a GitHub commit
     # hash, then we can treat this as a source reference.
     local repo_owner=${BASH_REMATCH[1]}
@@ -37,19 +24,38 @@ retrieve_external_model() {
     local repo_path=${BASH_REMATCH[4]:-}
     [[ $repo_path =~ \.\. ]] && die "cannot contain .. in path"
 
-    retrieve_external_source_model "$repo_owner" "$repo_name" "$repo_hash" "$repo_path"
+    _retrieve_external_source_model "$repo_owner" "$repo_name" "$repo_hash" "$repo_path"
   else
     # Otherwise, if the external_source file consists exclusively of
     # filename=url pairs, then we treat this as a binary reference, and download
     # these files into the source folder, and create the local .source_is_binary
     # file
-    retrieve_external_binary_model
+    _retrieve_external_binary_model
   fi
-
-  rewrite_external_git_ignore
 }
 
-verify_external_target_folder_is_clean() {
+clean_external_target_folder() {
+  # Assume we are starting in the correct folder
+  [ -f external_source ] || die "No external_source file found"
+
+  local files=`find * \! -name '.gitignore' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
+  rm -f .source_is_binary
+  if [ ! -z "$files" ]; then
+    rm -rf $files
+  fi
+}
+
+_is_external_source_model() {
+  # https://github.com/(owner)/(repo)/tree/(commit)/(path?)
+  [[ $1 =~ ^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/tree\/([a-z0-9]{40})(\/.+)?$ ]]
+}
+
+_urldecode() {
+  # https://stackoverflow.com/a/37840948/1836776, no +
+  echo -e "${*//%/\\x}";
+}
+
+_verify_external_target_folder_is_clean() {
   # Remove all files except:
   # .gitignore
   # external_source
@@ -62,25 +68,7 @@ verify_external_target_folder_is_clean() {
   fi
 }
 
-clean_external_target_folder() {
-  local files=`find * \! -name '.gitignore' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
-  if [ ! -z "$files" ]; then
-    rm -rf $files
-  fi
-}
-
-rewrite_external_git_ignore() {
-  echo "
-# Only specific files may be added to repository for external references
-*
-.source_is_binary
-!external_source
-!README_EXTERNAL.md
-!.gitignore
-" > .gitignore
-}
-
-retrieve_external_source_model() {
+_retrieve_external_source_model() {
   local repo_owner="$1"
   local repo_name="$2"
   local repo_hash="$3"
@@ -120,7 +108,7 @@ retrieve_external_source_model() {
 #
 # Download all the files referenced in external_source
 #
-retrieve_external_binary_model() {
+_retrieve_external_binary_model() {
   # We'll read .source line by line...
   touch .source_is_binary
 
