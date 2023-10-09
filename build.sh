@@ -42,7 +42,7 @@ if [[ -z ${KMC+x} ]]; then
 fi
 
 # TODO: remove -W
-readonly KMC_BUILD_PARAMS="build $builder_debug -W"
+readonly KMC_BUILD_PARAMS="build $builder_debug --for-publishing"
 # readonly KMC_CLEAN_PARAMS="clean"
 # readonly KMC_TEST_PARAMS="test"
 
