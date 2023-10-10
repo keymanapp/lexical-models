@@ -1,7 +1,5 @@
-#!/usr/bin/env bash
-
 #----------------------------------------------------------------------------------------
-# Source model from external repository or binary download location
+# Source keyboard or model from external repository or binary download location
 # This file corresponds very closely to external.sh in keymanapp/keyboards
 #----------------------------------------------------------------------------------------
 
@@ -10,10 +8,6 @@ retrieve_external_model() {
   [ -f external_source ] || die "No external_source file found"
 
   local source=`_urldecode $(<external_source)`
-
-  # We currently don't verify that the external target folder is clean.
-  # That breaks rebuilding. Instead, we just retrieve the files again.
-  # _verify_external_target_folder_is_clean
 
   if _is_external_source_model "$source"; then
     # If the external_source file has a single line referencing a GitHub commit
@@ -53,19 +47,6 @@ _is_external_source_model() {
 _urldecode() {
   # https://stackoverflow.com/a/37840948/1836776, no +
   echo -e "${*//%/\\x}";
-}
-
-_verify_external_target_folder_is_clean() {
-  # Remove all files except:
-  # .gitignore
-  # external_source
-  # README_EXTERNAL.md
-  local files=`find * \! -name '.gitignore' -a \! -name '.source_is_binary' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
-  if [ ! -z "$files" ]; then
-    echo "The target folder contains unexpected files:"
-    echo $files
-    die "Aborting build"
-  fi
 }
 
 _retrieve_external_source_model() {

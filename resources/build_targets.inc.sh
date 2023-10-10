@@ -12,7 +12,7 @@
 function collect_build_targets() {
   rm -f build_targets.txt build_targets_temp.txt build_external_targets.txt
 
-  local target
+  local target=
 
   for target in "${TARGETS[@]}"; do
     # strip trailing delimiter if present
@@ -29,7 +29,6 @@ function collect_build_targets() {
   done
 
   # filter build_targets.txt to exclude externally built here
-  local target
   for target in $(cat build_targets_temp.txt); do
     local model_name=$(basename $target)
     if [[ -f "$target/external_source" ]]; then

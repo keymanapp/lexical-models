@@ -56,7 +56,7 @@ function do_clean() {
 }
 
 function do_clean_externals() {
-  if [[ ! -f build_external_targets.txt ]]; then return; fi
+  test -f build_external_targets.txt || return 0
   local model=
   for model in $(cat build_external_targets.txt); do
     pushd "$model"
@@ -66,11 +66,11 @@ function do_clean_externals() {
 }
 
 function do_clean_targets() {
-  if [[ ! -f build_targets.txt ]]; then return; fi
+  test -f build_targets.txt || return 0
   local model=
   for model in $(cat build_targets.txt); do
     rm -rf "$model/build/"
-    rm -rf "$model/*.kpj.user"
+    rm -f "$model/*.kpj.user"
   done
 }
 
@@ -88,7 +88,7 @@ function do_build() {
 }
 
 function do_build_externals() {
-  if [[ ! -f build_external_targets.txt ]]; then return; fi
+  test -f build_external_targets.txt || return 0
   local model=
   for model in $(cat build_external_targets.txt); do
     local model_basename=$(basename $model)
@@ -113,7 +113,7 @@ function do_build_externals() {
 }
 
 function do_build_targets() {
-  if [[ ! -f build_targets.txt ]]; then return; fi
+  test -f build_targets.txt || return 0
   $KMC $KMC_BUILD_PARAMS @build_targets.txt
 }
 
