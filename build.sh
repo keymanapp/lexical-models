@@ -38,11 +38,13 @@ builder_parse "$@"
 #------------------------------------------------------------
 
 if [[ -z ${KMC+x} ]]; then
-  readonly KMC="./node_modules/.bin/kmc"
+  export KMC="${REPO_ROOT}/node_modules/.bin/kmc"
+  readonly KMC
 fi
 
 # TODO: remove -W
-readonly KMC_BUILD_PARAMS="build $builder_debug --for-publishing"
+export KMC_BUILD_PARAMS="build $builder_debug --for-publishing"
+readonly KMC_BUILD_PARAMS
 # readonly KMC_CLEAN_PARAMS="clean"
 # readonly KMC_TEST_PARAMS="test"
 
