@@ -82,12 +82,11 @@ function parse_args {
   DO_BUILD=true
   DO_NPM=true
   WARNINGS_AS_ERRORS=false
-  TARGET=
+  TARGET=()
   PROJECT_TARGET=
   FLAG_SILENT=
   FLAG_DEBUG=
   FLAG_CLEAN=
-  FLAG_TARGET=
   START=
   OUTPUT_COLOR=auto
 
@@ -124,7 +123,7 @@ function parse_args {
         OUTPUT_COLOR=true
         ;;
       *)
-        TARGET="$key"
+        TARGET+=("$key")
     esac
   done
 }

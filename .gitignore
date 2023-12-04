@@ -1,10 +1,20 @@
-node_modules/
-release/*/*/build/
-sample/*/*/build/
-experimental/*/*/build/
-servervars.sh
-.cache
+/node_modules/
+/release/*/*/build/
+/sample/*/*/build/
+/experimental/*/*/build/
+/servervars.sh
 *.kpj.user
 
+# Temporary build target files
+/build_targets.txt
+/build_external_targets.txt
+
+# .source_is_binary is generated during a build of external modules
+/release/*/*/.source_is_binary
+/sample/*/*/.source_is_binary
+/experimental/*/*/.source_is_binary
+
+# Generic externally generated files
 .DS_Store
 /.project
+.cache
