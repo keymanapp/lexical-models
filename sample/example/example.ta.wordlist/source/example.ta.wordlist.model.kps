@@ -8,6 +8,7 @@
     <ExecuteProgram></ExecuteProgram>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -25,6 +26,12 @@
       <Description>Lexical model example.ta.wordlist.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <LexicalModels>

@@ -5,6 +5,7 @@
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <Info>
     <Name URL="">Example (English) Template Custom Model</Name>
@@ -24,7 +25,13 @@
       <Description>Welcome file</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
-     </File> 
+     </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
   </Files>
   <LexicalModels>
     <LexicalModel>
