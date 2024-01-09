@@ -42,14 +42,14 @@
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>welcome\flag.png</Name>
-      <Description>File flag.png</Description>
+      <Name>splash.png</Name>
+      <Description>File splash.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>splash.png</Name>
-      <Description>File splash.png</Description>
+      <Name>flag.png</Name>
+      <Description>File flag.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
