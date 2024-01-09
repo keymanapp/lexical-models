@@ -7,7 +7,7 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
-    <GraphicFile>..\..\..\..\..\keyboards\release\e\eo_plus\source\splash.png</GraphicFile>
+    <GraphicFile>splash.png</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -25,30 +25,30 @@
   <Files>
     <File>
       <Name>..\build\av.eo.esperanto.model.js</Name>
-      <Description></Description>
+      <Description>File av.eo.esperanto.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
     </File>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>readme.htm</Name>
-      <Description></Description>
+      <Description>File readme.htm</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\keyboards\release\e\eo_plus\source\flag.png</Name>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\flag.png</Name>
       <Description>File flag.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
     </File>
     <File>
-      <Name>..\..\..\..\..\keyboards\release\e\eo_plus\source\splash.png</Name>
+      <Name>splash.png</Name>
       <Description>File splash.png</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.png</FileType>
@@ -57,7 +57,7 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Esperanto</Name>
+      <Name>Esperanto Lexical Model</Name>
       <ID>av.eo.esperanto</ID>
       <Languages>
         <Language ID="eo">Esperanto</Language>

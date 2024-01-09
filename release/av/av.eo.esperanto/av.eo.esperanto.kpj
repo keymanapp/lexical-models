@@ -64,14 +64,6 @@
       <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
     </File>
     <File>
-      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
-      <Filename>welcome.htm</Filename>
-      <Filepath>source\welcome.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
-    </File>
-    <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
       <Filename>readme.htm</Filename>
       <Filepath>source\readme.htm</Filepath>
@@ -80,17 +72,25 @@
       <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
     </File>
     <File>
-      <ID>id_021fa3f70f65ac6dc532fe359f504b0c</ID>
+      <ID>id_724e5b4c63f10bc0abf7077f7c3172fc</ID>
+      <Filename>welcome.htm</Filename>
+      <Filepath>source\welcome\welcome.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
+    </File>
+    <File>
+      <ID>id_83cf9403c027680d318d2b98b9c203c0</ID>
       <Filename>flag.png</Filename>
-      <Filepath>source\..\..\..\..\..\keyboards\release\e\eo_plus\source\flag.png</Filepath>
+      <Filepath>source\welcome\flag.png</Filepath>
       <FileVersion></FileVersion>
       <FileType>.png</FileType>
       <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
     </File>
     <File>
-      <ID>id_0bf1020128a0de92f883ca3c3e61344b</ID>
+      <ID>id_f6e7ba45d40eed14a854fd7b967cb1e2</ID>
       <Filename>splash.png</Filename>
-      <Filepath>source\..\..\..\..\..\keyboards\release\e\eo_plus\source\splash.png</Filepath>
+      <Filepath>source\splash.png</Filepath>
       <FileVersion></FileVersion>
       <FileType>.png</FileType>
       <ParentFileID>id_be25819628403fa4f0a2f652eba09d93</ParentFileID>
