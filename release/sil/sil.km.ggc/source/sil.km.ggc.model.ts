@@ -11,7 +11,7 @@ const source: LexicalModelSource = {
   format: 'trie-1.0',
   sources: ['wordlist.tsv'],
         wordBreaker: function (str) {
-  const tokens = str.split(/\s/);
+  const tokens = str.split(/\s|\u200b/);
 
   for(let i=0; i < tokens.length; i++) {
     const token = tokens[i];
@@ -61,6 +61,9 @@ const source: LexicalModelSource = {
         text: token
       }
     });
-}
+},
+punctuation: {
+    insertAfterWord: "\u200B"
+  }
 };
 export default source;
