@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProject>
+  <Options>
+    <BuildPath>$PROJECTPATH\build</BuildPath>
+    <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
+    <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>lexicalmodel</ProjectType>
+  </Options>
+  <Files>
+    <File>
+      <ID>id_0468453c7992199d3825a34c73e9ffcf</ID>
+      <Filename>samar.tk-arab.wl2.model.ts</Filename>
+      <Filepath>source\samar.tk-arab.wl2.model.ts</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.ts</FileType>
+    </File>
+    <File>
+      <ID>id_630ae0fd4caa10da89344652327320db</ID>
+      <Filename>samar.tk-arab.wl2.model.kps</Filename>
+      <Filepath>source\samar.tk-arab.wl2.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.kps</FileType>
+      <Details>
+        <Name>Afghan Turkmen Lexical Model</Name>
+        <Copyright>© 2023 Samar</Copyright>
+        <Version>1.0</Version>
+      </Details>
+    </File>
+    <File>
+      <ID>id_a6846494b824e5fa10bf971dea23e106</ID>
+      <Filename>samar.tk-arab.wl2.model.js</Filename>
+      <Filepath>source\..\build\samar.tk-arab.wl2.model.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
+      <ParentFileID>id_630ae0fd4caa10da89344652327320db</ParentFileID>
+    </File>
+    <File>
+      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
+      <Filename>welcome.htm</Filename>
+      <Filepath>source\welcome.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_630ae0fd4caa10da89344652327320db</ParentFileID>
+    </File>
+    <File>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <Filename>readme.htm</Filename>
+      <Filepath>source\readme.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_630ae0fd4caa10da89344652327320db</ParentFileID>
+    </File>
+  </Files>
+</KeymanDeveloperProject>

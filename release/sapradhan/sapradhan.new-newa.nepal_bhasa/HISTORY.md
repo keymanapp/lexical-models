@@ -1,5 +1,8 @@
-nepal-bhasa Change History
+# nepal-bhasa Change History
 ====================
+2.3 (2023-09-28)
+* Replaced 𑐫𑑂 (without zwj) with  𑐫𑑂‌ (with zwj)
+
 2.2 (2020-11-05)
 * Rebuild with lexical-model compiler using node 14.15.0
 
@@ -13,3 +16,4 @@ nepal-bhasa Change History
 1.0 (2020-03-07)
 ----------------
 * First compilation - ~21k words
+

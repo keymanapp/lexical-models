@@ -1,5 +1,13 @@
 # Version History
 
+## 0.3.0 (2024-02-15)
+
+* Major cleanup:
+* Non-words removed (including some acronyms)
+* misspellings corrected (both US and UK/Canadian/Australian spellings preserved)
+* most proper names removed (except names of continents, countries, nationalities, religions)
+* some proper names made lower case (Cardinals to cardinals) though the frequency count unchanged
+
 ## 0.2.0 (2023-02-13)
 
 * Lower-case some common words
