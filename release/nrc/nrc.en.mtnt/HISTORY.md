@@ -1,5 +1,10 @@
 # Version History
 
+## 0.3.1 (2024-03-07)
+
+* Fixes handling of words with apostrophes, allowing them to be suggested more easily
+* A misspelling correction
+
 ## 0.3.0 (2024-02-15)
 
 * Major cleanup:
