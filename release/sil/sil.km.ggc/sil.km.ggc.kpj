@@ -19,12 +19,12 @@
       <ID>id_a02fd3894fae146aa99da3213c3509d4</ID>
       <Filename>sil.km.ggc.model.kps</Filename>
       <Filepath>source\sil.km.ggc.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Khmer Google Crawler</Name>
         <Copyright>© SIL International</Copyright>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
