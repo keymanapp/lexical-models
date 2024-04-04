@@ -1,4 +1,6 @@
 # Version History
+## 0.3.2 (2024-04-03)
+* space corrected to tab in .tsv file
 
 ## 0.3.1 (2024-03-07)
 
