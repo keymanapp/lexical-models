@@ -1,4 +1,19 @@
 # Version History
+## 0.3.2 (2024-04-03)
+* space corrected to tab in .tsv file
+
+## 0.3.1 (2024-03-07)
+
+* Fixes handling of words with apostrophes, allowing them to be suggested more easily
+* A misspelling correction
+
+## 0.3.0 (2024-02-15)
+
+* Major cleanup:
+* Non-words removed (including some acronyms)
+* misspellings corrected (both US and UK/Canadian/Australian spellings preserved)
+* most proper names removed (except names of continents, countries, nationalities, religions)
+* some proper names made lower case (Cardinals to cardinals) though the frequency count unchanged
 
 ## 0.2.0 (2023-02-13)
 

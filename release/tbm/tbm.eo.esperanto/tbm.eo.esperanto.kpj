@@ -9,29 +9,22 @@
   </Options>
   <Files>
     <File>
-      <ID>id_0dcf647090a0f7ba9a9354d5838717ac</ID>
-      <Filename>nrc.en.mtnt.model.ts</Filename>
-      <Filepath>source\nrc.en.mtnt.model.ts</Filepath>
+      <ID>id_877674c832982c2b334f5549cea422ab</ID>
+      <Filename>tbm.eo.esperanto.model.ts</Filename>
+      <Filepath>source\tbm.eo.esperanto.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_89f63b613fd4156e39e15a1786b03708</ID>
-      <Filename>mtnt.tsv</Filename>
-      <Filepath>source\mtnt.tsv</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.tsv</FileType>
-    </File>
-    <File>
-      <ID>id_dbb5a988f0d2f501a6d48d1d9987c55f</ID>
-      <Filename>nrc.en.mtnt.model.kps</Filename>
-      <Filepath>source\nrc.en.mtnt.model.kps</Filepath>
-      <FileVersion>0.3.1</FileVersion>
+      <ID>id_edfb2e29f97c776f72c51a193c2b3839</ID>
+      <Filename>tbm.eo.esperanto.model.kps</Filename>
+      <Filepath>source\tbm.eo.esperanto.model.kps</Filepath>
+      <FileVersion>1.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
-        <Name>English language model mined from MTNT</Name>
-        <Copyright>© 2019-2023 National Research Council Canada</Copyright>
-        <Version>0.3.1</Version>
+        <Name>Esperanto</Name>
+        <Copyright>© Tomás Briones M.</Copyright>
+        <Version>1.0</Version>
       </Details>
     </File>
     <File>
@@ -56,19 +49,27 @@
       <FileType>.md</FileType>
     </File>
     <File>
-      <ID>id_b1aa9324e9bc1b050711391e7c264aeb</ID>
-      <Filename>nrc.en.mtnt.model_info</Filename>
-      <Filepath>nrc.en.mtnt.model_info</Filepath>
+      <ID>id_5e824e123d4633f9b9f4367b5ac6ef78</ID>
+      <Filename>tbm.eo.esperanto.model_info</Filename>
+      <Filepath>tbm.eo.esperanto.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_7a42be7f5e3385e6626cb714ea443173</ID>
-      <Filename>nrc.en.mtnt.model.js</Filename>
-      <Filepath>source\..\build\nrc.en.mtnt.model.js</Filepath>
+      <ID>id_7e89ab898cf5c595950b2f5d9e900cbb</ID>
+      <Filename>tbm.eo.esperanto.model.js</Filename>
+      <Filepath>source\..\build\tbm.eo.esperanto.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_dbb5a988f0d2f501a6d48d1d9987c55f</ParentFileID>
+      <ParentFileID>id_edfb2e29f97c776f72c51a193c2b3839</ParentFileID>
+    </File>
+    <File>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <Filename>readme.htm</Filename>
+      <Filepath>source\readme.htm</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.htm</FileType>
+      <ParentFileID>id_edfb2e29f97c776f72c51a193c2b3839</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
