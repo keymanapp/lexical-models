@@ -9,21 +9,21 @@
   <Files>
     <File>
       <ID>id_e1841c048bb8ead3fc5ad567a8a23b57</ID>
-      <Filename>sil.lzz-latn.laz.model.ts</Filename>
-      <Filepath>source\sil.lzz-latn.laz.model.ts</Filepath>
+      <Filename>sil.lzz.laz.model.ts</Filename>
+      <Filepath>source\sil.lzz.laz.model.ts</Filepath>
       <FileVersion>1.0</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_0211b8c127a465ce8af0a3296345d07b</ID>
-      <Filename>sil.lzz-latn.laz.model.kps</Filename>
-      <Filepath>source\sil.lzz-latn.laz.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <Filename>sil.lzz.laz.model.kps</Filename>
+      <Filepath>source\sil.lzz.laz.model.kps</Filepath>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Laz</Name>
         <Copyright>Copyright © SIL International</Copyright>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
@@ -49,15 +49,15 @@
     </File>
     <File>
       <ID>id_4f5ef30cf182b9f4c84b27720871fdd1</ID>
-      <Filename>sil.lzz-latn.laz.model_info</Filename>
-      <Filepath>sil.lzz-latn.laz.model_info</Filepath>
+      <Filename>sil.lzz.laz.model_info</Filename>
+      <Filepath>sil.lzz.laz.model_info</Filepath>
       <FileVersion></FileVersion>
       <FileType>.model_info</FileType>
     </File>
     <File>
       <ID>id_a868d2e851361752ae7673a48298f06d</ID>
-      <Filename>sil.lzz-latn.laz.model.js</Filename>
-      <Filepath>source\..\build\sil.lzz-latn.laz.model.js</Filepath>
+      <Filename>sil.lzz.laz.model.js</Filename>
+      <Filepath>source\..\build\sil.lzz.laz.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
       <ParentFileID>id_0211b8c127a465ce8af0a3296345d07b</ParentFileID>
