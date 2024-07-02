@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "xmf-Latn"
+    ],
+	  "description": "Mingrelian lexical model uses mingrelian (latin) script."
+}
