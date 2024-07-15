@@ -1,55 +1,42 @@
 ﻿katïp	9577
 tïkai	9446
-pëk	7915
-man	7384
 huwa	6203
 helë	6029
 pona	5503
 malë	4579
 ëhmelë	4076
 ejahe	4008
-po	3913
 kunka	3412
-eja	3344
 emna	3089
-me	2975
 ponokom	2798
 aptao	2773
-he	2526
 ëhep	2473
 eitëk	2447
 mënëtïja	2435
 kaliponotom	2401
 inëlë	2286
-wai	2250
 mëlë	2167
 kunehak	2095
 ipok	2054
 tuwalë	1984
 eitop	1970
-ïja	1920
 ailë	1673
 ipokela	1645
-lon	1510
 tëweihamo	1502
 poinë	1413
 esike	1326
 katïh	1254
-lo	1232
 hapon	1230
 tëwëtïhe	1191
 eikë	1176
 awolemïla	1072
-ka	1063
 tïkaitot	1059
-ma	1035
 ëjahe	1028
 tïwë	1019
 malalë	980
 mumu	977
 ëutë	945
 manai	925
-ëja	913
 manu	913
 tïhe	911
 tuna	884
@@ -62,12 +49,10 @@ mantot	774
 kaikë	772
 eitoptom	772
 tïtëi	770
-nai	748
 peinom	747
 mëha	729
 mënke	698
 kunëtïlï	680
-omi	668
 uhpolo	667
 apulu	650
 tïwëlënkom	640
@@ -81,7 +66,6 @@ iwaptao	574
 iweitop	564
 mënëtïjatot	546
 koutu	539
-ulë	537
 eluwa	537
 wïkane	533
 hemalë	523
@@ -112,8 +96,6 @@ tamu	390
 eitoponpë	385
 sisi	384
 wekalëjai	381
-hek	376
-ïu	375
 wïkei	373
 tënei	373
 tëlëi	372
@@ -122,13 +104,11 @@ tëwesike	370
 kaitëk	369
 tëkalëhem	367
 etïpïla	364
-maa	361
 tëwesikomke	359
 ahmit	359
 ëneponanmakom	357
 ïwaptao	352
 polo	351
-pëh	348
 akëlë	347
 henma	345
 wewe	343
@@ -147,19 +127,15 @@ wëtïjai	325
 kunkatot	323
 eitohme	321
 tuwalëla	320
-kao	319
 tëkalëi	318
 kolenma	316
 ipokenma	316
-ïne	312
 ënimojila	311
-uno	309
 tamutom	309
 iweitopkom	309
 ekalëne	306
 kaliponotomoja	305
 talë	303
-ïpï	302
 ïwesike	301
 tëweitopkom	301
 moloinë	301
@@ -174,15 +150,12 @@ pëkënatpë	280
 tïkaimëhehnë	276
 ekalëtëk	275
 wïjai	269
-ïtë	268
 ëwesikomke	267
-ëtï	266
 tïpanakmai	266
 neneme	264
 tumëkhe	263
 mënmëkja	263
 ekalëja	260
-eta	258
 sïtpïlïme	255
 pëkëla	255
 pepta	253
@@ -203,7 +176,6 @@ ekatak	244
 pata	239
 kutatëi	238
 ïpïn	236
-uwa	236
 tëweitop	234
 koununme	234
 kounume	232
@@ -242,19 +214,16 @@ tëwaptao	208
 ahpe	208
 towomilamo	207
 mïhjalë	207
-asi	205
 ïtëla	202
 ïkatoponpï	201
 ïweitop	200
 tïpok	200
 pëklëken	200
-enï	200
 ahpoi	200
 wekïtpëtom	199
 taosanme	199
 ponanokom	199
 mumutpë	198
-alë	196
 tïlëmëphe	193
 hemele	192
 tëpïhamo	191
@@ -299,8 +268,6 @@ hakëne	170
 tïnëlë	169
 ponotom	169
 meitëme	168
-ësë	167
-wei	167
 solati	167
 mule	167
 malalonkom	167
@@ -311,13 +278,11 @@ tuhmoi	165
 malalon	165
 kujahe	164
 helëken	164
-tëk	162
 iweitohme	162
 ënekalëla	161
 towomi	161
 panakmatpo	161
 ipoh	161
-epï	161
 ïweitopoja	160
 ënïlïla	160
 mëhe	160
@@ -345,7 +310,6 @@ ipohnëptëk	150
 eitëh	150
 ënenela	149
 pakolontak	149
-ulu	148
 tïlïtpï	148
 sentimeitë	147
 ohanëme	147
@@ -375,7 +339,6 @@ mënilëmëpja	135
 koutuke	134
 eitopoja	134
 ailëlëken	134
-upo	133
 tïkatoponpï	133
 empatao	133
 tëwaptaowëhe	132
@@ -395,7 +358,6 @@ taun	125
 polok	125
 palïnpëtom	125
 ïwekïtomoh	124
-ëë	124
 tuwalënma	124
 enene	124
 ïweitohme	123
@@ -413,7 +375,6 @@ sikaputom	120
 mïkane	120
 anumalë	120
 ëutëna	119
-tïh	119
 sitpïlïme	119
 peptame	119
 nimilikutpï	119
@@ -485,16 +446,13 @@ awainatop	104
 ïlïtpë	103
 tëjahe	103
 takpilemke	103
-pït	103
 wekïtpë	102
 tëputom	102
 kunilëmëp	102
-jum	102
 tëweihamoja	101
 solatintom	101
 nekalë	101
 ipanakmapophakan	101
-ïmë	100
 tïkahamo	100
 tëlëpoi	100
 kunmëk	100
@@ -513,7 +471,6 @@ tïwïpïlïtpïkom	98
 talan	98
 pelele	98
 imemnom	98
-ene	98
 awolemïpïn	98
 ënipanakmala	97
 mëktop	97
@@ -532,7 +489,6 @@ wëlïsija	95
 wantah	95
 tïtuwalonumai	95
 pëkëntom	95
-mëk	95
 awopo	95
 asitom	95
 alëja	95
@@ -567,7 +523,6 @@ nëtïlï	89
 maminumtoptom	89
 katoh	89
 ëweitoh	88
-ëmë	88
 tïlonkom	88
 opinë	88
 mëham	88
@@ -608,9 +563,7 @@ wenejai	83
 uhmone	83
 tupo	83
 pakolotak	83
-pa	83
 katoptom	83
-emo	83
 ïtëtop	82
 ëpatakom	82
 ënïkne	82
@@ -638,8 +591,6 @@ pëkën	80
 peitome	80
 mumuluja	80
 ituwalonumak	80
-alï	80
-ïlï	79
 ëweitohme	79
 ukuktop	79
 tïhule	79
@@ -679,10 +630,8 @@ ekataowëinë	77
 tïpeitotomoja	76
 tëwëhalëitot	76
 talahku	76
-okï	76
 menejatëi	76
 kaotom	76
-ise	76
 imumutom	76
 tïpohnëphe	75
 tïneponanmakom	75
@@ -723,13 +672,9 @@ mekalëjatëi	72
 imumu	72
 helanma	72
 emtakaime	72
-amo	72
 akojinpë	72
 ïtëkële	71
-ïhe	71
 ënimoipotom	71
-wëi	71
-wa	71
 umïtïnme	71
 pitpë	71
 kolela	71
@@ -744,7 +689,6 @@ waki	70
 tïlon	70
 tëweitopkome	70
 topopalaihem	70
-kai	70
 istaowëhe	70
 ikalïhtao	70
 ihjan	70
@@ -762,7 +706,6 @@ tëmehamo	69
 puliki	69
 katïhwë	69
 itïp	69
-ije	69
 euku	69
 ëmumu	68
 wïne	68
@@ -770,7 +713,6 @@ uhmoja	68
 tïpeinom	68
 tïnepatomoja	68
 tëmaminumhamo	68
-tëh	68
 mëktïhwë	68
 kunemaminum	68
 koununtom	68
@@ -779,7 +721,6 @@ ipatatpï	68
 inepatom	68
 ekalënanom	68
 zuid	67
-win	67
 panakme	67
 panakmatïhwë	67
 mënenatja	67
@@ -818,7 +759,6 @@ uhmotoponpë	64
 tëwëmëmhe	64
 nïlïtpï	64
 mïnpalë	64
-mon	64
 meha	64
 maminumtop	64
 lonunpë	64
@@ -862,7 +802,6 @@ wenokjai	60
 tïlï	60
 tëpëlamo	60
 tuwalonu	60
-mïu	60
 mëlëtpëmeinë	60
 kunëtïlëmë	60
 kawënotom	60
@@ -901,7 +840,6 @@ ahmotao	58
 tëwëtïtïhwëhe	57
 tëwëhmomhe	57
 tëwepohnëphamo	57
-pun	57
 pakolontao	57
 menejai	57
 kunëtulu	57
@@ -917,7 +855,6 @@ tëweihamome	56
 tëkalëhamome	56
 tamusimankom	56
 taluh	56
-ta	56
 peitolïja	56
 kapunaowëinë	56
 jïne	56
@@ -976,7 +913,6 @@ imeitïtom	53
 anumhakan	53
 alëtop	53
 akojinpëtom	53
-ïhï	52
 ëliwë	52
 ëhalëtëkële	52
 tënokëmëi	52
@@ -998,7 +934,6 @@ polëken	51
 panakmapotponkom	51
 mïkatëne	51
 mënïja	51
-lok	51
 emaminumïla	51
 eitopomna	51
 apëtunuina	51
@@ -1037,7 +972,6 @@ ipohnëpkë	49
 ewatohme	49
 ensun	49
 enohkë	49
-ïpo	48
 ïpeito	48
 ïneme	48
 ëtïlëmëla	48
@@ -1049,7 +983,6 @@ tuhtume	48
 tawakela	48
 numëk	48
 nimoipo	48
-mëi	48
 iwekaktatpï	48
 ipokelala	48
 inïlïtpïtom	48
@@ -1070,7 +1003,6 @@ mëtïlëmëjatëi	47
 kaita	47
 ipït	47
 imumku	47
-epu	47
 epetpïmatop	47
 ahmekantala	47
 ïnïktïhwë	46
@@ -1090,7 +1022,6 @@ ehetkom	46
 apëtunkepïla	46
 ahminme	46
 ïjatot	45
-ëta	45
 tïwïpïlïtpï	45
 tëwanëjao	45
 tomo	45
@@ -1099,7 +1030,6 @@ pitpïkom	45
 mënëtuhmoja	45
 mëlëlëtaolë	45
 kïkë	45
-ken	45
 jeknom	45
 ijumkom	45
 enokja	45
@@ -1133,7 +1063,6 @@ etatom	44
 alesi	44
 ëwanëkom	43
 ëtukepïla	43
-ëhe	43
 upomna	43
 tïweinatïhwë	43
 tïnëmëi	43
@@ -1147,7 +1076,6 @@ milikne	43
 kawëna	43
 kaputom	43
 kanawajak	43
-je	43
 isolatintom	43
 emsitom	43
 awainatoptomtao	43
@@ -1182,7 +1110,6 @@ amahtom	42
 ënenepola	41
 ëlimaktom	41
 ëile	41
-woi	41
 wapotohtak	41
 tïnïlïtpïkom	41
 tïnepïkom	41
@@ -1190,7 +1117,6 @@ tïmoihamo	41
 tïkëtot	41
 tëweitoponpï	41
 tëweitoh	41
-tëu	41
 silikë	41
 pïpïp	41
 peitopïhtom	41
@@ -1222,13 +1148,11 @@ nukuku	40
 nalëtom	40
 mënëtïlëmëjatot	40
 moinanom	40
-lue	40
 kuptëinë	40
 kunehaktoh	40
 inimoipotom	40
 inepïlïmna	40
 enahtoh	40
-apë	40
 ïtoptom	39
 ïnenetpï	39
 ïkatoptom	39
@@ -1238,7 +1162,6 @@ apë	40
 wapoh	39
 wakanan	39
 ukuknanom	39
-tïp	39
 tïnepï	39
 tïloptao	39
 tëwëhalëi	39
@@ -1289,7 +1212,6 @@ ilon	38
 eumakpela	38
 ekalëtïhwë	38
 apëtun	38
-ale	38
 aikom	38
 ïtïhwë	37
 ïkalïhtao	37
@@ -1397,7 +1319,6 @@ ipohnëptoptom	35
 ipohnëptoh	35
 imoikë	35
 imemnomoja	35
-eu	35
 epohnëptop	35
 enepotëk	35
 enepkë	35
@@ -1510,7 +1431,6 @@ hepïn	32
 etpitalïtom	32
 epohnëpïla	32
 enepoi	32
-ekï	32
 ekataowëhe	32
 awainatpë	32
 apëtomananom	32
@@ -1529,7 +1449,6 @@ alëtoptom	32
 ëtamëtkala	31
 ënemekom	31
 ëjekom	31
-ëje	31
 ëhtalïkom	31
 wakanajao	31
 uhmotïhwë	31
@@ -1567,7 +1486,6 @@ ailon	31
 ïweitoptom	30
 ïlïtponme	30
 ëwasikalun	30
-ëtë	30
 ënenokïla	30
 ënenekom	30
 ënene	30
@@ -1638,7 +1556,6 @@ tïtëimëitot	29
 tëweiheme	29
 tëkatalï	29
 tutak	29
-tak	29
 pohnëptoh	29
 patatome	29
 panakmapotpon	29
@@ -1715,7 +1632,6 @@ ankomhak	28
 ënipïnanïpïla	27
 ëneheptëla	27
 wuhmojai	27
-wo	27
 umosiphak	27
 uhpolomnom	27
 uhmotën	27
@@ -1787,7 +1703,6 @@ talenti	26
 pulam	26
 pohnëpïke	26
 pela	26
-pau	26
 nëtujai	26
 nesi	26
 mënilëmëpjatot	26
@@ -1817,7 +1732,6 @@ aklamatoptom	26
 ahpepïnme	26
 ïlëmëpjai	25
 ëwuhpolohe	25
-ëwa	25
 ëtëlïhtao	25
 ënïlïlahnë	25
 ënepatoptom	25
@@ -1860,7 +1774,6 @@ kawëno	25
 kawemhakantom	25
 kapok	25
 iwalë	25
-itu	25
 ipohnëmneme	25
 ihjanme	25
 hahkatoptom	25
@@ -1884,7 +1797,6 @@ aptaolëken	25
 ëtïkompalë	24
 ëtukë	24
 ëtakëlëntome	24
-ëpë	24
 ëpeitokome	24
 ënïkïhku	24
 ënïh	24
@@ -1941,7 +1853,6 @@ enehpone	24
 ekalëtëh	24
 apëinanom	24
 anïmja	24
-ai	24
 ïpït	23
 ïpïhtak	23
 ïpakolontao	23
@@ -2088,13 +1999,11 @@ imjatame	22
 ikoununkome	22
 ikloimatpï	22
 ikepïla	22
-han	22
 ewane	22
 enepolïhtao	22
 emsikom	22
 emjaowëinë	22
 elaimatëk	22
-eku	22
 ekalëpotohme	22
 ekalëimëtohme	22
 ekalëimëne	22
@@ -2141,7 +2050,6 @@ pïnanïptohme	21
 pohnëptë	21
 pohnëptoptom	21
 pitpëke	21
-pem	21
 pakolonuhmatonom	21
 otime	21
 onamtoponpï	21
@@ -2249,7 +2157,6 @@ kapunalï	20
 kalapitatom	20
 jamo	20
 iwekïtpïtom	20
-itë	20
 itumhakan	20
 ipanakma	20
 ipakolontak	20
@@ -2258,7 +2165,6 @@ ihme	20
 ihmatonpï	20
 hemalëlo	20
 hapontomoja	20
-ewa	20
 epelïke	20
 enetop	20
 enemnetot	20
@@ -2288,7 +2194,6 @@ amoleke	20
 ënëkula	19
 ënenelale	19
 ënapësitpïkom	19
-ëkë	19
 wimilikjai	19
 wetïnpë	19
 uwantanïmnanom	19
@@ -2351,7 +2256,6 @@ itïhme	19
 isehe	19
 ipohnëmnanom	19
 ipeitokom	19
-ina	19
 imëkïlïhtao	19
 ikuptë	19
 ikatpï	19
@@ -2421,14 +2325,11 @@ tumëktïhwëhe	18
 sakpululu	18
 pïnanïmne	18
 pika	18
-pia	18
 peptatom	18
 papah	18
 palïnpëme	18
 pakolotao	18
 pakala	18
-pak	18
-ona	18
 ohanëmetot	18
 nordtïinano	18
 nalëpo	18
@@ -2541,7 +2442,6 @@ mëhalëken	17
 munome	17
 mipohnëpjai	17
 mipohnëpja	17
-mat	17
 malëlëken	17
 lomo	17
 kuwenokjai	17
@@ -2667,7 +2567,6 @@ moipoja	16
 mepïjatëi	16
 melekatpon	16
 litime	16
-lak	16
 këpak	16
 kuneponanmakom	16
 kunemaminumtot	16
@@ -2694,12 +2593,10 @@ ikuptëlëhe	16
 hepï	16
 henmalëken	16
 hautu	16
-ha	16
 etïpïpïn	16
 etëne	16
 epoja	16
 epekahtohme	16
-epe	16
 enepophak	16
 enehe	16
 empataowëinë	16
@@ -2822,7 +2719,6 @@ inimilikutpï	15
 inepï	15
 imëktopkome	15
 imilikpok	15
-ila	15
 ikïphakankom	15
 ikatïp	15
 hapëhjatëi	15
@@ -2948,7 +2844,6 @@ pololëken	14
 pilëja	14
 panakmatohme	14
 pana	14
-pan	14
 ohanëmalïhtao	14
 nïtëjai	14
 nïpotpï	14
@@ -2982,7 +2877,6 @@ kunehakton	14
 koutuhleke	14
 kolome	14
 kokek	14
-kau	14
 katot	14
 kapunailë	14
 kapitekutome	14
@@ -3030,7 +2924,6 @@ etatonpï	14
 etatonpëtom	14
 epetpïmatoponpë	14
 epai	14
-epa	14
 eneimëtïhwë	14
 eluwakomoh	14
 elaime	14
@@ -3081,12 +2974,10 @@ ahpo	14
 ënipanakmakome	13
 ënilëmëpkapola	13
 ënawohanëmalahe	13
-ëna	13
 ëmëmïlanma	13
 ëlimak	13
 ëkatopkome	13
 ëhenepok	13
-ëha	13
 wïpïlïptëtpon	13
 wipïnanïpjai	13
 wewapojai	13
@@ -3168,7 +3059,6 @@ kunapënuk	13
 kukoununkom	13
 kokole	13
 katïpïnma	13
-kat	13
 jempatak	13
 jahmit	13
 iwëtïlëmëtopkome	13
@@ -3191,7 +3081,6 @@ iloptalïtak	13
 ikutpë	13
 ikakom	13
 hekalëjatëi	13
-heh	13
 haweipoja	13
 haponjak	13
 hankomoja	13
@@ -3426,7 +3315,6 @@ ejomaneme	12
 eheptëke	12
 awokï	12
 awohanëmananomkom	12
-awo	12
 asimhak	12
 apuwatëk	12
 apulutpïtom	12
@@ -3582,7 +3470,6 @@ petukwane	11
 peitotomelëken	11
 peitomelëken	11
 panakmai	11
-otï	11
 nuhmotpï	11
 nisanotpï	11
 nipokïme	11
@@ -3621,7 +3508,6 @@ ministelintom	11
 melekatïhwë	11
 mekalëtëne	11
 mekalëjatëo	11
-mau	11
 mapëitëne	11
 mapjao	11
 mapjak	11
@@ -3726,7 +3612,6 @@ akenaptëtpon	11
 ïpupu	10
 ïpotoptom	10
 ïnipïnïn	10
-ïna	10
 ïmnelum	10
 ïmeitïtom	10
 ïlëmëjatot	10
@@ -3761,7 +3646,6 @@ akenaptëtpon	11
 ëtukulanma	10
 ëpëh	10
 ëponamnom	10
-ëpi	10
 ëpakolontao	10
 ënïlïtpï	10
 ënïlï	10
@@ -3876,7 +3760,6 @@ sekeume	10
 pïnapophahkatse	10
 pïnanïpï	10
 pïle	10
-pïh	10
 pëwëjinuina	10
 pëkëntomoja	10
 pëkëlanma	10
@@ -3989,7 +3872,6 @@ etïpïpïnme	10
 etatoina	10
 etat	10
 epïmatïhwë	10
-epo	10
 epetpïmak	10
 epetala	10
 epane	10
