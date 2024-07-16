@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "way"
+    ],
+	  "description": "Lexical model for the Wayana language, derived from the Wayana Bible translation."
+}
