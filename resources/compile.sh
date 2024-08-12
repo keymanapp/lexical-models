@@ -164,26 +164,8 @@ function build_release_model {
     cp source/$modelOutputFilename build/$modelOutputFilename || die
     cp source/$modelOutputPackageFilename build/$modelOutputPackageFilename || die
   else
-    pushd source
-
     # Compile model
-    npx ${NPM_COLOR_FLAG} kmlmc -o "../build/$modelOutputFilename" "./$modelInputFilename" || die "Unable to build .model.js file"
-
-    # Compile package
-    npx ${NPM_COLOR_FLAG} kmlmp -o "../build/$modelOutputPackageFilename" "./$modelInputPackageFilename" || die "Unable to build .model.kmp file"
-
-    popd
-
-    # Merge .model_info file
-
-    npx ${NPM_COLOR_FLAG} kmlmi \
-      --model "$base_model" \
-      --outFile "build/$modelInfoFilename" \
-      --source "$group/$shortname/$base_model" \
-      --jsFilename "build/$modelOutputFilename" \
-      --kpsFilename "source/$modelInputPackageFilename" \
-      --kmpFilename "build/$modelOutputPackageFilename" \
-      "./$modelInfoFilename" || die "Unable to merge .model_info file"
+    "$MODELROOT/node_modules/.bin/kmc" build --for-publishing . || die "Unable to build model"
   fi
 
   return 0
