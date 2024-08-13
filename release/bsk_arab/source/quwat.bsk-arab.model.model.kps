@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.147.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">YSB Keyboard Dictionary</Name>
+    <Copyright URL="">Copyright © 2024 Quwat K. Sunny</Copyright>
+    <Author URL="mailto:support@burusho.org">Quwat K. Sunny</Author>
+    <Version URL="">1.26</Version>
+    <WebSite URL="www.burusho.org">www.burusho.org</WebSite>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\quwat.bsk-arab.model.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>fonts\Burusho_Quwatz_Nastaliq.ttf</Name>
+      <Description>Font Burusho Quwatz Nastaliq</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>model</Name>
+      <ID>quwat.bsk-arab.model</ID>
+      <RTL>True</RTL>
+      <Languages>
+        <Language ID="bsk">Burushaski</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
