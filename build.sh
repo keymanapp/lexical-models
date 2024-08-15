@@ -58,7 +58,7 @@ if [[ "$DO_NPM" = true ]]; then
   # Pull dependencies
   #
   echo "Dependencies check"
-  npm ${NPM_COLOR_FLAG} install --no-optional
+  npm ${NPM_COLOR_FLAG} ci --no-optional
 fi
 
 #
