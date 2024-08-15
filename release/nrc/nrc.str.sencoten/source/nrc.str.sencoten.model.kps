@@ -5,6 +5,7 @@
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <Info>
     <Name URL="">SENĆOŦEN (Saanich Dialect) Lexical Model</Name>
@@ -18,6 +19,12 @@
       <Description>Lexical model nrc.str.sencoten.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <LexicalModels>

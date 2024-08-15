@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-© 2024 Tomás Briones M.
+Copyright © 2024 Tomás Briones M.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
