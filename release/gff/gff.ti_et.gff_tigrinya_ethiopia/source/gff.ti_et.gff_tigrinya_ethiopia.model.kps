@@ -20,6 +20,7 @@
     <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
     <Version URL="">1.0.1</Version>
+    <Description>The Tigrinya-Ethiopia lexical model is based on the content found from 100 issues of the Wegahta (ወጋሕታ) newspaper.</Description>
   </Info>
   <Files>
     <File>

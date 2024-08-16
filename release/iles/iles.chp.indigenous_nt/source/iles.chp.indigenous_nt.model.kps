@@ -20,6 +20,7 @@
     <Copyright URL="">© 2021-2023 ILES</Copyright>
     <Author URL="">ILES</Author>
     <Version URL="">0.2</Version>
+    <Description>This is a preliminary predictive text model for Chipewyan, (BCP47: chp)</Description>
   </Info>
   <Files>
     <File>

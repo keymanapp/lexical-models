@@ -12,6 +12,7 @@
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
     <Version>0.1.2</Version>
+    <Description>Example wordlist model for Plains Cree, using a wordlist exported from Google Sheets. The words are terms for kinship (wahkohtowin).</Description>
   </Info>
   <Files>
     <File>
