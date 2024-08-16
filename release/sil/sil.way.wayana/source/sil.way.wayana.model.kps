@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.274.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.326.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -17,15 +16,15 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Laz</Name>
-    <Copyright URL="">Copyright © SIL International</Copyright>
-    <Author URL="">sil</Author>
+    <Name URL="">Wayana</Name>
+    <Copyright URL="">Copyright © SIL</Copyright>
+    <Author URL="">SIL</Author>
     <Version URL="">1.0</Version>
-    <Description URL="">This is a Laz lexical model created for the Colchis Latin keyboard.</Description>
+    <Description URL="">Lexical model for the Wayana language, derived from the Wayana Bible translation.</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\sil.lzz-latn.laz.model.js</Name>
+      <Name>..\build\sil.way.wayana.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -52,13 +51,12 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Laz</Name>
-      <ID>sil.lzz-latn.laz</ID>
+      <Name>Wayana</Name>
+      <ID>sil.way.wayana</ID>
       <Languages>
-        <Language ID="lzz-Latn">Laz</Language>
+        <Language ID="way">Wayana</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
-  <RelatedPackages/>
   <Strings/>
 </Package>

@@ -1,33 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.319.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Esperanto</Name>
-    <Copyright URL="">© Tomás Briones M.</Copyright>
-    <Author URL="">Tomás Briones M.</Author>
-    <Version URL="">1.0</Version>
-    <WebSite URL="http://www.lastajneuxronoj.wordpress.com">http://www.lastajneuxronoj.wordpress.com</WebSite>
+    <Name URL="">Laz</Name>
+    <Copyright URL="">Copyright © SIL International</Copyright>
+    <Author URL="">sil</Author>
+    <Version URL="">1.1</Version>
+    <Description URL="">This is a Laz lexical model created for the Colchis Latin keyboard.</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\tbm.eo.esperanto.model.js</Name>
+      <Name>..\build\sil.lzz.laz.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
     </File>
     <File>
       <Name>readme.htm</Name>
@@ -45,10 +52,10 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Esperanto</Name>
-      <ID>tbm.eo.esperanto</ID>
+      <Name>Laz</Name>
+      <ID>sil.lzz.laz</ID>
       <Languages>
-        <Language ID="eo">Esperanto</Language>
+        <Language ID="lzz">Laz</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
