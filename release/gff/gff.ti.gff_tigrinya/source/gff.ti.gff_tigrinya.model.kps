@@ -20,6 +20,7 @@
     <Copyright URL="">© 2020 - 2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
     <Version URL="">1.2</Version>
+    <Description>Tigrinya Lexical Model derived from the UniLex word list for Tigrinya.</Description>
   </Info>
   <Files>
     <File>

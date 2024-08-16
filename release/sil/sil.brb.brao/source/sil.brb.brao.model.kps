@@ -20,6 +20,7 @@
     <Copyright URL="">© 2021 SIL International</Copyright>
     <Author URL=""></Author>
     <Version URL="">1.0</Version>
+    <Description>This model was created based on a word list provided by the linguist working on the language.</Description>
   </Info>
   <Files>
     <File>
