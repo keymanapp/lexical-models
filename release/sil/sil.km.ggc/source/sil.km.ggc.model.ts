@@ -12,16 +12,16 @@ const source: LexicalModelSource = {
   sources: ['wordlist.tsv'],
   wordBreaker: function (str) {
     const whitespaceRegex = /\s|\u200b|\n|\r/;
-    const plainTokens = str.split(whitespaceRegex);
+    const tokens = str.split(whitespaceRegex);
 
-    for(let i=0; i < plainTokens.length; i++) {
-      const token = plainTokens[i];
+    for(let i=0; i < tokens.length; i++) {
+      const token = tokens[i];
       if(token.length == 0) {
-        plainTokens.splice(i, 1);
+        tokens.splice(i, 1);
         i--;
         continue;
       } else if(token.length == 1 && whitespaceRegex.test(token)) {
-        plainTokens.splice(i, 1);
+        tokens.splice(i, 1);
         i--;
         continue;
       }
@@ -48,11 +48,11 @@ const source: LexicalModelSource = {
         const right = token.substring(splitPoint+1);  // Starting past the end of the string => ''
 
         if(left) {
-          plainTokens.splice(i++, 0, left);
+          tokens.splice(i++, 0, left);
         }
-        plainTokens.splice(i++, 1, punct);
+        tokens.splice(i++, 1, punct);
         if(right) {
-          plainTokens.splice(i, 0, right);
+          tokens.splice(i, 0, right);
         }
         // Ensure that the next iteration puts `i` immediately after the punctuation token... even if
         // there was a `right` portion, as it may have extra marks that also need to be spun off.
@@ -61,7 +61,7 @@ const source: LexicalModelSource = {
     }
 
     let latestIndex = 0;
-    return plainTokens.map(function(token) {
+    return tokens.map(function(token) {
       const start = str.indexOf(token, latestIndex);
       latestIndex = start + token.length;
       return {
