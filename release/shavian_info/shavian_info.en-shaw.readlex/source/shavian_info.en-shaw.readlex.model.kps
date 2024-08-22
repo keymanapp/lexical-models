@@ -21,6 +21,7 @@
     <Copyright URL="">Shavian.info</Copyright>
     <Author URL="mailto:contact@shavian.info">Ed Greville</Author>
     <Version URL="">1.0</Version>
+    <Description>ReadLex generated from template</Description>
     <WebSite URL="https://www.shavian.info">https://www.shavian.info</WebSite>
   </Info>
   <Files>

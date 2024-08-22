@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">GFF Tigrinya-Eritrean Lexical Model</Name>
-    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
-    <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
-    <Version URL="">1.0.1</Version>
-    <Description>The Tigrinya-Eritrea lexical model is based on the content found from 131 issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper.</Description>
+    <Name URL="">teochew</Name>
+    <Copyright URL="">Copyright © cathaylab</Copyright>
+    <Author URL="">cathaylab</Author>
+    <Version URL="">1.0</Version>
+    <Description URL="">teochew model for Tiê-chiu Pe̍h-ūe-jī</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\gff.ti_er.gff_tigrinya_eritrea.model.js</Name>
+      <Name>..\build\cathaylab.nan-latn-035.teochew.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -51,10 +51,10 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>GFF Eritrean Tigrinya</Name>
-      <ID>gff.ti_er.gff_tigrinya_eritrea</ID>
+      <Name>teochew</Name>
+      <ID>cathaylab.nan-latn-035.teochew</ID>
       <Languages>
-        <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
+        <Language ID="nan-Latn-035">Min Nan Chinese</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>

@@ -12,6 +12,7 @@
     <Copyright URL="">© 2019 SIL International</Copyright>
     <Author URL="mailto:marc@keyman.com">Marc Durdin</Author>
     <Version>0.1.4</Version>
+    <Description>Example custom model template for English language.</Description>
   </Info>
   <Files>
     <File>
