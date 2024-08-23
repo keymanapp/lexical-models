@@ -1,32 +1,13 @@
-#!/usr/bin/env bash
-
 #----------------------------------------------------------------------------------------
-# Source model from external repository or binary download location
-# This file corresponds very closely to external.sh in keymanapp/keyboards
+# Source keyboard or model from external repository or binary download location
+# This file corresponds very closely to external.inc.sh in keymanapp/keyboards
 #----------------------------------------------------------------------------------------
-
-is_external_source_model() {
-  # https://github.com/(owner)/(repo)/tree/(commit)/(path?)
-  [[ $1 =~ ^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/tree\/([a-z0-9]{40})(\/.+)?$ ]]
-}
-
-urldecode() { echo -e "${*//%/\\x}"; } # https://stackoverflow.com/a/37840948/1836776, no +
 
 retrieve_external_model() {
   # Assume we are starting in the correct folder
   [ -f external_source ] || die "No external_source file found"
 
-  local source=`urldecode $(<external_source)`
-
-  if [[ ! -z "$FLAG_CLEAN" ]]; then
-    clean_external_target_folder
-    return 0
-  fi
-
-  # We currently don't verify that the external target folder is clean.
-  # That breaks rebuilding. Instead, we just retrieve the files again.
-  # verify_external_target_folder_is_clean
-
+  local source=`_urldecode $(<external_source)`
 
   if is_external_source_model "$source"; then
     # If the external_source file has a single line referencing a GitHub commit
@@ -49,35 +30,25 @@ retrieve_external_model() {
   rewrite_external_git_ignore
 }
 
-verify_external_target_folder_is_clean() {
-  # Remove all files except:
-  # .gitignore
-  # external_source
-  # README_EXTERNAL.md
-  local files=`find * \! -name '.gitignore' -a \! -name '.source_is_binary' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
-  if [ ! -z "$files" ]; then
-    echo "The target folder contains unexpected files:"
-    echo $files
-    die "Aborting build"
-  fi
-}
-
 clean_external_target_folder() {
+  # Assume we are starting in the correct folder
+  [ -f external_source ] || die "No external_source file found"
+
   local files=`find * \! -name '.gitignore' -a \! -name 'external_source' -a \! -name 'README_EXTERNAL.md' -print`
+  rm -f .source_is_binary
   if [ ! -z "$files" ]; then
     rm -rf $files
   fi
 }
 
-rewrite_external_git_ignore() {
-  echo "
-# Only specific files may be added to repository for external references
-*
-.source_is_binary
-!external_source
-!README_EXTERNAL.md
-!.gitignore
-" > .gitignore
+is_external_source_model() {
+  # https://github.com/(owner)/(repo)/tree/(commit)/(path?)
+  [[ $1 =~ ^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/tree\/([a-z0-9]{40})(\/.+)?$ ]]
+}
+
+_urldecode() {
+  # https://stackoverflow.com/a/37840948/1836776, no +
+  echo -e "${*//%/\\x}";
 }
 
 retrieve_external_source_model() {
