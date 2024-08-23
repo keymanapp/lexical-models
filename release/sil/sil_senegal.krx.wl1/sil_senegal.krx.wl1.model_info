@@ -1,7 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "krx"
-    ],
-	  "description": "Predictive text model for Karon (krx, Senegal), based on a word list with casing enabled."
-}
