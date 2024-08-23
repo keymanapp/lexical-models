@@ -26,8 +26,6 @@ retrieve_external_model() {
     # file
     retrieve_external_binary_model
   fi
-
-  rewrite_external_git_ignore
 }
 
 clean_external_target_folder() {
