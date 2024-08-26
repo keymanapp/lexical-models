@@ -20,7 +20,7 @@
     <Name URL="">wl2</Name>
     <Copyright URL="">©2022-2023 SIL International</Copyright>
     <Author URL="mailto:academic_computing_seb@sil.org">SIL Senegal</Author>
-    <Version URL="">1.2.1</Version>
+    <Version URL="">1.2.2</Version>
     <Description>predictive text model for Gusilay (gsl, Senegal) in Ajami, based on a word list</Description>
     <WebSite URL="senegal.sil.org">senegal.sil.org</WebSite>
   </Info>

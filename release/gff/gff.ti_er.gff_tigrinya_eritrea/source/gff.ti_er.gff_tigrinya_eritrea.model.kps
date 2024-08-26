@@ -19,7 +19,7 @@
     <Name URL="">GFF Tigrinya-Eritrean Lexical Model</Name>
     <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
-    <Version URL="">1.0.1</Version>
+    <Version URL="">1.0.2</Version>
     <Description>The Tigrinya-Eritrea lexical model is based on the content found from 131 issues of the Haddas Eritrea (ሓዳስ ኤርትራ) newspaper.</Description>
   </Info>
   <Files>

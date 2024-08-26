@@ -18,7 +18,7 @@
     <Name URL="">English language model mined from MTNT</Name>
     <Copyright URL="">© 2019-2023 National Research Council Canada</Copyright>
     <Author URL="mailto:easantos@ualberta.ca">Eddie Antonio Santos</Author>
-    <Version URL="">0.3.2</Version>
+    <Version URL="">0.3.3</Version>
     <Description>A unigram language model for English derived from the MTNT corpus &lt;http://www.cs.cmu.edu/~pmichel1/mtnt/&gt;. This corpus itself is gathered from Reddit, so it is unfiltered internet discussion. This is not humanity at its prettiest!</Description>
   </Info>
   <Files>

@@ -19,7 +19,7 @@
     <Name URL="">Khmer Google Crawler</Name>
     <Copyright URL="">© SIL International</Copyright>
     <Author URL="">SIL International</Author>
-    <Version URL="">1.1</Version>
+    <Version URL="">1.2</Version>
     <Description>Google Crawler generated from template</Description>
   </Info>
   <Files>
