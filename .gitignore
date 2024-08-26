@@ -8,3 +8,6 @@ servervars.sh
 
 .DS_Store
 /.project
+
+build_external_targets.txt
+build_targets.txt
