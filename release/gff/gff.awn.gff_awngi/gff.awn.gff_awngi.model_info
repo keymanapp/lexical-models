@@ -1,7 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "awn"
-    ],
-	  "description": "Awngi Lexical Model derived from a curated document corpus."
-}

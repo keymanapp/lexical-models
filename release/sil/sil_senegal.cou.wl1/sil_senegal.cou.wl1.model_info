@@ -1,7 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "cou"
-    ],
-	  "description": "predictive text model for Konyagi (cou, Senegal), based on a word list"
-}

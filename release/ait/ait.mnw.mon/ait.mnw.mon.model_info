@@ -1,8 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "mnw",
-        "mnw-Mymr"
-    ],
-	  "description": "Mon predictive text lexical model."
-}

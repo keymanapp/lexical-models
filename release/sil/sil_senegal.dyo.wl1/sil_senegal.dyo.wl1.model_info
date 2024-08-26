@@ -1,7 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "dyo", "dyo"
-    ],
-	  "description": "predictive text model for Jola Fonyi (dyo, Senegal), based on a word list with casing enabled"
-}

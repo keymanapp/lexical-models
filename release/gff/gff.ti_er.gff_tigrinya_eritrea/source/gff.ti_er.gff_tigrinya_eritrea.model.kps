@@ -59,4 +59,7 @@
     </LexicalModel>
   </LexicalModels>
   <Strings/>
+  <RelatedPackages>
+    <RelatedPackage ID="gff.ti.gff_tigrinya" Relationship="deprecates" />
+  </RelatedPackages>
 </Package>

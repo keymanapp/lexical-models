@@ -1,7 +1,0 @@
-{
-    "license": "mit",
-    "languages": [
-        "tig"
-    ],
-	  "description": "Tigre Lexical Model derived from a curated document corpus."
-}
