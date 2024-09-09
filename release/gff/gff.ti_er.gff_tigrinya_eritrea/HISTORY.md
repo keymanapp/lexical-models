@@ -1,6 +1,10 @@
 GFF Tigrinya-Eritrean Lexical Model Change History
 ==================================================
 
+1.0.2 (2024-09-09)
+----------------
+* Rebuild with 17.0.329 compiler
+
 1.0.1 (2023-07-08)
 ------------------
 * Display name fix and readme.htm, and welcome.htm enhancement.

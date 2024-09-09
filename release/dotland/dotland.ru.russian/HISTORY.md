@@ -1,6 +1,10 @@
 Russian Change History
 ====================
 
+1.4 (2024-09-09)
+----------------
+* Rebuild with 17.0.329 compiler
+
 1.3 (2023-03-21)
 ----------------
 * Rebuilt with ES3 code generation to support Android 5.0 devices

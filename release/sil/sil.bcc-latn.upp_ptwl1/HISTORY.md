@@ -1,18 +1,22 @@
 sil.bcc-latn.upp_ptwl1 Change History
 =====================================
 
+1.2.2 (2024-09-09)
+----------------
+* Rebuild with 17.0.329 compiler
+
 1.2.1 (2020-07-14)
 ----------------
-Added language code bal.
+* Added language code bal.
 
 1.2 (2020-05-22)
 ----------------
-Use more texts for the wordlist.
+* Use more texts for the wordlist.
 
 1.1 (2020-02-10)
 ----------------
-Don't neutralize accented vowels.
+* Don't neutralize accented vowels.
 
 1.0 (2020-01-31)
 ----------------
-Initial version.
+* Initial version.

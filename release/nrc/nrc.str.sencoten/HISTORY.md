@@ -1,5 +1,9 @@
 # Version History
 
+1.0.7 (2024-09-09)
+----------------
+* Rebuild with 17.0.329 compiler
+
 1.0.6 (2023-03-21)
 ------------------
 * Rebuilt with ES3 code generation to support Android 5.0 devices

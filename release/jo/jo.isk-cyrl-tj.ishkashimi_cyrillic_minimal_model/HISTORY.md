@@ -1,6 +1,10 @@
 Ishkashimi Cyrillic lexical model Change History
 ====================
 
+1.2 (2024-09-09)
+----------------
+* Rebuild with 17.0.329 compiler
+
 1.1 (2021-03-05)
 ----------------
 * Enable use of Keyman 14's case-detection & capitalization modeling features
