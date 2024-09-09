@@ -3,7 +3,7 @@ Postmodern English US Midland Lexical Model Change History
 
 1.0.4 (2024-09-09)
 ----------------
-* Rebuild with 17.0.329 compiler
+* Rebuild with 17.0.329 compiler to address missing low-frequency words
 
 1.0.3 (2022-12-10)
 ----------------
