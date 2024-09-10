@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.319.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
@@ -20,7 +20,7 @@
     <Name URL="">Laz</Name>
     <Copyright URL="">Copyright © SIL International</Copyright>
     <Author URL="">sil</Author>
-    <Version URL="">1.1</Version>
+    <Version URL="">1.2</Version>
     <Description URL="">This is a Laz lexical model created for the Colchis Latin keyboard.</Description>
   </Info>
   <Files>
@@ -56,6 +56,7 @@
       <ID>sil.lzz.laz</ID>
       <Languages>
         <Language ID="lzz">Laz</Language>
+        <Language ID="lzz-GE">Laz (Georgia)</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
