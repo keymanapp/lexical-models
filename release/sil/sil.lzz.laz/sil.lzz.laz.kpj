@@ -15,15 +15,15 @@
       <FileType>.ts</FileType>
     </File>
     <File>
-      <ID>id_0211b8c127a465ce8af0a3296345d07b</ID>
+      <ID>id_716920ed0c0d0d878b59b83f8fdd4490</ID>
       <Filename>sil.lzz.laz.model.kps</Filename>
       <Filepath>source\sil.lzz.laz.model.kps</Filepath>
-      <FileVersion>1.1</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Laz</Name>
         <Copyright>Copyright © SIL International</Copyright>
-        <Version>1.1</Version>
+        <Version>1.2</Version>
       </Details>
     </File>
     <File>
@@ -55,12 +55,12 @@
       <FileType>.model_info</FileType>
     </File>
     <File>
-      <ID>id_a868d2e851361752ae7673a48298f06d</ID>
+      <ID>id_b9e56d8a3460851a0af014d0de44e4e1</ID>
       <Filename>sil.lzz.laz.model.js</Filename>
       <Filepath>source\..\build\sil.lzz.laz.model.js</Filepath>
       <FileVersion></FileVersion>
       <FileType>.js</FileType>
-      <ParentFileID>id_0211b8c127a465ce8af0a3296345d07b</ParentFileID>
+      <ParentFileID>id_716920ed0c0d0d878b59b83f8fdd4490</ParentFileID>
     </File>
     <File>
       <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
@@ -68,7 +68,7 @@
       <Filepath>source\welcome.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_0211b8c127a465ce8af0a3296345d07b</ParentFileID>
+      <ParentFileID>id_716920ed0c0d0d878b59b83f8fdd4490</ParentFileID>
     </File>
     <File>
       <ID>id_8da344c4cea6f467013357fe099006f5</ID>
@@ -76,7 +76,7 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
-      <ParentFileID>id_0211b8c127a465ce8af0a3296345d07b</ParentFileID>
+      <ParentFileID>id_716920ed0c0d0d878b59b83f8fdd4490</ParentFileID>
     </File>
     <File>
       <ID>id_c296b5df3dc126e219e0173fcbc1baec</ID>
@@ -84,7 +84,7 @@
       <Filepath>source\..\LICENSE.md</Filepath>
       <FileVersion></FileVersion>
       <FileType>.md</FileType>
-      <ParentFileID>id_0211b8c127a465ce8af0a3296345d07b</ParentFileID>
+      <ParentFileID>id_716920ed0c0d0d878b59b83f8fdd4490</ParentFileID>
     </File>
   </Files>
 </KeymanDeveloperProject>
