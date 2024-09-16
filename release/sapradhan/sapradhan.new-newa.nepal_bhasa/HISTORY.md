@@ -1,7 +1,7 @@
 # nepal-bhasa Change History
 ====================
 
-2.4 (2024-09-09)
+2.4 (2024-09-16)
 ----------------
 * Rebuild with 17.0.329 compiler to address missing low-frequency words
 

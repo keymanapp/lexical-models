@@ -1,6 +1,6 @@
 # Version History
 
-## 0.3.3 (2024-09-09)
+## 0.3.3 (2024-09-16)
 
 * Rebuild with 17.0.329 compiler to address missing low-frequency words
 
