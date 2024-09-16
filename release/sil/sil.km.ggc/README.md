@@ -1,8 +1,6 @@
 Google Crawler lexical model
 ===================
 
-Version 1.1
-
 Description
 -----------
 This is a wordlist from [Google Corpus Crawler](https://github.com/google/corpuscrawler?tab=readme-ov-file).  After cleaning up the data using 
