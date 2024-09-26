@@ -1,6 +1,10 @@
 Chuon Nath Dictionary Change History
 ====================
 
+0.2 (2024-09-16)
+----------------
+* Rebuild with 17.0.329 compiler to address missing low-frequency words
+
 0.1 (2022-08-17)
 ----------------
 * removed: (1) regular spaces, (2) prefixes, (3) brackets and (4) deplicates

@@ -1,5 +1,11 @@
 # Version History
+
+## 0.3.3 (2024-09-16)
+
+* Rebuild with 17.0.329 compiler to address missing low-frequency words
+
 ## 0.3.2 (2024-04-03)
+
 * space corrected to tab in .tsv file
 
 ## 0.3.1 (2024-03-07)
