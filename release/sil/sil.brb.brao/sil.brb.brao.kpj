@@ -19,12 +19,12 @@
       <ID>id_a635d6690bfa4c120482489373b35f79</ID>
       <Filename>sil.brb.brao.model.kps</Filename>
       <Filepath>source\sil.brb.brao.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>brao</Name>
-        <Copyright>© 2021 SIL International</Copyright>
-        <Version>1.0</Version>
+        <Copyright>© 2021-2022 SIL International</Copyright>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
