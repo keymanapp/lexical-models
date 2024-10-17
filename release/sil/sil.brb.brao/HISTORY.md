@@ -1,7 +1,7 @@
 Brao Lexical Model Change History
 ====================
 
-1.2 (2022-05-23)
+1.2 (2024-10-17)
 ----------------
 * Updated the word list based on a new and improved list provided
 
