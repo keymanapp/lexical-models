@@ -1,6 +1,10 @@
 Brao Lexical Model Change History
 ====================
 
+1.3 (2024-10-17)
+----------------
+* New Brao wordlist
+
 1.2 (2024-09-16)
 ----------------
 * Rebuild with 17.0.329 compiler to address missing low-frequency words

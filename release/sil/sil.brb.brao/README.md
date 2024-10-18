@@ -3,7 +3,7 @@ Brao Lexical Model
 
 © 2021 SIL Global
 
-Version 1.2
+Version 1.3
 
 Description
 -----------
