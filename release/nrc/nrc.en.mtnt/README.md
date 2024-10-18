@@ -30,7 +30,7 @@ Maintainer
 ----------
 
 Eddie Antonio Santos <easantos@ualberta.ca> 🙃
-© 2019-2021 National Research Council Canada
+© National Research Council Canada
 
 How the corpus was post-processed
 ---------------------------------
@@ -59,6 +59,18 @@ them to avoid making that [clbuttic mistake][]. That was “fun”. This was
 a pretty manual, and at times, subjective process. Exact replication may
 not be guaranteed.
 
+Additional filtering
+--------------------
+
+From May 2023 through February 2024 additional hand editing was done
+to correct misspellings and remove non-words and many proper names.
+
+Future work
+-----------
+
+* Keep separate files for proper names. Could be several files (personal names,
+geographic names, company/product names, etc.)
+* Include other endings (-s, -ed, -ing, etc.)
 
 [profanities.en]: https://github.com/pmichel31415/mtnt/blob/master/resources/profanities.en
 [clbuttic mistake]: https://thedailywtf.com/articles/The-Clbuttic-Mistake-

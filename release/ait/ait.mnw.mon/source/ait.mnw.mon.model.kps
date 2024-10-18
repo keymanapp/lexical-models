@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder>Mon dictionary Lexical Model</Folder>
@@ -18,7 +19,8 @@
     <Name URL="">Mon dictionary Lexical Model</Name>
     <Copyright URL="">© 2021 Anonta Mon</Copyright>
     <Author URL="mailto:monfonts@gmail.com">Anonta Mon</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.1</Version>
+    <Description>Mon predictive text lexical model.</Description>
   </Info>
   <Files>
     <File>
@@ -38,6 +40,12 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>

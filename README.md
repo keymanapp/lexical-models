@@ -15,7 +15,7 @@ The components must be lower case and are:
   * *author*: a short unique identifier, such as `nrc` or `sil`.
   * *bcp47*: the canonical BCP 47 tag for the model. For example *km* for Khmer, or *en-au* for Australian English.
   * *uniq*: an optional component that can be provided when a given language has multiple models from a single author. For example, `en.custom` vs `en.wordlist`. We do recommend always using a uniquifer even if there are no current plans to produce more than one for a language.
-  
+
 
 ## Building Models
 
@@ -30,9 +30,10 @@ The components must be lower case and are:
 `build.sh` can be used to build all the models from the command line.
 
 * Common `build.sh` parameters:
-  * `-t, -test   Runs tests on models`
-  * `-b, -build  Creates compiled models`
-  * `-c, -clean  Cleans intermediate and output files`
-  * `-no-npm     Skip all npm steps`
-  * `-s          Quiet build`
-  * `[target]      The specific model(s) to build, e.g. release or release/example/en.template`
+  * `configure              Install dependencies (including kmc compiler)`
+  * `build                  Creates compiled models`
+  * `clean                  Cleans intermediate and output files`
+  * `test                   Runs tests on models`
+  * `-s, --silent           Quiet build`
+  * `-m, --model <target>   The specific model(s) to build, e.g. release or release/example/en.template`
+  * `-h, --help             Full help for build.sh`

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.145.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Esperanto_sxava</Name>
+    <Copyright URL="">© Tomás Briones M.</Copyright>
+    <Author URL="">Tomás Briones M.</Author>
+    <Version URL="">1.1</Version>
+    <Description>Esperanto_sxava lexical model. It includes more than 45.000 words in Esperanto, using the shavian alphabet. The words were taken from the dictionary Plena Ilustrita Vortaro. - Ĝi inkludas pli da 45.000 words in Esperanto, uzante la sxavan alfabeton. La vortoj estis prenitaj el Plena Ilustrita Vortaro</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\tbm.eo-shaw.esperanto_sxava.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Esperanto_sxava</Name>
+      <ID>tbm.eo-shaw.esperanto_sxava</ID>
+      <Languages>
+        <Language ID="eo-Shaw">Esperanto</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>

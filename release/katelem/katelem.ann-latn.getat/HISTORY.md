@@ -1,9 +1,14 @@
 Getat Change History
 ====================
 
-1.0.1 (2021-03-19)
-------------------
-* Fixes a bug that prevented use on Android 5.0 devices (keymanapp/keyman#4718)
+1.2 (2024-09-16)
+----------------
+* Rebuild with 17.0.329 compiler to address missing low-frequency words
+
+1.1 (2022-06-19)
+----------------
+* Added more words
+* Fixed typos
 
 1.0 (2020-05-14)
 ----------------

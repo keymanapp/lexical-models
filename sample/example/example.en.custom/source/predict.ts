@@ -1,25 +1,27 @@
-/// <reference path="../../../../includes/LMLayerWorker.d.ts" />
+/// <reference types="@keymanapp/models-types" />
 
 /*
   Example custom-class predictor for the en.custom model
 */
-class ExampleCustom implements WorkerInternalModel {
+class ExampleCustom implements LexicalModel {
   configuration: Configuration;
 
   configure(capabilities: Capabilities) {
     return this.configuration = {
-      leftContextCodeUnits: 64 < capabilities.maxLeftContextCodeUnits ? 64 : capabilities.maxLeftContextCodeUnits,
-      rightContextCodeUnits: 0
+      leftContextCodePoints: 64 < capabilities.maxLeftContextCodePoints ? 64 : capabilities.maxLeftContextCodePoints,
+      rightContextCodePoints: 0
     }
   }
 
-  // TODO:  Needs to reference a .d.ts file for type definitions!
-  predict(transform: Transform, context: Context): Suggestion[] {
+  predict(transform: Transform, context: Context): Distribution<Suggestion> {
     if(context.left == 'f') {
-      return [{transform: {
+      return [{
+        sample: {transform: {
           deleteLeft: 1,
           insert: 'foo'
-        }, displayAs: 'foo'}];
+        }, displayAs: 'foo'},
+        p: 1.0
+      }];
     } else {
       return [];
     }

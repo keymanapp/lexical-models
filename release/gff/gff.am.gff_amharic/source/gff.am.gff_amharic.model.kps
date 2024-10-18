@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,7 +19,8 @@
     <Name URL="">GFF Amharic Lexical Model</Name>
     <Copyright URL="">© 2020 Ge'ez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Ge'ez Frontier Foundation</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.1</Version>
+    <Description>Amharic Lexical Model derived from the UniLex word list for Amharic.</Description>
   </Info>
   <Files>
     <File>
@@ -38,6 +40,12 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>

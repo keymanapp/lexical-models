@@ -5,12 +5,14 @@
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <Info>
     <Name URL="">Example Plains Cree lexical model</Name>
     <Copyright URL="">© 2019 National Research Council Canada</Copyright>
     <Author URL="mailto:Eddie.Santos@nrc-cnrc.gc.ca">Eddie Antonio Santos</Author>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
+    <Description>Example wordlist model for Plains Cree, using a wordlist exported from Google Sheets. The words are terms for kinship (wahkohtowin).</Description>
   </Info>
   <Files>
     <File>
@@ -18,6 +20,12 @@
       <Description>Lexical model example.en.wordlist.model.js</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.model.js</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <LexicalModels>

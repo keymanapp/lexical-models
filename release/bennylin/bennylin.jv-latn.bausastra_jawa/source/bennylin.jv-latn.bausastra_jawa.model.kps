@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,7 +19,8 @@
     <Name URL="">Bausastra Jawa</Name>
     <Copyright URL="">© 2020 Benny Lin</Copyright>
     <Author URL="">Benny Lin</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.1</Version>
+    <Description>Bausastra Jawa generated from template</Description>
   </Info>
   <Files>
     <File>
@@ -38,6 +40,12 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>

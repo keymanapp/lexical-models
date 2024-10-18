@@ -10,6 +10,7 @@
     <GraphicFile>english_shavian.jpg</GraphicFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,7 +20,8 @@
     <Name URL="">Shaw ReadLex</Name>
     <Copyright URL="">Shavian.info</Copyright>
     <Author URL="mailto:contact@shavian.info">Ed Greville</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.1</Version>
+    <Description>ReadLex generated from template</Description>
     <WebSite URL="https://www.shavian.info">https://www.shavian.info</WebSite>
   </Info>
   <Files>
@@ -46,6 +48,12 @@
       <Description>File english_shavian.jpg</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.jpg</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>

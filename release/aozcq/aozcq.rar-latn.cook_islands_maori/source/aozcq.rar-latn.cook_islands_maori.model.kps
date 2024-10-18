@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,7 +19,8 @@
     <Name URL="">Cook Islands Maori</Name>
     <Copyright URL="">© 2020-2021 Sally Akevai Nicholas, Yuri Oh, Brandon Zhou, Rolando Coto Solano, Victoria Quint</Copyright>
     <Author URL="">aozcq</Author>
-    <Version URL="">1.2</Version>
+    <Version URL="">1.3</Version>
+    <Description>Cook Islands Maori predictive text lexical model. Generated from texts collected by Sally Akevai Nicholas.</Description>
   </Info>
   <Files>
     <File>
@@ -38,6 +40,12 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>

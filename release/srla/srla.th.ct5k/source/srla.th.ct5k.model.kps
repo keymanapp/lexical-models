@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -18,7 +19,8 @@
     <Name URL="">Chula top 5000</Name>
     <Copyright URL="">© 2021 Sebastian Restrepo &amp; LatamAsia</Copyright>
     <Author URL="">Sebastian Restrepo &amp; LatamAsia</Author>
-    <Version URL="">1.0</Version>
+    <Version URL="">1.1</Version>
+    <Description>This wordlist was created based on Chulalongkorn University top 5000 Thai frequency list (http://ling.arts.chula.ac.th/TNC/category.php?id=58&amp;).</Description>
   </Info>
   <Files>
     <File>
@@ -38,6 +40,12 @@
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
     </File>
   </Files>
   <Keyboards/>
