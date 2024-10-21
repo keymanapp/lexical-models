@@ -1,13 +1,9 @@
 Brao Lexical Model
 ===================
 
-© 2021 SIL Global
-
-Version 1.3
-
 Description
 -----------
-This model was created based on a wordlist of 6509 words.
+This model was created based on a wordlist.
 
 Supported Platforms
 -------------------
