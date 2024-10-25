@@ -1,10 +1,6 @@
 Bunong Wordlist lexical model
 ===================
 
-© 2021 - 2022 SIL International
-
-Version 1.1
-
 Description
 -----------
 
