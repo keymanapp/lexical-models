@@ -23,15 +23,41 @@
 
 <h1>Wordlist Model Documentation</h1>
 
-<p>This wordlist is from <a href = "https://github.com/google/corpuscrawler?tab=readme-ov-file">Google Corpus Crawler.</a> 
-  Currently, there are 17,318 entries after cleaning up.
-  <ul>
-    <li>remove English, numbers and non Khmer letters</li>
-    <li>using <a href = "https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf">Khmer Encoding Structure</a> code to normalize and remove incorrect words</li>
-    <li>remove duplicate words</li>
-    <li>remove incorrect spelling with <a href = "https://rac.gov.kh/royal-academy/research/attachments/original/42.pdf?1548147362">RAC</a></li>
-  </ul>
-
+<p>
+    This wordlist originates from the <a href="https://github.com/google/corpuscrawler?tab=readme-ov-file">Google Corpus Crawler</a>    
+    and currently contains 17,318 entries after an initial cleanup.
+</p>
+<p>
+    The following steps were taken to refine the list:
+</p>
+<ul>
+    <li>
+        Filtered out non-Khmer content: removed English words, numbers, and non-Khmer letters.
+    </li>
+    <li>
+        Normalized entries: applied <a href="https://www.unicode.org/L2/L2022/22290-khmer-encoding.pdf">Khmer Encoding Structure</a> 
+        code to standardize and eliminate incorrect words.
+    </li>
+    <li>
+        Eliminated duplicates: removed duplicate entries.
+    </li>
+    <li>
+        Corrected spelling: used the RAC (<a href="https://rac.gov.kh/public/researchs">ក្រុមប្រឹក្សាជាតិភាសាខ្មែរ ៖ សម្រងពាក្យសរសេរជាមួយ «ណ» 
+        មិនសរសេរជាមួយ «ន» និងពាក្យសរសេរជា«ឡ»ឬជាព្យាង្គតម្រួត មិនសរសេរជាមួយ«ល» រាជបណ្ឌិត្យសភាកម្ពុជា ឆ្នាំ២០១២</a>) standard to identify and 
+        remove incorrect spelling words.
+    </li>
+</ul>
+<p>
+    Despite these efforts, the wordlist still contained many unusable and incorrect entries. Therefore, each word was manually verified 
+    against the Khmer Dictionary 2022 (<a href="https://rac-app.com/">វចនានុក្រមខ្មែរ ២០២២</a>), resulting in a refined list of 10,566 correct words.
+</p>
+<p>
+    Additionally, we expanded the wordlist by incorporating 10,182 entries from the Chuon Nath wordlist. This expansion involved 
+    running the list through the normalizer, removing extraneous symbols such as ?, !, and ៗ, and eliminating any words that are 
+    duplicated to the Google Corpus Crawler wordlist. 
+</p>
+<p>
+    As a result, the final wordlist now consists of <b>20,507</b> uniquely valid and usable words.
 </p>
 
 
