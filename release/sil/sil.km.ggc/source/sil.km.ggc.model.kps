@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.143.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.328.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +19,8 @@
     <Name URL="">Khmer Google Crawler</Name>
     <Copyright URL="">© SIL International</Copyright>
     <Author URL="">SIL International</Author>
-    <Version URL="">1.2</Version>
-    <Description>Google Crawler generated from template</Description>
+    <Version URL="">2.0</Version>
+    <Description URL="">Google Crawler generated from template</Description>
   </Info>
   <Files>
     <File>
