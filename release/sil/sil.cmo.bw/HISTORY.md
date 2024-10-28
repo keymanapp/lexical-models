@@ -3,7 +3,7 @@ Bunong Wordlist Change History
 
 1.3 (2024-10-25)
 ----------------
-* Follow the updated script of text prediction. This script will handle the removal of punctuation marks or symbols that appear before the predictive word.
+* Follow the updated script of text prediction. This script avoids the removal of punctuation marks or symbols that appear before the predictive word.
 
 1.2 (2024-09-16)
 ----------------
