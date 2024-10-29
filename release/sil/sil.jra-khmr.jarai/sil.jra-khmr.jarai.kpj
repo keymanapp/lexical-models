@@ -11,19 +11,19 @@
       <ID>id_e3f7967b333ad7409f039b3f170fc751</ID>
       <Filename>sil.jra-khmr.jarai.model.ts</Filename>
       <Filepath>source\sil.jra-khmr.jarai.model.ts</Filepath>
-      <FileVersion>1.3</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_43442e7eba97b21424fabbc107e2e310</ID>
       <Filename>sil.jra-khmr.jarai.model.kps</Filename>
       <Filepath>source\sil.jra-khmr.jarai.model.kps</Filepath>
-      <FileVersion>1.3</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Jarai</Name>
         <Copyright>© SIL Global</Copyright>
-        <Version>1.3</Version>
+        <Version>1.2</Version>
       </Details>
     </File>
     <File>
