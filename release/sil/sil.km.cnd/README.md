@@ -1,8 +1,6 @@
 Chuon Nath Dictionary lexical model
 ===================
 
-Version 0.1
-
 Description
 -----------
 This is a list of all headwords from the "Chuon Nath 2.0.ods" without word freq. It has been modified to ensure its suitability for the predictive text.
