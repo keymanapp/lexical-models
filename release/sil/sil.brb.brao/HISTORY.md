@@ -1,6 +1,10 @@
 Brao Lexical Model Change History
 ====================
 
+1.4 (2024-11-01)
+----------------
+* Follow the updated script of text prediction. This script avoids the removal of punctuation marks or symbols that appear before the predictive word.
+
 1.3 (2024-10-17)
 ----------------
 * The new Brao wordlist consists of 6,509 words.
