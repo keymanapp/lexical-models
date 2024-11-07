@@ -18,12 +18,12 @@
       <ID>id_5b59c5bb30cd227e0987645222da5a9b</ID>
       <Filename>sil.km.cnd.model.kps</Filename>
       <Filepath>source\sil.km.cnd.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Chuon Nath Dictionary</Name>
         <Copyright>© SIL Global</Copyright>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
