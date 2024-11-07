@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>17.0.330.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>17.0.331.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -19,8 +19,8 @@
     <Name URL="">Chuon Nath Dictionary</Name>
     <Copyright URL="">© SIL Global</Copyright>
     <Author URL="">SIL Global</Author>
-    <Version URL="">1.0</Version>
-    <Description>This is a list of all headwords from the "Chuon Nath 2.0.ods" without word freq. It has been modified to ensure its suitability for the predictive text. After cleaning up, there are 17,190 entries.</Description>
+    <Version URL="">1.1</Version>
+    <Description URL="">This is a list of all headwords from the "Chuon Nath 2.0.ods" without word freq. It has been modified to ensure its suitability for the predictive text. After cleaning up, there are 17,190 entries.</Description>
   </Info>
   <Files>
     <File>

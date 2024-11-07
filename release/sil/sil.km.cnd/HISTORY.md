@@ -1,6 +1,10 @@
 Chuon Nath Dictionary Change History
 ====================
 
+1.1 (2024-11-07)
+----------------
+* fixed incorrect word 
+
 1.0 (2024-10-30)
 ----------------
 * Follow the updated script of text prediction. This script avoids the removal of punctuation marks or symbols that appear before the selected predictive word.
