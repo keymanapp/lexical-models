@@ -7,6 +7,7 @@ Description
 -----------
 
 El modelo de texto predictivo para el teclado móvil Triqui de Itunyoso.
+
 The predictive text model for the Itunyoso Triqui mobile keyboard.
 
 Links
