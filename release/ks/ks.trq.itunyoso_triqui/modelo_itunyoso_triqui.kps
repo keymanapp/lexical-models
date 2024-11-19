@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>16.0.146.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">modelo itunyoso triqui</Name>
+  </Info>
+  <Files>
+    <File>
+      <Name>build\ks.trq.itunyoso_triqui.model.js</Name>
+      <Description>File ks.trq.itunyoso_triqui.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name></Name>
+      <ID>ks.trq.itunyoso_triqui</ID>
+      <Languages>
+        <Language ID="trq">San Martín Itunyoso Triqui</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
