@@ -1,5 +1,5 @@
 /*
-  Laz Dictionary 1.0 generated from template.
+  Laz Dictionary 1.2 generated from template.
   
   This is a minimal lexical model source that uses a tab delimited wordlist.
   See documentation online at https://help.keyman.com/developer/ for

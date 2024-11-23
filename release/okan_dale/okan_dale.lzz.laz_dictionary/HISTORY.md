@@ -1,5 +1,8 @@
 Laz Dictionary Change History
 ====================
+1.2 (2024-11-23)
+----------------
+* Replaced old letters with new ones
 
 1.1 (2024-09-16)
 ----------------
