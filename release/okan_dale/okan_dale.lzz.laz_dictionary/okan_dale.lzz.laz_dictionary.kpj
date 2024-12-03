@@ -3,7 +3,6 @@
   <Options>
     <BuildPath>$PROJECTPATH\build</BuildPath>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
-    <WarnDeprecatedCode>True</WarnDeprecatedCode>
     <CheckFilenameConventions>True</CheckFilenameConventions>
     <ProjectType>lexicalmodel</ProjectType>
   </Options>
@@ -12,19 +11,19 @@
       <ID>id_8822809d65cbc299867e1a1ea45e1db4</ID>
       <Filename>okan_dale.lzz.laz_dictionary.model.ts</Filename>
       <Filepath>source\okan_dale.lzz.laz_dictionary.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_08efc39e0102d5bb1ad9eac962554fac</ID>
       <Filename>okan_dale.lzz.laz_dictionary.model.kps</Filename>
       <Filepath>source\okan_dale.lzz.laz_dictionary.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.1</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Laz Dictionary</Name>
         <Copyright>© Okan Dale</Copyright>
-        <Version>1.0</Version>
+        <Version>1.1</Version>
       </Details>
     </File>
     <File>
@@ -77,6 +76,14 @@
       <Filepath>source\readme.htm</Filepath>
       <FileVersion></FileVersion>
       <FileType>.htm</FileType>
+      <ParentFileID>id_08efc39e0102d5bb1ad9eac962554fac</ParentFileID>
+    </File>
+    <File>
+      <ID>id_c296b5df3dc126e219e0173fcbc1baec</ID>
+      <Filename>LICENSE.md</Filename>
+      <Filepath>source\..\LICENSE.md</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.md</FileType>
       <ParentFileID>id_08efc39e0102d5bb1ad9eac962554fac</ParentFileID>
     </File>
   </Files>
