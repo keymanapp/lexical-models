@@ -7,7 +7,7 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
-  sources: ['wordlist.tsv'],,
+  sources: ['wordlist.tsv'],
   languageUsesCasing: true,
   punctuation: {
     quotesForKeepSuggestion: {
