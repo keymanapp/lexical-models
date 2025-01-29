@@ -20,12 +20,12 @@
     <Name URL="">Burushaski</Name>
     <Copyright URL="">Copyright © Burusho</Copyright>
     <Author URL="">Burusho</Author>
-    <Version URL=""></Version>
+    <Version URL="">1.0.0</Version>
     <Description URL="">This is lexical model for Burushaski Latin Script.</Description>
   </Info>
   <Files>
     <File>
-      <Name>..\build\burusho.bsk-latn.burushaski.model.js</Name>
+      <Name>..\build\burushos.bsk-latn.burushaski.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -53,7 +53,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>Burushaski</Name>
-      <ID>burusho.bsk-latn.burushaski</ID>
+      <ID>burushos.bsk-latn.burushaski</ID>
       <Languages>
         <Language ID="bsk-Latn">Burushaski</Language>
       </Languages>
