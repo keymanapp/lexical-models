@@ -53,6 +53,7 @@
     <LexicalModel>
       <Name>burushaski</Name>
       <ID>burushos.bsk.burushaski</ID>
+      <RTL>True</RTL>
       <Languages>
         <Language ID="bsk">Burushaski</Language>
       </Languages>
