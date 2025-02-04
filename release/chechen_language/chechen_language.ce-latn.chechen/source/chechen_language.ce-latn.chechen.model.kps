@@ -16,10 +16,10 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Chechen</Name>
-    <Copyright URL="">Copyright © Chechen Language</Copyright>
-    <Author URL="">Chechen Language</Author>
-    <Version URL="">1.0</Version>
+    <Name URL="">Chechen Latin Dictionary</Name>
+    <Copyright URL="https://github.com/chechen-language/lexical-models">Copyright © Chechen Languages</Copyright>
+    <Author URL="https://github.com/chechen-language">Chechen Language Team</Author>
+    <Version URL="">1.1</Version>
     <Description URL="">Lexical model for the Chechen language using the 1992 Latin script. Word forms are sourced from the corpus at corpora.dosham.info, created by a member of our team and maintained as part of our efforts to support the Chechen language.</Description>
   </Info>
   <Files>
@@ -51,7 +51,7 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>Chechen</Name>
+      <Name>Chechen Latin Dictionary</Name>
       <ID>chechen_language.ce-latn.chechen</ID>
       <Languages>
         <Language ID="ce-Latn">Chechen</Language>
