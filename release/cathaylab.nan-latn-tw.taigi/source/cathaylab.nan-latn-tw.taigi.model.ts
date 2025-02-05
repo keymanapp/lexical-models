@@ -4,7 +4,7 @@ const source: LexicalModelSource = {
   wordBreaker: {
     use: 'default',     // we want to use the default word breaker, BUT!
     // CUSTOMIZE THIS:
-    joinWordsAt: [" ", '-'], // join words that contain hyphens
+    joinWordsAt: ['-'], // join words that contain hyphens
   }
   sources: ['wordlist.tsv'],
     punctuation: {
