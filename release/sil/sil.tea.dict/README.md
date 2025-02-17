@@ -1,8 +1,6 @@
 dict lexical model
 ===================
 
-Version 1.0
-
 Description
 -----------
 Wordlist for Temiar keyboard
