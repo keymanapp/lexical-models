@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0.335.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Jèrriais Wordlist Lexical Model</Name>
+    <Copyright URL="">Copyright © Jerriais.Tech</Copyright>
+    <Author URL="mailto:steveleroyharris@gmail.com">Jerriais.Tech</Author>
+    <Version URL="">1.0</Version>
+    <Description URL="">A lexical model for the Jèrriais language based on the Jèrriais spellcheck file maintained by Geraint Jennings.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\jerriais_tech.nrf-je.spellcheck.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Jèrriais Wordlist Lexical Model</Name>
+      <ID>jerriais_tech.nrf-je.spellcheck</ID>
+      <Languages>
+        <Language ID="nrf-JE">Jèrriais</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>

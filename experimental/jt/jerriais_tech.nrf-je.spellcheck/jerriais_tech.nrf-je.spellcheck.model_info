@@ -1,0 +1,7 @@
+{
+    "license": "mit",
+    "languages": [
+        "nrf"
+    ],
+	  "description": "A lexical model for the Jèrriais language based on the Jèrriais spellcheck file maintained by Geraint Jennings."
+}
