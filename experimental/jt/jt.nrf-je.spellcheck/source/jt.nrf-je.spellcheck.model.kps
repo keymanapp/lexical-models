@@ -25,7 +25,7 @@
   </Info>
   <Files>
     <File>
-      <Name>..\build\jerriais_tech.nrf-je.spellcheck.model.js</Name>
+      <Name>..\build\jt.nrf-je.spellcheck.model.js</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.js</FileType>
@@ -53,7 +53,7 @@
   <LexicalModels>
     <LexicalModel>
       <Name>Jèrriais Wordlist Lexical Model</Name>
-      <ID>jerriais_tech.nrf-je.spellcheck</ID>
+      <ID>jt.nrf-je.spellcheck</ID>
       <Languages>
         <Language ID="nrf-JE">Jèrriais</Language>
       </Languages>
