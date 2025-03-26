@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProject>
+  <Options>
+    <BuildPath>$PROJECTPATH\build</BuildPath>
+    <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
+    <WarnDeprecatedCode>True</WarnDeprecatedCode>
+    <CheckFilenameConventions>True</CheckFilenameConventions>
+    <ProjectType>lexicalmodel</ProjectType>
+  </Options>
+  <Files>
+    <File>
+      <ID>id_2d6237037d81bd0f4dc51f53faa536c7</ID>
+      <Filename>unilex.fr.unilex.model.ts</Filename>
+      <Filepath>source\unilex.fr.unilex.model.ts</Filepath>
+      <FileVersion>1.0</FileVersion>
+      <FileType>.ts</FileType>
+    </File>
+    <File>
+      <ID>id_c2d6578233d0ef9036f598b2918606ed</ID>
+      <Filename>unilex.fr.unilex.model.kps</Filename>
+      <Filepath>source\unilex.fr.unilex.model.kps</Filepath>
+      <FileVersion>1.0.0</FileVersion>
+      <FileType>.kps</FileType>
+      <Details>
+        <Name>Unilex fr Lexical Model</Name>
+        <Copyright>© 2019 Unicode.org and contributors</Copyright>
+        <Version>1.0.0</Version>
+      </Details>
+    </File>
+    <File>
+      <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
+      <Filename>HISTORY.md</Filename>
+      <Filepath>HISTORY.md</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <ID>id_53e892b8b41cc4caece1cfd5ef21d6e7</ID>
+      <Filename>LICENSE.md</Filename>
+      <Filepath>LICENSE.md</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <ID>id_0730bb7c2e8f9ea2438b52e419dd86c9</ID>
+      <Filename>README.md</Filename>
+      <Filepath>README.md</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <ID>id_c758b711516aab7bb5a90192207282fa</ID>
+      <Filename>unilex.fr.unilex.model_info</Filename>
+      <Filepath>unilex.fr.unilex.model_info</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.model_info</FileType>
+    </File>
+    <File>
+      <ID>id_a49cddd25cd998d8bfe69c383c32232b</ID>
+      <Filename>unilex.fr.unilex.model.js</Filename>
+      <Filepath>source\..\build\unilex.fr.unilex.model.js</Filepath>
+      <FileVersion></FileVersion>
+      <FileType>.js</FileType>
+      <ParentFileID>id_c2d6578233d0ef9036f598b2918606ed</ParentFileID>
+    </File>
+  </Files>
+</KeymanDeveloperProject>
