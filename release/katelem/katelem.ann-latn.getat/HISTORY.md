@@ -1,9 +1,11 @@
 Getat Change History
 ====================
 
-1.2 (2024-09-16)
+1.2 (2025-04-23)
 ----------------
-* Rebuild with 17.0.329 compiler to address missing low-frequency words
+* Added new words
+* Fixed typos
+* Delete duplicate words
 
 1.1 (2022-06-19)
 ----------------
