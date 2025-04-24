@@ -5,7 +5,7 @@ Getat Change History
 ----------------
 * Added new words
 * Fixed typos
-* Delete duplicate words
+* Deleted duplicate words
 
 1.1 (2022-06-19)
 ----------------
