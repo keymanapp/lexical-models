@@ -1,7 +1,7 @@
 Getat Change History
 ====================
 
-1.2 (2025-04-23)
+1.3 (2025-04-23)
 ----------------
 * Added new words
 * Fixed typos
