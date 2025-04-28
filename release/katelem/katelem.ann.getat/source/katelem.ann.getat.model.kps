@@ -52,6 +52,7 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
+      <Name>Getat</Name>
       <ID>katelem.ann.getat</ID>
       <Languages>
         <Language ID="ann">Obolo (Andoni)</Language>
