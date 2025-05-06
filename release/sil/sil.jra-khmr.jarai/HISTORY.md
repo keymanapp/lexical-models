@@ -1,5 +1,8 @@
 Jarai Change History
 ====================
+2.0 (2025-May-06)
+----------------
+* update the wordlist with new words
 
 1.2 (2024-10-28)
 ----------------
@@ -11,4 +14,4 @@ Jarai Change History
 
 1.0 (2022-06-14)
 ----------------
-* Created by SIL International
+* Created by SIL Global
