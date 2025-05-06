@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Unilex nia Lexical Model</Name>
+    <Copyright URL="">© 2019 Unicode.org and contributors</Copyright>
+    <Author URL=""></Author>
+    <Version>1.0.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\unilex.nia.unilex.model.js</Name>
+      <Description>Lexical model unilex.nia.unilex.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>unilex nia dictionary</Name>
+      <ID>unilex.nia.unilex</ID>
+      <Languages>
+        <Language ID="nia">nia</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
