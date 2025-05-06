@@ -18,12 +18,12 @@
       <ID>id_43442e7eba97b21424fabbc107e2e310</ID>
       <Filename>sil.jra-khmr.jarai.model.kps</Filename>
       <Filepath>source\sil.jra-khmr.jarai.model.kps</Filepath>
-      <FileVersion>1.2</FileVersion>
+      <FileVersion>2.0</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Jarai</Name>
         <Copyright>© SIL Global</Copyright>
-        <Version>1.2</Version>
+        <Version>2.0</Version>
       </Details>
     </File>
     <File>
