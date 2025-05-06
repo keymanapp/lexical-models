@@ -2,7 +2,7 @@ Jarai Change History
 ====================
 2.0 (2025-May-06)
 ----------------
-* update the wordlist with new words
+* update the wordlist with new words and change the wordlist name
 
 1.2 (2024-10-28)
 ----------------
