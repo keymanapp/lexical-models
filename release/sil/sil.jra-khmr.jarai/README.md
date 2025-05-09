@@ -3,7 +3,7 @@ Jarai lexical model
 
 Description
 -----------
-Jarai lexical model is created for Jarai ចារាយ (SIL) keyboard. The word list obtained has 1,276 words.
+Jarai lexical model is created for Jarai ចារាយ (SIL) keyboard.
 
 Links
 -----
