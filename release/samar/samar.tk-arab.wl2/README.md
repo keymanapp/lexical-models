@@ -3,7 +3,7 @@ Afghan Turkmen Lexical Model
 
 Description
 -----------
-Lexical Model for Afghan Turkmen. [tk]
+Lexical Model for Afghan Turkmen using Arabic script. [tk-Arab]
 
 Links
 -----
