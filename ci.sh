@@ -15,7 +15,6 @@ SHLVL=0
 #
 MODELROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 JQ="$MODELROOT/tools/jq-win64.exe"
-RSYNC="$MODELROOT/tools/rsync.exe"
 CI_CACHE="$MODELROOT/.cache"
 
 if [ ! -z "$SEVENZ_HOME" ]; then
