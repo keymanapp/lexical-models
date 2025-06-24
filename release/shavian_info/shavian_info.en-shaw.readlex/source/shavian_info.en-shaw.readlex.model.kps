@@ -9,6 +9,7 @@
     <ReadMeFile>readme.htm</ReadMeFile>
     <GraphicFile>english_shavian.png</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
   </Options>
@@ -21,7 +22,7 @@
     <Copyright URL="">Shavian.info</Copyright>
     <Author URL="mailto:contact@shavian.info">Evan Gallagher</Author>
     <Version URL="">1.2</Version>
-    <Description URL="">ReadLex generated from template</Description>
+    <Description URL="">The Shaw ReadLex lexical model reflects Shavian alphabet spellings for English in the Kingsley Read Lexicon published by Shavian.info, which are ultimately derived from the "rhotic Received Pronunciation" standard used in the Shaw Alphabet edition of Androcles and the Lion (1962).</Description>
     <WebSite URL="https://www.shavian.info">https://www.shavian.info</WebSite>
   </Info>
   <Files>
