@@ -1,14 +1,10 @@
 Shaw ReadLex lexical model
 ===================
 
-© 2021 Shavian.info
-
-Version 1.0
-
 Description
 -----------
 
-Shaw ReadLex generated from template
+The Shaw ReadLex lexical model reflects Shavian alphabet spellings for English in the Kingsley Read Lexicon published by Shavian.info, which are ultimately derived from the "rhotic Received Pronunciation" standard used in the Shaw Alphabet edition of Androcles and the Lion (1962).
 
 Links
 -----

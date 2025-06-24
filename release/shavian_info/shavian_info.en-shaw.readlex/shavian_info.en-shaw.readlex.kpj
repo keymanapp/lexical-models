@@ -1,98 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KeymanDeveloperProject>
   <Options>
-    <BuildPath>$PROJECTPATH\build</BuildPath>
+    <Version>2.0</Version>
     <CompilerWarningsAsErrors>True</CompilerWarningsAsErrors>
-    <WarnDeprecatedCode>True</WarnDeprecatedCode>
     <CheckFilenameConventions>True</CheckFilenameConventions>
+    <SkipMetadataFiles>True</SkipMetadataFiles>
     <ProjectType>lexicalmodel</ProjectType>
   </Options>
-  <Files>
-    <File>
-      <ID>id_38efab96d2de37e9177c5fa752d72b69</ID>
-      <Filename>shavian_info.en-shaw.readlex.model.ts</Filename>
-      <Filepath>source\shavian_info.en-shaw.readlex.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.ts</FileType>
-    </File>
-    <File>
-      <ID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ID>
-      <Filename>shavian_info.en-shaw.readlex.model.kps</Filename>
-      <Filepath>source\shavian_info.en-shaw.readlex.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
-      <FileType>.kps</FileType>
-      <Details>
-        <Name>Shaw ReadLex</Name>
-        <Copyright>Shavian.info</Copyright>
-        <Version>1.0</Version>
-      </Details>
-    </File>
-    <File>
-      <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
-      <Filename>HISTORY.md</Filename>
-      <Filepath>HISTORY.md</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <ID>id_53e892b8b41cc4caece1cfd5ef21d6e7</ID>
-      <Filename>LICENSE.md</Filename>
-      <Filepath>LICENSE.md</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <ID>id_0730bb7c2e8f9ea2438b52e419dd86c9</ID>
-      <Filename>README.md</Filename>
-      <Filepath>README.md</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.md</FileType>
-    </File>
-    <File>
-      <ID>id_d3a2767924df3b9339e0d564ef611dc6</ID>
-      <Filename>shavian_info.en-shaw.readlex.model_info</Filename>
-      <Filepath>shavian_info.en-shaw.readlex.model_info</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.model_info</FileType>
-    </File>
-    <File>
-      <ID>id_7d93c966eef4f7d3bb6829d729932744</ID>
-      <Filename>english_shavian.kpj</Filename>
-      <Filepath>..\english_shavian\english_shavian.kpj</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.kpj</FileType>
-    </File>
-    <File>
-      <ID>id_4ac22f2847b42d890c124af6236a9d46</ID>
-      <Filename>shavian_info.en-shaw.readlex.model.js</Filename>
-      <Filepath>source\..\build\shavian_info.en-shaw.readlex.model.js</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.js</FileType>
-      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
-    </File>
-    <File>
-      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
-      <Filename>welcome.htm</Filename>
-      <Filepath>source\welcome.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
-    </File>
-    <File>
-      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
-      <Filename>readme.htm</Filename>
-      <Filepath>source\readme.htm</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.htm</FileType>
-      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
-    </File>
-    <File>
-      <ID>id_c861ad5e8db756e2aea55a53dd333a94</ID>
-      <Filename>english_shavian.jpg</Filename>
-      <Filepath>source\english_shavian.jpg</Filepath>
-      <FileVersion></FileVersion>
-      <FileType>.jpg</FileType>
-      <ParentFileID>id_ba2ea770f832d4be544d5b4bcb3dae7c</ParentFileID>
-    </File>
-  </Files>
 </KeymanDeveloperProject>
