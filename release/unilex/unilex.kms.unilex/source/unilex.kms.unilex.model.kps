@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Unilex kms Lexical Model</Name>
+    <Copyright URL="">© 2019 Unicode.org and contributors</Copyright>
+    <Author URL=""></Author>
+    <Version>1.0.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\unilex.kms.unilex.model.js</Name>
+      <Description>Lexical model unilex.kms.unilex.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>unilex kms dictionary</Name>
+      <ID>unilex.kms.unilex</ID>
+      <Languages>
+        <Language ID="kms">kms</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>

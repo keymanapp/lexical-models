@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>13.0.101.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+  </Options>
+  <Info>
+    <Name URL="">Unilex kyg Lexical Model</Name>
+    <Copyright URL="">© 2019 Unicode.org and contributors</Copyright>
+    <Author URL=""></Author>
+    <Version>1.0.0</Version>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\unilex.kyg.unilex.model.js</Name>
+      <Description>Lexical model unilex.kyg.unilex.model.js</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>unilex kyg dictionary</Name>
+      <ID>unilex.kyg.unilex</ID>
+      <Languages>
+        <Language ID="kyg">kyg</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
