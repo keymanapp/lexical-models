@@ -1,9 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# Keyman is copyright (C) SIL Global. MIT License.
+#
+# Uploads models to downloads.keyman.com
+#
+# TODO(lowpri): convert to builder-style script
 
-function display_usage {
-  echo "Usage: ci.sh [release|experimental[/m/model]]"
-  exit 1
-}
+set -e
+set -u
 
 #
 # Prevents 'clear' on exit of mingw64 bash shell
@@ -17,43 +21,20 @@ MODELROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 JQ="$MODELROOT/tools/jq-win64.exe"
 CI_CACHE="$MODELROOT/.cache"
 
-if [ ! -z "$SEVENZ_HOME" ]; then
+if [ ! -z "${SEVENZ_HOME+x}" ]; then
   APP7Z="$SEVENZ_HOME/7z"
 else
   APP7Z="/c/Program Files/7-Zip/7z.exe"
 fi
 
 . "$MODELROOT/servervars.sh"
-. "$MODELROOT/resources/util.sh"
+. "$MODELROOT/resources/util.inc.sh"
 . "$MODELROOT/resources/rsync-tools.sh"
-
-parse_args "$@"
-setup_colors
 
 function run {
 
   if [ ! -d "$CI_CACHE" ]; then
     mkdir "$CI_CACHE"
-  fi
-
-  if [[ $DO_UPLOAD_ONLY == true ]]; then
-    if [ ! -d "$CI_CACHE/upload" ]; then
-      mkdir "$CI_CACHE/upload"
-    fi
-    rsync_to_downloads_keyman_com "$CI_CACHE/upload/" models/ true
-    exit 0
-  fi
-
-  if [[ $DO_ZIP_ONLY == true ]]; then
-    if [ ! -d "$CI_CACHE/data" ]; then
-      mkdir "$CI_CACHE/data"
-    fi
-    if [ ! -d "$CI_CACHE/upload" ]; then
-      mkdir "$CI_CACHE/upload"
-    fi
-    zip_model_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
-    exit 0
   fi
 
   if [ -d "$CI_CACHE/upload" ]; then
@@ -76,25 +57,8 @@ function run {
 ## Main function
 ##
 function upload_models_by_target {
-  if [[ "$TARGET" ]]; then
-    if [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
-      group=$(cut -d / -f 1 <<< "$TARGET")
-      author=$(cut -d / -f 2 <<< "$TARGET")
-      echo "${t_grn}--- Only uploading $group $TARGET ---${t_end}"
-      upload_model $group "$TARGET"
-    elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "experimental" ]]; then
-      # Assuming release|experimental
-      echo "${t_grn}--- Only uploading $TARGET ---${t_end}"
-      upload_models "$TARGET"
-    else
-      echo "Invalid $TARGET"
-      display_usage
-    fi
-  else
-    upload_models release
-    upload_models experimental
-  fi
-
+  upload_models release
+  upload_models experimental
   rsync_to_downloads_keyman_com "$CI_CACHE/upload/" models/ true
 }
 
