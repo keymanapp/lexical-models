@@ -23,6 +23,10 @@ builder_describe \
 
 builder_parse "$@"
 
+export DOWNLOADS_KEYMAN_COM_URL
+export REMOTE_RSYNC_PATH
+export RSYNC_DEST
+
 function do_build() {
   builder_echo "Building all models"
   "${REPO_ROOT}/build.sh"
@@ -30,6 +34,15 @@ function do_build() {
 }
 
 function do_publish() {
+  if [[ -z "${DOWNLOADS_KEYMAN_COM_URL+x}" ]]; then
+    builder_die "Option --downloads-keyman-com must be specified for publish action"
+  fi
+  if [[ -z "${REMOTE_RSYNC_PATH+x}" ]]; then
+    builder_die "Option --rsync-path must be specified for publish action"
+  fi
+  if [[ -z "${RSYNC_DEST+x}" ]]; then
+    builder_die "Option --rsync-dest must be specified for publish action"
+  fi
   builder_echo "Uploading models to downloads.keyman.com"
   "${REPO_ROOT}/ci.sh"
   builder_echo "Finished uploading models to downloads.keyman.com"

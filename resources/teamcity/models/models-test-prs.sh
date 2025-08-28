@@ -20,7 +20,7 @@ builder_parse "$@"
 
 function do_build() {
   builder_echo "Building all models"
-  "${REPO_ROOT}/build.sh"
+  "${REPO_ROOT}/build.sh" configure build test
   builder_echo "Finished building all models"
 }
 
