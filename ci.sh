@@ -148,15 +148,11 @@ function upload_models {
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
     else
-      if [[ "$base_shortname" < "$START" ]]; then
-        echo "- Skipping folder $group/$base_shortname, before $START"
-      else
-        echo "- Uploading $group/$base_shortname"
-        local model
-        for model in "$shortname"*/ ; do
-          upload_model "$group" "$model"
-        done
-      fi
+      echo "- Uploading $group/$base_shortname"
+      local model
+      for model in "$shortname"*/ ; do
+        upload_model "$group" "$model"
+      done
     fi
   done
 
