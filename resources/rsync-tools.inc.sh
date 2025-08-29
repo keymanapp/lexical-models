@@ -1,4 +1,5 @@
-#!/bin/bash
+# shellcheck shell=bash
+# Keyman is copyright (C) SIL Global. MIT License.
 
 ##
 ## Use rsync to upload new files from a folder
