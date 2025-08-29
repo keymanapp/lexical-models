@@ -29,7 +29,7 @@ fi
 
 . "$MODELROOT/servervars.sh"
 . "$MODELROOT/resources/util.inc.sh"
-. "$MODELROOT/resources/rsync-tools.sh"
+. "$MODELROOT/resources/rsync-tools.inc.sh"
 
 function run {
 
@@ -50,7 +50,7 @@ function run {
   upload_models_by_target
 
   zip_model_info
-  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ false
 }
 
 ##
