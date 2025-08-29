@@ -112,11 +112,6 @@ function upload_model {
   local model_info_upload_path=$base_model/$package_version/$base_model.model_info
   local js_upload_path=$base_model/$package_version/$js_filename
 
-  local package_url=$DOWNLOADS_KEYMAN_COM_URL/models/$package_upload_path
-  local model_info_url=$DOWNLOADS_KEYMAN_COM_URL/models/$model_info_upload_path
-  local installer_url=$DOWNLOADS_KEYMAN_COM_URL/models/$installer_upload_path
-  local js_url=$DOWNLOADS_KEYMAN_COM_URL/models/$js_upload_path
-
   echo "${t_grn}Package name: $package_name, version: $package_version${t_end}"
 
   prepare_for_upload "$model_info" "$model_info_upload_path"
