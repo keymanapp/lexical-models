@@ -1,9 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# Keyman is copyright (C) SIL Global. MIT License.
+#
+# Uploads models to downloads.keyman.com
+#
+# TODO(lowpri): convert to builder-style script
 
-function display_usage {
-  echo "Usage: ci.sh [release|experimental[/m/model]]"
-  exit 1
-}
+set -e
+set -u
 
 #
 # Prevents 'clear' on exit of mingw64 bash shell
@@ -17,42 +21,19 @@ MODELROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 JQ="$MODELROOT/tools/jq-win64.exe"
 CI_CACHE="$MODELROOT/.cache"
 
-if [ ! -z "$SEVENZ_HOME" ]; then
+if [ ! -z "${SEVENZ_HOME+x}" ]; then
   APP7Z="$SEVENZ_HOME/7z"
 else
   APP7Z="/c/Program Files/7-Zip/7z.exe"
 fi
 
-. "$MODELROOT/resources/util.sh"
-. "$MODELROOT/resources/rsync-tools.sh"
-
-parse_args "$@"
-setup_colors
+. "$MODELROOT/resources/util.inc.sh"
+. "$MODELROOT/resources/rsync-tools.inc.sh"
 
 function run {
 
   if [ ! -d "$CI_CACHE" ]; then
     mkdir "$CI_CACHE"
-  fi
-
-  if [[ $DO_UPLOAD_ONLY == true ]]; then
-    if [ ! -d "$CI_CACHE/upload" ]; then
-      mkdir "$CI_CACHE/upload"
-    fi
-    rsync_to_downloads_keyman_com "$CI_CACHE/upload/" models/ true
-    exit 0
-  fi
-
-  if [[ $DO_ZIP_ONLY == true ]]; then
-    if [ ! -d "$CI_CACHE/data" ]; then
-      mkdir "$CI_CACHE/data"
-    fi
-    if [ ! -d "$CI_CACHE/upload" ]; then
-      mkdir "$CI_CACHE/upload"
-    fi
-    zip_model_info
-    rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
-    exit 0
   fi
 
   if [ -d "$CI_CACHE/upload" ]; then
@@ -68,32 +49,15 @@ function run {
   upload_models_by_target
 
   zip_model_info
-  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/
+  rsync_to_downloads_keyman_com "$CI_CACHE/data/" data/ false
 }
 
 ##
 ## Main function
 ##
 function upload_models_by_target {
-  if [[ "$TARGET" ]]; then
-    if [[ "$TARGET" == */* ]] && [[ (-d "$TARGET") ]]; then
-      group=$(cut -d / -f 1 <<< "$TARGET")
-      author=$(cut -d / -f 2 <<< "$TARGET")
-      echo "${t_grn}--- Only uploading $group $TARGET ---${t_end}"
-      upload_model $group "$TARGET"
-    elif [[ "$TARGET" == "release" ]] || [[ "$TARGET" == "experimental" ]]; then
-      # Assuming release|experimental
-      echo "${t_grn}--- Only uploading $TARGET ---${t_end}"
-      upload_models "$TARGET"
-    else
-      echo "Invalid $TARGET"
-      display_usage
-    fi
-  else
-    upload_models release
-    upload_models experimental
-  fi
-
+  upload_models release
+  upload_models experimental
   rsync_to_downloads_keyman_com "$CI_CACHE/upload/" models/ true
 }
 
@@ -147,11 +111,6 @@ function upload_model {
   local model_info_upload_path=$base_model/$package_version/$base_model.model_info
   local js_upload_path=$base_model/$package_version/$js_filename
 
-  local package_url=$DOWNLOADS_KEYMAN_COM_URL/models/$package_upload_path
-  local model_info_url=$DOWNLOADS_KEYMAN_COM_URL/models/$model_info_upload_path
-  local installer_url=$DOWNLOADS_KEYMAN_COM_URL/models/$installer_upload_path
-  local js_url=$DOWNLOADS_KEYMAN_COM_URL/models/$js_upload_path
-
   echo "${t_grn}Package name: $package_name, version: $package_version${t_end}"
 
   prepare_for_upload "$model_info" "$model_info_upload_path"
@@ -183,15 +142,11 @@ function upload_models {
     if [[ "$excluded_folders" == *" $base_shortname "* ]]; then
       echo "- Skipping folder $group/$base_shortname"
     else
-      if [[ "$base_shortname" < "$START" ]]; then
-        echo "- Skipping folder $group/$base_shortname, before $START"
-      else
-        echo "- Uploading $group/$base_shortname"
-        local model
-        for model in "$shortname"*/ ; do
-          upload_model "$group" "$model"
-        done
-      fi
+      echo "- Uploading $group/$base_shortname"
+      local model
+      for model in "$shortname"*/ ; do
+        upload_model "$group" "$model"
+      done
     fi
   done
 
