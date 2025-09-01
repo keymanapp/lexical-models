@@ -23,7 +23,6 @@ else
   APP7Z="/c/Program Files/7-Zip/7z.exe"
 fi
 
-. "$MODELROOT/servervars.sh"
 . "$MODELROOT/resources/util.sh"
 . "$MODELROOT/resources/rsync-tools.sh"
 
