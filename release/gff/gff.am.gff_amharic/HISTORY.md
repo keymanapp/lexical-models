@@ -1,6 +1,10 @@
 GFF Amharic Change History
 ====================
 
+1.1.1 (2025-09-07)
+----------------
+* Demoted ነዉ frequency which was artificially high due to a common typographical error.
+
 1.1 (2024-09-16)
 ----------------
 * Rebuild with 17.0.329 compiler to address missing low-frequency words
