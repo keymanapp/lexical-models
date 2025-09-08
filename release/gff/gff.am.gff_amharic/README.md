@@ -1,9 +1,9 @@
 GFF Amharic lexical model
 ===================
 
-© 2020 Ge'ez Frontier Foundation
+© 2020-2025 Ge'ez Frontier Foundation
 
-Version 1.0
+Version 1.1.1
 
 Description
 -----------

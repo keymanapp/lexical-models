@@ -17,9 +17,9 @@
   </StartMenu>
   <Info>
     <Name URL="">GFF Amharic Lexical Model</Name>
-    <Copyright URL="">© 2020 Ge'ez Frontier Foundation</Copyright>
+    <Copyright URL="">© 2020-2025 Ge'ez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Ge'ez Frontier Foundation</Author>
-    <Version URL="">1.1</Version>
+    <Version URL="">1.1.1</Version>
     <Description>Amharic Lexical Model derived from the UniLex word list for Amharic.</Description>
   </Info>
   <Files>
