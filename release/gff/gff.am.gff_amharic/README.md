@@ -1,9 +1,9 @@
 GFF Amharic lexical model
 ===================
 
-© 2020-2025 Ge'ez Frontier Foundation
+© 2020-2025 Geʾez Frontier Foundation
 
-Version 1.1.1
+Version 2.0
 
 Description
 -----------
@@ -16,7 +16,7 @@ word lists are goals of future development of this lexical model.
 
 Links
 -----
-* UniLex AM Word List: [https://github.com/unicode-org/unilex/blob/master/data/frequency/ti.txt](https://github.com/unicode-org/unilex/blob/master/data/frequency/am.txt)
+* The Ethiopian News Headlines Corpus Collection: [https://github.com/geezorg/enh-corpus](https://github.com/geezorg/enh-corpus)
 
 
 Supported Platforms
