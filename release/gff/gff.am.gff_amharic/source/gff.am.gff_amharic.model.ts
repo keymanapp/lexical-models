@@ -9,6 +9,6 @@
 const source: LexicalModelSource = {
   format: 'trie-1.0',
   wordBreaker: 'default',
-  sources: ['enh-corpus-all.tsv', 'geezorg-ebooks-wordlist.tsv' ],
+  sources: ['enh-corpus-all.tsv', 'geezorg-ebooks.tsv' ],
 };
 export default source;
