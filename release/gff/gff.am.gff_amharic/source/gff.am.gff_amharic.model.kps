@@ -21,7 +21,7 @@
     <Copyright URL="">© 2020-2025 Ge'ez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Ge'ez Frontier Foundation</Author>
     <Version URL="">2.0</Version>
-    <Description URL="">Amharic Lexical Model derived from the UniLex word list for Amharic.</Description>
+    <Description URL="">Amharic Lexical Model derived from the newspaper, magazine, and book corpora.</Description>
   </Info>
   <Files>
     <File>
