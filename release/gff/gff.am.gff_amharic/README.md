@@ -36,14 +36,14 @@ The Ethiopian News Headlines Corpus Collection comprises 13,079 newspaper and ma
 The Ge'ez Frontier Foundation's ebook archive contributes words from a selection of 25 books: [https://github.com/geezorg/ebooks](https://github.com/geezorg/ebooks)
 
 
-1.   ብሃኑ ዘርይሁን. ማዕበል የአብዮት መባቻ. ኢትዮጵያ መጻሕፍት ድርጅት, ፲፱፻፸፫ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/BerhanuZerihun/MaebelYeabyotuMebacha-BerhanuZerihun/src.
-1.   ብርሃኑ ዘርይሁን. ማዕበል የአብዮቱ ማግሥት. ኢትዮጵያ መጻሕፍት ድርጅት, ፲፱፻፸፭ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/BerhanuZerihun/MaebelYeabyotuMebacha-BerhanuZerihun/src.
+1.   ብሃኑ ዘርይሁን. ማዕበል የአብዮት መባቻ. ኢትዮጵያ መጻሕፍት ድርጅት, ፲፱፻፸፫ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/BerhanuZerihun/MaebelYeabyotuMebacha-BerhanuZerihun/src).
+1.   ብርሃኑ ዘርይሁን. ማዕበል የአብዮቱ ማግሥት. ኢትዮጵያ መጻሕፍት ድርጅት, ፲፱፻፸፭ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/BerhanuZerihun/MaebelYeabyotuMebacha-BerhanuZerihun/src).
 1.   ብርሃኑ ዘይሁን. የታንጕት ምስጢር. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹ ዓ/ም.
-1.   ብርሃኑ ድንቄ. ከወልወል እስከ ማይጨው. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, መስከረም ፳፮ ቀን ፲፱፻፵፪ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/KeWelwelEskeMaychew-BirhanuDinqie/src.
-1.   ተክለ ጻድቅ መኵሪያ. ከጣዖት አምልኮ ወደ ክርስትና. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, ፲፱፻፵፩ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/KeTaotAmilkoWedeKirstinaTeSafe-TekleSadiqMekwuriya/src.
-1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ቴዎድሮስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፩ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieTewodrosEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src.
-1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ዮሐንስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፪ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieYohannesEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src.
-1.   ተክለ ጻድቅ መኵሪያ. የሰው ጠባይና አብሮ የመኖር ዘዴ. አርቲስቲክ ማተሚያ ቤት, ፲፱፻፵፫ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeSewTebaynaAbroYeMenorZedie-TekleSadiqMekwuriya/src.
+1.   ብርሃኑ ድንቄ. ከወልወል እስከ ማይጨው. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, መስከረም ፳፮ ቀን ፲፱፻፵፪ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/KeWelwelEskeMaychew-BirhanuDinqie/src).
+1.   ተክለ ጻድቅ መኵሪያ. ከጣዖት አምልኮ ወደ ክርስትና. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, ፲፱፻፵፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/KeTaotAmilkoWedeKirstinaTeSafe-TekleSadiqMekwuriya/src).
+1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ቴዎድሮስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieTewodrosEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src).
+1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ዮሐንስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፪ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieYohannesEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src).
+1.   ተክለ ጻድቅ መኵሪያ. የሰው ጠባይና አብሮ የመኖር ዘዴ. አርቲስቲክ ማተሚያ ቤት, ፲፱፻፵፫ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeSewTebaynaAbroYeMenorZedie-TekleSadiqMekwuriya/src).
 1.   ተክለ ጻድቅ መኵሪያ. የኢትዮጵያ ታሪክ ከዐፄ ልብነ ድንግል እስከ ዐፄ ቴዎድሮስ. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, መስከረም ፲፱፻፶፫ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeEthiopiaTarikKeAtsieLibineDingelEskeAtsieTewodros-TekleTsadikMekuriya/src.
 1.   ተክለ ጻድቅ መኵሪያ. ጥንታዊ የኢትዮጵያና ግብጽ. አዲስ አበባ, n.d. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/TintawiEthiopiaNaGibtse-TekleSadikMekuriya/src.
 1.   ኅሩይ ወልደ ሥላሴ. ጎህ ጽባሕ. ፲፱፻፲፱ ዓ/ም.
