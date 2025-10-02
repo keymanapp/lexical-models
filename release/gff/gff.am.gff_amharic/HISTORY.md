@@ -1,9 +1,11 @@
 GFF Amharic Change History
 ==========================
 
-2.0 (2025-09-27)
+2.0 (2025-10-02)
 ----------------
-* Regenerated from the The Ethiopian News Headlines Corpus Collection.
+* Regenerated from:
+  *  The Ethiopian News Headlines Corpus Collection.
+  *  The Geez.Org eBooks Archive (selected items).
 
 1.1.1 (2025-09-07)
 ----------------
