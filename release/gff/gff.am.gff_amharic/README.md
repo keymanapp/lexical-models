@@ -44,21 +44,21 @@ The Ge'ez Frontier Foundation's ebook archive contributes words from a selection
 1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ቴዎድሮስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieTewodrosEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src).
 1.   ተክለ ጻድቅ መኵሪያ. ዐፄ ዮሐንስ እና የኢትዮጵያ አንድነት. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፹፪ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/AtsieYohannesEnaYeEthiopiaAndinet-TekleTsadikMekuriya/src).
 1.   ተክለ ጻድቅ መኵሪያ. የሰው ጠባይና አብሮ የመኖር ዘዴ. አርቲስቲክ ማተሚያ ቤት, ፲፱፻፵፫ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeSewTebaynaAbroYeMenorZedie-TekleSadiqMekwuriya/src).
-1.   ተክለ ጻድቅ መኵሪያ. የኢትዮጵያ ታሪክ ከዐፄ ልብነ ድንግል እስከ ዐፄ ቴዎድሮስ. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, መስከረም ፲፱፻፶፫ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeEthiopiaTarikKeAtsieLibineDingelEskeAtsieTewodros-TekleTsadikMekuriya/src.
-1.   ተክለ ጻድቅ መኵሪያ. ጥንታዊ የኢትዮጵያና ግብጽ. አዲስ አበባ, n.d. https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/TintawiEthiopiaNaGibtse-TekleSadikMekuriya/src.
+1.   ተክለ ጻድቅ መኵሪያ. የኢትዮጵያ ታሪክ ከዐፄ ልብነ ድንግል እስከ ዐፄ ቴዎድሮስ. ትንሣኤ ዘጉባኤ ማተሚያ ቤት, መስከረም ፲፱፻፶፫ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/YeEthiopiaTarikKeAtsieLibineDingelEskeAtsieTewodros-TekleTsadikMekuriya/src).
+1.   ተክለ ጻድቅ መኵሪያ. ጥንታዊ የኢትዮጵያና ግብጽ. አዲስ አበባ, n.d. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/TekleTsadikMekuriya/TintawiEthiopiaNaGibtse-TekleSadikMekuriya/src).
 1.   ኅሩይ ወልደ ሥላሴ. ጎህ ጽባሕ. ፲፱፻፲፱ ዓ/ም.
-1.   አስረስ የኔሰው. ትቤ አክሡም መኑ አንተ? ንግድ ማተሚያ ቤት, ፲፱፻፶፩ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/AsresYeniesew/TibieAksumMenuAnte-AsresYeniesew/src.
-1.   አስረስ የኔሰው. የካም መታሰቢያ. አሥመራ በኮከበ ጽባሕ ማተሚያ ቤት, ፲፱፻፶፩ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/AsresYeniesew/YeKamMetasebiya-AsresYeniesew/src.
-1.   አፈወርቅ ገብረ ኢየሱስ. ጦቢያ. ሮማ, 1900. https://github.com/geezorg/ebooks/tree/master/amharic/literature/Tobiya-AfeworkGebreYesus/src.
-1.   ኪዳነ ወልድ ክፍሌ. መዝገበ ፊደል. አርቲስቲክ ማተሚያ ቤት, ፲፱፻፳፮  ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/MezgebeFidel-KidaneWoldeKifle/src.
-1.   ወልደ ጊዮርጊስ ወልደ ዮሐንስ. አግዐዚ።. ቅዱስ ጊዮርጊስ ማተሚያ ቤት, ፲፱፻፷፩ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/literature/Agazi-WoldeGirogisWoldeYohannes/src.
-1.   ዓሉ ግርማ. ኦሮማይ. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፸፭ ዓ/ም. https://github.com/geezorg/ebooks/blob/master/amharic/literature/Oromay-BaaluGirma/src/Oromay-BaaluGirma.utf8.txt.
-1.   ደስታ ተክለ ወልድ. ገበታዋሪያ የንባብ መማሪያ።. ቅዱስ አልዓዛር ማተሚያ ቤት, ፲፱፻፳፰ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/educational/GebetawariyaYenibabMemariya-DestaTekleWold/src.
-1.   ጳውሎስ ኞኞ. ሁለተኛው አስደናቂ ታሪኮች. Publisher Unknown, ፲፱፻፷፱ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/Huletenyaw-AsdenaqiTarikoch-PaulosNyonyo/src.
-1.   ጳውሎስ ኞኞ. አራተኛው አስደናቂ ታሪኮች. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፸፭ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/AratenyawAsdenaqiTarikoch-PaulosNyonyo/src.
-1.   ጳውሎስ ኞኞ. አንደኛው አስደናቂ ታሪኮች. አዲስ አበባ, n.d. https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/Andenyaw-AsdenaqiTarikoch-PaulosNyonyo/src.
+1.   አስረስ የኔሰው. ትቤ አክሡም መኑ አንተ? ንግድ ማተሚያ ቤት, ፲፱፻፶፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/AsresYeniesew/TibieAksumMenuAnte-AsresYeniesew/src).
+1.   አስረስ የኔሰው. የካም መታሰቢያ. አሥመራ በኮከበ ጽባሕ ማተሚያ ቤት, ፲፱፻፶፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/AsresYeniesew/YeKamMetasebiya-AsresYeniesew/src).
+1.   አፈወርቅ ገብረ ኢየሱስ. ጦቢያ. ሮማ, 1900. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/Tobiya-AfeworkGebreYesus/src).
+1.   ኪዳነ ወልድ ክፍሌ. መዝገበ ፊደል. አርቲስቲክ ማተሚያ ቤት, ፲፱፻፳፮  ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/MezgebeFidel-KidaneWoldeKifle/src).
+1.   ወልደ ጊዮርጊስ ወልደ ዮሐንስ. አግዐዚ።. ቅዱስ ጊዮርጊስ ማተሚያ ቤት, ፲፱፻፷፩ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/literature/Agazi-WoldeGirogisWoldeYohannes/src).
+1.   ዓሉ ግርማ. ኦሮማይ. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፸፭ ዓ/ም. [↗](https://github.com/geezorg/ebooks/blob/master/amharic/literature/Oromay-BaaluGirma/src/).
+1.   ደስታ ተክለ ወልድ. ገበታዋሪያ የንባብ መማሪያ።. ቅዱስ አልዓዛር ማተሚያ ቤት, ፲፱፻፳፰ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/educational/GebetawariyaYenibabMemariya-DestaTekleWold/src).
+1.   ጳውሎስ ኞኞ. ሁለተኛው አስደናቂ ታሪኮች. Publisher Unknown, ፲፱፻፷፱ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/Huletenyaw-AsdenaqiTarikoch-PaulosNyonyo/src).
+1.   ጳውሎስ ኞኞ. አራተኛው አስደናቂ ታሪኮች. ኩራዝ አሳታሚ ድርጅት, ፲፱፻፸፭ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/AratenyawAsdenaqiTarikoch-PaulosNyonyo/src).
+1.   ጳውሎስ ኞኞ. አንደኛው አስደናቂ ታሪኮች. አዲስ አበባ, n.d. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/Andenyaw-AsdenaqiTarikoch-PaulosNyonyo/src).
 1.   ጳውሎስ ኞኞ. አጤ ምኒልክ. ቦሌ ማተሚያ ቤት, የካቲት ፲፱፻፹፬ ዓ/ም.
-1.   ጳውሎስ ኞኞ. አጤ ቴዎድሮስ. ቦሌ ማተሚያ ቤት, ግንቦት ፲፱፻፹፭ ዓ/ም. https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/AtsieTewodros-PaulosNyonyo/src.
+1.   ጳውሎስ ኞኞ. አጤ ቴዎድሮስ. ቦሌ ማተሚያ ቤት, ግንቦት ፲፱፻፹፭ ዓ/ም. [↗](https://github.com/geezorg/ebooks/tree/master/amharic/history/PaulosNyonyo/AtsieTewodros-PaulosNyonyo/src).
 1.   ጳውሎስ ኞኞ. ዕውቀት. አዲስ አበባ, ፲፱፻፶፱ ዓ/ም.
 1.   ጳውሎስ ኞኞ. የአራዳው ታደሰ እና ሌሎችም. ብርሃንና ሰላም ማተሚያ ቤት, ፲፱፻፷፯ ዓ/ም.
 
