@@ -13,20 +13,6 @@ otherwise been reviewed to validate spelling. Spelling refinements and the incor
 content are goals of future development of this lexical model.
 
 
-## Supported Platforms
- * Windows
- * macOS
- * Linux
- * Web
- * iPhone
- * iPad
- * Android phone
- * Android tablet
- * Mobile devices
- * Desktop devices
- * Tablet devices
-
-
 ## Corpus Collections
 The word lists in this lexical model come from two curated Amharic corpus collections described in the following.
 
