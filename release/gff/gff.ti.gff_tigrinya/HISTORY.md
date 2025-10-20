@@ -1,6 +1,10 @@
 GFF Tigrinya Change History
 ====================
 
+1.3.1 (2025-10-20)
+------------------
+The language tag "ti" is added.
+
 1.3 (2024-09-16)
 ----------------
 * Rebuild with 17.0.329 compiler to address missing low-frequency words
