@@ -54,9 +54,7 @@
     <LexicalModel>
       <ID>gff.ti.gff_tigrinya</ID>
       <Languages>
-        <Language ID="ti-ET">Tigrinya (Ethiopia)</Language>
-        <Language ID="ti-ER">Tigrinya (Eritrea)</Language>
-        <Language ID="ti">Tigrinya</Language>
+        <Language ID="art">Artificial languages</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
