@@ -1,9 +1,9 @@
 GFF Tigrinya-Eritrean Lexical Model
 ===================================
 
-© 2023 Geʾez Frontier Foundation
+© 2023-2025 Geʾez Frontier Foundation
 
-Version 1.0.1
+Version 1.0.2
 
 Description
 -----------
