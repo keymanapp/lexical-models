@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Package>
   <System>
-    <KeymanDeveloperVersion>16.0.139.0</KeymanDeveloperVersion>
+    <KeymanDeveloperVersion>18.0.242.0</KeymanDeveloperVersion>
     <FileVersion>12.0</FileVersion>
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
-    <LicenseFile>..\LICENSE.md</LicenseFile>
   </Options>
   <StartMenu>
     <Folder></Folder>
@@ -17,10 +18,10 @@
   </StartMenu>
   <Info>
     <Name URL="">GFF Tigrinya-Ethiopia Lexical Model</Name>
-    <Copyright URL="">© 2023 Geʾez Frontier Foundation</Copyright>
+    <Copyright URL="">© 2023-2025 Geʾez Frontier Foundation</Copyright>
     <Author URL="mailto:yacob@geez.org">Geʾez Frontier Foundation</Author>
-    <Version URL="">1.0.2</Version>
-    <Description>The Tigrinya-Ethiopia lexical model is based on the content found from 100 issues of the Wegahta (ወጋሕታ) newspaper.</Description>
+    <Version URL="">1.0.3</Version>
+    <Description URL="">The Tigrinya-Ethiopia lexical model is based on the content found from 100 issues of the Wegahta (ወጋሕታ) newspaper.</Description>
   </Info>
   <Files>
     <File>
@@ -51,15 +52,15 @@
   <Keyboards/>
   <LexicalModels>
     <LexicalModel>
-      <Name>GFF Ethiopian Tigrinya</Name>
       <ID>gff.ti_et.gff_tigrinya_ethiopia</ID>
       <Languages>
         <Language ID="ti-ET">Tigrinya (Ethiopia)</Language>
+        <Language ID="ti">Tigrinya</Language>
       </Languages>
     </LexicalModel>
   </LexicalModels>
-  <Strings/>
   <RelatedPackages>
-    <RelatedPackage ID="gff.ti.gff_tigrinya" Relationship="deprecates" />
+    <RelatedPackage ID="gff.ti.gff_tigrinya" Relationship="deprecates"/>
   </RelatedPackages>
+  <Strings/>
 </Package>
