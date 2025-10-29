@@ -1,6 +1,10 @@
 GFF Tigrinya-Eritrean Lexical Model Change History
 ==================================================
 
+1.0.3 (2025-10-28)
+------------------
+`ti` language tag is added to make the lexical model available to Tigrinya keyboards that do not specify a region.
+
 1.0.2 (2024-09-16)
 ----------------
 * Rebuild with 17.0.329 compiler to address missing low-frequency words
