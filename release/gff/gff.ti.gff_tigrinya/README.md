@@ -5,6 +5,12 @@ GFF Tigrinya Lexical Model
 
 Version 1.3.1
 
+Depreication Note
+-----------------
+Note that this lexical model has been deprecatied.  Please refer to its successors for
+[Eritrean Tigrinya](https://github.com/keymanapp/lexical-models/tree/master/release/gff/gff.ti_er.gff_tigrinya_eritrea) 
+or [Ethiopian Tigrinya](https://github.com/keymanapp/lexical-models/tree/master/release/gff/gff.ti_et.gff_tigrinya_ethiopia).
+
 Description
 -----------
 
