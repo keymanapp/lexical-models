@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <WelcomeFile>welcome.htm</WelcomeFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Kanembu</Name>
+    <Copyright URL="">Copyright © SIL Tchad</Copyright>
+    <Author URL="">SIL Tchad</Author>
+    <Version URL="">1.0</Version>
+    <Description URL="">Lexical model for the Kanembu language of Chad</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\sil.kbl.lexique.model.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <ID>sil.kbl.lexique</ID>
+      <Languages>
+        <Language ID="kbl">Kanembu</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <Strings/>
+</Package>
