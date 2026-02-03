@@ -3,6 +3,8 @@
 # This file corresponds very closely to external.inc.sh in keymanapp/keyboards
 #----------------------------------------------------------------------------------------
 
+. "./tools/jq.inc.sh"
+
 retrieve_external_model() {
   # Assume we are starting in the correct folder
   [ -f external_source ] || die "No external_source file found"
@@ -108,8 +110,44 @@ retrieve_external_binary_model() {
     [[ $filename =~ ^/ ]] && die "path cannot start with /"
     local path=
     [[ ! $filename =~ .model_info$ ]] && path=source/
-    curl -s -L "$url" --output "$path$filename" --create-dirs || die "Unable to download $filename"
+    curl -s -L "$url" --output "$path$filename" --create-dirs || retrieve_cached_model "$path" "$filename" && continue
     echo "$sha256 $path$filename" | sha256sum -c --quiet || die "Invalid checksum for $filename"
   done < external_source
 }
 
+#
+# Download cached file from downloads.keyman when external source is missing
+#
+retrieve_cached_model() {
+  local path="$1"
+  local filename="$2"
+  builder_warn "Unable to download $filename so getting cached file from downloads.keyman.com"
+
+  local extension="${filename##*.}"
+  local model_id="${filename%.model*}"
+
+  local query="https://api.keyman.com/model/?q=${model_id}"
+  case "$extension" in
+    js)
+      local js_filename=`curl "$query" | $JQ -r '.[].jsFilename'`
+      curl -s -L "$js_filename" --output "$path$filename" --create-dirs || die "Unable to download $js_filename"
+      ;;
+    kmp)
+      local kmp_filename=`curl "$query" | $JQ -r '.[].packageFilename'`
+      curl -s -L "$kmp_filename" --output "$path$filename" --create-dirs || die "Unable to download $kmp_filename"
+
+      # Also handle model_info since we need to query the latest version 
+      # .model_info is downloaded up a level
+      local version=`curl "$query" | $JQ -r '.[].version'`
+      local model_info_filename="https://downloads.keyman.com/models/${model_id}/${version}/${model_id}.model_info"
+      curl -s -L "$model_info_filename" --output "$model_id.model_info" --create-dirs || die "Unable to download $model_info_filename"
+      ;;
+    model_info)
+      # Skip - handled above
+      echo "$filename handled elsewhere"
+      ;;
+    *)
+      die "$path $filename had unexpected extension (expecting js, kmp, or model_info)"
+      ;;
+  esac
+}
