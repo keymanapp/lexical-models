@@ -130,17 +130,17 @@ retrieve_cached_model() {
   case "$extension" in
     js)
       local js_filename=`curl "$query" | $JQ -r '.[].jsFilename'`
-      curl -s -L "$js_filename" --output "$path$filename" --create-dirs || die "Unable to download $js_filename"
+      curl -s -L -f "$js_filename" --output "$path$filename" --create-dirs || builder_die "Unable to download $js_filename"
       ;;
     kmp)
       local kmp_filename=`curl "$query" | $JQ -r '.[].packageFilename'`
-      curl -s -L "$kmp_filename" --output "$path$filename" --create-dirs || die "Unable to download $kmp_filename"
+      curl -s -L -f "$kmp_filename" --output "$path$filename" --create-dirs || builder_die "Unable to download $kmp_filename"
       ;;
     model_info)
       # .model_info is downloaded up a level (not at $path)
       local version=`curl "$query" | $JQ -r '.[].version'`
       local model_info_filename="https://downloads.keyman.com/models/${model_id}/${version}/${model_id}.model_info"
-      curl -s -L "$model_info_filename" --output "$model_id.model_info" --create-dirs || die "Unable to download $model_info_filename"
+      curl -s -L -f "$model_info_filename" --output "$filename" --create-dirs || builder_die "Unable to download $model_info_filename"
       ;;
     *)
       die "$path $filename had unexpected extension (expecting js, kmp, or model_info)"
