@@ -139,7 +139,7 @@ retrieve_cached_model() {
     model_info)
       # .model_info is downloaded up a level (not at $path)
       local version=`curl "$query" | $JQ -r '.[].version'`
-      local model_info_filename="https://downloads.keyman.com/models/${model_id}/${version}/${model_id}.model_info"
+      local model_info_filename="https://downloads.keyman.com/models/${model_id}/${version}/${filename}"
       curl -s -L -f "$model_info_filename" --output "$filename" --create-dirs || builder_die "Unable to download $model_info_filename"
       ;;
     *)
