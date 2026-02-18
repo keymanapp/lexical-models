@@ -1,6 +1,10 @@
 Bunong Wordlist Change History
 ====================
 
+1.4 (2026-02-19)
+----------------
+* Remove U+200C ZWNJ character from wordlist
+
 1.3 (2024-10-25)
 ----------------
 * Follow the updated script of text prediction. This script avoids the removal of punctuation marks or symbols that appear before the predictive word.
