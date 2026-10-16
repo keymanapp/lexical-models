@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.253.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <Info>
+    <Name URL="">Lemko - test dictionary</Name>
+    <Copyright URL="">© lemko.tools</Copyright>
+    <Author URL="">lemko.tools</Author>
+    <Version URL="">0.3.0</Version>
+    <Description URL="">Lemko - test dictionary</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\lemkotools.rue.lemko.model.js</Name>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Lemko - test dictionary</Name>
+      <ID>lemkotools.rue.lemko</ID>
+            <Languages>
+        <Language ID="rue">Lemko</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <RelatedPackages/>
+</Package>
