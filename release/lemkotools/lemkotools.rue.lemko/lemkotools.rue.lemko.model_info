@@ -1,5 +1,0 @@
-{
-  "license": "mit",
-  "languages": ["rue"],
-  "description": "Lemko predictive-text model for Lemko, based on lemko.tools dictionary forms, original Bukvaky spreadsheet forms and measured frequencies from a deduplicated indexed corpus subset."
-}
