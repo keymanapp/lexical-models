@@ -1,5 +1,10 @@
 Google Crawler Change History
 ====================
+
+2.1 (2026-Oct-27)
+----------------
+* update wordbreaking function to better handle edge cases
+
 2.0 (2024-Oct-24)
 ----------------
 * update wordlist and documentation
