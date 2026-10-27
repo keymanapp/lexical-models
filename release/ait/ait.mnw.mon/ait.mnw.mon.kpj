@@ -12,19 +12,19 @@
       <ID>id_a0a76ecb3384b957c34b9a90d62d20ea</ID>
       <Filename>ait.mnw.mon.model.ts</Filename>
       <Filepath>source\ait.mnw.mon.model.ts</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.ts</FileType>
     </File>
     <File>
       <ID>id_e06131155a3cd6fa86531f339ad6dc6c</ID>
       <Filename>ait.mnw.mon.model.kps</Filename>
       <Filepath>source\ait.mnw.mon.model.kps</Filepath>
-      <FileVersion>1.0</FileVersion>
+      <FileVersion>1.2</FileVersion>
       <FileType>.kps</FileType>
       <Details>
         <Name>Mon dictionary Lexical Model</Name>
         <Copyright>© 2021 Anonta Mon</Copyright>
-        <Version>1.0</Version>
+        <Version>1.2</Version>
       </Details>
     </File>
     <File>
