@@ -60,8 +60,25 @@ const source: LexicalModelSource = {
       }
     }
 
+    let emptyToken = {
+      left: str.length,
+      start: str.length,
+      right: str.length,
+      end: str.length,
+      length: 0,
+      text: ''
+    };
+
     let latestIndex = 0;
-    return tokens.map(function(token) {
+    const finalizedTokens = tokens.map(function(token, index) {
+      // Make sure we properly place a new end-of-context token;
+      // indexOf doesn't do this well by default.
+      if(token == '' && index == tokens.length - 1) {
+        return emptyToken;
+      }
+
+      // Find the first occurrence of the word that appears after the end of
+      // the last word we checked.
       const start = str.indexOf(token, latestIndex);
       latestIndex = start + token.length;
       return {
@@ -73,6 +90,15 @@ const source: LexicalModelSource = {
         text: token
       }
     });
+
+    // If a new word should be starting at the current caret position,
+    // create an empty '' token to indicate this.
+    let tailToken = finalizedTokens[tokens.length - 1];
+    if(!tailToken || tailToken.end != str.length) {
+      finalizedTokens.push(emptyToken);
+    }
+
+    return finalizedTokens;
   },
   punctuation: {
     insertAfterWord: "\u200B"
