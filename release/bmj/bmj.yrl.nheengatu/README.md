@@ -1,9 +1,7 @@
 Nheengatu lexical model
 =======================
 
-Copyright (C) 2026 Bruno Maia de Jesus - TJ
-
-Version 1.0
+Copyright © Bruno Maia de Jesus - TJ
 
 Description
 -----------
