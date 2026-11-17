@@ -22,6 +22,8 @@ Sources
 Official acts are not protected by copyright in Brazil (Law 9,610/98, art. 8). Portuguese words mixed in the texts
 were filtered out; PDF typing substitutes were normalized (ǖ → ü̃, ’ and › → ').
 
+Plus 50 words and names added by the author that are missing from those texts (weight 10).
+
 Links
 -----
 Keyboard: https://keyman.com/keyboards/ticuna
