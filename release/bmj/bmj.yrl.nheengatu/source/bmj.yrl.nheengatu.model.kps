@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.255.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <Info>
+    <Name URL="">Nheengatu</Name>
+    <Copyright URL="">© Bruno Maia de Jesus - TJ</Copyright>
+    <Author URL="">Bruno Maia de Jesus - TJ</Author>
+    <Version URL="">1.0</Version>
+    <Description URL="">Sugestões de palavras em nheengatu, a partir das tradução oficial da Constituição Federal para o nheengatu (CNJ/STF, 2023).</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\bmj.yrl.nheengatu.model.js</Name>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Nheengatu</Name>
+      <ID>bmj.yrl.nheengatu</ID>
+      <Languages>
+        <Language ID="yrl">Nheengatu</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <RelatedPackages/>
+</Package>
