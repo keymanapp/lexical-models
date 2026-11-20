@@ -11,27 +11,25 @@ const source: LexicalModelSource = {
   languageUsesCasing: true,
 
   // A glotal é o apóstrofo e faz parte da palavra (pã'i).
-  // A palavra começa numa letra ou número e segue com letras, sinais combinantes, números e apóstrofos.
-  wordBreaker: {
-    use: function (text: string): Span[] {
-      const spans: Span[] = [];
-      const re = /[\p{L}\p{N}][\p{L}\p{M}\p{N}'’]*/gu;
-      let m: RegExpExecArray | null;
-      while ((m = re.exec(text)) !== null) {
-        spans.push({ start: m.index, end: m.index + m[0].length, length: m[0].length, text: m[0] });
-      }
-      return spans;
-    }
+  // O resto segue o separador padrão do Keyman (Unicode UAX #29): sinais combinantes ficam na letra, e números
+  // (3.000,48) e endereços (www.exemplo.com) não se partem. Só o apóstrofo muda: conta como letra, para não
+  // sair da palavra nem no fim dela.
+  wordBreaker: function (text: string): Span[] {
+    const customization = {
+      propertyMapping: (char: string) => (char == "'" || char == '\u2019') ? 'ALetter' : null,
+    };
+    return wordBreakers['default'](text, customization);
   },
 
-  // Chave de busca: minúscula, sem acento/til/trema e sem apóstrofo.
+  // Chave de busca: minúscula, sem apóstrofo e sem nenhum sinal combinante (toda a faixa U+0300–U+036F
+  // depois da NFKD: til, agudo, trema, grave, circunflexo, mácron, ogonek).
   // Assim "ty" encontra "tỹ" e "pai" encontra "pã'i".
   searchTermToKey: function (wordform: string): string {
     let s = '';
     for (const ch of wordform) {
       s += ch.toLowerCase();
     }
-    return s.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, '');
+    return s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/['\u2019]/g, '');
   },
 };
 export default source;
