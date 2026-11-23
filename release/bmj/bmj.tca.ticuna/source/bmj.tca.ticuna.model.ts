@@ -11,27 +11,26 @@ const source: LexicalModelSource = {
   languageUsesCasing: true,
 
   // A glotal é o apóstrofo e faz parte da palavra, inclusive no fim (nü'ü̃, naca').
-  // A palavra começa numa letra ou número e segue com letras, sinais combinantes (ü̃, ü̃́), números e apóstrofos.
-  wordBreaker: {
-    use: function (text: string): Span[] {
-      const spans: Span[] = [];
-      const re = /[\p{L}\p{N}][\p{L}\p{M}\p{N}'’]*/gu;
-      let m: RegExpExecArray | null;
-      while ((m = re.exec(text)) !== null) {
-        spans.push({ start: m.index, end: m.index + m[0].length, length: m[0].length, text: m[0] });
-      }
-      return spans;
-    }
+  // Usa o word breaker padrão (Unicode UAX #29), que já trata abreviações ("e.g."),
+  // URLs e números ("3,000.48"). A única customização é tratar o apóstrofo
+  // (U+0027 e U+2019) como ALetter, para que ele não quebre a palavra.
+  wordBreaker: function (text: string): Span[] {
+    return wordBreakers['default'](text, {
+      propertyMapping: (char: string) => (char === "'" || char === '\u2019') ? 'ALetter' : null
+    });
   },
 
-  // Chave de busca: minúscula, sem acento/til/trema e sem apóstrofo.
+  // Chave de busca: minúscula, sem diacríticos e sem apóstrofo.
+  // A normalização NFKD separa toda letra acentuada em letra base + marcas
+  // combinantes do bloco U+0300–U+036F (agudo, grave, til, trema, mácron...),
+  // então todas as marcas são removidas, não só algumas.
   // Assim "nuu" encontra "nü'ü̃" e "naca" encontra "naca'".
   searchTermToKey: function (wordform: string): string {
-    let s = '';
-    for (const ch of wordform) {
-      s += ch.toLowerCase();
-    }
-    return s.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, '');
+    return wordform
+      .toLowerCase()
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/['\u2019]/g, '');
   },
 };
 export default source;
