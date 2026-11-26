@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.255.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+  </Options>
+  <Info>
+    <Name URL="">Kaiowá</Name>
+    <Copyright URL="">© Bruno Maia de Jesus - TJ</Copyright>
+    <Author URL="">Bruno Maia de Jesus - TJ</Author>
+    <Version URL="">1.0</Version>
+    <Description URL="">Sugestões de palavras em kaiowá, a partir das traduções oficiais da AGU (Constituição, OIT 169 e ODS) e do glossário jurídico kaiowá.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\bmj.kgk.kaiowa.model.js</Name>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+    </File>
+  </Files>
+  <Keyboards/>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Kaiowá</Name>
+      <ID>bmj.kgk.kaiowa</ID>
+      <Languages>
+        <Language ID="kgk">Kaiowá</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+  <RelatedPackages/>
+</Package>
